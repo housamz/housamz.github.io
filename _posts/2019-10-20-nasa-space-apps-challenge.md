@@ -10,7 +10,7 @@ This weekend 18-20 October, I participated in the Nasa International Space Apps 
 
 We started a project named Lemon-Aid to use satellite images from NASA along with other open-source data sources to be able to help aid organisations to predict and efficiently help victims of natural disasters and conflicts. The project use case during the weekend was to study the Syrian situation and provide better insights into the needs of people. 
 
-** __We won the challenge in Dublin, Ireland and were nominated for the Global Space Apps Challenge.__ **
+**_We won the challenge in Dublin, Ireland and were nominated for the Global Space Apps Challenge._**
 
 The competition's second round took place on 27 October. It saw global nominees deliver a 30-second online pitch to Nasa scientists. Thirty finalists will be announced in December, and the winners in each of the six categories will be revealed in January 2020.
 
