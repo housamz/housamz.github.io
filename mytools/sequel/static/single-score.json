@@ -1,0 +1,7492 @@
+[
+   {
+      "Star Wars":[
+         {
+            "critics":91,
+            "users":90,
+            "name":"Star Wars",
+            "year":"1977"
+         },
+         {
+            "critics":88,
+            "users":91,
+            "name":"Star Wars: Episode V - The Empire Strikes Back",
+            "year":"1980"
+         },
+         {
+            "critics":69,
+            "users":86,
+            "name":"Star Wars: Episode VI - Return of the Jedi",
+            "year":"1983"
+         },
+         {
+            "critics":52,
+            "users":61,
+            "name":"Star Wars: Episode I - The Phantom Menace",
+            "year":"1999"
+         },
+         {
+            "critics":59,
+            "users":60,
+            "name":"Star Wars: Episode II - Attack of the Clones",
+            "year":"2002"
+         },
+         {
+            "critics":73,
+            "users":72,
+            "name":"Star Wars: Episode III - Revenge of the Sith",
+            "year":"2005"
+         },
+         {
+            "critics":86,
+            "users":78,
+            "name":"Star Wars: Episode VII - The Force Awakens",
+            "year":"2015"
+         },
+         {
+            "critics":88,
+            "users":53,
+            "name":"Star Wars: Episode VIII - The Last Jedi",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "The Butterfly Effect":[
+         {
+            "critics":31,
+            "users":80,
+            "name":"The Butterfly Effect",
+            "year":"2004"
+         },
+         {
+            "critics":26,
+            "users":35,
+            "name":"The Butterfly Effect 2",
+            "year":"2006"
+         },
+         {
+            "critics":33,
+            "users":44,
+            "name":"The Butterfly Effect 3: Revelations",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Starship Troopers":[
+         {
+            "critics":56,
+            "users":76,
+            "name":"Starship Troopers",
+            "year":"1997"
+         },
+         {
+            "critics":33,
+            "users":23,
+            "name":"Starship Troopers 2: Hero of the Federation",
+            "year":"2004"
+         },
+         {
+            "critics":50,
+            "users":31,
+            "name":"Starship Troopers 3: Marauder",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Indiana Jones":[
+         {
+            "critics":90,
+            "users":90,
+            "name":"Raiders of the Lost Ark",
+            "year":"1981"
+         },
+         {
+            "critics":71,
+            "users":78,
+            "name":"Indiana Jones and the Temple of Doom",
+            "year":"1984"
+         },
+         {
+            "critics":76,
+            "users":87,
+            "name":"Indiana Jones and the Last Crusade",
+            "year":"1989"
+         },
+         {
+            "critics":71,
+            "users":56,
+            "name":"Indiana Jones and the Kingdom of the Crystal Skull",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Gremlins":[
+         {
+            "critics":77,
+            "users":75,
+            "name":"Gremlins",
+            "year":"1984"
+         },
+         {
+            "critics":69,
+            "users":60,
+            "name":"Gremlins 2: The New Batch",
+            "year":"1990"
+         }
+      ]
+   },
+   {
+      "The Best Exotic Marigold Hotel":[
+         {
+            "critics":"N/A",
+            "users":73,
+            "name":"The Best Exotic Marigold Hotel",
+            "year":"2011"
+         },
+         {
+            "critics":57,
+            "users":61,
+            "name":"The Second Best Exotic Marigold Hotel",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Dungeons & Dragons":[
+         {
+            "critics":12,
+            "users":35,
+            "name":"Dungeons & Dragons",
+            "year":"2000"
+         },
+         {
+            "critics":29,
+            "users":38,
+            "name":"Dungeons & Dragons: Wrath of the Dragon God",
+            "year":"2005"
+         },
+         {
+            "critics":29,
+            "users":37,
+            "name":"Dungeons & Dragons: The Book of Vile Darkness",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Smokin' Aces":[
+         {
+            "critics":"N/A",
+            "users":67,
+            "name":"Smokin' Aces",
+            "year":"2006"
+         },
+         {
+            "critics":22,
+            "users":36,
+            "name":"Smokin' Aces 2: Assassins' Ball",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Under Siege":[
+         {
+            "critics":67,
+            "users":63,
+            "name":"Under Siege",
+            "year":"1992"
+         },
+         {
+            "critics":44,
+            "users":46,
+            "name":"Under Siege 2: Dark Territory",
+            "year":"1995"
+         }
+      ]
+   },
+   {
+      "Sherlock Holmes":[
+         {
+            "critics":63,
+            "users":76,
+            "name":"Sherlock Holmes",
+            "year":"2009"
+         },
+         {
+            "critics":54,
+            "users":75,
+            "name":"Sherlock Holmes: A Game of Shadows",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Lara Croft: Tomb Raider":[
+         {
+            "critics":26,
+            "users":54,
+            "name":"Lara Croft: Tomb Raider",
+            "year":"2001"
+         },
+         {
+            "critics":34,
+            "users":60,
+            "name":"Lara Croft Tomb Raider: The Cradle of Life",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "Mulan":[
+         {
+            "critics":78,
+            "users":81,
+            "name":"Mulan",
+            "year":"1998"
+         },
+         {
+            "critics":"N/A",
+            "users":57,
+            "name":"Mulan II",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Universal Soldier":[
+         {
+            "critics":30,
+            "users":60,
+            "name":"Universal Soldier",
+            "year":"1992"
+         },
+         {
+            "critics":14,
+            "users":38,
+            "name":"Universal Soldier: The Return",
+            "year":"1999"
+         },
+         {
+            "critics":52,
+            "users":43,
+            "name":"Universal Soldier: Regeneration",
+            "year":"2009"
+         },
+         {
+            "critics":57,
+            "users":47,
+            "name":"Universal Soldier: Day of Reckoning",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Love Comes Softly":[
+         {
+            "critics":87,
+            "users":80,
+            "name":"Love Comes Softly",
+            "year":"2003"
+         },
+         {
+            "critics":86,
+            "users":79,
+            "name":"Love's Enduring Promise",
+            "year":"2004"
+         },
+         {
+            "critics":86,
+            "users":80,
+            "name":"Love's Long Journey",
+            "year":"2005"
+         },
+         {
+            "critics":13,
+            "users":75,
+            "name":"Love's Abiding Joy",
+            "year":"2006"
+         },
+         {
+            "critics":83,
+            "users":77,
+            "name":"Love's Unending Legacy",
+            "year":"2007"
+         },
+         {
+            "critics":84,
+            "users":78,
+            "name":"Love's Unfolding Dream",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "From Dusk Till Dawn":[
+         {
+            "critics":55,
+            "users":78,
+            "name":"From Dusk Till Dawn",
+            "year":"1996"
+         },
+         {
+            "critics":9,
+            "users":30,
+            "name":"From Dusk Till Dawn 2: Texas Blood Money",
+            "year":"1999"
+         },
+         {
+            "critics":"N/A",
+            "users":48,
+            "name":"From Dusk Till Dawn 3: The Hangman's Daughter",
+            "year":"1999"
+         }
+      ]
+   },
+   {
+      "Blade":[
+         {
+            "critics":49,
+            "users":78,
+            "name":"Blade",
+            "year":"1998"
+         },
+         {
+            "critics":54,
+            "users":74,
+            "name":"Blade II",
+            "year":"2002"
+         },
+         {
+            "critics":31,
+            "users":48,
+            "name":"Blade: Trinity",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Back to the Future":[
+         {
+            "critics":91,
+            "users":89,
+            "name":"Back to the Future",
+            "year":"1985"
+         },
+         {
+            "critics":60,
+            "users":83,
+            "name":"Back to the Future Part II",
+            "year":"1989"
+         },
+         {
+            "critics":64,
+            "users":78,
+            "name":"Back to the Future Part III",
+            "year":"1990"
+         }
+      ]
+   },
+   {
+      "Alice in Wonderland":[
+         {
+            "critics":52,
+            "users":59,
+            "name":"Alice in Wonderland",
+            "year":"2010"
+         },
+         {
+            "critics":31,
+            "users":56,
+            "name":"Alice Through the Looking Glass",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Blade Runner":[
+         {
+            "critics":89,
+            "users":87,
+            "name":"Blade Runner",
+            "year":"1982"
+         },
+         {
+            "critics":84,
+            "users":81,
+            "name":"Blade Runner 2049",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Hannibal":[
+         {
+            "critics":47,
+            "users":67,
+            "name":"Hannibal",
+            "year":"2001"
+         },
+         {
+            "critics":25,
+            "users":55,
+            "name":"Hannibal Rising",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Men in Black":[
+         {
+            "critics":81,
+            "users":79,
+            "name":"Men in Black",
+            "year":"1997"
+         },
+         {
+            "critics":44,
+            "users":56,
+            "name":"Men in Black II",
+            "year":"2002"
+         },
+         {
+            "critics":68,
+            "users":69,
+            "name":"Men in Black 3",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "The Muppets":[
+         {
+            "critics":81,
+            "users":83,
+            "name":"The Muppet Movie",
+            "year":"1979"
+         },
+         {
+            "critics":72,
+            "users":75,
+            "name":"The Great Muppet Caper",
+            "year":"1981"
+         },
+         {
+            "critics":73,
+            "users":72,
+            "name":"The Muppets Take Manhattan",
+            "year":"1984"
+         },
+         {
+            "critics":58,
+            "users":60,
+            "name":"Muppets from Space",
+            "year":"1999"
+         },
+         {
+            "critics":85,
+            "users":76,
+            "name":"The Muppets",
+            "year":"2011"
+         },
+         {
+            "critics":70,
+            "users":61,
+            "name":"Muppets Most Wanted",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Toy Story":[
+         {
+            "critics":97,
+            "users":88,
+            "name":"Toy Story",
+            "year":"1995"
+         },
+         {
+            "critics":94,
+            "users":84,
+            "name":"Toy Story 2",
+            "year":"1999"
+         },
+         {
+            "critics":95,
+            "users":87,
+            "name":"Toy Story 3",
+            "year":"2010"
+         },
+         {
+            "critics":"N/A",
+            "users":"N/A",
+            "name":"Toy Story 4",
+            "year":"2019"
+         }
+      ]
+   },
+   {
+      "Ocean's Eleven":[
+         {
+            "critics":82,
+            "users":79,
+            "name":"Ocean's Eleven",
+            "year":"2001"
+         },
+         {
+            "critics":55,
+            "users":62,
+            "name":"Ocean's Twelve",
+            "year":"2004"
+         },
+         {
+            "critics":70,
+            "users":72,
+            "name":"Ocean's Thirteen",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "The Messengers":[
+         {
+            "critics":23,
+            "users":49,
+            "name":"The Messengers",
+            "year":"2007"
+         },
+         {
+            "critics":17,
+            "users":32,
+            "name":"Messengers 2: The Scarecrow",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Psycho":[
+         {
+            "critics":97,
+            "users":90,
+            "name":"Psycho",
+            "year":"1960"
+         },
+         {
+            "critics":57,
+            "users":62,
+            "name":"Psycho II",
+            "year":"1983"
+         }
+      ]
+   },
+   {
+      "'A' gai wak":[
+         {
+            "critics":82,
+            "users":78,
+            "name":"'A' gai wak",
+            "year":"1983"
+         },
+         {
+            "critics":67,
+            "users":68,
+            "name":"'A' gai wak 2",
+            "year":"1987"
+         }
+      ]
+   },
+   {
+      "RoboCop":[
+         {
+            "critics":78,
+            "users":82,
+            "name":"RoboCop",
+            "year":"1987"
+         },
+         {
+            "critics":36,
+            "users":54,
+            "name":"RoboCop 2",
+            "year":"1990"
+         },
+         {
+            "critics":21,
+            "users":28,
+            "name":"RoboCop 3",
+            "year":"1993"
+         }
+      ]
+   },
+   {
+      "The Talented Mr. Ripley":[
+         {
+            "critics":79,
+            "users":80,
+            "name":"The Talented Mr. Ripley",
+            "year":"1999"
+         },
+         {
+            "critics":"N/A",
+            "users":66,
+            "name":"Ripley's Game",
+            "year":"2002"
+         },
+         {
+            "critics":34,
+            "users":47,
+            "name":"Ripley Under Ground",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Cat People":[
+         {
+            "critics":93,
+            "users":73,
+            "name":"Cat People",
+            "year":"1942"
+         },
+         {
+            "critics":"N/A",
+            "users":69,
+            "name":"The Curse of the Cat People",
+            "year":"1944"
+         }
+      ]
+   },
+   {
+      "Zoolander":[
+         {
+            "critics":62,
+            "users":70,
+            "name":"Zoolander",
+            "year":"2001"
+         },
+         {
+            "critics":28,
+            "users":36,
+            "name":"Zoolander 2",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "The Hobbit":[
+         {
+            "critics":61,
+            "users":80,
+            "name":"The Hobbit: An Unexpected Journey",
+            "year":"2012"
+         },
+         {
+            "critics":70,
+            "users":80,
+            "name":"The Hobbit: The Desolation of Smaug",
+            "year":"2013"
+         },
+         {
+            "critics":59,
+            "users":74,
+            "name":"The Hobbit: The Battle of the Five Armies",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Before Sunrise":[
+         {
+            "critics":88,
+            "users":87,
+            "name":"Before Sunrise",
+            "year":"1995"
+         },
+         {
+            "critics":92,
+            "users":86,
+            "name":"Before Sunset",
+            "year":"2004"
+         },
+         {
+            "critics":95,
+            "users":81,
+            "name":"Before Midnight",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Ride Along":[
+         {
+            "critics":29,
+            "users":58,
+            "name":"Ride Along",
+            "year":"2014"
+         },
+         {
+            "critics":22,
+            "users":51,
+            "name":"Ride Along 2",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Baiohaz\u00e2do: Dijener\u00eashon":[
+         {
+            "critics":"N/A",
+            "users":65,
+            "name":"Baiohaz\u00e2do: Dijener\u00eashon",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":66,
+            "name":"Biohazard: Damnation",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Harold & Kumar":[
+         {
+            "critics":69,
+            "users":79,
+            "name":"Harold & Kumar Go to White Castle",
+            "year":"2004"
+         },
+         {
+            "critics":54,
+            "users":70,
+            "name":"Harold & Kumar Escape from Guantanamo Bay",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":63,
+            "name":"A Very Harold & Kumar 3D Christmas",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Omega Code":[
+         {
+            "critics":11,
+            "users":39,
+            "name":"The Omega Code",
+            "year":"1999"
+         },
+         {
+            "critics":22,
+            "users":45,
+            "name":"Megiddo: The Omega Code 2",
+            "year":"2001"
+         }
+      ]
+   },
+   {
+      "Bad Lieutenant":[
+         {
+            "critics":73,
+            "users":71,
+            "name":"Bad Lieutenant",
+            "year":"1992"
+         },
+         {
+            "critics":77,
+            "users":63,
+            "name":"The Bad Lieutenant: Port of Call - New Orleans",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Texas Chainsaw Massacre":[
+         {
+            "critics":44,
+            "users":49,
+            "name":"The Texas Chainsaw Massacre 2",
+            "year":"1986"
+         },
+         {
+            "critics":24,
+            "users":41,
+            "name":"Leatherface: Texas Chainsaw Massacre III",
+            "year":"1990"
+         },
+         {
+            "critics":32,
+            "users":24,
+            "name":"Texas Chainsaw Massacre: The Next Generation",
+            "year":"1994"
+         },
+         {
+            "critics":37,
+            "users":61,
+            "name":"The Texas Chainsaw Massacre",
+            "year":"2003"
+         },
+         {
+            "critics":21,
+            "users":57,
+            "name":"The Texas Chainsaw Massacre: The Beginning",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "American Psycho":[
+         {
+            "critics":66,
+            "users":82,
+            "name":"American Psycho",
+            "year":"2000"
+         },
+         {
+            "critics":11,
+            "users":28,
+            "name":"American Psycho II: All American Girl",
+            "year":"2002"
+         }
+      ]
+   },
+   {
+      "Meet the Parents":[
+         {
+            "critics":78,
+            "users":79,
+            "name":"Meet the Parents",
+            "year":"2000"
+         },
+         {
+            "critics":40,
+            "users":63,
+            "name":"Meet the Fockers",
+            "year":"2004"
+         },
+         {
+            "critics":18,
+            "users":52,
+            "name":"Little Fockers",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Open Season":[
+         {
+            "critics":48,
+            "users":59,
+            "name":"Open Season",
+            "year":"2006"
+         },
+         {
+            "critics":35,
+            "users":45,
+            "name":"Open Season 2",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":52,
+            "name":"Open Season 3",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Piranha 3D":[
+         {
+            "critics":"N/A",
+            "users":54,
+            "name":"Piranha 3D",
+            "year":"2010"
+         },
+         {
+            "critics":18,
+            "users":33,
+            "name":"Piranha 3DD",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Tinker Bell":[
+         {
+            "critics":89,
+            "users":71,
+            "name":"Tinker Bell",
+            "year":"2008"
+         },
+         {
+            "critics":73,
+            "users":70,
+            "name":"Tinker Bell and the Lost Treasure",
+            "year":"2009"
+         },
+         {
+            "critics":71,
+            "users":73,
+            "name":"Tinker Bell and the Great Fairy Rescue",
+            "year":"2010"
+         },
+         {
+            "critics":"N/A",
+            "users":74,
+            "name":"Pixie Hollow Games",
+            "year":"2011"
+         },
+         {
+            "critics":60,
+            "users":75,
+            "name":"Secret of the Wings",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "National Treasure":[
+         {
+            "critics":42,
+            "users":71,
+            "name":"National Treasure",
+            "year":"2004"
+         },
+         {
+            "critics":41,
+            "users":63,
+            "name":"National Treasure: Book of Secrets",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Insidious":[
+         {
+            "critics":"N/A",
+            "users":69,
+            "name":"Insidious",
+            "year":"2010"
+         },
+         {
+            "critics":39,
+            "users":63,
+            "name":"Insidious: Chapter 2",
+            "year":"2013"
+         },
+         {
+            "critics":55,
+            "users":59,
+            "name":"Insidious: Chapter 3",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Father of the Bride":[
+         {
+            "critics":60,
+            "users":73,
+            "name":"Father of the Bride",
+            "year":"1991"
+         },
+         {
+            "critics":48,
+            "users":65,
+            "name":"Father of the Bride Part II",
+            "year":"1995"
+         }
+      ]
+   },
+   {
+      "Trainspotting":[
+         {
+            "critics":86,
+            "users":87,
+            "name":"Trainspotting",
+            "year":"1996"
+         },
+         {
+            "critics":73,
+            "users":74,
+            "name":"T2 Trainspotting",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Paranormal Activity":[
+         {
+            "critics":56,
+            "users":54,
+            "name":"Paranormal Activity 2",
+            "year":"2010"
+         },
+         {
+            "critics":63,
+            "users":56,
+            "name":"Paranormal Activity 3",
+            "year":"2011"
+         },
+         {
+            "critics":32,
+            "users":42,
+            "name":"Paranormal Activity 4",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "X-Men":[
+         {
+            "critics":72,
+            "users":78,
+            "name":"X-Men",
+            "year":"2000"
+         },
+         {
+            "critics":76,
+            "users":82,
+            "name":"X2",
+            "year":"2003"
+         },
+         {
+            "critics":58,
+            "users":62,
+            "name":"X-Men: The Last Stand",
+            "year":"2006"
+         },
+         {
+            "critics":38,
+            "users":59,
+            "name":"X-Men Origins: Wolverine",
+            "year":"2009"
+         },
+         {
+            "critics":75,
+            "users":80,
+            "name":"X: First Class",
+            "year":"2011"
+         },
+         {
+            "critics":82,
+            "users":85,
+            "name":"X-Men: Days of Future Past",
+            "year":"2014"
+         },
+         {
+            "critics":66,
+            "users":67,
+            "name":"The Wolverine",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Lilo & Stitch":[
+         {
+            "critics":79,
+            "users":78,
+            "name":"Lilo & Stitch",
+            "year":"2002"
+         },
+         {
+            "critics":40,
+            "users":59,
+            "name":"Lilo & Stitch 2: Stitch Has a Glitch",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Green Lantern":[
+         {
+            "critics":50,
+            "users":71,
+            "name":"Green Lantern: First Flight",
+            "year":"2009"
+         },
+         {
+            "critics":71,
+            "users":69,
+            "name":"Green Lantern: Emerald Knights",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Alien":[
+         {
+            "critics":93,
+            "users":89,
+            "name":"Alien",
+            "year":"1979"
+         },
+         {
+            "critics":91,
+            "users":89,
+            "name":"Aliens",
+            "year":"1986"
+         },
+         {
+            "critics":62,
+            "users":84,
+            "name":"Predator",
+            "year":"1987"
+         },
+         {
+            "critics":36,
+            "users":56,
+            "name":"Predator 2",
+            "year":"1990"
+         },
+         {
+            "critics":50,
+            "users":57,
+            "name":"Alien\u00b3",
+            "year":"1992"
+         },
+         {
+            "critics":59,
+            "users":52,
+            "name":"Alien: Resurrection",
+            "year":"1997"
+         },
+         {
+            "critics":24,
+            "users":49,
+            "name":"AVP: Alien vs. Predator",
+            "year":"2004"
+         },
+         {
+            "critics":20,
+            "users":40,
+            "name":"AVPR: Aliens vs Predator - Requiem",
+            "year":"2007"
+         },
+         {
+            "critics":58,
+            "users":59,
+            "name":"Predators",
+            "year":"2010"
+         },
+         {
+            "critics":68,
+            "users":67,
+            "name":"Prometheus",
+            "year":"2012"
+         },
+         {
+            "critics":65,
+            "users":59,
+            "name":"Alien: Covenant",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Ice Age":[
+         {
+            "critics":68,
+            "users":79,
+            "name":"Ice Age",
+            "year":"2002"
+         },
+         {
+            "critics":57,
+            "users":71,
+            "name":"Ice Age: The Meltdown",
+            "year":"2006"
+         },
+         {
+            "critics":47,
+            "users":67,
+            "name":"Ice Age: Dawn of the Dinosaurs",
+            "year":"2009"
+         },
+         {
+            "critics":"N/A",
+            "users":65,
+            "name":"Ice Age: A Mammoth Christmas",
+            "year":"2011"
+         },
+         {
+            "critics":43,
+            "users":62,
+            "name":"Ice Age: Continental Drift",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Poltergeist":[
+         {
+            "critics":82,
+            "users":79,
+            "name":"Poltergeist",
+            "year":"1982"
+         },
+         {
+            "critics":43,
+            "users":46,
+            "name":"Poltergeist II: The Other Side",
+            "year":"1986"
+         },
+         {
+            "critics":29,
+            "users":34,
+            "name":"Poltergeist III",
+            "year":"1988"
+         }
+      ]
+   },
+   {
+      "Dirty Dancing":[
+         {
+            "critics":68,
+            "users":78,
+            "name":"Dirty Dancing",
+            "year":"1987"
+         },
+         {
+            "critics":31,
+            "users":74,
+            "name":"Dirty Dancing: Havana Nights",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "The Punisher":[
+         {
+            "critics":31,
+            "users":72,
+            "name":"The Punisher",
+            "year":"2004"
+         },
+         {
+            "critics":29,
+            "users":54,
+            "name":"Punisher: War Zone",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Les rivi\u00e8res pourpres":[
+         {
+            "critics":31,
+            "users":74,
+            "name":"Les visiteurs",
+            "year":"1993"
+         },
+         {
+            "critics":49,
+            "users":55,
+            "name":"Les couloirs du temps: Les visiteurs II",
+            "year":"1998"
+         },
+         {
+            "critics":"N/A",
+            "users":69,
+            "name":"Les rivi\u00e8res pourpres",
+            "year":"2000"
+         },
+         {
+            "critics":"N/A",
+            "users":59,
+            "name":"Les rivi\u00e8res pourpres 2 - Les anges de l'apocalypse",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "The Conjuring":[
+         {
+            "critics":76,
+            "users":80,
+            "name":"The Conjuring",
+            "year":"2013"
+         },
+         {
+            "critics":72,
+            "users":77,
+            "name":"The Conjuring 2",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Agent Cody Banks":[
+         {
+            "critics":40,
+            "users":46,
+            "name":"Agent Cody Banks",
+            "year":"2003"
+         },
+         {
+            "critics":23,
+            "users":40,
+            "name":"Agent Cody Banks 2: Destination London",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "RED":[
+         {
+            "critics":71,
+            "users":71,
+            "name":"RED",
+            "year":"2010"
+         },
+         {
+            "critics":45,
+            "users":65,
+            "name":"RED 2",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Jurassic Park":[
+         {
+            "critics":79,
+            "users":86,
+            "name":"Jurassic Park",
+            "year":"1993"
+         },
+         {
+            "critics":56,
+            "users":62,
+            "name":"The Lost World: Jurassic Park",
+            "year":"1997"
+         },
+         {
+            "critics":46,
+            "users":52,
+            "name":"Jurassic Park III",
+            "year":"2001"
+         },
+         {
+            "critics":65,
+            "users":72,
+            "name":"Jurassic World",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "The Fast and the Furious":[
+         {
+            "critics":55,
+            "users":73,
+            "name":"The Fast and the Furious",
+            "year":"2001"
+         },
+         {
+            "critics":37,
+            "users":59,
+            "name":"2 Fast 2 Furious",
+            "year":"2003"
+         },
+         {
+            "critics":41,
+            "users":64,
+            "name":"The Fast and the Furious: Tokyo Drift",
+            "year":"2006"
+         },
+         {
+            "critics":37,
+            "users":65,
+            "name":"Fast & Furious",
+            "year":"2009"
+         },
+         {
+            "critics":71,
+            "users":76,
+            "name":"Fast Five",
+            "year":"2011"
+         },
+         {
+            "critics":65,
+            "users":75,
+            "name":"Furious 6",
+            "year":"2013"
+         },
+         {
+            "critics":81,
+            "users":77,
+            "name":"Furious Seven",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Brother Bear":[
+         {
+            "critics":42,
+            "users":67,
+            "name":"Brother Bear",
+            "year":"2003"
+         },
+         {
+            "critics":50,
+            "users":59,
+            "name":"Brother Bear 2",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Final Destination":[
+         {
+            "critics":35,
+            "users":74,
+            "name":"Final Destination",
+            "year":"2000"
+         },
+         {
+            "critics":43,
+            "users":48,
+            "name":"Final Destination 2",
+            "year":"2003"
+         },
+         {
+            "critics":42,
+            "users":58,
+            "name":"Final Destination 3",
+            "year":"2006"
+         },
+         {
+            "critics":29,
+            "users":45,
+            "name":"The Final Destination",
+            "year":"2009"
+         },
+         {
+            "critics":56,
+            "users":58,
+            "name":"Final Destination 5",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Descent":[
+         {
+            "critics":51,
+            "users":62,
+            "name":"The Descent",
+            "year":"2005"
+         },
+         {
+            "critics":"N/A",
+            "users":58,
+            "name":"The Descent: Part 2",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Brat":[
+         {
+            "critics":"N/A",
+            "users":80,
+            "name":"Brat",
+            "year":"1997"
+         },
+         {
+            "critics":79,
+            "users":79,
+            "name":"Brat 2",
+            "year":"2000"
+         }
+      ]
+   },
+   {
+      "Alone in the Dark":[
+         {
+            "critics":5,
+            "users":16,
+            "name":"Alone in the Dark",
+            "year":"2005"
+         },
+         {
+            "critics":11,
+            "users":22,
+            "name":"Alone in the Dark II",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Think Like a Man":[
+         {
+            "critics":52,
+            "users":68,
+            "name":"Think Like a Man",
+            "year":"2012"
+         },
+         {
+            "critics":30,
+            "users":52,
+            "name":"Think Like a Man Too",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "G.I. Joe":[
+         {
+            "critics":33,
+            "users":53,
+            "name":"G.I. Joe: The Rise of Cobra",
+            "year":"2009"
+         },
+         {
+            "critics":35,
+            "users":53,
+            "name":"G.I. Joe: Retaliation",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Mirrors":[
+         {
+            "critics":25,
+            "users":55,
+            "name":"Mirrors",
+            "year":"2008"
+         },
+         {
+            "critics":20,
+            "users":34,
+            "name":"Mirrors 2",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Ging chaat goo si":[
+         {
+            "critics":90,
+            "users":82,
+            "name":"Ging chaat goo si",
+            "year":"1985"
+         },
+         {
+            "critics":91,
+            "users":74,
+            "name":"Ging chaat goo si juk jaap",
+            "year":"1988"
+         },
+         {
+            "critics":"N/A",
+            "users":69,
+            "name":"Ging chaat goo si III: Chiu kup ging chaat",
+            "year":"1992"
+         },
+         {
+            "critics":"N/A",
+            "users":62,
+            "name":"Chao ji ji hua",
+            "year":"1993"
+         },
+         {
+            "critics":"N/A",
+            "users":66,
+            "name":"Ging chaat goo si 4: Ji gaan daan yam mo",
+            "year":"1996"
+         },
+         {
+            "critics":"N/A",
+            "users":70,
+            "name":"San ging chaat goo si",
+            "year":"2004"
+         },
+         {
+            "critics":"N/A",
+            "users":61,
+            "name":"Jing cha gu shi 2013",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Class of 1999":[
+         {
+            "critics":67,
+            "users":54,
+            "name":"Class of 1999",
+            "year":"1990"
+         },
+         {
+            "critics":14,
+            "users":29,
+            "name":"Class of 1999 II: The Substitute",
+            "year":"1994"
+         }
+      ]
+   },
+   {
+      "Austin Powers":[
+         {
+            "critics":55,
+            "users":74,
+            "name":"Austin Powers: The Spy Who Shagged Me",
+            "year":"1999"
+         },
+         {
+            "critics":60,
+            "users":78,
+            "name":"Austin Powers: International Man of Mystery",
+            "year":"1997"
+         },
+         {
+            "critics":58,
+            "users":57,
+            "name":"Austin Powers in Goldmember",
+            "year":"2002"
+         }
+      ]
+   },
+   {
+      "Tres metros sobre el cielo":[
+         {
+            "critics":65,
+            "users":68,
+            "name":"Tres metros sobre el cielo",
+            "year":"2010"
+         },
+         {
+            "critics":66,
+            "users":68,
+            "name":"Tengo ganas de ti",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Beauty and the Beast":[
+         {
+            "critics":94,
+            "users":86,
+            "name":"Beauty and the Beast",
+            "year":"1991"
+         },
+         {
+            "critics":13,
+            "users":58,
+            "name":"Beauty and the Beast: The Enchanted Christmas",
+            "year":"1997"
+         },
+         {
+            "critics":17,
+            "users":64,
+            "name":"Belle's Magical World",
+            "year":"1998"
+         }
+      ]
+   },
+   {
+      "Ast\u00e9rix & Ob\u00e9lix contre C\u00e9sar":[
+         {
+            "critics":"N/A",
+            "users":59,
+            "name":"Ast\u00e9rix & Ob\u00e9lix contre C\u00e9sar",
+            "year":"1999"
+         },
+         {
+            "critics":"N/A",
+            "users":66,
+            "name":"Ast\u00e9rix & Ob\u00e9lix: Mission Cl\u00e9op\u00e2tre",
+            "year":"2002"
+         },
+         {
+            "critics":18,
+            "users":34,
+            "name":"Ast\u00e9rix aux jeux olympiques",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":53,
+            "name":"Ast\u00e9rix & Ob\u00e9lix: Au service de sa Majest\u00e9",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Clerks":[
+         {
+            "critics":79,
+            "users":84,
+            "name":"Clerks",
+            "year":"1994"
+         },
+         {
+            "critics":64,
+            "users":77,
+            "name":"Clerks II",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Horrible Bosses":[
+         {
+            "critics":63,
+            "users":71,
+            "name":"Horrible Bosses",
+            "year":"2011"
+         },
+         {
+            "critics":36,
+            "users":56,
+            "name":"Horrible Bosses 2",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Wrong Turn":[
+         {
+            "critics":36,
+            "users":60,
+            "name":"Wrong Turn",
+            "year":"2003"
+         },
+         {
+            "critics":70,
+            "users":49,
+            "name":"Wrong Turn 2: Dead End",
+            "year":"2007"
+         },
+         {
+            "critics":23,
+            "users":34,
+            "name":"Wrong Turn 3: Left for Dead",
+            "year":"2009"
+         },
+         {
+            "critics":"N/A",
+            "users":46,
+            "name":"Wrong Turn 4: Bloody Beginnings",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Wild Things":[
+         {
+            "critics":58,
+            "users":68,
+            "name":"Wild Things",
+            "year":"1998"
+         },
+         {
+            "critics":22,
+            "users":34,
+            "name":"Wild Things 2",
+            "year":"2004"
+         },
+         {
+            "critics":"N/A",
+            "users":46,
+            "name":"Wild Things: Diamonds in the Rough",
+            "year":"2005"
+         },
+         {
+            "critics":"N/A",
+            "users":47,
+            "name":"Wild Things: Foursome",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "I Know What You Did Last Summer":[
+         {
+            "critics":47,
+            "users":40,
+            "name":"I Know What You Did Last Summer",
+            "year":"1997"
+         },
+         {
+            "critics":14,
+            "users":41,
+            "name":"I Still Know What You Did Last Summer",
+            "year":"1998"
+         }
+      ]
+   },
+   {
+      "Daredevil":[
+         {
+            "critics":43,
+            "users":56,
+            "name":"Daredevil",
+            "year":"2003"
+         },
+         {
+            "critics":22,
+            "users":40,
+            "name":"Elektra",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "The Little Mermaid":[
+         {
+            "critics":90,
+            "users":80,
+            "name":"The Little Mermaid",
+            "year":"1989"
+         },
+         {
+            "critics":33,
+            "users":50,
+            "name":"The Little Mermaid II: Return to the Sea",
+            "year":"2000"
+         },
+         {
+            "critics":33,
+            "users":60,
+            "name":"The Little Mermaid: Ariel's Beginning",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "The Mask":[
+         {
+            "critics":66,
+            "users":68,
+            "name":"The Mask",
+            "year":"1994"
+         },
+         {
+            "critics":13,
+            "users":32,
+            "name":"Son of the Mask",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Kingsman":[
+         {
+            "critics":"N/A",
+            "users":77,
+            "name":"Kingsman: The Secret Service",
+            "year":"2014"
+         },
+         {
+            "critics":48,
+            "users":66,
+            "name":"Kingsman: The Golden Circle",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Cocoon":[
+         {
+            "critics":71,
+            "users":63,
+            "name":"Cocoon",
+            "year":"1985"
+         },
+         {
+            "critics":39,
+            "users":44,
+            "name":"Cocoon: The Return",
+            "year":"1988"
+         }
+      ]
+   },
+   {
+      "Shrek":[
+         {
+            "critics":86,
+            "users":85,
+            "name":"Shrek",
+            "year":"2001"
+         },
+         {
+            "critics":82,
+            "users":76,
+            "name":"Shrek 2",
+            "year":"2004"
+         },
+         {
+            "critics":49,
+            "users":59,
+            "name":"Shrek the Third",
+            "year":"2007"
+         },
+         {
+            "critics":58,
+            "users":60,
+            "name":"Shrek Forever After",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Fortress":[
+         {
+            "critics":"N/A",
+            "users":59,
+            "name":"Fortress",
+            "year":"1992"
+         },
+         {
+            "critics":"N/A",
+            "users":45,
+            "name":"Fortress 2",
+            "year":"2000"
+         }
+      ]
+   },
+   {
+      "Beverly Hills Chihuahua":[
+         {
+            "critics":40,
+            "users":43,
+            "name":"Beverly Hills Chihuahua",
+            "year":"2008"
+         },
+         {
+            "critics":50,
+            "users":47,
+            "name":"Beverly Hills Chihuahua 2",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Blue Crush":[
+         {
+            "critics":61,
+            "users":53,
+            "name":"Blue Crush",
+            "year":"2002"
+         },
+         {
+            "critics":40,
+            "users":47,
+            "name":"Blue Crush 2",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Collector":[
+         {
+            "critics":29,
+            "users":59,
+            "name":"The Collector",
+            "year":"2009"
+         },
+         {
+            "critics":37,
+            "users":59,
+            "name":"The Collection",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Nanny McPhee":[
+         {
+            "critics":"N/A",
+            "users":66,
+            "name":"Nanny McPhee",
+            "year":"2005"
+         },
+         {
+            "critics":76,
+            "users":58,
+            "name":"Nanny McPhee and the Big Bang",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "The Lord of the Rings":[
+         {
+            "critics":91,
+            "users":91,
+            "name":"The Lord of the Rings: The Fellowship of the Ring",
+            "year":"2001"
+         },
+         {
+            "critics":91,
+            "users":90,
+            "name":"The Lord of the Rings: The Two Towers",
+            "year":"2002"
+         },
+         {
+            "critics":93,
+            "users":88,
+            "name":"The Lord of the Rings: The Return of the King",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "Bad Santa":[
+         {
+            "critics":74,
+            "users":78,
+            "name":"Bad Santa",
+            "year":"2003"
+         },
+         {
+            "critics":30,
+            "users":47,
+            "name":"Bad Santa 2",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Night at the Museum":[
+         {
+            "critics":45,
+            "users":66,
+            "name":"Night at the Museum",
+            "year":"2006"
+         },
+         {
+            "critics":43,
+            "users":54,
+            "name":"Night at the Museum: Battle of the Smithsonian",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Mask of Zorro":[
+         {
+            "critics":72,
+            "users":75,
+            "name":"The Mask of Zorro",
+            "year":"1998"
+         },
+         {
+            "critics":36,
+            "users":51,
+            "name":"The Legend of Zorro",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Hostel":[
+         {
+            "critics":"N/A",
+            "users":59,
+            "name":"Hostel",
+            "year":"2005"
+         },
+         {
+            "critics":45,
+            "users":48,
+            "name":"Hostel: Part II",
+            "year":"2007"
+         },
+         {
+            "critics":67,
+            "users":32,
+            "name":"Hostel: Part III",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Iron Man":[
+         {
+            "critics":86,
+            "users":85,
+            "name":"Iron Man",
+            "year":"2008"
+         },
+         {
+            "critics":65,
+            "users":68,
+            "name":"Iron Man 2",
+            "year":"2010"
+         },
+         {
+            "critics":79,
+            "users":75,
+            "name":"Iron Man Three",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "The Three Musketeers":[
+         {
+            "critics":82,
+            "users":75,
+            "name":"The Three Musketeers",
+            "year":"1973"
+         },
+         {
+            "critics":"N/A",
+            "users":71,
+            "name":"The Four Musketeers",
+            "year":"1974"
+         }
+      ]
+   },
+   {
+      "Tremors":[
+         {
+            "critics":75,
+            "users":74,
+            "name":"Tremors",
+            "year":"1990"
+         },
+         {
+            "critics":63,
+            "users":53,
+            "name":"Tremors II: Aftershocks",
+            "year":"1996"
+         },
+         {
+            "critics":67,
+            "users":43,
+            "name":"Tremors 3: Back to Perfection",
+            "year":"2001"
+         },
+         {
+            "critics":32,
+            "users":43,
+            "name":"Tremors 4: The Legend Begins",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "The Scorpion King":[
+         {
+            "critics":43,
+            "users":48,
+            "name":"The Scorpion King",
+            "year":"2002"
+         },
+         {
+            "critics":"N/A",
+            "users":38,
+            "name":"The Scorpion King: Rise of a Warrior",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "The Best Man":[
+         {
+            "critics":66,
+            "users":76,
+            "name":"The Best Man",
+            "year":"1999"
+         },
+         {
+            "critics":65,
+            "users":69,
+            "name":"The Best Man Holiday",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "The Tall Blond Man with One Black Shoe":[
+         {
+            "critics":"N/A",
+            "users":73,
+            "name":"The Tall Blond Man with One Black Shoe",
+            "year":"1972"
+         },
+         {
+            "critics":49,
+            "users":58,
+            "name":"The Return of the Tall Blond Man",
+            "year":"1974"
+         }
+      ]
+   },
+   {
+      "Urban Legend":[
+         {
+            "critics":27,
+            "users":59,
+            "name":"Urban Legend",
+            "year":"1998"
+         },
+         {
+            "critics":12,
+            "users":29,
+            "name":"Urban Legends: Final Cut",
+            "year":"2000"
+         },
+         {
+            "critics":40,
+            "users":35,
+            "name":"Urban Legends: Bloody Mary",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "The Da Vinci Code":[
+         {
+            "critics":35,
+            "users":60,
+            "name":"The Da Vinci Code",
+            "year":"2006"
+         },
+         {
+            "critics":42,
+            "users":62,
+            "name":"Angels & Demons",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Sisterhood of the Traveling Pants":[
+         {
+            "critics":71,
+            "users":73,
+            "name":"The Sisterhood of the Traveling Pants",
+            "year":"2005"
+         },
+         {
+            "critics":64,
+            "users":64,
+            "name":"The Sisterhood of the Traveling Pants 2",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "A Nightmare on Elm Street":[
+         {
+            "critics":85,
+            "users":82,
+            "name":"A Nightmare on Elm Street",
+            "year":"1984"
+         },
+         {
+            "critics":"N/A",
+            "users":54,
+            "name":"A Nightmare on Elm Street Part 2: Freddy's Revenge",
+            "year":"1985"
+         },
+         {
+            "critics":61,
+            "users":72,
+            "name":"A Nightmare on Elm Street 3: Dream Warriors",
+            "year":"1987"
+         },
+         {
+            "critics":55,
+            "users":59,
+            "name":"A Nightmare on Elm Street 4: The Dream Master",
+            "year":"1988"
+         },
+         {
+            "critics":43,
+            "users":48,
+            "name":"A Nightmare on Elm Street: The Dream Child",
+            "year":"1989"
+         },
+         {
+            "critics":20,
+            "users":41,
+            "name":"Freddy's Dead: The Final Nightmare",
+            "year":"1991"
+         },
+         {
+            "critics":71,
+            "users":69,
+            "name":"New Nightmare",
+            "year":"1994"
+         },
+         {
+            "critics":25,
+            "users":48,
+            "name":"A Nightmare on Elm Street",
+            "year":"2010"
+         },
+         {
+            "critics":39,
+            "users":64,
+            "name":"Freddy vs. Jason",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "The Ring":[
+         {
+            "critics":79,
+            "users":69,
+            "name":"The Ring",
+            "year":"2002"
+         },
+         {
+            "critics":32,
+            "users":39,
+            "name":"The Ring Two",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Machete":[
+         {
+            "critics":66,
+            "users":66,
+            "name":"Machete",
+            "year":"2010"
+         },
+         {
+            "critics":35,
+            "users":50,
+            "name":"Machete Kills",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Hot Tub Time Machine":[
+         {
+            "critics":63,
+            "users":62,
+            "name":"Hot Tub Time Machine",
+            "year":"2010"
+         },
+         {
+            "critics":21,
+            "users":37,
+            "name":"Hot Tub Time Machine 2",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "An American Werewolf in London":[
+         {
+            "critics":74,
+            "users":81,
+            "name":"An American Werewolf in London",
+            "year":"1981"
+         },
+         {
+            "critics":19,
+            "users":44,
+            "name":"An American Werewolf in Paris",
+            "year":"1997"
+         }
+      ]
+   },
+   {
+      "The Jewel of the Nile":[
+         {
+            "critics":50,
+            "users":49,
+            "name":"The Jewel of the Nile",
+            "year":"1985"
+         },
+         {
+            "critics":82,
+            "users":75,
+            "name":"The War of the Roses",
+            "year":"1989"
+         }
+      ]
+   },
+   {
+      "The Princess Diaries":[
+         {
+            "critics":49,
+            "users":71,
+            "name":"The Princess Diaries",
+            "year":"2001"
+         },
+         {
+            "critics":34,
+            "users":58,
+            "name":"The Princess Diaries 2: Royal Engagement",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Scream":[
+         {
+            "critics":48,
+            "users":68,
+            "name":"Scream",
+            "year":"1996"
+         },
+         {
+            "critics":72,
+            "users":68,
+            "name":"Scream 2",
+            "year":"1997"
+         },
+         {
+            "critics":46,
+            "users":60,
+            "name":"Scream 3",
+            "year":"2000"
+         },
+         {
+            "critics":55,
+            "users":60,
+            "name":"Scream 4",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "A Haunted House":[
+         {
+            "critics":15,
+            "users":50,
+            "name":"A Haunted House",
+            "year":"2013"
+         },
+         {
+            "critics":12,
+            "users":42,
+            "name":"A Haunted House 2",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "M\u00e4dchen M\u00e4dchen!":[
+         {
+            "critics":"N/A",
+            "users":53,
+            "name":"M\u00e4dchen M\u00e4dchen!",
+            "year":"2001"
+         },
+         {
+            "critics":"N/A",
+            "users":48,
+            "name":"M\u00e4dchen M\u00e4dchen 2",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Saw":[
+         {
+            "critics":47,
+            "users":80,
+            "name":"Saw",
+            "year":"2004"
+         },
+         {
+            "critics":38,
+            "users":64,
+            "name":"Saw II",
+            "year":"2005"
+         },
+         {
+            "critics":38,
+            "users":66,
+            "name":"Saw III",
+            "year":"2006"
+         },
+         {
+            "critics":27,
+            "users":60,
+            "name":"Saw IV",
+            "year":"2007"
+         },
+         {
+            "critics":16,
+            "users":55,
+            "name":"Saw V",
+            "year":"2008"
+         },
+         {
+            "critics":34,
+            "users":59,
+            "name":"Saw VI",
+            "year":"2009"
+         },
+         {
+            "critics":16,
+            "users":51,
+            "name":"Saw 3D",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Wall Street":[
+         {
+            "critics":67,
+            "users":80,
+            "name":"Wall Street",
+            "year":"1987"
+         },
+         {
+            "critics":57,
+            "users":54,
+            "name":"Wall Street: Money Never Sleeps",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "The Lion King":[
+         {
+            "critics":88,
+            "users":88,
+            "name":"The Lion King",
+            "year":"1994"
+         },
+         {
+            "critics":43,
+            "users":62,
+            "name":"The Lion King II: Simba's Pride",
+            "year":"1998"
+         },
+         {
+            "critics":76,
+            "users":63,
+            "name":"The Lion King 1\u00bd",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "The Matrix":[
+         {
+            "critics":80,
+            "users":87,
+            "name":"The Matrix",
+            "year":"1999"
+         },
+         {
+            "critics":67,
+            "users":73,
+            "name":"The Matrix Reloaded",
+            "year":"2003"
+         },
+         {
+            "critics":41,
+            "users":58,
+            "name":"The Matrix Revolutions",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "Alvin and the Chipmunks":[
+         {
+            "critics":33,
+            "users":56,
+            "name":"Alvin and the Chipmunks",
+            "year":"2007"
+         },
+         {
+            "critics":30,
+            "users":45,
+            "name":"Alvin and the Chipmunks: The Squeakquel",
+            "year":"2009"
+         },
+         {
+            "critics":17,
+            "users":44,
+            "name":"Alvin and the Chipmunks: Chipwrecked",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "American Pie":[
+         {
+            "critics":59,
+            "users":58,
+            "name":"American Pie",
+            "year":"1999"
+         },
+         {
+            "critics":47,
+            "users":61,
+            "name":"American Pie 2",
+            "year":"2001"
+         },
+         {
+            "critics":48,
+            "users":64,
+            "name":"American Wedding",
+            "year":"2003"
+         },
+         {
+            "critics":17,
+            "users":50,
+            "name":"Band Camp",
+            "year":"2005"
+         },
+         {
+            "critics":0,
+            "users":56,
+            "name":"The Naked Mile",
+            "year":"2006"
+         },
+         {
+            "critics":56,
+            "users":55,
+            "name":"Beta House",
+            "year":"2007"
+         },
+         {
+            "critics":28,
+            "users":38,
+            "name":"American Pie Presents the Book of Love",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Banlieue 13":[
+         {
+            "critics":"N/A",
+            "users":72,
+            "name":"Banlieue 13",
+            "year":"2004"
+         },
+         {
+            "critics":74,
+            "users":60,
+            "name":"Banlieue 13: Ultimatum",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Elizabeth":[
+         {
+            "critics":78,
+            "users":78,
+            "name":"Elizabeth",
+            "year":"1998"
+         },
+         {
+            "critics":39,
+            "users":63,
+            "name":"Elizabeth: The Golden Age",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "[Rec]":[
+         {
+            "critics":88,
+            "users":78,
+            "name":"[Rec]",
+            "year":"2007"
+         },
+         {
+            "critics":"N/A",
+            "users":65,
+            "name":"[Rec]\u00b2",
+            "year":"2009"
+         },
+         {
+            "critics":42,
+            "users":39,
+            "name":"[Rec]\u00b3: G\u00e9nesis",
+            "year":"2012"
+         },
+         {
+            "critics":"N/A",
+            "users":54,
+            "name":"[REC] 4: Apocalipsis",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "The Dead":[
+         {
+            "critics":"N/A",
+            "users":58,
+            "name":"The Dead",
+            "year":"2010"
+         },
+         {
+            "critics":33,
+            "users":42,
+            "name":"The Dead 2: India",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Kill Bill":[
+         {
+            "critics":76,
+            "users":83,
+            "name":"Kill Bill: Vol. 1",
+            "year":"2003"
+         },
+         {
+            "critics":83,
+            "users":83,
+            "name":"Kill Bill: Vol. 2",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "In the Name of the King":[
+         {
+            "critics":"N/A",
+            "users":38,
+            "name":"In the Name of the King: A Dungeon Siege Tale",
+            "year":"2007"
+         },
+         {
+            "critics":17,
+            "users":24,
+            "name":"In the Name of the King: Two Worlds",
+            "year":"2011"
+         },
+         {
+            "critics":"N/A",
+            "users":32,
+            "name":"In the Name of the King: The Last Mission",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "The X Files":[
+         {
+            "critics":62,
+            "users":75,
+            "name":"The X Files",
+            "year":"1998"
+         },
+         {
+            "critics":39,
+            "users":51,
+            "name":"The X Files: I Want to Believe",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "The Maze Runner":[
+         {
+            "critics":61,
+            "users":67,
+            "name":"The Maze Runner",
+            "year":"2014"
+         },
+         {
+            "critics":45,
+            "users":59,
+            "name":"Maze Runner: The Scorch Trials",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Wishmaster":[
+         {
+            "critics":23,
+            "users":48,
+            "name":"Wishmaster",
+            "year":"1997"
+         },
+         {
+            "critics":10,
+            "users":40,
+            "name":"Wishmaster 2: Evil Never Dies",
+            "year":"1999"
+         },
+         {
+            "critics":16,
+            "users":26,
+            "name":"Wishmaster 3: Beyond the Gates of Hell",
+            "year":"2001"
+         },
+         {
+            "critics":20,
+            "users":32,
+            "name":"Wishmaster 4: The Prophecy Fulfilled",
+            "year":"2002"
+         }
+      ]
+   },
+   {
+      "Atlas Shrugged":[
+         {
+            "critics":20,
+            "users":61,
+            "name":"Atlas Shrugged: Part I",
+            "year":"2011"
+         },
+         {
+            "critics":26,
+            "users":57,
+            "name":"Atlas Shrugged II: The Strike",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Despicable Me":[
+         {
+            "critics":76,
+            "users":78,
+            "name":"Despicable Me",
+            "year":"2010"
+         },
+         {
+            "critics":68,
+            "users":77,
+            "name":"Despicable Me 2",
+            "year":"2013"
+         },
+         {
+            "critics":54,
+            "users":58,
+            "name":"Despicable Me 3",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Transformers":[
+         {
+            "critics":25,
+            "users":50,
+            "name":"Transformers: Age of Extinction",
+            "year":"2014"
+         },
+         {
+            "critics":21,
+            "users":45,
+            "name":"Transformers: The Last Knight",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Ghost Busters":[
+         {
+            "critics":"N/A",
+            "users":78,
+            "name":"Ghost Busters",
+            "year":"1984"
+         },
+         {
+            "critics":54,
+            "users":66,
+            "name":"Ghostbusters II",
+            "year":"1989"
+         }
+      ]
+   },
+   {
+      "Mission: Impossible":[
+         {
+            "critics":61,
+            "users":74,
+            "name":"Mission: Impossible",
+            "year":"1996"
+         },
+         {
+            "critics":58,
+            "users":60,
+            "name":"Mission: Impossible II",
+            "year":"2000"
+         },
+         {
+            "critics":68,
+            "users":72,
+            "name":"Mission: Impossible III",
+            "year":"2006"
+         },
+         {
+            "critics":83,
+            "users":76,
+            "name":"Mission: Impossible - Ghost Protocol",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Fright Night":[
+         {
+            "critics":91,
+            "users":73,
+            "name":"Fright Night",
+            "year":"1985"
+         },
+         {
+            "critics":"N/A",
+            "users":59,
+            "name":"Fright Night Part 2",
+            "year":"1988"
+         },
+         {
+            "critics":68,
+            "users":65,
+            "name":"Fright Night",
+            "year":"2011"
+         },
+         {
+            "critics":17,
+            "users":30,
+            "name":"Fright Night 2",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Police Academy":[
+         {
+            "critics":47,
+            "users":68,
+            "name":"Police Academy",
+            "year":"1984"
+         },
+         {
+            "critics":34,
+            "users":56,
+            "name":"Police Academy 2: Their First Assignment",
+            "year":"1985"
+         },
+         {
+            "critics":36,
+            "users":46,
+            "name":"Police Academy 3: Back in Training",
+            "year":"1986"
+         },
+         {
+            "critics":13,
+            "users":43,
+            "name":"Police Academy 4: Citizens on Patrol",
+            "year":"1987"
+         },
+         {
+            "critics":9,
+            "users":39,
+            "name":"Police Academy 5: Assignment: Miami Beach",
+            "year":"1988"
+         },
+         {
+            "critics":8,
+            "users":35,
+            "name":"Police Academy 6: City Under Siege",
+            "year":"1989"
+         },
+         {
+            "critics":5,
+            "users":28,
+            "name":"Police Academy: Mission to Moscow",
+            "year":"1994"
+         },
+         {
+            "critics":"N/A",
+            "users":63,
+            "name":"Paranormal Activity",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Walking Tall":[
+         {
+            "critics":67,
+            "users":70,
+            "name":"Walking Tall",
+            "year":"1973"
+         },
+         {
+            "critics":62,
+            "users":62,
+            "name":"Walking Tall Part II",
+            "year":"1975"
+         },
+         {
+            "critics":70,
+            "users":64,
+            "name":"Final Chapter: Walking Tall",
+            "year":"1977"
+         },
+         {
+            "critics":35,
+            "users":65,
+            "name":"Walking Tall",
+            "year":"2004"
+         },
+         {
+            "critics":"N/A",
+            "users":48,
+            "name":"Walking Tall: The Payback",
+            "year":"2007"
+         },
+         {
+            "critics":20,
+            "users":35,
+            "name":"Walking Tall: Lone Justice",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "The Evil Dead":[
+         {
+            "critics":95,
+            "users":79,
+            "name":"The Evil Dead",
+            "year":"1981"
+         },
+         {
+            "critics":83,
+            "users":83,
+            "name":"Evil Dead II",
+            "year":"1987"
+         },
+         {
+            "critics":"N/A",
+            "users":76,
+            "name":"Army of Darkness",
+            "year":"1992"
+         }
+      ]
+   },
+   {
+      "Balto":[
+         {
+            "critics":52,
+            "users":70,
+            "name":"Balto",
+            "year":"1995"
+         },
+         {
+            "critics":53,
+            "users":57,
+            "name":"Balto: Wolf Quest",
+            "year":"2002"
+         },
+         {
+            "critics":"N/A",
+            "users":64,
+            "name":"Balto III: Wings of Change",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Monsters":[
+         {
+            "critics":68,
+            "users":60,
+            "name":"Monsters",
+            "year":"2010"
+         },
+         {
+            "critics":"N/A",
+            "users":43,
+            "name":"Monsters: Dark Continent",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Rush Hour":[
+         {
+            "critics":60,
+            "users":78,
+            "name":"Rush Hour",
+            "year":"1998"
+         },
+         {
+            "critics":50,
+            "users":74,
+            "name":"Rush Hour 2",
+            "year":"2001"
+         },
+         {
+            "critics":31,
+            "users":63,
+            "name":"Rush Hour 3",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Into the Blue":[
+         {
+            "critics":33,
+            "users":57,
+            "name":"Into the Blue",
+            "year":"2005"
+         },
+         {
+            "critics":17,
+            "users":32,
+            "name":"Into the Blue 2: The Reef",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "L'instinct de mort":[
+         {
+            "critics":"N/A",
+            "users":76,
+            "name":"L'instinct de mort",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":75,
+            "name":"L'ennemi public n\u00b01",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Candyman":[
+         {
+            "critics":73,
+            "users":63,
+            "name":"Candyman",
+            "year":"1992"
+         },
+         {
+            "critics":"N/A",
+            "users":53,
+            "name":"Candyman: Farewell to the Flesh",
+            "year":"1995"
+         },
+         {
+            "critics":13,
+            "users":32,
+            "name":"Candyman: Day of the Dead",
+            "year":"1999"
+         }
+      ]
+   },
+   {
+      "The Transporter":[
+         {
+            "critics":52,
+            "users":76,
+            "name":"The Transporter",
+            "year":"2002"
+         },
+         {
+            "critics":54,
+            "users":50,
+            "name":"Transporter 2",
+            "year":"2005"
+         },
+         {
+            "critics":44,
+            "users":55,
+            "name":"Transporter 3",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Mad Max":[
+         {
+            "critics":90,
+            "users":70,
+            "name":"Mad Max",
+            "year":"1979"
+         },
+         {
+            "critics":"N/A",
+            "users":76,
+            "name":"Mad Max 2",
+            "year":"1981"
+         },
+         {
+            "critics":75,
+            "users":58,
+            "name":"Mad Max Beyond Thunderdome",
+            "year":"1985"
+         }
+      ]
+   },
+   {
+      "Step Up":[
+         {
+            "critics":34,
+            "users":74,
+            "name":"Step Up",
+            "year":"2006"
+         },
+         {
+            "critics":38,
+            "users":70,
+            "name":"Step Up 2: The Streets",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":62,
+            "name":"Step Up 3D",
+            "year":"2010"
+         },
+         {
+            "critics":42,
+            "users":61,
+            "name":"Step Up Revolution",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "30 Days of Night":[
+         {
+            "critics":52,
+            "users":63,
+            "name":"30 Days of Night",
+            "year":"2007"
+         },
+         {
+            "critics":17,
+            "users":29,
+            "name":"30 Days of Night: Dark Days",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Fantastic Four":[
+         {
+            "critics":33,
+            "users":53,
+            "name":"Fantastic Four",
+            "year":"2005"
+         },
+         {
+            "critics":37,
+            "users":53,
+            "name":"4: Rise of the Silver Surfer",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "48 Hrs.":[
+         {
+            "critics":82,
+            "users":75,
+            "name":"48 Hrs.",
+            "year":"1982"
+         },
+         {
+            "critics":20,
+            "users":47,
+            "name":"Another 48 Hrs.",
+            "year":"1990"
+         }
+      ]
+   },
+   {
+      "The Hunt for Eagle One":[
+         {
+            "critics":17,
+            "users":28,
+            "name":"The Hunt for Eagle One",
+            "year":"2006"
+         },
+         {
+            "critics":13,
+            "users":27,
+            "name":"The Hunt for Eagle One: Crash Point",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Taxi":[
+         {
+            "critics":81,
+            "users":75,
+            "name":"Taxi",
+            "year":"1998"
+         },
+         {
+            "critics":70,
+            "users":67,
+            "name":"Taxi 2",
+            "year":"2000"
+         },
+         {
+            "critics":50,
+            "users":54,
+            "name":"Taxi 3",
+            "year":"2003"
+         },
+         {
+            "critics":42,
+            "users":49,
+            "name":"Taxi 4",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "The Crow":[
+         {
+            "critics":76,
+            "users":84,
+            "name":"The Crow",
+            "year":"1994"
+         },
+         {
+            "critics":12,
+            "users":43,
+            "name":"The Crow: City of Angels",
+            "year":"1996"
+         },
+         {
+            "critics":22,
+            "users":46,
+            "name":"The Crow: Salvation",
+            "year":"2000"
+         },
+         {
+            "critics":0,
+            "users":32,
+            "name":"The Crow: Wicked Prayer",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "The Lawnmower Man":[
+         {
+            "critics":38,
+            "users":51,
+            "name":"The Lawnmower Man",
+            "year":"1992"
+         },
+         {
+            "critics":20,
+            "users":18,
+            "name":"Lawnmower Man 2: Beyond Cyberspace",
+            "year":"1996"
+         }
+      ]
+   },
+   {
+      "Pirates of the Caribbean":[
+         {
+            "critics":71,
+            "users":84,
+            "name":"Pirates of the Caribbean: The Curse of the Black Pearl",
+            "year":"2003"
+         },
+         {
+            "critics":53,
+            "users":72,
+            "name":"Pirates of the Caribbean: Dead Man's Chest",
+            "year":"2006"
+         },
+         {
+            "critics":44,
+            "users":71,
+            "name":"Pirates of the Caribbean: At World's End",
+            "year":"2007"
+         },
+         {
+            "critics":39,
+            "users":61,
+            "name":"Pirates of the Caribbean: On Stranger Tides",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Nutty Professor":[
+         {
+            "critics":63,
+            "users":56,
+            "name":"The Nutty Professor",
+            "year":"1996"
+         },
+         {
+            "critics":32,
+            "users":45,
+            "name":"Nutty Professor II: The Klumps",
+            "year":"2000"
+         }
+      ]
+   },
+   {
+      "Bridget Jones's Diary":[
+         {
+            "critics":81,
+            "users":74,
+            "name":"Bridget Jones's Diary",
+            "year":"2001"
+         },
+         {
+            "critics":35,
+            "users":64,
+            "name":"Bridget Jones: The Edge of Reason",
+            "year":"2004"
+         },
+         {
+            "critics":78,
+            "users":65,
+            "name":"Bridget Jones's Baby",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Undisputed":[
+         {
+            "critics":53,
+            "users":54,
+            "name":"Undisputed",
+            "year":"2002"
+         },
+         {
+            "critics":69,
+            "users":70,
+            "name":"Undisputed II: Last Man Standing",
+            "year":"2006"
+         },
+         {
+            "critics":75,
+            "users":75,
+            "name":"Undisputed III: Redemption",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Cheaper by the Dozen":[
+         {
+            "critics":35,
+            "users":61,
+            "name":"Cheaper by the Dozen",
+            "year":"2003"
+         },
+         {
+            "critics":20,
+            "users":51,
+            "name":"Cheaper by the Dozen 2",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "xXx":[
+         {
+            "critics":48,
+            "users":51,
+            "name":"xXx",
+            "year":"2002"
+         },
+         {
+            "critics":27,
+            "users":46,
+            "name":"xXx: State of the Union",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Desperado":[
+         {
+            "critics":58,
+            "users":79,
+            "name":"Desperado",
+            "year":"1995"
+         },
+         {
+            "critics":61,
+            "users":72,
+            "name":"Once Upon a Time in Mexico",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "The Trip":[
+         {
+            "critics":"N/A",
+            "users":70,
+            "name":"The Trip",
+            "year":"2010"
+         },
+         {
+            "critics":80,
+            "users":60,
+            "name":"The Trip to Italy",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "21 Jump Street":[
+         {
+            "critics":76,
+            "users":78,
+            "name":"21 Jump Street",
+            "year":"2012"
+         },
+         {
+            "critics":77,
+            "users":75,
+            "name":"22 Jump Street",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "8MM":[
+         {
+            "critics":20,
+            "users":49,
+            "name":"8MM",
+            "year":"1999"
+         },
+         {
+            "critics":17,
+            "users":31,
+            "name":"8MM 2",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Hotel Transylvania":[
+         {
+            "critics":45,
+            "users":70,
+            "name":"Hotel Transylvania",
+            "year":"2012"
+         },
+         {
+            "critics":49,
+            "users":67,
+            "name":"Hotel Transylvania 2",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Home Alone":[
+         {
+            "critics":64,
+            "users":80,
+            "name":"Home Alone",
+            "year":"1990"
+         },
+         {
+            "critics":30,
+            "users":64,
+            "name":"Home Alone 2: Lost in New York",
+            "year":"1992"
+         },
+         {
+            "critics":30,
+            "users":35,
+            "name":"Home Alone 3",
+            "year":"1997"
+         },
+         {
+            "critics":"N/A",
+            "users":26,
+            "name":"Home Alone 4: Taking Back the House",
+            "year":"2002"
+         }
+      ]
+   },
+   {
+      "Batman":[
+         {
+            "critics":70,
+            "users":80,
+            "name":"Batman",
+            "year":"1989"
+         },
+         {
+            "critics":74,
+            "users":72,
+            "name":"Batman Returns",
+            "year":"1992"
+         },
+         {
+            "critics":45,
+            "users":50,
+            "name":"Batman Forever",
+            "year":"1995"
+         },
+         {
+            "critics":19,
+            "users":36,
+            "name":"Batman & Robin",
+            "year":"1997"
+         },
+         {
+            "critics":77,
+            "users":87,
+            "name":"Batman Begins",
+            "year":"2005"
+         },
+         {
+            "critics":89,
+            "users":91,
+            "name":"The Dark Knight",
+            "year":"2008"
+         },
+         {
+            "critics":82,
+            "users":85,
+            "name":"The Dark Knight Rises",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Turbulence":[
+         {
+            "critics":17,
+            "users":33,
+            "name":"Turbulence",
+            "year":"1997"
+         },
+         {
+            "critics":14,
+            "users":31,
+            "name":"Turbulence 2: Fear of Flying",
+            "year":"1999"
+         },
+         {
+            "critics":24,
+            "users":30,
+            "name":"Turbulence 3: Heavy Metal",
+            "year":"2001"
+         }
+      ]
+   },
+   {
+      "Mimic":[
+         {
+            "critics":58,
+            "users":60,
+            "name":"Mimic",
+            "year":"1997"
+         },
+         {
+            "critics":8,
+            "users":28,
+            "name":"Mimic 2",
+            "year":"2001"
+         },
+         {
+            "critics":60,
+            "users":29,
+            "name":"Mimic: Sentinel",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "[Anti]killer":[
+         {
+            "critics":61,
+            "users":58,
+            "name":"[Anti]killer",
+            "year":"2002"
+         },
+         {
+            "critics":"N/A",
+            "users":51,
+            "name":"Antikiller 2: Antiterror",
+            "year":"2003"
+         },
+         {
+            "critics":"N/A",
+            "users":59,
+            "name":"Antikiller D.K.",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Prince & Me":[
+         {
+            "critics":37,
+            "users":68,
+            "name":"The Prince & Me",
+            "year":"2004"
+         },
+         {
+            "critics":"N/A",
+            "users":44,
+            "name":"The Prince & Me II: The Royal Wedding",
+            "year":"2006"
+         },
+         {
+            "critics":"N/A",
+            "users":43,
+            "name":"The Prince & Me 3: A Royal Honeymoon",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":48,
+            "name":"The Prince & Me: The Elephant Adventure",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Scooby-Doo":[
+         {
+            "critics":32,
+            "users":48,
+            "name":"Scooby-Doo",
+            "year":"2002"
+         },
+         {
+            "critics":28,
+            "users":47,
+            "name":"Scooby-Doo 2: Monsters Unleashed",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Child's Play":[
+         {
+            "critics":67,
+            "users":64,
+            "name":"Child's Play",
+            "year":"1988"
+         },
+         {
+            "critics":40,
+            "users":52,
+            "name":"Child's Play 2",
+            "year":"1990"
+         },
+         {
+            "critics":23,
+            "users":42,
+            "name":"Child's Play 3",
+            "year":"1991"
+         }
+      ]
+   },
+   {
+      "Critters":[
+         {
+            "critics":54,
+            "users":52,
+            "name":"Critters",
+            "year":"1986"
+         },
+         {
+            "critics":39,
+            "users":45,
+            "name":"Critters 2",
+            "year":"1988"
+         },
+         {
+            "critics":0,
+            "users":33,
+            "name":"Critters 3",
+            "year":"1991"
+         },
+         {
+            "critics":"N/A",
+            "users":41,
+            "name":"Critters 4",
+            "year":"1992"
+         }
+      ]
+   },
+   {
+      "The Prophecy":[
+         {
+            "critics":43,
+            "users":64,
+            "name":"The Prophecy",
+            "year":"1995"
+         },
+         {
+            "critics":33,
+            "users":51,
+            "name":"The Prophecy II",
+            "year":"1998"
+         },
+         {
+            "critics":17,
+            "users":48,
+            "name":"The Prophecy 3: The Ascent",
+            "year":"2000"
+         },
+         {
+            "critics":32,
+            "users":42,
+            "name":"The Prophecy: Uprising",
+            "year":"2005"
+         },
+         {
+            "critics":23,
+            "users":34,
+            "name":"The Prophecy: Forsaken",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Independence Day":[
+         {
+            "critics":61,
+            "users":71,
+            "name":"Independence Day",
+            "year":"1996"
+         },
+         {
+            "critics":30,
+            "users":42,
+            "name":"Independence Day: Resurgence",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Garfield":[
+         {
+            "critics":21,
+            "users":46,
+            "name":"Garfield",
+            "year":"2004"
+         },
+         {
+            "critics":24,
+            "users":50,
+            "name":"Garfield: A Tail of Two Kitties",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Finding Nemo":[
+         {
+            "critics":94,
+            "users":84,
+            "name":"Finding Nemo",
+            "year":"2003"
+         },
+         {
+            "critics":85,
+            "users":77,
+            "name":"Finding Dory",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Anaconda":[
+         {
+            "critics":38,
+            "users":43,
+            "name":"Anaconda",
+            "year":"1997"
+         },
+         {
+            "critics":32,
+            "users":40,
+            "name":"Anacondas: The Hunt for the Blood Orchid",
+            "year":"2004"
+         },
+         {
+            "critics":"N/A",
+            "users":28,
+            "name":"Anaconda: Offspring",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":30,
+            "name":"Anacondas 4: Trail of Blood",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Speed":[
+         {
+            "critics":85,
+            "users":78,
+            "name":"Speed",
+            "year":"1994"
+         },
+         {
+            "critics":13,
+            "users":26,
+            "name":"Speed 2: Cruise Control",
+            "year":"1997"
+         }
+      ]
+   },
+   {
+      "Deadpool":[
+         {
+            "critics":74,
+            "users":83,
+            "name":"Deadpool",
+            "year":"2016"
+         },
+         {
+            "critics":74,
+            "users":80,
+            "name":"Deadpool 2",
+            "year":"2018"
+         }
+      ]
+   },
+   {
+      "The Grudge":[
+         {
+            "critics":43,
+            "users":59,
+            "name":"The Grudge",
+            "year":"2004"
+         },
+         {
+            "critics":22,
+            "users":48,
+            "name":"The Grudge 2",
+            "year":"2006"
+         },
+         {
+            "critics":27,
+            "users":37,
+            "name":"The Grudge 3",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Chronicles of Riddick":[
+         {
+            "critics":54,
+            "users":78,
+            "name":"Pitch Black",
+            "year":"2000"
+         },
+         {
+            "critics":33,
+            "users":69,
+            "name":"The Chronicles of Riddick",
+            "year":"2004"
+         },
+         {
+            "critics":53,
+            "users":59,
+            "name":"The Chronicles of Riddick: Dark Fury",
+            "year":"2004"
+         },
+         {
+            "critics":53,
+            "users":63,
+            "name":"Riddick",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Hot Shots!":[
+         {
+            "critics":72,
+            "users":66,
+            "name":"Hot Shots!",
+            "year":"1991"
+         },
+         {
+            "critics":57,
+            "users":64,
+            "name":"Hot Shots! Part Deux",
+            "year":"1993"
+         }
+      ]
+   },
+   {
+      "101 Dalmatians":[
+         {
+            "critics":44,
+            "users":52,
+            "name":"101 Dalmatians",
+            "year":"1996"
+         },
+         {
+            "critics":33,
+            "users":43,
+            "name":"102 Dalmatians",
+            "year":"2000"
+         }
+      ]
+   },
+   {
+      "Divergent":[
+         {
+            "critics":45,
+            "users":65,
+            "name":"Divergent",
+            "year":"2014"
+         },
+         {
+            "critics":35,
+            "users":58,
+            "name":"Insurgent",
+            "year":"2015"
+         },
+         {
+            "critics":22,
+            "users":47,
+            "name":"Allegiant",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Screamers":[
+         {
+            "critics":"N/A",
+            "users":64,
+            "name":"Screamers",
+            "year":"1995"
+         },
+         {
+            "critics":16,
+            "users":31,
+            "name":"Screamers: The Hunting",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Hulk":[
+         {
+            "critics":58,
+            "users":45,
+            "name":"Hulk",
+            "year":"2003"
+         },
+         {
+            "critics":64,
+            "users":69,
+            "name":"The Incredible Hulk",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Donnie Darko":[
+         {
+            "critics":79,
+            "users":79,
+            "name":"Donnie Darko",
+            "year":"2001"
+         },
+         {
+            "critics":13,
+            "users":27,
+            "name":"S. Darko",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Darkman":[
+         {
+            "critics":74,
+            "users":70,
+            "name":"Darkman",
+            "year":"1990"
+         },
+         {
+            "critics":"N/A",
+            "users":51,
+            "name":"Darkman II: The Return of Durant",
+            "year":"1995"
+         },
+         {
+            "critics":"N/A",
+            "users":48,
+            "name":"Darkman III: Die Darkman Die",
+            "year":"1996"
+         }
+      ]
+   },
+   {
+      "Magic Mike":[
+         {
+            "critics":76,
+            "users":60,
+            "name":"Magic Mike",
+            "year":"2012"
+         },
+         {
+            "critics":63,
+            "users":55,
+            "name":"Magic Mike XXL",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "DC Extended Universe":[
+         {
+            "critics":36,
+            "users":66,
+            "name":"Batman v Superman: Dawn of Justice",
+            "year":"2016"
+         },
+         {
+            "critics":42,
+            "users":67,
+            "name":"Justice League",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "The Arrival":[
+         {
+            "critics":60,
+            "users":62,
+            "name":"The Arrival",
+            "year":"1996"
+         },
+         {
+            "critics":15,
+            "users":27,
+            "name":"The Second Arrival",
+            "year":"1998"
+         }
+      ]
+   },
+   {
+      "Fletch":[
+         {
+            "critics":72,
+            "users":75,
+            "name":"Fletch",
+            "year":"1985"
+         },
+         {
+            "critics":38,
+            "users":57,
+            "name":"Fletch Lives",
+            "year":"1989"
+         }
+      ]
+   },
+   {
+      "Twilight":[
+         {
+            "critics":52,
+            "users":57,
+            "name":"Twilight",
+            "year":"2008"
+         },
+         {
+            "critics":36,
+            "users":49,
+            "name":"The Twilight Saga: New Moon",
+            "year":"2009"
+         },
+         {
+            "critics":53,
+            "users":53,
+            "name":"The Twilight Saga: Eclipse",
+            "year":"2010"
+         },
+         {
+            "critics":35,
+            "users":51,
+            "name":"The Twilight Saga: Breaking Dawn - Part 1",
+            "year":"2011"
+         },
+         {
+            "critics":50,
+            "users":57,
+            "name":"The Twilight Saga: Breaking Dawn - Part 2",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Young Guns":[
+         {
+            "critics":41,
+            "users":72,
+            "name":"Young Guns",
+            "year":"1988"
+         },
+         {
+            "critics":41,
+            "users":65,
+            "name":"Young Guns II",
+            "year":"1990"
+         }
+      ]
+   },
+   {
+      "Rio":[
+         {
+            "critics":63,
+            "users":72,
+            "name":"Rio",
+            "year":"2011"
+         },
+         {
+            "critics":48,
+            "users":60,
+            "name":"Rio 2",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Sharpe's Rifles":[
+         {
+            "critics":82,
+            "users":80,
+            "name":"Sharpe's Rifles",
+            "year":"1993"
+         },
+         {
+            "critics":83,
+            "users":81,
+            "name":"Sharpe's Eagle",
+            "year":"1993"
+         },
+         {
+            "critics":83,
+            "users":81,
+            "name":"Sharpe's Company",
+            "year":"1994"
+         },
+         {
+            "critics":81,
+            "users":80,
+            "name":"Sharpe's Enemy",
+            "year":"1994"
+         },
+         {
+            "critics":88,
+            "users":83,
+            "name":"Sharpe's Honour",
+            "year":"1994"
+         },
+         {
+            "critics":76,
+            "users":75,
+            "name":"Sharpe's Gold",
+            "year":"1995"
+         },
+         {
+            "critics":87,
+            "users":83,
+            "name":"Sharpe's Battle",
+            "year":"1995"
+         },
+         {
+            "critics":91,
+            "users":85,
+            "name":"Sharpe's Sword",
+            "year":"1995"
+         },
+         {
+            "critics":"N/A",
+            "users":80,
+            "name":"Sharpe's Regiment",
+            "year":"1996"
+         },
+         {
+            "critics":"N/A",
+            "users":80,
+            "name":"Sharpe's Siege",
+            "year":"1996"
+         },
+         {
+            "critics":79,
+            "users":79,
+            "name":"Sharpe's Mission",
+            "year":"1996"
+         },
+         {
+            "critics":"N/A",
+            "users":78,
+            "name":"Sharpe's Revenge",
+            "year":"1997"
+         },
+         {
+            "critics":"N/A",
+            "users":76,
+            "name":"Sharpe's Justice",
+            "year":"1997"
+         },
+         {
+            "critics":"N/A",
+            "users":81,
+            "name":"Sharpe's Waterloo",
+            "year":"1997"
+         },
+         {
+            "critics":"N/A",
+            "users":76,
+            "name":"Sharpe's Challenge",
+            "year":"2006"
+         },
+         {
+            "critics":61,
+            "users":67,
+            "name":"Sharpe's Peril",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "The Girl with the Dragon Tattoo":[
+         {
+            "critics":"N/A",
+            "users":78,
+            "name":"M\u00e4n som hatar kvinnor",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Ted":[
+         {
+            "critics":65,
+            "users":71,
+            "name":"Ted",
+            "year":"2012"
+         },
+         {
+            "critics":47,
+            "users":58,
+            "name":"Ted 2",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Spider-Man":[
+         {
+            "critics":81,
+            "users":75,
+            "name":"Spider-Man",
+            "year":"2002"
+         },
+         {
+            "critics":88,
+            "users":80,
+            "name":"Spider-Man 2",
+            "year":"2004"
+         },
+         {
+            "critics":61,
+            "users":60,
+            "name":"Spider-Man 3",
+            "year":"2007"
+         },
+         {
+            "critics":69,
+            "users":72,
+            "name":"The Amazing Spider-Man",
+            "year":"2012"
+         },
+         {
+            "critics":52,
+            "users":64,
+            "name":"The Amazing Spider-Man 2",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Epoch":[
+         {
+            "critics":16,
+            "users":32,
+            "name":"Epoch",
+            "year":"2001"
+         },
+         {
+            "critics":33,
+            "users":38,
+            "name":"Epoch: Evolution",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "Analyze This":[
+         {
+            "critics":65,
+            "users":72,
+            "name":"Analyze This",
+            "year":"1999"
+         },
+         {
+            "critics":32,
+            "users":49,
+            "name":"Analyze That",
+            "year":"2002"
+         }
+      ]
+   },
+   {
+      "Lethal Weapon":[
+         {
+            "critics":75,
+            "users":82,
+            "name":"Lethal Weapon",
+            "year":"1987"
+         },
+         {
+            "critics":76,
+            "users":78,
+            "name":"Lethal Weapon 2",
+            "year":"1989"
+         },
+         {
+            "critics":49,
+            "users":66,
+            "name":"Lethal Weapon 3",
+            "year":"1992"
+         },
+         {
+            "critics":44,
+            "users":70,
+            "name":"Lethal Weapon 4",
+            "year":"1998"
+         }
+      ]
+   },
+   {
+      "The Hustler":[
+         {
+            "critics":98,
+            "users":86,
+            "name":"The Hustler",
+            "year":"1961"
+         },
+         {
+            "critics":83,
+            "users":74,
+            "name":"The Color of Money",
+            "year":"1986"
+         }
+      ]
+   },
+   {
+      "Sniper":[
+         {
+            "critics":38,
+            "users":58,
+            "name":"Sniper",
+            "year":"1993"
+         },
+         {
+            "critics":"N/A",
+            "users":52,
+            "name":"Sniper 2",
+            "year":"2002"
+         },
+         {
+            "critics":43,
+            "users":48,
+            "name":"Sniper 3",
+            "year":"2004"
+         },
+         {
+            "critics":34,
+            "users":44,
+            "name":"Sniper: Reloaded",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Godfather":[
+         {
+            "critics":99,
+            "users":94,
+            "name":"The Godfather",
+            "year":"1972"
+         },
+         {
+            "critics":93,
+            "users":92,
+            "name":"The Godfather: Part II",
+            "year":"1974"
+         },
+         {
+            "critics":64,
+            "users":77,
+            "name":"The Godfather: Part III",
+            "year":"1990"
+         }
+      ]
+   },
+   {
+      "Goon":[
+         {
+            "critics":"N/A",
+            "users":68,
+            "name":"Goon",
+            "year":"2011"
+         },
+         {
+            "critics":45,
+            "users":51,
+            "name":"Goon: Last of the Enforcers",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Anchorman: The Legend of Ron Burgundy":[
+         {
+            "critics":64,
+            "users":79,
+            "name":"Anchorman: The Legend of Ron Burgundy",
+            "year":"2004"
+         },
+         {
+            "critics":67,
+            "users":59,
+            "name":"Anchorman 2: The Legend Continues",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "The Bourne Identity":[
+         {
+            "critics":75,
+            "users":82,
+            "name":"The Bourne Identity",
+            "year":"2002"
+         },
+         {
+            "critics":77,
+            "users":85,
+            "name":"The Bourne Supremacy",
+            "year":"2004"
+         },
+         {
+            "critics":88,
+            "users":82,
+            "name":"The Bourne Ultimatum",
+            "year":"2007"
+         },
+         {
+            "critics":58,
+            "users":62,
+            "name":"The Bourne Legacy",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Legally Blonde":[
+         {
+            "critics":64,
+            "users":68,
+            "name":"Legally Blonde",
+            "year":"2001"
+         },
+         {
+            "critics":42,
+            "users":47,
+            "name":"Legally Blonde 2: Red, White & Blonde",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "Happy Feet":[
+         {
+            "critics":76,
+            "users":65,
+            "name":"Happy Feet",
+            "year":"2006"
+         },
+         {
+            "critics":47,
+            "users":58,
+            "name":"Happy Feet Two",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Hills Have Eyes":[
+         {
+            "critics":67,
+            "users":59,
+            "name":"The Hills Have Eyes",
+            "year":"1977"
+         },
+         {
+            "critics":"N/A",
+            "users":38,
+            "name":"The Hills Have Eyes Part II",
+            "year":"1984"
+         },
+         {
+            "critics":51,
+            "users":61,
+            "name":"The Hills Have Eyes",
+            "year":"2006"
+         },
+         {
+            "critics":22,
+            "users":46,
+            "name":"The Hills Have Eyes II",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Basic Instinct":[
+         {
+            "critics":47,
+            "users":58,
+            "name":"Basic Instinct",
+            "year":"1992"
+         },
+         {
+            "critics":16,
+            "users":32,
+            "name":"Basic Instinct 2",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Escape from New York":[
+         {
+            "critics":81,
+            "users":74,
+            "name":"Escape from New York",
+            "year":"1981"
+         },
+         {
+            "critics":53,
+            "users":55,
+            "name":"Escape from L.A.",
+            "year":"1996"
+         }
+      ]
+   },
+   {
+      "Paul Blart: Mall Cop":[
+         {
+            "critics":35,
+            "users":48,
+            "name":"Paul Blart: Mall Cop",
+            "year":"2009"
+         },
+         {
+            "critics":9,
+            "users":34,
+            "name":"Paul Blart: Mall Cop 2",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Boogeyman":[
+         {
+            "critics":17,
+            "users":32,
+            "name":"The Boogey Man",
+            "year":"1980"
+         },
+         {
+            "critics":"N/A",
+            "users":20,
+            "name":"Revenge of the Boogeyman",
+            "year":"1983"
+         },
+         {
+            "critics":0,
+            "users":7,
+            "name":"Return of the Boogeyman",
+            "year":"1994"
+         },
+         {
+            "critics":22,
+            "users":33,
+            "name":"Boogeyman",
+            "year":"2005"
+         },
+         {
+            "critics":34,
+            "users":43,
+            "name":"Boogeyman 2",
+            "year":"2007"
+         },
+         {
+            "critics":22,
+            "users":35,
+            "name":"Boogeyman 3",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Vacancy":[
+         {
+            "critics":54,
+            "users":63,
+            "name":"Vacancy",
+            "year":"2007"
+         },
+         {
+            "critics":"N/A",
+            "users":50,
+            "name":"Vacancy 2: The First Cut",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "The Omen":[
+         {
+            "critics":74,
+            "users":78,
+            "name":"The Omen",
+            "year":"1976"
+         },
+         {
+            "critics":43,
+            "users":56,
+            "name":"Damien: Omen II",
+            "year":"1978"
+         },
+         {
+            "critics":33,
+            "users":45,
+            "name":"The Final Conflict",
+            "year":"1981"
+         },
+         {
+            "critics":20,
+            "users":31,
+            "name":"Omen IV: The Awakening",
+            "year":"1991"
+         }
+      ]
+   },
+   {
+      "Superman":[
+         {
+            "critics":87,
+            "users":79,
+            "name":"Superman",
+            "year":"1978"
+         },
+         {
+            "critics":"N/A",
+            "users":68,
+            "name":"Superman II",
+            "year":"1980"
+         },
+         {
+            "critics":34,
+            "users":39,
+            "name":"Superman III",
+            "year":"1983"
+         },
+         {
+            "critics":17,
+            "users":26,
+            "name":"Superman IV: The Quest for Peace",
+            "year":"1987"
+         },
+         {
+            "critics":73,
+            "users":62,
+            "name":"Superman Returns",
+            "year":"2006"
+         },
+         {
+            "critics":55,
+            "users":73,
+            "name":"Man of Steel",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "The Pink Panther":[
+         {
+            "critics":29,
+            "users":56,
+            "name":"The Pink Panther",
+            "year":"2006"
+         },
+         {
+            "critics":24,
+            "users":49,
+            "name":"The Pink Panther 2",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Keinohrhasen":[
+         {
+            "critics":82,
+            "users":74,
+            "name":"Keinohrhasen",
+            "year":"2007"
+         },
+         {
+            "critics":51,
+            "users":54,
+            "name":"Zweiohrk\u00fcken",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Lego Movie":[
+         {
+            "critics":89,
+            "users":82,
+            "name":"The Lego Movie",
+            "year":"2014"
+         },
+         {
+            "critics":75,
+            "users":70,
+            "name":"The Lego Movie 2: The Second Part",
+            "year":"2019"
+         }
+      ]
+   },
+   {
+      "Kick-Ass":[
+         {
+            "critics":70,
+            "users":80,
+            "name":"Kick-Ass",
+            "year":"2010"
+         },
+         {
+            "critics":36,
+            "users":64,
+            "name":"Kick-Ass 2",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "The Whole Nine Yards":[
+         {
+            "critics":46,
+            "users":72,
+            "name":"The Whole Nine Yards",
+            "year":"2000"
+         },
+         {
+            "critics":24,
+            "users":42,
+            "name":"The Whole Ten Yards",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Street Kings":[
+         {
+            "critics":45,
+            "users":66,
+            "name":"Street Kings",
+            "year":"2008"
+         },
+         {
+            "critics":19,
+            "users":34,
+            "name":"Street Kings 2: Motor City",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Cars":[
+         {
+            "critics":73,
+            "users":74,
+            "name":"Cars",
+            "year":"2006"
+         },
+         {
+            "critics":47,
+            "users":56,
+            "name":"Cars 2",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Marley & Me":[
+         {
+            "critics":57,
+            "users":71,
+            "name":"Marley & Me",
+            "year":"2008"
+         },
+         {
+            "critics":43,
+            "users":40,
+            "name":"Marley & Me: The Puppy Years",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Deuce Bigalow":[
+         {
+            "critics":26,
+            "users":48,
+            "name":"Deuce Bigalow: Male Gigolo",
+            "year":"1999"
+         },
+         {
+            "critics":16,
+            "users":32,
+            "name":"Deuce Bigalow: European Gigolo",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Cidade de Deus":[
+         {
+            "critics":"N/A",
+            "users":86,
+            "name":"Cidade de Deus",
+            "year":"2002"
+         },
+         {
+            "critics":75,
+            "users":75,
+            "name":"Cidade dos Homens",
+            "year":"2007"
+         },
+         {
+            "critics":53,
+            "users":84,
+            "name":"Tropa de Elite",
+            "year":"2007"
+         },
+         {
+            "critics":"N/A",
+            "users":81,
+            "name":"Tropa de Elite 2: O Inimigo Agora \u00e9 Outro",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Doctor Dolittle":[
+         {
+            "critics":43,
+            "users":44,
+            "name":"Doctor Dolittle",
+            "year":"1998"
+         },
+         {
+            "critics":45,
+            "users":43,
+            "name":"Dr. Dolittle 2",
+            "year":"2001"
+         },
+         {
+            "critics":45,
+            "users":42,
+            "name":"Dr. Dolittle 3",
+            "year":"2006"
+         },
+         {
+            "critics":45,
+            "users":43,
+            "name":"Dr. Dolittle: Tail to the Chief",
+            "year":"2008"
+         },
+         {
+            "critics":52,
+            "users":46,
+            "name":"Dr. Dolittle: Million Dollar Mutts",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Mechanic":[
+         {
+            "critics":51,
+            "users":59,
+            "name":"The Mechanic",
+            "year":"2011"
+         },
+         {
+            "critics":35,
+            "users":50,
+            "name":"Mechanic: Resurrection",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Ghost Rider":[
+         {
+            "critics":31,
+            "users":45,
+            "name":"Ghost Rider",
+            "year":"2007"
+         },
+         {
+            "critics":"N/A",
+            "users":43,
+            "name":"Ghost Rider: Spirit of Vengeance",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Hollow Man":[
+         {
+            "critics":25,
+            "users":35,
+            "name":"Hollow Man",
+            "year":"2000"
+         },
+         {
+            "critics":16,
+            "users":30,
+            "name":"Hollow Man II",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Halloween":[
+         {
+            "critics":88,
+            "users":85,
+            "name":"Halloween",
+            "year":"1978"
+         },
+         {
+            "critics":34,
+            "users":66,
+            "name":"Halloween II",
+            "year":"1981"
+         },
+         {
+            "critics":45,
+            "users":43,
+            "name":"Halloween III: Season of the Witch",
+            "year":"1982"
+         },
+         {
+            "critics":30,
+            "users":60,
+            "name":"Halloween 4: The Return of Michael Myers",
+            "year":"1988"
+         },
+         {
+            "critics":20,
+            "users":50,
+            "name":"Halloween 5: The Revenge of Michael Myers",
+            "year":"1989"
+         },
+         {
+            "critics":8,
+            "users":48,
+            "name":"Halloween: The Curse of Michael Myers",
+            "year":"1995"
+         },
+         {
+            "critics":52,
+            "users":63,
+            "name":"Halloween H20: 20 Years Later",
+            "year":"1998"
+         },
+         {
+            "critics":15,
+            "users":31,
+            "name":"Halloween: Resurrection",
+            "year":"2002"
+         },
+         {
+            "critics":36,
+            "users":58,
+            "name":"Halloween 2007",
+            "year":"2007"
+         },
+         {
+            "critics":27,
+            "users":48,
+            "name":"Halloween II 2009",
+            "year":"2009"
+         },
+         {
+            "critics":73,
+            "users":68,
+            "name":"Halloween 2018",
+            "year":"2018"
+         }
+      ]
+   },
+   {
+      "The Fox and the Hound":[
+         {
+            "critics":67,
+            "users":75,
+            "name":"The Fox and the Hound",
+            "year":"1981"
+         },
+         {
+            "critics":20,
+            "users":50,
+            "name":"The Fox and the Hound 2",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "BloodRayne":[
+         {
+            "critics":"N/A",
+            "users":29,
+            "name":"BloodRayne",
+            "year":"2005"
+         },
+         {
+            "critics":0,
+            "users":20,
+            "name":"BloodRayne II: Deliverance",
+            "year":"2007"
+         },
+         {
+            "critics":"N/A",
+            "users":30,
+            "name":"BloodRayne: The Third Reich",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Behind Enemy Lines":[
+         {
+            "critics":43,
+            "users":63,
+            "name":"Behind Enemy Lines",
+            "year":"2001"
+         },
+         {
+            "critics":0,
+            "users":41,
+            "name":"Behind Enemy Lines II: Axis of Evil",
+            "year":"2006"
+         },
+         {
+            "critics":24,
+            "users":36,
+            "name":"Behind Enemy Lines: Colombia",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Spy Kids":[
+         {
+            "critics":82,
+            "users":61,
+            "name":"Spy Kids",
+            "year":"2001"
+         },
+         {
+            "critics":70,
+            "users":52,
+            "name":"Spy Kids 2: Island of Lost Dreams",
+            "year":"2002"
+         },
+         {
+            "critics":51,
+            "users":40,
+            "name":"Spy Kids 3: Game Over",
+            "year":"2003"
+         },
+         {
+            "critics":"N/A",
+            "users":35,
+            "name":"Spy Kids 4: All the Time in the World",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Madagascar":[
+         {
+            "critics":55,
+            "users":67,
+            "name":"Madagascar",
+            "year":"2005"
+         },
+         {
+            "critics":62,
+            "users":67,
+            "name":"Madagascar: Escape 2 Africa",
+            "year":"2008"
+         },
+         {
+            "critics":79,
+            "users":70,
+            "name":"Madagascar 3: Europe's Most Wanted",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "The Librarian":[
+         {
+            "critics":60,
+            "users":60,
+            "name":"The Librarian: Quest for the Spear",
+            "year":"2004"
+         },
+         {
+            "critics":49,
+            "users":56,
+            "name":"The Librarian: Return to King Solomon's Mines",
+            "year":"2006"
+         },
+         {
+            "critics":56,
+            "users":60,
+            "name":"The Librarian: The Curse of the Judas Chalice",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Joy Ride":[
+         {
+            "critics":74,
+            "users":72,
+            "name":"Joy Ride",
+            "year":"2001"
+         },
+         {
+            "critics":27,
+            "users":39,
+            "name":"Joy Ride 2: Dead Ahead",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "The Fugitive":[
+         {
+            "critics":91,
+            "users":85,
+            "name":"The Fugitive",
+            "year":"1993"
+         },
+         {
+            "critics":47,
+            "users":67,
+            "name":"U.S. Marshals",
+            "year":"1998"
+         }
+      ]
+   },
+   {
+      "The Blues Brothers":[
+         {
+            "critics":71,
+            "users":83,
+            "name":"The Blues Brothers",
+            "year":"1980"
+         },
+         {
+            "critics":"N/A",
+            "users":48,
+            "name":"Blues Brothers 2000",
+            "year":"1998"
+         }
+      ]
+   },
+   {
+      "Charlie's Angels":[
+         {
+            "critics":68,
+            "users":50,
+            "name":"Charlie's Angels",
+            "year":"2000"
+         },
+         {
+            "critics":42,
+            "users":44,
+            "name":"Charlie's Angels: Full Throttle",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "Kung Fu Panda":[
+         {
+            "critics":80,
+            "users":80,
+            "name":"Kung Fu Panda",
+            "year":"2008"
+         },
+         {
+            "critics":74,
+            "users":74,
+            "name":"Kung Fu Panda 2",
+            "year":"2011"
+         },
+         {
+            "critics":76,
+            "users":74,
+            "name":"Kung Fu Panda 3",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Major League":[
+         {
+            "critics":72,
+            "users":75,
+            "name":"Major League",
+            "year":"1989"
+         },
+         {
+            "critics":5,
+            "users":50,
+            "name":"Major League II",
+            "year":"1994"
+         },
+         {
+            "critics":21,
+            "users":35,
+            "name":"Major League: Back to the Minors",
+            "year":"1998"
+         }
+      ]
+   },
+   {
+      "Terms of Endearment":[
+         {
+            "critics":83,
+            "users":77,
+            "name":"Terms of Endearment",
+            "year":"1983"
+         },
+         {
+            "critics":22,
+            "users":60,
+            "name":"The Evening Star",
+            "year":"1996"
+         }
+      ]
+   },
+   {
+      "Short Circuit":[
+         {
+            "critics":54,
+            "users":73,
+            "name":"Short Circuit",
+            "year":"1986"
+         },
+         {
+            "critics":38,
+            "users":55,
+            "name":"Short Circuit 2",
+            "year":"1988"
+         }
+      ]
+   },
+   {
+      "Ace Ventura: Pet Detective":[
+         {
+            "critics":37,
+            "users":70,
+            "name":"Ace Ventura: Pet Detective",
+            "year":"1994"
+         },
+         {
+            "critics":39,
+            "users":68,
+            "name":"Ace Ventura: When Nature Calls",
+            "year":"1995"
+         }
+      ]
+   },
+   {
+      "The Addams Family":[
+         {
+            "critics":60,
+            "users":67,
+            "name":"The Addams Family",
+            "year":"1991"
+         },
+         {
+            "critics":69,
+            "users":68,
+            "name":"Addams Family Values",
+            "year":"1993"
+         }
+      ]
+   },
+   {
+      "Hellraiser":[
+         {
+            "critics":62,
+            "users":77,
+            "name":"Hellraiser",
+            "year":"1987"
+         },
+         {
+            "critics":48,
+            "users":70,
+            "name":"Hellbound: Hellraiser II",
+            "year":"1988"
+         },
+         {
+            "critics":45,
+            "users":56,
+            "name":"Hellraiser III: Hell on Earth",
+            "year":"1992"
+         },
+         {
+            "critics":26,
+            "users":57,
+            "name":"Hellraiser: Bloodline",
+            "year":"1996"
+         },
+         {
+            "critics":35,
+            "users":45,
+            "name":"Hellraiser: Inferno",
+            "year":"2000"
+         },
+         {
+            "critics":23,
+            "users":49,
+            "name":"Hellraiser: Hellseeker",
+            "year":"2002"
+         },
+         {
+            "critics":17,
+            "users":35,
+            "name":"Hellraiser: Deader",
+            "year":"2005"
+         },
+         {
+            "critics":20,
+            "users":32,
+            "name":"Hellraiser: Hellworld",
+            "year":"2005"
+         },
+         {
+            "critics":6,
+            "users":17,
+            "name":"Hellraiser: Revelations",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "How to Train Your Dragon":[
+         {
+            "critics":86,
+            "users":86,
+            "name":"How to Train Your Dragon",
+            "year":"2010"
+         },
+         {
+            "critics":84,
+            "users":83,
+            "name":"How to Train Your Dragon 2",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "28 Days Later...":[
+         {
+            "critics":"N/A",
+            "users":76,
+            "name":"28 Days Later...",
+            "year":"2002"
+         },
+         {
+            "critics":74,
+            "users":68,
+            "name":"28 Weeks Later",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Look Who's Talking":[
+         {
+            "critics":59,
+            "users":52,
+            "name":"Look Who's Talking",
+            "year":"1989"
+         },
+         {
+            "critics":14,
+            "users":39,
+            "name":"Look Who's Talking Too",
+            "year":"1990"
+         },
+         {
+            "critics":0,
+            "users":35,
+            "name":"Look Who's Talking Now",
+            "year":"1993"
+         }
+      ]
+   },
+   {
+      "Sex and the City":[
+         {
+            "critics":51,
+            "users":65,
+            "name":"Sex and the City",
+            "year":"2008"
+         },
+         {
+            "critics":21,
+            "users":42,
+            "name":"Sex and the City 2",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Chinese Zodiac":[
+         {
+            "critics":"N/A",
+            "users":71,
+            "name":"Lung hing foo dai",
+            "year":"1986"
+         },
+         {
+            "critics":71,
+            "users":69,
+            "name":"Fei ying gai wak",
+            "year":"1991"
+         },
+         {
+            "critics":"N/A",
+            "users":61,
+            "name":"Sap ji sang ciu",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Nochnoy dozor":[
+         {
+            "critics":"N/A",
+            "users":65,
+            "name":"Nochnoy dozor",
+            "year":"2004"
+         },
+         {
+            "critics":"N/A",
+            "users":65,
+            "name":"Dnevnoy dozor",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Dolphin Tale":[
+         {
+            "critics":72,
+            "users":72,
+            "name":"Dolphin Tale",
+            "year":"2011"
+         },
+         {
+            "critics":61,
+            "users":63,
+            "name":"Dolphin Tale 2",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Taken":[
+         {
+            "critics":"N/A",
+            "users":78,
+            "name":"Taken",
+            "year":"2008"
+         },
+         {
+            "critics":33,
+            "users":57,
+            "name":"Taken 2",
+            "year":"2012"
+         },
+         {
+            "critics":"N/A",
+            "users":60,
+            "name":"Taken 3",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "The Avengers":[
+         {
+            "critics":80,
+            "users":84,
+            "name":"The Avengers",
+            "year":"2012"
+         },
+         {
+            "critics":70,
+            "users":75,
+            "name":"Avengers: Age of Ultron",
+            "year":"2015"
+         },
+         {
+            "critics":76,
+            "users":87,
+            "name":"Avengers: Infinity War",
+            "year":"2018"
+         },
+         {
+            "critics":"N/A",
+            "users":"N/A",
+            "name":"Avengers: Endgame",
+            "year":"2019"
+         }
+      ]
+   },
+   {
+      "Crank":[
+         {
+            "critics":59,
+            "users":62,
+            "name":"Crank",
+            "year":"2006"
+         },
+         {
+            "critics":52,
+            "users":59,
+            "name":"Crank: High Voltage",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Dumb and Dumber":[
+         {
+            "critics":54,
+            "users":72,
+            "name":"Dumb and Dumber",
+            "year":"1994"
+         },
+         {
+            "critics":14,
+            "users":27,
+            "name":"Dumb and Dumberer: When Harry Met Lloyd",
+            "year":"2003"
+         },
+         {
+            "critics":33,
+            "users":48,
+            "name":"Dumb and Dumber To",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Paragraf 78":[
+         {
+            "critics":45,
+            "users":47,
+            "name":"Paragraf 78",
+            "year":"2007"
+         },
+         {
+            "critics":"N/A",
+            "users":49,
+            "name":"Paragraf 78 - Film vtoroy",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Thor":[
+         {
+            "critics":67,
+            "users":72,
+            "name":"Thor",
+            "year":"2011"
+         },
+         {
+            "critics":60,
+            "users":72,
+            "name":"Thor: The Dark World",
+            "year":"2013"
+         },
+         {
+            "critics":83,
+            "users":81,
+            "name":"Thor: Ragnarok",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Red Riding":[
+         {
+            "critics":"N/A",
+            "users":71,
+            "name":"Red Riding: The Year of Our Lord 1974",
+            "year":"2009"
+         },
+         {
+            "critics":"N/A",
+            "users":72,
+            "name":"Red Riding: The Year of Our Lord 1980",
+            "year":"2009"
+         },
+         {
+            "critics":"N/A",
+            "users":72,
+            "name":"Red Riding: The Year of Our Lord 1983",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Pet Sematary":[
+         {
+            "critics":44,
+            "users":64,
+            "name":"Pet Sematary",
+            "year":"1989"
+         },
+         {
+            "critics":29,
+            "users":48,
+            "name":"Pet Sematary II",
+            "year":"1992"
+         }
+      ]
+   },
+   {
+      "The Raid":[
+         {
+            "critics":"N/A",
+            "users":76,
+            "name":"Serbuan maut",
+            "year":"2011"
+         },
+         {
+            "critics":"N/A",
+            "users":80,
+            "name":"Serbuan maut 2: Berandal",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Shanghai Noon":[
+         {
+            "critics":78,
+            "users":73,
+            "name":"Shanghai Noon",
+            "year":"2000"
+         },
+         {
+            "critics":62,
+            "users":68,
+            "name":"Shanghai Knights",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "The Hunger Games":[
+         {
+            "critics":76,
+            "users":74,
+            "name":"The Hunger Games",
+            "year":"2012"
+         },
+         {
+            "critics":82,
+            "users":81,
+            "name":"The Hunger Games: Catching Fire",
+            "year":"2013"
+         },
+         {
+            "critics":66,
+            "users":67,
+            "name":"The Hunger Games: Mockingjay - Part 1",
+            "year":"2014"
+         },
+         {
+            "critics":67,
+            "users":66,
+            "name":"The Hunger Games: Mockingjay - Part 2",
+            "year":"2015"
+         }
+      ]
+   },
+   {
+      "Beverly Hills Cop":[
+         {
+            "critics":73,
+            "users":80,
+            "name":"Beverly Hills Cop",
+            "year":"1984"
+         },
+         {
+            "critics":47,
+            "users":63,
+            "name":"Beverly Hills Cop II",
+            "year":"1987"
+         },
+         {
+            "critics":13,
+            "users":50,
+            "name":"Beverly Hills Cop III",
+            "year":"1994"
+         }
+      ]
+   },
+   {
+      "The Santa Clause":[
+         {
+            "critics":65,
+            "users":68,
+            "name":"The Santa Clause",
+            "year":"1994"
+         },
+         {
+            "critics":51,
+            "users":53,
+            "name":"The Santa Clause 2",
+            "year":"2002"
+         },
+         {
+            "critics":24,
+            "users":43,
+            "name":"The Santa Clause 3: The Escape Clause",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Species":[
+         {
+            "critics":46,
+            "users":50,
+            "name":"Species",
+            "year":"1995"
+         },
+         {
+            "critics":14,
+            "users":25,
+            "name":"Species II",
+            "year":"1998"
+         },
+         {
+            "critics":33,
+            "users":29,
+            "name":"Species III",
+            "year":"2004"
+         },
+         {
+            "critics":14,
+            "users":28,
+            "name":"Species: The Awakening",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Death Race":[
+         {
+            "critics":42,
+            "users":64,
+            "name":"Death Race",
+            "year":"2008"
+         },
+         {
+            "critics":17,
+            "users":46,
+            "name":"Death Race 2",
+            "year":"2010"
+         },
+         {
+            "critics":50,
+            "users":50,
+            "name":"Death Race: Inferno",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Harry Potter":[
+         {
+            "critics":81,
+            "users":79,
+            "name":"Harry Potter and the Sorcerer's Stone",
+            "year":"2001"
+         },
+         {
+            "critics":72,
+            "users":75,
+            "name":"Harry Potter and the Chamber of Secrets",
+            "year":"2002"
+         },
+         {
+            "critics":86,
+            "users":82,
+            "name":"Harry Potter and the Prisoner of Azkaban",
+            "year":"2004"
+         },
+         {
+            "critics":84,
+            "users":76,
+            "name":"Harry Potter and the Goblet of Fire",
+            "year":"2005"
+         },
+         {
+            "critics":74,
+            "users":76,
+            "name":"Harry Potter and the Order of the Phoenix",
+            "year":"2007"
+         },
+         {
+            "critics":80,
+            "users":75,
+            "name":"Harry Potter and the Half-Blood Prince",
+            "year":"2009"
+         },
+         {
+            "critics":77,
+            "users":81,
+            "name":"Harry Potter and the Deathly Hallows: Part 1",
+            "year":"2010"
+         },
+         {
+            "critics":91,
+            "users":83,
+            "name":"Harry Potter and the Deathly Hallows: Part 2",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Cloverfield":[
+         {
+            "critics":70,
+            "users":67,
+            "name":"Cloverfield",
+            "year":"2008"
+         },
+         {
+            "critics":83,
+            "users":76,
+            "name":"10 Cloverfield Lane",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Obitaemyy ostrov":[
+         {
+            "critics":50,
+            "users":51,
+            "name":"Obitaemyy ostrov",
+            "year":"2009"
+         },
+         {
+            "critics":50,
+            "users":50,
+            "name":"Obitaemyy ostrov. Skhvatka",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Honey":[
+         {
+            "critics":69,
+            "users":66,
+            "name":"Honey, I Shrunk the Kids",
+            "year":"1989"
+         },
+         {
+            "critics":42,
+            "users":36,
+            "name":"Honey, I Blew Up the Kid",
+            "year":"1992"
+         },
+         {
+            "critics":25,
+            "users":38,
+            "name":"Honey, We Shrunk Ourselves!",
+            "year":"1997"
+         },
+         {
+            "critics":29,
+            "users":62,
+            "name":"Honey",
+            "year":"2003"
+         },
+         {
+            "critics":10,
+            "users":53,
+            "name":"Honey 2",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Cube":[
+         {
+            "critics":"N/A",
+            "users":73,
+            "name":"Cube",
+            "year":"1997"
+         },
+         {
+            "critics":"N/A",
+            "users":56,
+            "name":"Cube 2: Hypercube",
+            "year":"2002"
+         },
+         {
+            "critics":42,
+            "users":49,
+            "name":"Cube Zero",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "Bad Ass":[
+         {
+            "critics":20,
+            "users":47,
+            "name":"Bad Ass",
+            "year":"2012"
+         },
+         {
+            "critics":"N/A",
+            "users":56,
+            "name":"Bad Ass 2: Bad Asses",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "The Terminator":[
+         {
+            "critics":92,
+            "users":80,
+            "name":"The Terminator",
+            "year":"1984"
+         },
+         {
+            "critics":84,
+            "users":90,
+            "name":"Terminator 2: Judgment Day",
+            "year":"1991"
+         },
+         {
+            "critics":67,
+            "users":61,
+            "name":"Terminator 3: Rise of the Machines",
+            "year":"2003"
+         },
+         {
+            "critics":41,
+            "users":59,
+            "name":"Terminator Salvation",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Karate Kid":[
+         {
+            "critics":74,
+            "users":78,
+            "name":"The Karate Kid",
+            "year":"1984"
+         },
+         {
+            "critics":48,
+            "users":55,
+            "name":"The Karate Kid Part II",
+            "year":"1986"
+         },
+         {
+            "critics":26,
+            "users":43,
+            "name":"The Karate Kid Part III",
+            "year":"1989"
+         },
+         {
+            "critics":21,
+            "users":34,
+            "name":"The Next Karate Kid",
+            "year":"1994"
+         },
+         {
+            "critics":63,
+            "users":65,
+            "name":"The Karate Kid 2010",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Lyubov-Morkov":[
+         {
+            "critics":"N/A",
+            "users":52,
+            "name":"Lyubov-Morkov",
+            "year":"2007"
+         },
+         {
+            "critics":"N/A",
+            "users":49,
+            "name":"Lyubov 2 Morkov",
+            "year":"2008"
+         },
+         {
+            "critics":"N/A",
+            "users":38,
+            "name":"Lyubov-Morkov 3",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The French Connection":[
+         {
+            "critics":98,
+            "users":82,
+            "name":"The French Connection",
+            "year":"1971"
+         },
+         {
+            "critics":77,
+            "users":65,
+            "name":"French Connection II",
+            "year":"1975"
+         }
+      ]
+   },
+   {
+      "Bambi":[
+         {
+            "critics":90,
+            "users":75,
+            "name":"Bambi",
+            "year":"1942"
+         },
+         {
+            "critics":50,
+            "users":61,
+            "name":"Bambi II",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Arthur et les Minimoys":[
+         {
+            "critics":"N/A",
+            "users":60,
+            "name":"Arthur et les Minimoys",
+            "year":"2006"
+         },
+         {
+            "critics":"N/A",
+            "users":53,
+            "name":"Arthur et la vengeance de Maltazard",
+            "year":"2009"
+         },
+         {
+            "critics":"N/A",
+            "users":55,
+            "name":"Arthur 3: la guerre des deux mondes",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "The Hangover":[
+         {
+            "critics":75,
+            "users":79,
+            "name":"The Hangover",
+            "year":"2009"
+         },
+         {
+            "critics":38,
+            "users":58,
+            "name":"The Hangover Part II",
+            "year":"2011"
+         },
+         {
+            "critics":25,
+            "users":52,
+            "name":"The Hangover Part III",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Johnny English":[
+         {
+            "critics":42,
+            "users":60,
+            "name":"Johnny English",
+            "year":"2003"
+         },
+         {
+            "critics":42,
+            "users":56,
+            "name":"Johnny English Reborn",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Rambo":[
+         {
+            "critics":74,
+            "users":82,
+            "name":"First Blood",
+            "year":"1982"
+         },
+         {
+            "critics":40,
+            "users":64,
+            "name":"Rambo: First Blood Part II",
+            "year":"1985"
+         },
+         {
+            "critics":37,
+            "users":53,
+            "name":"Rambo III",
+            "year":"1988"
+         },
+         {
+            "critics":41,
+            "users":72,
+            "name":"Rambo",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Cruel Intentions":[
+         {
+            "critics":55,
+            "users":77,
+            "name":"Cruel Intentions",
+            "year":"1999"
+         },
+         {
+            "critics":17,
+            "users":31,
+            "name":"Cruel Intentions 2",
+            "year":"2000"
+         },
+         {
+            "critics":31,
+            "users":39,
+            "name":"Cruel Intentions 3",
+            "year":"2004"
+         }
+      ]
+   },
+   {
+      "I Spit on Your Grave":[
+         {
+            "critics":29,
+            "users":57,
+            "name":"I Spit on Your Grave",
+            "year":"2010"
+         },
+         {
+            "critics":0,
+            "users":48,
+            "name":"I Spit on Your Grave 2",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Captain America":[
+         {
+            "critics":73,
+            "users":71,
+            "name":"Captain America: The First Avenger",
+            "year":"2011"
+         },
+         {
+            "critics":80,
+            "users":85,
+            "name":"Captain America: The Winter Soldier",
+            "year":"2014"
+         },
+         {
+            "critics":83,
+            "users":83,
+            "name":"Captain America: Civil War",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Planet of the Apes":[
+         {
+            "critics":75,
+            "users":77,
+            "name":"Rise of the Planet of the Apes",
+            "year":"2011"
+         },
+         {
+            "critics":84,
+            "users":82,
+            "name":"Dawn of the Planet of the Apes",
+            "year":"2014"
+         },
+         {
+            "critics":87,
+            "users":80,
+            "name":"War for the Planet of the Apes",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Grave Encounters":[
+         {
+            "critics":48,
+            "users":59,
+            "name":"Grave Encounters",
+            "year":"2011"
+         },
+         {
+            "critics":22,
+            "users":39,
+            "name":"Grave Encounters 2",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "The Fly":[
+         {
+            "critics":85,
+            "users":79,
+            "name":"The Fly",
+            "year":"1986"
+         },
+         {
+            "critics":31,
+            "users":36,
+            "name":"The Fly II",
+            "year":"1989"
+         }
+      ]
+   },
+   {
+      "Jeepers Creepers":[
+         {
+            "critics":47,
+            "users":52,
+            "name":"Jeepers Creepers",
+            "year":"2001"
+         },
+         {
+            "critics":23,
+            "users":46,
+            "name":"Jeepers Creepers 2",
+            "year":"2003"
+         },
+         {
+            "critics":17,
+            "users":42,
+            "name":"Jeepers Creepers 3",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Hellboy":[
+         {
+            "critics":76,
+            "users":73,
+            "name":"Hellboy",
+            "year":"2004"
+         },
+         {
+            "critics":82,
+            "users":71,
+            "name":"Hellboy II: The Golden Army",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Star Trek":[
+         {
+            "critics":88,
+            "users":83,
+            "name":"Star Trek",
+            "year":"2009"
+         },
+         {
+            "critics":78,
+            "users":81,
+            "name":"Star Trek Into Darkness",
+            "year":"2013"
+         },
+         {
+            "critics":76,
+            "users":72,
+            "name":"Star Trek Beyond",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Friday the 13th":[
+         {
+            "critics":42,
+            "users":61,
+            "name":"Friday the 13th",
+            "year":"1980"
+         },
+         {
+            "critics":27,
+            "users":58,
+            "name":"Friday the 13th Part 2",
+            "year":"1981"
+         },
+         {
+            "critics":21,
+            "users":52,
+            "name":"Friday the 13th Part III",
+            "year":"1982"
+         },
+         {
+            "critics":26,
+            "users":60,
+            "name":"Friday the 13th: The Final Chapter",
+            "year":"1984"
+         },
+         {
+            "critics":16,
+            "users":42,
+            "name":"Friday the 13th: A New Beginning",
+            "year":"1985"
+         },
+         {
+            "critics":41,
+            "users":60,
+            "name":"Friday the 13th Part VI: Jason Lives",
+            "year":"1986"
+         },
+         {
+            "critics":21,
+            "users":50,
+            "name":"Friday the 13th Part VII: The New Blood",
+            "year":"1988"
+         },
+         {
+            "critics":11,
+            "users":42,
+            "name":"Friday the 13th Part VIII: Jason Takes Manhattan",
+            "year":"1989"
+         },
+         {
+            "critics":20,
+            "users":35,
+            "name":"Jason Goes to Hell: The Final Friday",
+            "year":"1993"
+         },
+         {
+            "critics":29,
+            "users":54,
+            "name":"Friday the 13th 2009",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "The Boondock Saints":[
+         {
+            "critics":23,
+            "users":84,
+            "name":"The Boondock Saints",
+            "year":"1999"
+         },
+         {
+            "critics":23,
+            "users":60,
+            "name":"The Boondock Saints II: All Saints Day",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Resident Evil":[
+         {
+            "critics":33,
+            "users":67,
+            "name":"Resident Evil",
+            "year":"2002"
+         },
+         {
+            "critics":27,
+            "users":61,
+            "name":"Resident Evil: Apocalypse",
+            "year":"2004"
+         },
+         {
+            "critics":32,
+            "users":61,
+            "name":"Resident Evil: Extinction",
+            "year":"2007"
+         },
+         {
+            "critics":30,
+            "users":54,
+            "name":"Resident Evil: Afterlife",
+            "year":"2010"
+         },
+         {
+            "critics":34,
+            "users":52,
+            "name":"Resident Evil: Retribution",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Die Hard":[
+         {
+            "critics":82,
+            "users":78,
+            "name":"Die Hard",
+            "year":"1988"
+         },
+         {
+            "critics":67,
+            "users":75,
+            "name":"Die Hard 2",
+            "year":"1990"
+         },
+         {
+            "critics":55,
+            "users":81,
+            "name":"Die Hard: With a Vengeance",
+            "year":"1995"
+         },
+         {
+            "critics":75,
+            "users":75,
+            "name":"Live Free or Die Hard",
+            "year":"2007"
+         },
+         {
+            "critics":21,
+            "users":46,
+            "name":"A Good Day to Die Hard",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "The Woman in Black":[
+         {
+            "critics":64,
+            "users":60,
+            "name":"The Woman in Black",
+            "year":"2012"
+         },
+         {
+            "critics":"N/A",
+            "users":49,
+            "name":"The Woman in Black 2: Angel of Death",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Van Wilder":[
+         {
+            "critics":22,
+            "users":68,
+            "name":"Van Wilder",
+            "year":"2002"
+         },
+         {
+            "critics":14,
+            "users":42,
+            "name":"Van Wilder 2: The Rise of Taj",
+            "year":"2006"
+         },
+         {
+            "critics":32,
+            "users":42,
+            "name":"Van Wilder: Freshman Year",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Big Momma's House":[
+         {
+            "critics":30,
+            "users":54,
+            "name":"Big Momma's House",
+            "year":"2000"
+         },
+         {
+            "critics":6,
+            "users":52,
+            "name":"Big Momma's House 2",
+            "year":"2006"
+         },
+         {
+            "critics":13,
+            "users":52,
+            "name":"Big Mommas: Like Father, Like Son",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Purge":[
+         {
+            "critics":40,
+            "users":48,
+            "name":"The Purge",
+            "year":"2013"
+         },
+         {
+            "critics":52,
+            "users":61,
+            "name":"The Purge: Anarchy",
+            "year":"2014"
+         },
+         {
+            "critics":55,
+            "users":55,
+            "name":"The Purge: Election Year",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "White Noise":[
+         {
+            "critics":18,
+            "users":47,
+            "name":"White Noise",
+            "year":"2005"
+         },
+         {
+            "critics":"N/A",
+            "users":57,
+            "name":"White Noise 2: The Light",
+            "year":"2007"
+         }
+      ]
+   },
+   {
+      "Rocky":[
+         {
+            "critics":81,
+            "users":79,
+            "name":"Rocky",
+            "year":"1976"
+         },
+         {
+            "critics":66,
+            "users":78,
+            "name":"Rocky II",
+            "year":"1979"
+         },
+         {
+            "critics":61,
+            "users":71,
+            "name":"Rocky III",
+            "year":"1982"
+         },
+         {
+            "critics":40,
+            "users":73,
+            "name":"Rocky IV",
+            "year":"1985"
+         },
+         {
+            "critics":42,
+            "users":46,
+            "name":"Rocky V",
+            "year":"1990"
+         },
+         {
+            "critics":70,
+            "users":77,
+            "name":"Rocky Balboa",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "S.W.A.T.":[
+         {
+            "critics":46,
+            "users":64,
+            "name":"S.W.A.T.",
+            "year":"2003"
+         },
+         {
+            "critics":34,
+            "users":43,
+            "name":"S.W.A.T.: Firefight",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "Batoru rowaiaru":[
+         {
+            "critics":87,
+            "users":83,
+            "name":"Batoru rowaiaru",
+            "year":"2000"
+         },
+         {
+            "critics":"N/A",
+            "users":47,
+            "name":"Batoru rowaiaru II: Chinkonka",
+            "year":"2003"
+         }
+      ]
+   },
+   {
+      "Miss Congeniality":[
+         {
+            "critics":42,
+            "users":58,
+            "name":"Miss Congeniality",
+            "year":"2000"
+         },
+         {
+            "critics":24,
+            "users":47,
+            "name":"Miss Congeniality 2: Armed & Fabulous",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "Bad Boys":[
+         {
+            "critics":41,
+            "users":78,
+            "name":"Bad Boys",
+            "year":"1995"
+         },
+         {
+            "critics":30,
+            "users":61,
+            "name":"Bad Boys II",
+            "year":"2003"
+         },
+         {
+            "critics":"N/A",
+            "users":"N/A",
+            "name":"Bad Boys for Life",
+            "year":"2020"
+         }
+      ]
+   },
+   {
+      "Olympus Has Fallen":[
+         {
+            "critics":45,
+            "users":62,
+            "name":"Olympus Has Fallen",
+            "year":"2013"
+         },
+         {
+            "critics":27,
+            "users":53,
+            "name":"London Has Fallen",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "Carlito's Way":[
+         {
+            "critics":80,
+            "users":85,
+            "name":"Carlito's Way",
+            "year":"1993"
+         },
+         {
+            "critics":33,
+            "users":49,
+            "name":"Carlito's Way: Rise to Power",
+            "year":"2005"
+         }
+      ]
+   },
+   {
+      "The Exorcist":[
+         {
+            "critics":83,
+            "users":84,
+            "name":"The Exorcist",
+            "year":"1973"
+         },
+         {
+            "critics":28,
+            "users":26,
+            "name":"Exorcist II: The Heretic",
+            "year":"1977"
+         },
+         {
+            "critics":52,
+            "users":58,
+            "name":"The Exorcist III",
+            "year":"1990"
+         },
+         {
+            "critics":20,
+            "users":42,
+            "name":"Exorcist: The Beginning",
+            "year":"2004"
+         },
+         {
+            "critics":42,
+            "users":46,
+            "name":"Dominion: Prequel to the Exorcist",
+            "year":"2005"
+         },
+         {
+            "critics":67,
+            "users":50,
+            "name":"The Last Exorcism",
+            "year":"2010"
+         }
+      ]
+   },
+   {
+      "Fantomas":[
+         {
+            "critics":72,
+            "users":71,
+            "name":"Fantomas",
+            "year":"1964"
+         },
+         {
+            "critics":"N/A",
+            "users":69,
+            "name":"Fant\u00f4mas se d\u00e9cha\u00eene",
+            "year":"1965"
+         },
+         {
+            "critics":"N/A",
+            "users":68,
+            "name":"Fant\u00f4mas contre Scotland Yard",
+            "year":"1967"
+         }
+      ]
+   },
+   {
+      "If These Walls Could Talk":[
+         {
+            "critics":88,
+            "users":72,
+            "name":"If These Walls Could Talk",
+            "year":"1996"
+         },
+         {
+            "critics":83,
+            "users":77,
+            "name":"If These Walls Could Talk 2",
+            "year":"2000"
+         }
+      ]
+   },
+   {
+      "My Big Fat Greek Wedding":[
+         {
+            "critics":69,
+            "users":71,
+            "name":"My Big Fat Greek Wedding",
+            "year":"2002"
+         },
+         {
+            "critics":32,
+            "users":55,
+            "name":"My Big Fat Greek Wedding 2",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "The Equalizer":[
+         {
+            "critics":58,
+            "users":72,
+            "name":"The Equalizer",
+            "year":"2014"
+         },
+         {
+            "critics":50,
+            "users":65,
+            "name":"The Equalizer 2",
+            "year":"2018"
+         }
+      ]
+   },
+   {
+      "The Expendables":[
+         {
+            "critics":43,
+            "users":64,
+            "name":"The Expendables",
+            "year":"2010"
+         },
+         {
+            "critics":59,
+            "users":68,
+            "name":"The Expendables 2",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Jarhead":[
+         {
+            "critics":59,
+            "users":69,
+            "name":"Jarhead",
+            "year":"2005"
+         },
+         {
+            "critics":38,
+            "users":46,
+            "name":"Jarhead 2: Field of Fire",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Underworld":[
+         {
+            "critics":36,
+            "users":79,
+            "name":"Underworld",
+            "year":"2003"
+         },
+         {
+            "critics":26,
+            "users":75,
+            "name":"Underworld: Evolution",
+            "year":"2006"
+         },
+         {
+            "critics":36,
+            "users":67,
+            "name":"Underworld: Rise of the Lycans",
+            "year":"2009"
+         },
+         {
+            "critics":33,
+            "users":63,
+            "name":"Underworld Awakening",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Cinderella":[
+         {
+            "critics":91,
+            "users":72,
+            "name":"Cinderella",
+            "year":"1950"
+         },
+         {
+            "critics":11,
+            "users":41,
+            "name":"Cinderella II: Dreams Come True",
+            "year":"2002"
+         },
+         {
+            "critics":71,
+            "users":60,
+            "name":"Cinderella III: A Twist in Time",
+            "year":"2007"
+         },
+         {
+            "critics":18,
+            "users":59,
+            "name":"A Cinderella Story",
+            "year":"2004"
+         },
+         {
+            "critics":74,
+            "users":66,
+            "name":"Another Cinderella Story",
+            "year":"2008"
+         },
+         {
+            "critics":62,
+            "users":61,
+            "name":"A Cinderella Story: Once Upon a Song",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "V/H/S":[
+         {
+            "critics":57,
+            "users":49,
+            "name":"V/H/S",
+            "year":"2012"
+         },
+         {
+            "critics":69,
+            "users":56,
+            "name":"V/H/S/2",
+            "year":"2013"
+         },
+         {
+            "critics":35,
+            "users":28,
+            "name":"V/H/S Viral",
+            "year":"2014"
+         }
+      ]
+   },
+   {
+      "Nymphomaniac":[
+         {
+            "critics":"N/A",
+            "users":69,
+            "name":"Nymphomaniac: Vol. I",
+            "year":"2013"
+         },
+         {
+            "critics":"N/A",
+            "users":67,
+            "name":"Nymphomaniac: Vol. II",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Teenage Mutant Ninja Turtles":[
+         {
+            "critics":26,
+            "users":53,
+            "name":"Teenage Mutant Ninja Turtles",
+            "year":"2014"
+         },
+         {
+            "critics":38,
+            "users":54,
+            "name":"Teenage Mutant Ninja Turtles: Out of the Shadows",
+            "year":"2016"
+         }
+      ]
+   },
+   {
+      "The Mummy":[
+         {
+            "critics":53,
+            "users":77,
+            "name":"The Mummy",
+            "year":"1999"
+         },
+         {
+            "critics":47,
+            "users":53,
+            "name":"The Mummy Returns",
+            "year":"2001"
+         },
+         {
+            "critics":22,
+            "users":39,
+            "name":"The Mummy: Tomb of the Dragon Emperor",
+            "year":"2008"
+         }
+      ]
+   },
+   {
+      "Per un pugno di dollari":[
+         {
+            "critics":98,
+            "users":85,
+            "name":"Per un pugno di dollari",
+            "year":"1964"
+         },
+         {
+            "critics":"N/A",
+            "users":83,
+            "name":"Per qualche dollaro in pi\u00f9",
+            "year":"1965"
+         },
+         {
+            "critics":"N/A",
+            "users":89,
+            "name":"Il buono, il brutto, il cattivo",
+            "year":"1966"
+         }
+      ]
+   },
+   {
+      "Save the Last Dance":[
+         {
+            "critics":52,
+            "users":66,
+            "name":"Save the Last Dance",
+            "year":"2001"
+         },
+         {
+            "critics":49,
+            "users":51,
+            "name":"Save the Last Dance 2",
+            "year":"2006"
+         }
+      ]
+   },
+   {
+      "Scary Movie":[
+         {
+            "critics":50,
+            "users":47,
+            "name":"Scary Movie",
+            "year":"2000"
+         },
+         {
+            "critics":22,
+            "users":54,
+            "name":"Scary Movie 2",
+            "year":"2001"
+         },
+         {
+            "critics":42,
+            "users":59,
+            "name":"Scary Movie 3",
+            "year":"2003"
+         },
+         {
+            "critics":38,
+            "users":53,
+            "name":"Scary Movie 4",
+            "year":"2006"
+         },
+         {
+            "critics":7,
+            "users":33,
+            "name":"Scary Movie 5",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Clash of the Titans":[
+         {
+            "critics":33,
+            "users":48,
+            "name":"Clash of the Titans",
+            "year":"2010"
+         },
+         {
+            "critics":31,
+            "users":53,
+            "name":"Wrath of the Titans",
+            "year":"2012"
+         }
+      ]
+   },
+   {
+      "Wayne's World":[
+         {
+            "critics":84,
+            "users":77,
+            "name":"Wayne's World",
+            "year":"1992"
+         },
+         {
+            "critics":61,
+            "users":62,
+            "name":"Wayne's World 2",
+            "year":"1993"
+         }
+      ]
+   },
+   {
+      "Bride of Chucky":[
+         {
+            "critics":47,
+            "users":56,
+            "name":"Bride of Chucky",
+            "year":"1998"
+         },
+         {
+            "critics":39,
+            "users":40,
+            "name":"Seed of Chucky",
+            "year":"2004"
+         },
+         {
+            "critics":76,
+            "users":56,
+            "name":"Curse of Chucky",
+            "year":"2013"
+         },
+         {
+            "critics":77,
+            "users":49,
+            "name":"Cult of Chucky",
+            "year":"2017"
+         }
+      ]
+   },
+   {
+      "Quarantine":[
+         {
+            "critics":55,
+            "users":54,
+            "name":"Quarantine",
+            "year":"2008"
+         },
+         {
+            "critics":75,
+            "users":43,
+            "name":"Quarantine 2: Terminal",
+            "year":"2011"
+         }
+      ]
+   },
+   {
+      "The Base":[
+         {
+            "critics":24,
+            "users":35,
+            "name":"The Base",
+            "year":"1999"
+         },
+         {
+            "critics":18,
+            "users":31,
+            "name":"Guilty as Charged",
+            "year":"2000"
+         }
+      ]
+   },
+   {
+      "The Cell":[
+         {
+            "critics":42,
+            "users":69,
+            "name":"The Cell",
+            "year":"2000"
+         },
+         {
+            "critics":"N/A",
+            "users":29,
+            "name":"The Cell 2",
+            "year":"2009"
+         }
+      ]
+   },
+   {
+      "Guardians of the Galaxy":[
+         {
+            "critics":83,
+            "users":86,
+            "name":"Guardians of the Galaxy",
+            "year":"2014"
+         },
+         {
+            "critics":75,
+            "users":80,
+            "name":"Guardians of the Galaxy Vol. 2",
+            "year":"2017"
+         },
+         {
+            "critics":"N/A",
+            "users":"N/A",
+            "name":"Guardians of the Galaxy Vol. 3",
+            "year":"2022"
+         }
+      ]
+   },
+   {
+      "The Naked Gun":[
+         {
+            "critics":81,
+            "users":82,
+            "name":"The Naked Gun: From the Files of Police Squad!",
+            "year":"1988"
+         },
+         {
+            "critics":61,
+            "users":71,
+            "name":"The Naked Gun 2\u00bd: The Smell of Fear",
+            "year":"1991"
+         },
+         {
+            "critics":54,
+            "users":59,
+            "name":"Naked Gun 33 1/3: The Final Insult",
+            "year":"1994"
+         }
+      ]
+   },
+   {
+      "The Marine":[
+         {
+            "critics":32,
+            "users":54,
+            "name":"The Marine",
+            "year":"2006"
+         },
+         {
+            "critics":34,
+            "users":42,
+            "name":"The Marine 2",
+            "year":"2009"
+         },
+         {
+            "critics":"N/A",
+            "users":49,
+            "name":"The Marine 3: Homefront",
+            "year":"2013"
+         }
+      ]
+   },
+   {
+      "Dirty Harry":[
+         {
+            "critics":91,
+            "users":84,
+            "name":"Dirty Harry",
+            "year":"1971"
+         },
+         {
+            "critics":70,
+            "users":74,
+            "name":"Magnum Force",
+            "year":"1973"
+         },
+         {
+            "critics":68,
+            "users":63,
+            "name":"The Enforcer",
+            "year":"1976"
+         },
+         {
+            "critics":54,
+            "users":60,
+            "name":"Sudden Impact",
+            "year":"1983"
+         },
+         {
+            "critics":51,
+            "users":60,
+            "name":"The Dead Pool",
+            "year":"1988"
+         }
+      ]
+   },
+   {
+      "12 Rounds":[
+         {
+            "critics":34,
+            "users":50,
+            "name":"12 Rounds",
+            "year":"2009"
+         }
+      ]
+   }
+]

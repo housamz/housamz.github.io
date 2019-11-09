@@ -1,0 +1,99 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the header)
+name: Housam Ziad
+
+tagline: Putting the fun in function
+
+# Short bio or description (displayed in the header)
+description: This is my blog where I write tips about programming and UX, and list my projects and tools.
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: http://hmz.ie/img/logo.svg
+
+keywords: research, software engineer, designer, web developer, UI, UX, user experience, user interface, natural language processing, data analytics, developer, programming, coding, design, seo, search engine optimisation
+
+#
+# Flags below are optional
+#
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: 
+  facebook:
+  flickr:
+  github: housamz
+  instagram: housamz
+  linkedin: housamz
+  pinterest:
+  rss: housamz
+  twitter: housamz
+  stackoverflow: users/329847/housamz
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: 
+  googlescholar: 48PxDb0AAAAJ
+  codepen: housamz
+  behance: housamz
+
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus: housamz
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-1386199-11
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: http://hmz.ie
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
+# Where are tags and categories displayed
+tag_page: '/tags/'
+category_page: '/categories/'
+
+images_url: https://housamz.files.wordpress.com/
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+permalink: /:title/
+
+# The release of Jekyll Now that you're using
+version: v1.2.0
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

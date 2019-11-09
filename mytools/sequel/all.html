@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Sequel Movies Meter, Check how people reacted to sequel movies">
+	<meta name="author" content="@housamz">
+	<link rel="icon" href="static/favicon.ico">
+
+	<title>Sequel Movies Meter :: All Movies</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="static/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md fixed-top bg-light">
+		<div class="container">
+			<span class="navbar-brand">
+				Sequel Movies Meter<br>
+				<small>Check how people reacted to sequel movies</small>
+			</span>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./">Charts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./all.html">Movies</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container">
+
+		<div class="row" id="movies-div">
+			<!-- This div gets filled by D3JS -->
+		</div>
+		<!-- /.row -->
+
+		<div id="preloader">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+
+	</div>
+	<!-- /.container -->
+
+	<!-- Footer -->
+	<footer class="py-5">
+		<div class="container">
+			<p class="m-0 text-center">Copyright © <a href="http://hmz.ie">Sequel Movie Meter</a> 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script>, a project by <a href="http://hmz.ie">@housamz</a></p>
+		</div>
+		<!-- /.container -->
+	</footer>
+
+	<a href="javascript:" id="return-to-top">Back to top</a>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="vendor/d3js/d3.v4.min.js"></script>
+	<script src="static/script.js"></script>
+	
+	<script type="text/javascript">
+		function formatTh(n) {
+			if(isNaN(n)){
+				return "N/A";
+			} else {
+				var parts=n.toString().split(".");
+				return parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + (parts[1] ? "." + parts[1] : "");
+			}
+		}
+
+		d3.json("static/data.json", function(error, data){
+
+			var flatJSON = [];
+
+			if (error) {
+				console.log(error);
+			} else {
+				for (var i = 0; i < data.length; i++) {
+					thisData = data[i];
+					thisData = thisData[Object.keys(thisData)[0]];
+					for (var j = 0; j < thisData.length; j++) {
+						flatJSON.push(thisData[j]);
+					}
+
+					if (i === data.length - 1){
+						finishedloading = true;
+					}
+				}
+			}
+
+			var movie_div = d3.select("#movies-div").selectAll("div")
+							.data(flatJSON).enter()
+							.append("div").attr("class", "col-lg-4 col-sm-12 portfolio-item")
+							.append("div").attr("class", "card h-100")
+							.append("div").attr("class", "card-body");
+			
+			movie_div.append("img")
+				.attr("class", "card-img-top")
+				.attr("src", function (d) { return d.poster});
+
+			var titles = movie_div.append("h5").attr("class", "card-title");
+			var summaries = movie_div.append("p");
+			var tables = movie_div.append("table").attr("class", "table table-striped");
+			
+			titles.html (function (d) { return d.name + " <small>("+d.year+")</small>"});
+			summaries.text (function (d) { return d.summary});
+
+			tables.html(function(d){
+
+				table = '<thead><tr><th colspan="2">&nbsp;</th><th><a href="'+d.IMDB_link+'" target="_blank">IMDB</a></th><th><a href="'+d.MC_link+'" target="_blank">MC</a></th><th><a href="'+d.RT_link+'" target="_blank">RT</a></th></tr></thead>';
+				table += '<tbody><tr><td rowspan="2">Critics</td><td>Rating</td><td>N/A</td><td>'+formatTh(d.MC_critics_rating)+'</td><td>'+formatTh(d.RT_critics_rating)+'</td></tr><tr><td>Votes</td><td>N/A</td><td>'+formatTh(d.MC_critics_count)+'</td><td>'+formatTh(d.RT_critics_count)+'</td></tr><tr><td rowspan="2">Users</td><td>Rating</td><td>'+formatTh(d.IMDB_rating)+'</td><td>'+formatTh(d.MC_users_rating)+'</td><td>'+formatTh(d.RT_users_rating)+'</td></tr><tr><td>Votes</td><td>'+formatTh(d.IMDB_votes)+'</td><td>'+formatTh(d.MC_users_count)+'</td><td>'+formatTh(d.RT_users_count)+'</td></tr></tbody>';
+
+				return table;
+
+			});
+		});
+
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-1386199-11', 'auto');
+		ga('send', 'pageview', {
+			'page': '/',
+			'title': ''
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+</body>
+
+</html>

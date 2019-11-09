@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% if page.title %}{{ page.title }} – {{ site.name }} {% else %} {{ site.name }} - {{ site.tagline }}{% endif %}</title>
+
+	{% include meta.html %}
+
+	<link rel="shortcut icon" href="{{ site.avatar }}">
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/style.css?v=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata|Raleway">
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+{% if  page.url != "/" %}
+<style type="text/css">
+.text-intro{display: none}
+</style>
+{% endif %}
+</head>
+
+<body>
+	<header>
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<span class="brand"><a href="{{ site.baseurl }}/"><img src="{{ site.avatar }}" alt="Housamz Logo" width="60"></a></span>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li id="whoamiLink"><a href="{{ site.baseurl }}/whoami"><span>whoami</span></a></li>
+						<li id="projectsLink"><a href="{{ site.baseurl }}/projects"><span>projects</span></a></li>
+						<li id="toolsLink"><a href="{{ site.baseurl }}/tools"><span>tools</span></a></li>
+						<li id="contactLink"><a href="{{ site.baseurl }}/contact"><span>contact</span></a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+	</header>
+
+	<aside id="hodoodaside">
+		<div class="hodood ofoki fouk"></div>
+		<div class="hodood amodi ymin"></div>
+		<div class="hodood ofoki taht"></div>
+		<div class="hodood amodi ysar"></div>
+		<div class="scara fouk"></div>
+		<div class="scara taht"></div>
+		<div class="point ymin"><span></span></div>
+		<div class="point ysar"><span></span></div>
+		{% if page.previous.url %}
+		<a class="triangle ysar" href="{{page.previous.url}}" data-toggle="tooltip" data-placement="right" title=" Previous post: {{page.previous.title}}"><span></span></a>
+		{% endif %}
+		{% if page.next.url %}
+		<a class="triangle ymin" href="{{page.next.url}}" data-toggle="tooltip" data-placement="left" title="Next post: {{page.next.title}}"><span></span></a>
+		{% endif %}
+	</aside>
+
+	<div class="container">
+
+		<div class="col-md-10 col-md-offset-1 realcontent">
+			<div class="text-intro" id="site-type">
+				<h1 class="typewrite">
+					Housam Ziad,<div class="breaker"></div>
+					<div id="typedtext" class="hidden">Software Engineer, Web Developer, Front-End Developer, Graphic Designer, User-Experience Developer, Researcher, SEO Expert, Linguist, Business Developer, Entrepreneur, Traveler, Tech Geek, Gadget Collector</div>
+					<span class="site-description"></span>
+				</h1>
+				<p>I am a front-end and a user-experience developer with an MSc in Software Engineering and a Bachelor in Linguistics. I started as a Graphic Designer and a Web Designer in 1998 and started focusing on Web Development in 2008. Through my years of business experience, I learned a lot about Business Development, Marketing, Management, Entrepreneurship, and I worked on projects for <a href="http://www.hmz.ie/whoami/#education">big companies</a>.<br><br>
+				I am passionate about creating <a href="./portfolio"><strong>beautiful</strong> designs</a> for <strong>print</strong> and for <strong>the web</strong>, and the <strong>happyness</strong> I pursue doing this.<br><br>
+
+				My latest updates and blog posts</p>
+			</div>
+
+			{{ content }}
+			
+			{% include social-icons.html %}
+
+		</div>
+	</div>
+
+	<!-- the pointer -->
+	<div id="cursors">
+		<div class="cursor"></div>
+		<!-- <div class="cursor"></div> -->
+	</div>
+
+	<p id="back-top">
+		<a href="#top"> Back to top <i class="fa fa-rocket" aria-hidden="true"></i></a>
+	</p>
+
+	<!-- {% include frames.html %} -->
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/scripts/script.js" type="text/javascript"></script>
+
+	{% include analytics.html %}
+
+</body>
+</html>

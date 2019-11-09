@@ -1,0 +1,53 @@
+/* general styles */
+body{background: #EFF2F4; padding-top: 4.5rem}
+img{margin-bottom: 10px}
+path {fill: none;stroke-width: 2}
+.movie-item, .portfolio-item {margin-bottom: 20px}
+.navbar, footer {font-size:.8em}
+
+/* navbar styles */
+.navbar-brand {font-weight: bold; line-height: 1}
+.navbar-brand small, table{font-size: 11px}
+
+
+/* charts styles */
+/* removing grid */
+.grid path {stroke: none}
+.grid line {stroke: #E0E0E0; shape-rendering: crispEdges}
+
+/* colouring the lines */
+.IMDB-rating, .critics{stroke: red; fill:red}
+.MC-critics-rating, .users{stroke: blue; fill:blue}
+.MC-users-rating{stroke: green; fill:green}
+.RT-critics-rating{stroke: blueviolet; fill:blueviolet}
+.RT-users-rating{stroke: orange; fill:orange}
+
+/* colouring axis and text */
+.axis path, .axis line {fill: none;shape-rendering: crispEdges;stroke: #BBB;stroke-width: 1}
+.axis text {fill: #766}
+
+
+/* legend styles */
+#legend ul {padding:0}
+#legend ul li{margin-right: 20px; float: left; list-style: none}
+#legend ul li:nth-child(2){color:red}
+#legend ul li:nth-child(3){color:blue}
+#legend ul li:nth-child(4){color:green}
+#legend ul li:nth-child(5){color:blueviolet}
+#legend ul li:nth-child(6){color:orange}
+
+/* pure CSS preloader */
+#preloader{margin:100px auto;width:40px;height:40px;position:relative;text-align:center;-webkit-animation:sk-rotate 2s infinite linear;animation:sk-rotate 2s infinite linear}.dot1,.dot2{width:60%;height:60%;display:inline-block;position:absolute;top:0;background-color:#333;border-radius:100%;-webkit-animation:sk-bounce 2s infinite ease-in-out;animation:sk-bounce 2s infinite ease-in-out}.dot2{top:auto;bottom:0;-webkit-animation-delay:-1s;animation-delay:-1s}@-webkit-keyframes sk-rotate{100%{-webkit-transform:rotate(360deg)}}@keyframes sk-rotate{100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}}@-webkit-keyframes sk-bounce{0%,100%{-webkit-transform:scale(0)}50%{-webkit-transform:scale(1)}}@keyframes sk-bounce{0%,100%{transform:scale(0);-webkit-transform:scale(0)}50%{transform:scale(1);-webkit-transform:scale(1)}}
+
+/* back to top div */
+#return-to-top {position: fixed; color:white; bottom: 20px; right: 20px; background: rgba(0, 0, 0, 0.7); display: block; text-decoration: none; display: none; transition: all 0.3s ease; padding: 10px 20px}
+#return-to-top:hover {background: rgba(0, 0, 0, 0.9)}
+#return-to-top:hover i {color: #fff; top: 5px}
+
+div.tooltip {
+        position: absolute;
+        padding: 5px;
+        font-size: 12px;
+        background: red;
+        color: white
+    }
