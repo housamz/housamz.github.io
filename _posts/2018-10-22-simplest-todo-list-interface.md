@@ -2,7 +2,7 @@
 layout: post
 title: Simplest ToDo List
 category: Software Engineering
-tags: [javascript, UI, codepen]
+tags: [javascript, user-interface, codepen]
 ---
 
 ![Todo List]({{site.images_url}}2019/11/todo-thumb.png)

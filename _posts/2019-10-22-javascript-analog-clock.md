@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Analog Clock
 category: Software Engineering
-tags: [javascript, UI, codepen]
+tags: [javascript, user-interface, codepen]
 ---
 
 ![Analog Clock Thumbnail]({{site.images_url}}2019/11/analog-clock-thumb.png)

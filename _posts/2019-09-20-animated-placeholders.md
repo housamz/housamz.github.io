@@ -2,7 +2,7 @@
 layout: post
 title: jQuery Animated Place Holders
 category: Software Engineering
-tags: [jQuery, UI, codepen]
+tags: [jQuery, user-interface, codepen]
 ---
 
 ![Animated Placeholders]({{site.images_url}}2019/11/animated-placeholders.gif)
