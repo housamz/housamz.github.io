@@ -3,15 +3,17 @@ layout: page
 title: Tags
 ---
 
+{% assign allTags = (site.tags | sort: 'order') | reverse %}
+
 <div class="tags-expo">
 	<div class="tags-expo-list">
-		{% for tag in site.tags %}
+		{% for tag in allTags %}
 		<a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
 		{% endfor %}
 	</div>
 	<hr/>
 	<div class="tags-expo-section">
-		{% for tag in site.tags %}
+		{% for tag in allTags %}
 		<h4 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h4>
 		<ul class="tags-expo-posts">
 			{% for post in tag[1] %}
