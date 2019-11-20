@@ -2,7 +2,7 @@
 layout: post
 title: Floppy disk pen holder
 category: General
-tags: [diy, fun]
+tags: [diy, upcycle]
 ---
 ![pen holder]({{site.images_url}}2018/06/pen-holder.jpg)
 
