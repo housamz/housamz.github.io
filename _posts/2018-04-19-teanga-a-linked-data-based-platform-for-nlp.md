@@ -2,7 +2,7 @@
 layout: post
 title: Teanga, a linked data based platform for NLP
 category: Research
-tags: [talks, NLP, natural language processing, platform, nlp architecture, linked data]
+tags: [talks, nlp, natural language processing, platform, nlp architecture, linked data]
 ---
 
 ![Teanga Logo]({{site.images_url}}2018/06/teanga-logo-final-no-text.png)
