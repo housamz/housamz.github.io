@@ -5,6 +5,8 @@ category: Software Engineering
 tags: [javascript, UI, codepen]
 ---
 
+![Analog Clock Thumbnail]({{site.images_url}}2019/11/analog-clock-thumb.png)
+
 This JavaScript analog clock is made by using only four lines of code in HTML, CSS, JavaScript.
 Editting the code and adaptingg it to your website is very simple, and it uses vanilla JavaScript without any libraries.
 
