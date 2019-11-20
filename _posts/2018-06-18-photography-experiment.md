@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Photography Experiment
-category: photography
+category: Photography
 tags: [photo, photography]
 ---
 
