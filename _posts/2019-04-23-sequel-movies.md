@@ -14,7 +14,7 @@ Although the newest episodes got better in matters of ratings, we must say that 
 
 This led me to a bigger question: “Do people really like sequels? Should production companies stop when they have a hit movie, or they should keep producing sequels?”.  
 
-To answer this question, I had to use my experience in programming and work on this long project to find out. The project is called “[Sequel Movies Meter](http://www.hmz.ie/mytools/sequel/){:target="_blank"}”.  
+To answer this question, I had to use my experience in programming and work on this long project to find out. The project is called “[Sequel Movies Meter](https://t.hmz.ie/sequel/){:target="_blank"}”.  
 
 The project consisted of many steps as below:  
   
@@ -74,6 +74,6 @@ Examples from the meter for popular movies:
 
 ### Final Thoughts  
 Working on this project was interesting and mentally challenged me to get the results.  
-I hope everyone likes this page ([Sequel Movie Meter](http://www.hmz.ie/mytools/sequel/){:target="_blank"}) and finds it useful for something.  
+I hope everyone likes this page ([Sequel Movie Meter](https://t.hmz.ie/sequel/){:target="_blank"}) and finds it useful for something.  
 
 [1] IMDb, Rotten Tomatoes, and Metacritic. These three websites provide five ratings: IMDb users, Metacritic critics, Metacritic users, Rotten Tomatoes critics, and Rotten Tomatoes users.
