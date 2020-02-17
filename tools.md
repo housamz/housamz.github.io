@@ -4,12 +4,14 @@ title: Tools
 permalink: /tools/
 ---
 
+#### [Python MySQL Admin-panel Generator (MAGE)](https://github.com/housamz/python-mysql-admin-panel-generator)
+Python MySQL Admin-panel Generator (MAGE), a Python Flask tool that helps you create a Python Flask CRUD system for any MySQL database in seconds.
+
 #### [Movie Info Finder](https://github.com/housamz/Find-Movie-Info)
 This tool finds all important info about a movie from three sources, IMDB, Meta Critic, and Rotten Tomatoes, and generate a JSON object with the data.
 
 #### [Awesome Site Check](https://github.com/housamz/site-check)
 This python script checks websites on interval that you can set, and it sends a report via email for every check.
-
 
 #### [PHP MySQL Admin-panel Generator (MAGE)](https://github.com/housamz/php-mysql-admin-panel-generator)
 PHP MySQL Admin-panel Generator (MAGE), a PHP tool that helps you create a PHP Admin Panel for any MySQL database in seconds.
