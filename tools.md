@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tools
+title: Tools & Games
 permalink: /tools/
 ---
 
@@ -25,6 +25,9 @@ This tool helps you write text upside down, and then you can copy the result and
 ***
 
 ### Games 
+
+#### [Minesweeper](https://github.com/housamz/minesweeper)
+The classic game in vanilla JavaScript for today's browsers
 
 #### [The Stereotyper](https://github.com/housamz/The-Stereotyper)
 This tool reads Google search suggestions by mocking the search for "why are NATIONALITY ... ", it's just for fun, enjoy!
