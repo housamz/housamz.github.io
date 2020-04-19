@@ -5,7 +5,7 @@ category: Software Engineering
 tags: [javascript, user-interface, codepen]
 ---
 
-![Analog Clock Thumbnail]({{site.images_url}}2020/04/dooms-day-algorithm.png)
+![Doomsday Rule Algorithm]({{site.images_url}}2020/04/dooms-day-algorithm.png)
 
 An algorithm to know the day of the week for a given date (method valid for dates from 1800s to 2000s).  
 How can you quickly and accurately calculate the day of the week associated with a specific date?  
