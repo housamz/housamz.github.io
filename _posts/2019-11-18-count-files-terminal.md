@@ -8,11 +8,11 @@ tags: [terminal, linux, macOS]
 Sometimes I need to copy directories using the terminal, and I wish to know how many files are there in them. For that, I use some terminal commands to show that piece of info.   
 If anybody is looking for these, here are the commands and their breakdown.  
 
-## tl;dr
+### tl;dr
 This command counts all files in a directory and subdirectories:  
 `echo "Directory $(pwd) has $(find . | wc -l) files"`  
 
-
+### The Breakdown
 To avoid doing that recursively, you achieve that by listing all the files and count the lines. That means using either `find` of `ls` commands.
 Here's a list of useful parameters using the above two commands:
 1. `ls -F` lists all the files and the subdirectories in a directory and appends an indicator `/` to directories names.
