@@ -4,7 +4,7 @@ title: Winning Irish Socksociety Competition
 category: Awards
 tags: [design, competition, adobe, illustrator]
 ---
-![Galway Design]({{site.images_url}}2020/04/is-contest-galway.jpg)  
+![Galway Design]({{site.images_url}}2020/04/is-contest-galway-e1587329454653.jpg)  
 
 The [Irish Socksociety](https://irishsocksciety.com/blogs/news/design-your-own-socks-in-celebration-of-galway){:target="_blank"} 2020 competition was about designing socks in celebration of [Galway City](https://en.wikipedia.org/wiki/Galway){:target="_blank"}.  
 
