@@ -6,11 +6,11 @@ tags: [development, python, MySQL, CRUD]
 ---
 ![Server info](https://raw.githubusercontent.com/housamz/php-mysql-admin-panel-generator/master/images/1.png)
 
+Python MySQL Admin Panel Generator (MAGE), a Python tool that helps you create a Python Admin Panel for any MySQL database in seconds.
+
 Find it on [Github](https://github.com/housamz/python-mysql-admin-panel-generator)  
 
 Available for PHP also: [PHP Mage](https://github.com/housamz/php-mysql-admin-panel-generator)
-
-Python MySQL Admin Panel Generator (MAGE), a Python tool that helps you create a Python Admin Panel for any MySQL database in seconds.
 
 Mage is not like PHPMyAdmin; it doesn't contain all your databases. It physically creates an admin panel for a database.
 
