@@ -4,7 +4,8 @@ title: Python MAGE MySQL Admin Panel Generator
 category: Development
 tags: [development, python, MySQL, CRUD]
 ---
-  
+![Server info](https://raw.githubusercontent.com/housamz/php-mysql-admin-panel-generator/master/images/1.png)
+
 Find it on [Github](https://github.com/housamz/python-mysql-admin-panel-generator)  
 
 Available for PHP also: [PHP Mage](https://github.com/housamz/php-mysql-admin-panel-generator)
