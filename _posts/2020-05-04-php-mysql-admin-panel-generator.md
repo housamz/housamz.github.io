@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MAGE, PHP MySQL Admin Panel Generator
+title: MAGE - HP MySQL Admin Panel Generator
 category: Development
 tags: [development, php, MySQL, crud]
 ---
