@@ -28,5 +28,5 @@ I know that a project admin panel will not have as many users as its main interf
 As an example, I would like to highlight two tools I put on Github recently, both of them are CRUD/Admin Panel generators for a MySQL database. One uses PHP, and the other uses Python.  
 Both of them are quite easy to use, and it is easy to follow their pattern in your future admin panel.  
 Check them here:
-[PHP](http://www.hmz.ie/php-mysql-admin-panel-generator/){:target="_blank"}
+[PHP](http://www.hmz.ie/php-mysql-admin-panel-generator/){:target="_blank"} / 
 [Python](http://www.hmz.ie/python-mysql-admin-panel-generator/){:target="_blank"}
