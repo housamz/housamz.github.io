@@ -6,6 +6,7 @@ tags: [design, usability, user-experience, user-interface]
 ---
 ![Design Presentation]({{site.images_url}}2020/06/apollo-vs-dragon-dashboard.png)  
 
+{:.image-caption}
 *Image from Linkedin*
 All of us were amazed by the recent achievement of Nasa's launch, and mostly we liked how the control panel (dashboard) of the Dragon 2 capsule looked. I wanted to share the lesson learnt from this, how a simple administration panel could control complex machines. And if a space capsule can achieve this, your next application can do this easily.  
 
