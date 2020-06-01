@@ -7,7 +7,8 @@ tags: [design, usability, user-experience, user-interface]
 ![Design Presentation]({{site.images_url}}2020/06/apollo-vs-dragon-dashboard.png)  
 
 {:.image-caption}
-*Image from Linkedin*
+*Image from Linkedin*  
+
 All of us were amazed by the recent achievement of Nasa's launch, and mostly we liked how the control panel (dashboard) of the Dragon 2 capsule looked. I wanted to share the lesson learnt from this, how a simple administration panel could control complex machines. And if a space capsule can achieve this, your next application can do this easily.  
 
 Back in 2003, I was starting my business as a web development/web hosting services provider; I did not expect the high number of jobs that I would score. For that, I started hiring freelancers to help me get projects done. I would meet the clients, understand requirements, design the interfaces, and the freelancers' job was to code the project. I was always checking and testing the projects before they get delivered to the clients. I used to cover security, usability, code quality, and performance before the delivery.  
