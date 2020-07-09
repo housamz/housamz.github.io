@@ -109,7 +109,7 @@ Cursor
 	var api  = 'yzwwt3wwsgK8vm0Cne8EWuEfMLOtWNf3';
 	var user = 'housamz';
 
-	var apiURL = "http://www.behance.net/v2/users/" + user + "/projects?api_key=" + api + "&callback=?";
+	var apiURL = "https://www.behance.net/v2/users/" + user + "/projects?api_key=" + api + "&callback=?";
 	console.log(apiURL);
 
 	$.getJSON(apiURL, function (data) {
