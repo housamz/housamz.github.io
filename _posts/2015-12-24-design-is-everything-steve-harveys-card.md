@@ -14,7 +14,7 @@ If you thought about blaming Steve Harvey for his mistake in Miss Universe annou
   
 Everybody saw what happened with Steve Harvey on Miss Universe 2015 announcement, if you didn’t:
   
-<iframe width="500" height="281" src="https://www.youtube.com/embed/nmqAjr0xs04?feature=oembed" frameborder="0" allowfullscreen=""></iframe>  
+<iframe width="500" height="281" src="https://www.youtube.com/embed/3DKDaSd-4nY?feature=oembed" frameborder="0" allowfullscreen=""></iframe>  
   
   
 30 minutes later, the video went viral on the Internet, and everybody was reacting to that, criticising Steve Harvey to be with clumsy personality for his known comedian background, and that he’s an actor because he can’t read … etc.  
