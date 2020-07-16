@@ -31,7 +31,7 @@ As you see, I could clearly see what problems in the card, and I saw an example 
    
 I do actually blame the designer (editor) who printed this card, as it’s way misleading especially if you’re presenting to millions on a stage, within non-regular settings of light.  
   
-This is one suggestion from me on how the card design SHOULD be:  
+This is one suggestion from me on how the card design should be:  
 ![Card suggested design]({{site.images_url}}2015/12/harvey-card3.png)  
    
 Thanks.  
