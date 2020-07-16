@@ -5,9 +5,7 @@ category: Design
 tags: [talks, design, best practices, ux]
 ---
 
-![unclear card]({{site.images_url}}2015/12/harvey-card11.png)  
-  
-  
+![unclear card]({{site.images_url}}2015/12/harvey-card11.png)
 A few days ago, I had a presentation for my colleagues in the<a href="http://insight-centre.org/" target="_blank"> Insight Centre for Data Analytics</a> about the importance of design, explaining that design is everything for anything around us, you can check the <a href="https://www.insight-centre.org/content/wait-%E2%80%A6-your-demo" target="_blank">slides here</a> if you’re interested.  
   
 If you thought about blaming Steve Harvey for his mistake in Miss Universe announcement, you should really rethink about it, because I blame the designer of the card!  
