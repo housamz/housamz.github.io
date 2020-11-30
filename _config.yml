@@ -60,7 +60,7 @@ baseurl: ""
 tag_page: '/tags/'
 category_page: '/categories/'
 
-images_url: https://housamz.files.wordpress.com/
+images_url: https://www.hmz.ie/images/media/
 
 #
 # !! You don't need to change any of the configuration flags below !!

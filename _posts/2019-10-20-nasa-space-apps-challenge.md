@@ -4,7 +4,7 @@ title: Winning NASA Space Apps 2019 Challenge
 category: Awards
 tags: [data_science, nlp, apps, nasa, space]
 ---
-![Lemonaid](https://sa-2019.s3.amazonaws.com/media/images/Screenshot_Lemon-Aid.width-800.png)  
+![Lemonaid]({{site.images_url}}2019/11/Screenshot_Lemon-Aid.width-800.png)  
 
 This weekend 18-20 October, I participated in the Nasa International Space Apps 2019 Challenge. I teamed up with four brilliant people from CeADAR, Ireland’s national centre for Applied Data Analytics. The team included Saad Shahid (Engineer), Aditya Grover, Lauren Burnham-King, Manokamna Singh (Data Scientists) and myself (Designer, Story Teller). 
 
