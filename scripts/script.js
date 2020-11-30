@@ -33,15 +33,17 @@ Cursor
 		);
 	}
 
-	$('#masonry-container').masonry({
-		itemSelector: '.item',
-		isAnimated: true // the animated makes the process smooth
-	});
-	$(window).resize(function() {
+	$(window).load(function(){
 		$('#masonry-container').masonry({
 			itemSelector: '.item',
-			isAnimated: true
-		}, 'reload');
+			isAnimated: true // the animated makes the process smooth
+		});
+		$(window).resize(function() {
+			$('#masonry-container').masonry({
+				itemSelector: '.item',
+				isAnimated: true
+			}, 'reload');
+		});
 	});
 	
 	$('[data-toggle="tooltip"]').tooltip();
