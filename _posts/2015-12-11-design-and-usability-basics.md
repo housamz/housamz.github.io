@@ -6,6 +6,7 @@ tags: [talks, design, usability, user-experience, user-interface]
 ---
 
 ![Design Presentation]({{site.images_url}}2018/06/ireland-faucets.png)
+
 When I first joined my current role with the NUI Galway, I noticed that my fellow researchers and software engineers tend to build applications without having the user in their minds, which I found to be the same for the majority of researchers.
 
 I planned a presentation for my colleagues on our weekly meeting to cover this issue and help them build better User Experience for their applications (demos), and better designs for their presentations.
