@@ -6,6 +6,7 @@ tags: [talks, seo, search engine optimisation]
 ---
 
 ![SEO Presentation]({{site.images_url}}2018/06/wordpress-meetup-min.jpg)
+
 I was invited to give a small talk by Galway Wordpress meetup co-organiser and my friend, Darragh J Canning.
 
 The presentation contained:
