@@ -6,6 +6,7 @@ tags: [javascript, user-interface, codepen]
 ---
 
 ![Todo List]({{site.images_url}}2019/11/todo-thumb.png)
+
 This project is a very simple way to implement a Todo List interface for your website/project.
 It uses vanilla JavaScript to create the logic, and CSS to create the effects and styles.
 
