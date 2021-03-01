@@ -78,9 +78,12 @@ sudo mysql -u root -p
 then enter MySQL password when prompted.  
   
 #### Extra Step  
+
 ***Note: This is weak security settings only for local setups.***  
+
 To get rid of the `sudo` you have to do the following:  
-connect to MySQL  
+  
+Connect to MySQL  
 ```bash  
 sudo mysql -u root -p  
 ```  
