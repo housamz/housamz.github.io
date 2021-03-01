@@ -10,7 +10,7 @@ This tutorial will take you through installing PHP & MySQL on Ubuntu 20.04 and i
   
 At the time of this article, the PHP version is `7.4.3`, and the MySQL version is `8.0.23`.  
   
-## Installing Apache  
+### Installing Apache  
 Apache is included within the Ubuntu repositories.  
 Installing Apache is straightforward on Ubuntu. The Apache package and the service is called `apache2`.  
   
@@ -37,7 +37,7 @@ Head to your browser and type `http://YOUR_IP/` `http://localhost/` or you can a
   
 If you like to setup your the VirtualHost Configuration File [check this page](https://ubuntu.com/tutorials/install-and-configure-apache#4-setting-up-the-virtualhost-configuration-file){:target="_blank"}  
   
-## Installing PHP 7.4 with Apache  
+### Installing PHP 7.4 with Apache  
 Head to your terminal and run the following commands to install PHP and Apache PHP module.  
 Please notice that you don't need to update again if you are doing this process directly after you installed Apache.  
 ```bash  
@@ -58,7 +58,7 @@ This code displays the PHP information on your device.
 Save the file, and open the following URL in your browser: `http://localhost/info.php`  
 You should see the information page.  
   
-## Installing MySQL  
+### Installing MySQL  
 Type the following in your terminal to install the `mysql-server` package:  
 ```bash  
 sudo apt update  
@@ -77,7 +77,7 @@ sudo mysql -u root -p
 ```  
 then enter MySQL password when prompted.  
   
-### Extra Step  
+#### Extra Step  
 ***Note: This is weak security settings only for local setups.***  
 To get rid of the `sudo` you have to do the following:  
 connect to MySQL  
