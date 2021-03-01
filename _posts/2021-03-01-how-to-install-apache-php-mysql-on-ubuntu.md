@@ -5,6 +5,11 @@ category: Development
 tags: [development, php, MySQL, Apache]
 ---
 
+![Coding]({{site.images_url}}code-terminal.jpg)  
+
+{:.image-caption}
+*Image by Kevin Horvat: unsplash.com* 
+
 PHP is one of the most common server-side programming languages; it is used in many common CMS and frameworks, including WordPress, Magento, and Laravel. Many of the popular CMSs use MySQL as the database as well.  
 This tutorial will take you through installing PHP & MySQL on Ubuntu 20.04 and integrating it with Apache from your terminal.  
   
