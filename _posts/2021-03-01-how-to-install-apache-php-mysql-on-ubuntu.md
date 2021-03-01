@@ -124,3 +124,5 @@ Now you can connect to MySQL without the `sudo`
 ```bash  
 mysql -u root -p  
 ```
+
+After these steps, your installation should be working perfectly.
