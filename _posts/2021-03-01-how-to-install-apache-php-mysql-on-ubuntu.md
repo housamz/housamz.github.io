@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install Apache, PHP and MySQL on Ubuntu 20.02
+title: How to install Apache, PHP and MySQL on Ubuntu 20.04
 category: Development
 tags: [development, php, MySQL, Apache]
 ---
