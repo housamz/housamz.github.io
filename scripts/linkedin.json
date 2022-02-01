@@ -1,0 +1,455 @@
+{
+  "basics": {
+    "name": "Housam Ziad",
+    "label": "Principal Software Engineer at Oracle",
+    "picture": "",
+    "email": "in@hmz.ie",
+    "phone": "",
+    "website": "",
+    "summary": "I am a Principal Software Engineer with a first-class honours Master’s degree in Software Engineering. My experience started in 1998. I deliver visually attractive designs while keeping an eye on good User Experience (UX).\n\nI have the expertise to perform full software development life cycle including carrying out straightforward design, testing or support of network design and solutions following steady methodologies.\n\nIn my current position, I work on the Oracle Private Cloud Appliance.\n\nPortfolio: www.be.net/housamz",
+    "location": {
+      "countryCode": "US",
+      "address": "Ireland"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "housamz",
+        "url": "https://www.linkedin.com/in/housamz/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Oracle",
+      "endDate": "Now",
+      "highlights": [],
+      "position": "Principal Software Engineer",
+      "startDate": "2019-08-31",
+      "summary": "Working with the Private Cloud Appliance (PCA) team to build the user interface to control the machine, including high-accessibility availability for the system.\n\nTasks: Software Engineering, Web Design, Web Development, Planning, UX Design, UI design, Accessibility Development.\nLanguages: Java, TypeScript, JavaScript, HTML, CSS, SCSS, Python, MySQL, NoSQL.\nLibraries: Oracle JET, NodeJs, Python Flask, Jinja.",
+      "website": "https://www.linkedin.com/company/oracle/"
+    },
+    {
+      "company": "NUI Galway",
+      "endDate": "Now",
+      "highlights": [],
+      "position": "IT Online Lecturer",
+      "startDate": "2019-08-31",
+      "summary": "Teaching MSc and Diploma Software Engineering & Database Technologies students.\nA member of the IT Online Programme team at NUI Galway.",
+      "website": "https://www.linkedin.com/school/nui-galway/"
+    },
+    {
+      "company": "NUI Galway",
+      "endDate": "2019-07-31",
+      "highlights": [],
+      "position": "Senior Software Engineer",
+      "startDate": "2014-10-31",
+      "summary": "Research Associate / Software Engineer at the Insight Centre for Data Analytics (DERI).\nI worked on filling the gap between research and industry by converting research into real-world software, taking advantage of my mixed business and technical skills.\nMy personal research was to build an NLP platform, Teanga [1], that uses Linked Data to achieve interoperability between NLP services, which is a new approach in utilising UX in NLP. Teanga was well-received from domain experts and during LREC 2018, in Miyazaki, Japan.\n\nI used different programming languages (Python, JavaScript, PHP) and frameworks (NodeJS, AngularJS, Flask) according to the specifications of a project, in addition to having a good experience in scripting in HTML5, CSS3, and SCSS. My projects include Irish Times, EA Games, Fidelity, and GRCTC.\nWhile working at the Insight Centre, I completed a Master’s degree with a First-Class Honours in 2017.\n\nResponsibilities:\n◉ Software design, architecture and development for data analytics projects.\n◉ Developing front-end services enabling knowledge navigation, by use of text mining and Linked Data based technologies.\n◉ Assisting in research experiments to understand usability and user behaviour. \n◉ Apply technologies related to Data Visualisation, web-based knowledge presentation, exploration and discovery.\n◉ Leading teams and coordinating with business and academic partners to deliver excellent results at the designated deadlines.\n◉ Training new engineers and interns on using modern web technologies to assess in projects.\n◉ Interviewing candidates and help in decisions about fresh team members.\n\nTasks: Software Engineering, Data Management, Research, Web Design, Web Development, Planning, UX Design, UI design, Team Leadership, Training.\nLanguages: Python, PHP, MySQL, NoSQL, JavaScript, HTML, CSS, SCSS.\nLibraries: Angular, AngularJS, NodeJs, D3, Bootstrap, Python Flask, Jinja, Handlebars.\n\n[1] http://www.teanga.io",
+      "website": "https://www.linkedin.com/school/nui-galway/"
+    },
+    {
+      "company": "emind",
+      "endDate": "2014-10-31",
+      "highlights": [],
+      "position": "Full Stack Engineer / Founder",
+      "startDate": "2008-01-31",
+      "summary": "I founded emind Creative Solutions to fulfil clients' needs in web development and web applications. My vision was to apply user-oriented design and use modern web technologies including mobile-first design processes to help clients achieve more in the era of hand-held devices but at the same time serving users from laptops and desktop computers.\n\nDuring six years, emind worked with big clients like Nissan, Garmin, Honda, Infiniti, Lipton, Pepsi co, McVities, and others. \n\nemind Creative provided clients with the following services:\n◉ Web design and development.\n◉ Developing Facebook applications and games.\n◉ Web hosting and domain management.\n◉ Web application development.\n◉ Search Engine Optimization.\n\nResponsibilities: \n◉ Designing and delivering comprehensive websites and web applications for clients.\n◉ Leading teams of freelancers working on big projects using Agile techniques.\n◉ Developing specially requested web apps.\n◉ Applying Search Engine Optimization to websites.\n◉ Developing Facebook applications and games using Adobe Flash and Web technologies.\n\nTasks: Software Development, Data Management, Web Design, Web Development, Planning, UX Design, UI design, Facebook Applications Development, Training, Team Management, Customer Relations.\nLanguages: Python, PHP, MySQL, JavaScript, HTML, CSS.",
+      "website": "https://www.linkedin.com/company/emind-creative-for-web-solutions/"
+    },
+    {
+      "company": "Syria Nobles",
+      "endDate": "2009-02-28",
+      "highlights": [],
+      "position": "Project Manager",
+      "startDate": "2006-01-31",
+      "summary": "After two years, I was promoted to the position of Project Manager. During my tenure with the company I had the following responsibilities:\n    ◉ Planning websites maps and contents, and web application usability.\n    ◉ Coordinating and communicating with internal departments including designers and programmers to achieve clients views using user-oriented design processes.\n    ◉ Running presentations and end-to-end interviews with clients using iterative design techniques.\n    ◉ Training clients and writing user manuals for websites and web applications in Arabic & English.\n    ◉ Supervising the website production process and code quality.\n    ◉ Leading teams and coordinating with clients to deliver excellent results at the designated deadlines.\n    ◉ Training new engineers and interns on using modern web technologies to assess in projects.\n    ◉ Interviewing candidates and help in decisions about fresh team members.\n\nTasks: Web Design, Web Development, Team Management, Planning, Customer Relations, Programming, UX Design, UI design.\nLanguages: PHP, MySQL, JavaScript, HTML, CSS.",
+      "website": "https://www.linkedin.com/company/syria-nobles/"
+    },
+    {
+      "company": "Syria Nobles",
+      "endDate": "2006-01-31",
+      "highlights": [],
+      "position": "Web Developer",
+      "startDate": "2004-01-31",
+      "summary": "I joined SyriaNobles as a Web Developer with the following responsibilities: \n ◉ Front-end development using HTML, CSS, and JavaScript.\n ◉ Back-end development using PHP.\n ◉ Database management using MySQL.\n ◉ Web design using Adobe Suite.\n ◉ Solving localisation problems by designing interactive simulators for products in Arabic.",
+      "website": "https://www.linkedin.com/company/syria-nobles/"
+    },
+    {
+      "company": "New Horizons",
+      "endDate": "2005-12-31",
+      "highlights": [],
+      "position": "Web Design Instructor",
+      "startDate": "2003-04-30",
+      "summary": "Teaching all-level classes of the following:\n◉  HTML.\n◉ CSS.\n◉ JavaScript.\n◉ Adobe Flash and its programming language, ActionScript\n◉ Adobe Photoshop.\n◉ Adobe Illustrator.\n◉ Adobe Indesign.\n◉ Microsoft Office.",
+      "website": "https://www.linkedin.com/company/new-horizons-computer-learning-centers/"
+    },
+    {
+      "company": "Trust Lines",
+      "endDate": "2003-12-31",
+      "highlights": [],
+      "position": "Senior Web Designer",
+      "startDate": "2001-01-31",
+      "summary": "Tasks: Web Design, Web Development, Team Management, Interactive Media Development, Graphic Design, Event Management, Planning.\nLanguages: ActionScript, JavaScript, HTML, CSS.",
+      "website": ""
+    },
+    {
+      "company": "Trust Lines",
+      "endDate": "2001-01-31",
+      "highlights": [],
+      "position": "Web Designer",
+      "startDate": "1998-06-30",
+      "summary": "Tasks: Web Design, Web Development, Interactive Media Development, Graphic Design.\nTechnologies: Adobe Suite, Flash ActionScript, JavaScript, HTML, CSS.",
+      "website": ""
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Depaul (Ireland)",
+      "position": "Consultant",
+      "website": "https://www.linkedin.com/company/500319",
+      "startDate": "2021-02-28",
+      "endDate": "2021-02-28",
+      "summary": null,
+      "highlights": []
+    },
+    {
+      "organization": "My Streets Ireland CLG",
+      "position": "Consultant",
+      "website": "https://www.linkedin.com/company/31446999",
+      "startDate": "2019-12-31",
+      "endDate": "Now",
+      "summary": null,
+      "highlights": []
+    },
+    {
+      "organization": "CoderDojo",
+      "position": "Programming Instructor",
+      "website": "https://www.linkedin.com/company/5178906",
+      "startDate": "2015-09-30",
+      "endDate": "Now",
+      "summary": "Teaching kids programming using Scratch and web development using HTML, CSS, and JS.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "NUI, Galway",
+      "area": "Software Engineering and Database Technologies",
+      "studyType": "Master of Science (MSc)",
+      "startDate": "2015-12-31",
+      "endDate": "2017-12-31",
+      "gpa": "1st class honours",
+      "courses": []
+    },
+    {
+      "institution": "Damascus University",
+      "area": "Language, Literature, and Linguistics",
+      "studyType": "Bachelor of Arts (B.A.)",
+      "startDate": "2004-12-31",
+      "endDate": "2008-12-31",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "NASA Space Apps Challenge 2019",
+      "date": "2019-10-31",
+      "awarder": "NASA",
+      "summary": "Space Apps is an international hackathon for coders, scientists, designers, storytellers, makers, builders, technologists, and others in cities around the world, where teams engage with NASA’s free and open data to address real-world problems on Earth and in space. Space Apps 2019 included over 29,000 participants at more than 230 events in 80 countries."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Teanga: A Linked Data based platform for Natural Language Processing",
+      "publisher": "LREC 2018",
+      "releaseDate": "2018-05-07",
+      "website": "http://www.lrec-conf.org/proceedings/lrec2018/summaries/106.html",
+      "summary": "In this paper, we describe Teanga, a linked data based platform for natural language processing (NLP). Teanga enables the use of many NLP services from a single interface, whether the need was to use a single service or multiple services in a pipeline. Teanga focuses on the problem of NLP services interoperability by using linked data to define the types of services input and output. Teanga’s strengths include being easy to install and run, easy to use, able to run multiple NLP tasks from one interface and helping users to build a pipeline of tasks through a graphical user interface."
+    },
+    {
+      "name": "Mixedemotions: An open-source toolbox for multimodal emotion analysis",
+      "publisher": "IEEE",
+      "releaseDate": "2018-01-25",
+      "website": "https://aran.library.nuigalway.ie/bitstream/handle/10379/14653/main.pdf?sequence=5&isAllowed=y",
+      "summary": "Recently, there is an increasing tendency to embed functionalities for recognizing emotions from user-generated media content in automated systems such as call-centre operations, recommendations, and assistive technologies, providing richer and more informative user and content profiles. However, to date, adding these functionalities was a tedious, costly, and time-consuming effort, requiring identification and integration of diverse tools with diverse interfaces as required by the use case at hand. The MixedEmotions Toolbox leverages the need for such functionalities by providing tools for text, audio, video, and linked data processing within an easily integrable plug-and-play platform. These functionalities include: 1) for text processing: emotion and sentiment recognition; 2) for audio processing: emotion, age, and gender recognition; 3) for video processing: face detection and tracking, emotion recognition, facial …"
+    },
+    {
+      "name": "OTTO-Ontology Translation System",
+      "publisher": "International Semantic Web Conference",
+      "releaseDate": "2015-08-11",
+      "website": "https://aran.library.nuigalway.ie/bitstream/handle/10379/14903/llncsdoc.pdf?sequence=1",
+      "summary": "To enable knowledge access across languages, ontologies that are often represented only in English, need to be translated into different languages. For this reason, we present OTTO, an OnTology TranslatiOn System, which enhances ontologies with multilingual information. Rather a different task than the classic document translation, ontology label translation faces highly specific vocabulary and lack contextual information. Therefore, OTTO takes advantage of the semantic information of the ontology to improve the translation of labels."
+    },
+    {
+      "name": "Who are the american vegans related to brad pitt?: Exploring related entities",
+      "publisher": "ACM",
+      "releaseDate": "2015-05-18",
+      "website": "http://www.www2015.it/documents/proceedings/companion/p151.pdf",
+      "summary": "In this demo, we present Entity Relatedness Graph (EnRG), a focused related entities explorer, which provides the users with a dynamic set of filters and facets. It gives a ranked lists of related entities to a given entity, and clusters them using the different filters. For instance, using EnRG, one can easily find the American vegans related to Brad Pitt or Irish universities related to Semantic Web. Moreover, EnRG helps a user in discovering the provenance for implicit relations between two entities. EnRG uses distributional semantics to obtain the relatedness scores between two entities."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SEO",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Graphic Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Research",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Algorithms",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Structures",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Patterns",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Business Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Unit Testing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "New Business Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Environment",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Creative Suite",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Photoshop",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AngularJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Indesign CC",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Illustrator",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Public Speaking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Engineering Practices",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Sketch App",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "NUI, Galway",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Tareq Sheikh Issa",
+      "reference": "I knew Housam for a long time, since 2002 in university, as a very close friend.Everyone who knows him, admires his personality, creativity, light-heartedness and persistence. He is a quick learner, mature and has a wonderful mind. I recommended his work for several companies, and will always do."
+    },
+    {
+      "name": "Mohammad Hayani",
+      "reference": "Through my knowledge Mr. Hossam Ziad, he is a contrived , clever and sincere person as a  great professional in web design / developer ,  he is  keen to enter new design techniques in each part of his work , easy handling and is committed to work very well, I wish him success in his career"
+    },
+    {
+      "name": "Carl Bierer",
+      "reference": "I have worked with Housam on a number of projects. He is very professional with an attention to detail. He has good knowledge of Operations and has a very commercial approach."
+    }
+  ]
+}

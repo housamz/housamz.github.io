@@ -11,9 +11,10 @@ tagline: Putting the fun in function
 description: This is my blog where I write tips about programming and UX, and list my projects and tools.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://hmz.ie/img/logo.svg
+avatar: images/logo.svg
 
 keywords: research, software engineer, designer, web developer, UI, UX, user experience, user interface, natural language processing, data analytics, developer, programming, coding, design, seo, search engine optimisation
+skills: Full-stack Engineer, Graphic Designer, UX Developer, Researcher, SEO Expert, Linguist, Entrepreneur, Traveler, Tech Geek
 
 #
 # Flags below are optional
@@ -22,7 +23,7 @@ keywords: research, software engineer, designer, web developer, UI, UX, user exp
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: 
+  email:
   facebook:
   flickr:
   github: housamz
@@ -33,7 +34,7 @@ footer-links:
   twitter: housamz
   stackoverflow: users/329847/housamz
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: 
+  googleplus:
   googlescholar: 48PxDb0AAAAJ
   codepen: housamz
   behance: housamz

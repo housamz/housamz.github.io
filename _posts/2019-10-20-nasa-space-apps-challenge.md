@@ -2,7 +2,7 @@
 layout: post
 title: Winning NASA Space Apps 2019 Challenge
 category: Awards
-tags: [data_science, nlp, apps, nasa, space]
+tags: [Data Science, Natural Language Processing, apps, Nasa, space]
 ---
 ![Lemonaid]({{site.images_url}}2019/11/Screenshot_Lemon-Aid.width-800.png)  
 

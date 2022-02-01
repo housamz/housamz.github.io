@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$game-green: #0F0;
+$game-blue: #00F;
+$game-red: #F00;
+$size: 0.25; // 0.25
+$size2: $size * 2; // 0.5
+$size3: $size * 3; // 0.75
+$size4: $size * 4; // 1
+$size5: $size * 5; // 1.25
+$size_25: $size * 0.25; // 0.0625
+$size_5: $size * 0.5; // 0.125
+$size_75: $size * 0.75; // 0.185
+$size1_25: $size * 1.25; // 0.3125
+$size1_5: $size * 1.5; // 0.375
+$size2_5: $size * 2.5; // 0.625
+$size3_25: $size * 3.25; // 0.8125
+$size3_5: $size * 3.5; // 0.875
+$size3_75: $size * 3.75; // 0.9375
+$size4_25: $size * 4.25; // 1.0625
+
+@function em($val) {
+  @return $val + em;
+}
+
+@function neg($val) {
+  @return em($val * -1);
+}
+
+@function em2px($target) {
+  @return (16 * $target / 2) + px;
+}
+
+.game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+
+  & > * {
+    border: em2px($size) solid $game-green;
+    background-color: $game-green;
+    width: em($size);
+    height: em($size);
+  }
+
+  .score-board {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
+    color: $game-red;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .shooter {
+    background-color: $game-red;
+    border-color: $game-red;
+    box-shadow: 0 0 0 em($size) $game-red,
+      em($size2_5) 0 0 em($size) $game-red,
+      neg($size2_5) 0 0 em($size) $game-red,
+      em($size4) em($size_25) 0 em($size_75) $game-red,
+      neg($size4) em($size_25) 0 em($size_75) $game-red,
+      0 neg($size) 0 em($size) $game-red, 0 neg($size2_5) 0 0 $game-red;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+  }
+
+  .shot {
+    height: em($size2_5);
+    background-color: $game-red;
+    position: absolute;
+    border: none;
+  }
+
+  .monster {
+    animation: 1s step-end infinite;
+    position: absolute;
+  }
+
+  .monster.monster-1 {
+    box-shadow:
+      0 0 0 em($size) $game-green,
+      0 em($size) 0 em($size) $game-green,
+      neg($size2_5) em($size1_5) 0 em($size_5) $game-green,
+      em($size2_5) em($size1_5) 0 em($size_5) $game-green,
+      neg($size3) neg($size3) 0 0 $game-green,
+      em($size3) neg($size3) 0 0 $game-green,
+      neg($size2) neg($size2) 0 0 $game-green,
+      em($size2) neg($size2) 0 0 $game-green,
+      neg($size3) neg($size) 0 0 $game-green,
+      neg($size2) neg($size) 0 0 $game-green,
+      em($size2) neg($size) 0 0 $game-green,
+      em($size3) neg($size) 0 0 $game-green,
+      neg($size4) 0 0 0 $game-green,
+      neg($size3) 0 0 0 $game-green,
+      em($size3) 0 0 0 $game-green,
+      em($size4) 0 0 0 $game-green,
+      neg($size4) em($size) 0 0 $game-green,
+      em($size4) em($size) 0 0 $game-green,
+      neg($size3) em($size3) 0 0 $game-green,
+      em($size3) em($size3) 0 0 $game-green,
+      /* Left Arm */
+      em($size5) em($size) 0 0 $game-green,
+      em($size5) em($size2) 0 0 $game-green,
+      em($size5) em($size3) 0 0 $game-green,
+      /* Right Arm */
+      neg($size5) em($size) 0 0 $game-green,
+      neg($size5) em($size2) 0 0 $game-green,
+      neg($size5) em($size3) 0 0 $game-green,
+      /* Left Foot */
+      neg($size) em($size4) 0 0 $game-green,
+      neg($size2) em($size4) 0 0 $game-green,
+      /* Right Foot */
+      em($size) em($size4) 0 0 $game-green,
+      em($size2) em($size4) 0 0 $game-green;
+    animation-name: monster-1;
+  }
+
+  .monster.monster-2 {
+    box-shadow:
+      neg($size_5) neg($size2) 0 em($size) $game-green,
+      em($size_5) neg($size2) 0 em($size) $game-green,
+      neg($size3) neg($size1_5) 0 em($size_5) $game-green,
+      neg($size3_5) neg($size1_5) 0 em($size_5) $game-green,
+      em($size3) neg($size1_5) 0 em($size_5) $game-green,
+      em($size3_5) neg($size1_5) 0 em($size_5) $game-green,
+      neg($size4) 0 0 em($size) $game-green,
+      em($size4) 0 0 em($size) $game-green,
+      neg($size2) em($size) 0 0 $game-green,
+      neg($size) em($size) 0 0 $game-green,
+      0 em($size) 0 0 $game-green,
+      em($size) em($size) 0 0 $game-green,
+      em($size2) em($size) 0 0 $game-green,
+      /* Crotch */
+      em($size1_25) em($size2) 0 0 $game-green,
+      em($size2) em($size2) 0 0 $game-green,
+      em($size2) em($size2) 0 0 $game-green,
+      neg($size1_25) em($size2) 0 0 $game-green,
+      neg($size2) em($size2) 0 0 $game-green,
+      neg($size2) em($size2) 0 0 $game-green,
+      em($size_25) em($size3) 0 0 $game-green,
+      neg($size_25) em($size3) 0 0 $game-green,
+      /* Right Leg */
+      neg($size_25) em($size3) 0 0 $game-green,
+      neg($size3_25) em($size3) 0 0 $game-green,
+      neg($size4_25) em($size4) 0 0 $game-green,
+      neg($size5) em($size4) 0 0 $game-green,
+      /* Left Leg */
+      em($size_25) em($size3) 0 0 $game-green,
+      em($size3_25) em($size3) 0 0 $game-green,
+      em($size4_25) em($size4) 0 0 $game-green,
+      em($size5) em($size4) 0 0 $game-green;
+    animation-name: monster-2;
+  }
+
+  .monster.monster-3 {
+    box-shadow:
+      0 neg($size2_5) 0 em($size_5) $game-green,
+      neg($size) neg($size1_5) 0 em($size_5) $game-green,
+      em($size) neg($size1_5) 0 em($size_5) $game-green,
+      em($size2_5) neg($size) 0 0 $game-green,
+      neg($size2_5) neg($size) 0 0 $game-green,
+      0 em($size_5) 0 em($size_5) $game-green,
+      neg($size3) em($size_5) 0 em($size_5) $game-green,
+      em($size3) em($size_5) 0 em($size_5) $game-green,
+      em($size1_5) em($size) 0 0 $game-green,
+      neg($size1_5) em($size) 0 0 $game-green,
+      /* Crotch */
+      em($size_5) em($size2) 0 0 $game-green,
+      neg($size_5) em($size2) 0 0 $game-green,
+      /* Right Leg */
+      neg($size2_5) em($size2) 0 0 $game-green,
+      neg($size3_5) em($size3) 0 0 $game-green,
+      neg($size2_5) em($size4) 0 0 $game-green,
+      neg($size2_5) em($size4) 0 0 $game-green,
+      /* Left Leg */
+      em($size2_5) em($size2) 0 0 $game-green,
+      em($size3_5) em($size3) 0 0 $game-green,
+      em($size2_5) em($size4) 0 0 $game-green,
+      em($size2_5) em($size4) 0 0 $game-green;
+    animation-name: monster-3;
+  }
+
+  @keyframes monster-1 {
+    50% {
+      box-shadow:
+        0 0 0 em($size) $game-green,
+        0 em($size) 0 em($size) $game-green,
+        neg($size2_5) em($size1_5) 0 em($size_5) $game-green,
+        em($size2_5) em($size1_5) 0 em($size_5) $game-green,
+        neg($size3) neg($size3) 0 0 $game-green,
+        em($size3) neg($size3) 0 0 $game-green,
+        neg($size2) neg($size2) 0 0 $game-green,
+        em($size2) neg($size2) 0 0 $game-green,
+        neg($size3) neg($size) 0 0 $game-green,
+        neg($size2) neg($size) 0 0 $game-green,
+        em($size2) neg($size) 0 0 $game-green,
+        em($size3) neg($size) 0 0 $game-green,
+        neg($size4) 0 0 0 $game-green,
+        neg($size3) 0 0 0 $game-green,
+        em($size3) 0 0 0 $game-green,
+        em($size4) 0 0 0 $game-green,
+        neg($size4) em($size) 0 0 $game-green,
+        em($size4) em($size) 0 0 $game-green,
+        neg($size3) em($size3) 0 0 $game-green,
+        em($size3) em($size3) 0 0 $game-green,
+        /* Left Arm */
+        em($size5) 0 0 0 $game-green,
+        em($size5) neg($size) 0 0 $game-green,
+        em($size5) neg($size2) 0 0 $game-green,
+        /* Right Arm */
+        neg($size5) 0 0 0 $game-green,
+        neg($size5) neg($size) 0 0 $game-green,
+        neg($size5) neg($size2) 0 0 $game-green,
+        /* Left Foot */
+        neg($size4) em($size4) 0 0 $game-green,
+        neg($size4) em($size4) 0 0 $game-green,
+        /* Right Foot */
+        em($size4) em($size4) 0 0 $game-green,
+        em($size4) em($size4) 0 0 $game-green;
+    }
+  }
+
+  @keyframes monster-2 {
+    50% {
+      box-shadow:
+        neg($size_5) neg($size2) 0 em($size) $game-green,
+        em($size_5) neg($size2) 0 em($size) $game-green,
+        neg($size3) neg($size1_5) 0 em($size_5) $game-green,
+        neg($size3_5) neg($size1_5) 0 em($size_5) $game-green,
+        em($size3) neg($size1_5) 0 em($size_5) $game-green,
+        em($size3_5) neg($size1_5) 0 em($size_5) $game-green,
+        neg($size4) 0 0 em($size) $game-green,
+        em($size4) 0 0 em($size) $game-green,
+        neg($size2) em($size) 0 0 $game-green,
+        neg($size) em($size) 0 0 $game-green,
+        0 em($size) 0 0 $game-green,
+        em($size) em($size) 0 0 $game-green,
+        em($size2) em($size) 0 0 $game-green,
+        /* Crotch */
+        em($size1_25) em($size2) 0 0 $game-green,
+        em($size2) em($size2) 0 0 $game-green,
+        em($size2_5) em($size2) 0 0 $game-green,
+        neg($size1_25) em($size2) 0 0 $game-green,
+        neg($size2) em($size2) 0 0 $game-green,
+        neg($size2_5) em($size2) 0 0 $game-green,
+        em($size_25) em($size3) 0 0 $game-green,
+        neg($size_25) em($size3) 0 0 $game-green,
+        /* Right Leg */
+        neg($size3) em($size3) 0 0 $game-green,
+        neg($size3_75) em($size3) 0 0 $game-green,
+        neg($size3) em($size4) 0 0 $game-green,
+        neg($size2) em($size4) 0 0 $game-green,
+        /* Left Leg */
+        em($size3) em($size3) 0 0 $game-green,
+        em($size3_75) em($size3) 0 0 $game-green,
+        em($size3) em($size4) 0 0 $game-green,
+        em($size2) em($size4) 0 0 $game-green;
+    }
+  }
+
+  @keyframes monster-3 {
+    50% {
+      box-shadow:
+        0 neg($size2_5) 0 em($size_5) $game-green,
+        neg($size) neg($size1_5) 0 em($size_5) $game-green,
+        em($size) neg($size1_5) 0 em($size_5) $game-green,
+        em($size2_5) neg($size) 0 0 $game-green,
+        neg($size2_5) neg($size) 0 0 $game-green,
+        0 em($size_5) 0 em($size_5) $game-green,
+        neg($size3) em($size_5) 0 em($size_5) $game-green,
+        em($size3) em($size_5) 0 em($size_5) $game-green,
+        em($size1_5) em($size) 0 0 $game-green,
+        neg($size1_5) em($size) 0 0 $game-green,
+        /* Crotch */
+        em($size_5) em($size2) 0 0 $game-green,
+        neg($size_5) em($size2) 0 0 $game-green,
+        /* Right Leg */
+        neg($size1_5) em($size2) 0 0 $game-green,
+        neg($size2_5) em($size3) 0 0 $game-green,
+        neg($size3_5) em($size4) 0 0 $game-green,
+        neg($size1_5) em($size4) 0 0 $game-green,
+        /* Left Leg */
+        em($size1_5) em($size2) 0 0 $game-green,
+        em($size2_5) em($size3) 0 0 $game-green,
+        em($size3_5) em($size4) 0 0 $game-green,
+        em($size1_5) em($size4) 0 0 $game-green;
+    }
+  }
+}

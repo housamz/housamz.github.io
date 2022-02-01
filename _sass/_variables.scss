@@ -2,17 +2,44 @@
 // VARIABLES
 //
 
-// Colors
-$Blue:#39A9D8;
-$DarkBlue:#007ec0;
-$Green:#00ccaf;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Major+Mono+Display&display=swap');
 
-// Grays
-$darkerGray: #222;
-$darkGray: #373737;
-$gray: #666;
-$lightGray: #eee;
+:root {
+  --primary: #121212; //#2B233B
+  --secondary: #f7f7f7;
+  --blue: #0f4e8d;
+}
+
+/* Dark mode 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #ccc;
+    --secondary: #121212;
+    --blue: #4890c3;
+  }
+}
+
+@media (prefers-dark-interface) {
+  :root {
+    --primary: #ccc;
+    --secondary: #121212;
+    --blue: #4890c3;
+  }
+}
+*/
+
+
+// Colors
+$primary-color: var(--primary);
+$secondary-color: var(--secondary);
+$dark-color: #121212;
+$light-color: #f7f7f7;
+$red: #ab0044;//#a96d85;
+$blue: var(--blue);
+$light-blue: #4890c3;
+$light-red: #d5c4d3;
 
 // Font stacks
-$sans: 'Raleway', 'Arial', sans-serif !important;
-$curs: 'Prata', "Times New Roman", serif !important;
+$sans: 'Inconsolata', monospace;
+$titles-font: 'Major Mono Display', monospace;
+
