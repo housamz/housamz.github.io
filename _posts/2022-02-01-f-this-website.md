@@ -4,7 +4,7 @@ title: F This Website
 category: Development
 tags: [game, development, JavaScript]
 ---
-![f-this-website]({{site.images_url}}2022/02/f-this-website.png)  
+![f-this-website]({{site.images_url}}2022/02/f-this-website.gif)  
 
 An ~4KB game for your website.
 These space invaders are coming to F your website.
