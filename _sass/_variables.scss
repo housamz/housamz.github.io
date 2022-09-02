@@ -10,7 +10,7 @@
   --blue: #0f4e8d;
 }
 
-/* Dark mode 
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #ccc;
@@ -26,8 +26,6 @@
     --blue: #4890c3;
   }
 }
-*/
-
 
 // Colors
 $primary-color: var(--primary);
