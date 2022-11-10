@@ -5,6 +5,7 @@ category: Development
 tags: [development, php, macOS, apache]
 ---
 If you got a new Mac with the latest OS, and you need to develop some PHP projects, you may be surprised that it doesn't work out-of-the-box any more.  
+This guide post will help you setup PHP and get it to run on Apche inside your Mac machine.  
 PHP is NOT included in Monterey. Apple even included a note about it in `/etc/apache2/httpd.conf` saying:
 ```
 #PHP was deprecated in macOS 11 and removed from macOS 12
