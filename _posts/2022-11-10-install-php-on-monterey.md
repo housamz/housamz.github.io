@@ -14,10 +14,9 @@ PHP is NOT included in Monterey. Apple even included a note about it in `/etc/ap
 ```
 
 To Install PHP and get Apache to run on macOS 12, follow these steps:
-1. Start by installing Homebrew if you don't have it already
+- Start by installing Homebrew if you don't have it already
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-2. Install PHP by using
-`brew install php`  
+- Install PHP by using `brew install php`  
 After brew finishes installing, it shows the following message:  
 
 ```
@@ -34,14 +33,14 @@ Finally, check DirectoryIndex includes index.php
 The php.ini and php-fpm.ini file can be found in:
   /opt/homebrew/etc/php/8.1/
 ```
-4. Using Homebrew, install the following libraries:
+- Using Homebrew, install the following libraries:
 ```
 brew install openssl
 brew install httpd
 ```
-5. Edit httpd.conf, you can find it on: `/opt/homebrew/etc/httpd/httpd.conf`
-6. If you are using nano, scroll to the end by pressing CTRL + W and then CTRL + V and add the above lines.
-7. Add the following to the conf file
+- Edit httpd.conf, you can find it on: `/opt/homebrew/etc/httpd/httpd.conf`
+- If you are using nano, scroll to the end by pressing CTRL + W and then CTRL + V and add the above lines.
+- Add the following to the conf file
 
 ```
 LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
@@ -50,7 +49,7 @@ LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
   SetHandler application/x-httpd-php
 </FilesMatch>
 ```
-8. Search, by using CTRL + W for the following and change them:  
+- Search, by using CTRL + W for the following and change them:  
 `Listen 8080` change it to be 80 so you don't need to specify port every time.  
 ```
 DocumentRoot "/Users/your_user/Sites"
@@ -59,14 +58,14 @@ DocumentRoot "/Users/your_user/Sites"
 
 change `"/Users/your_user/Sites"` to the directory that want to use as your document root.  
 
-9. Restart PHP and Apache
+- Restart PHP and Apache
 ```
 brew services restart php
 sudo apachectl restart
 ```
-10. Start httpd
+- Start httpd
 ```
 brew services start httpd
 ```
-11. Put an HTML or PHP file in your document root.
-12. In your wbe browser, visit `http://localhost` and check if you get the code running.
+- Put an HTML or PHP file in your document root.
+- In your wbe browser, visit `http://localhost` and check if you get the code running.
