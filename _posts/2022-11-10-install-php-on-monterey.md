@@ -9,6 +9,7 @@ This mean that you need to install and enable it manually.
 This guide post will help you setup PHP and get it to run on Apache inside your Mac machine.  
 
 PHP is NOT included in Monterey. Apple even included a note about it in `/etc/apache2/httpd.conf` saying:
+
 ```
 #PHP was deprecated in macOS 11 and removed from macOS 12
 ```
@@ -34,6 +35,7 @@ The php.ini and php-fpm.ini file can be found in:
   /opt/homebrew/etc/php/8.1/
 ```
 - Using Homebrew, install the following libraries:
+
 ```
 brew install openssl
 brew install httpd
@@ -50,6 +52,7 @@ LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
 ```
 - Search, by using CTRL + W for the following and change them:  
 `Listen 8080` change it to be 80 so you don't need to specify port every time.  
+
 ```
 DocumentRoot "/Users/your_user/Sites"
 <Directory "/Users/your_user/Sites">
@@ -58,11 +61,13 @@ DocumentRoot "/Users/your_user/Sites"
 change `"/Users/your_user/Sites"` to the directory that want to use as your document root.  
 
 - Restart PHP and Apache
+
 ```
 brew services restart php
 sudo apachectl restart
 ```
 - Start httpd
+
 ```
 brew services start httpd
 ```
