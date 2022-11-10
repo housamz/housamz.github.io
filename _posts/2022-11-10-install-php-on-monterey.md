@@ -16,6 +16,7 @@ To Install PHP and get Apache to run on macOS 12, follow these steps:
 2. Install PHP by using
 `brew install php`  
 After brew finishes installing, it shows the following message:  
+
 ```
 To enable PHP in Apache add the following to httpd.conf and restart Apache:
   LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
