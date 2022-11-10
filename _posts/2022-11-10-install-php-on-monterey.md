@@ -4,6 +4,7 @@ title: Install PHP on macOS 12.0 Monterey
 category: Development
 tags: [development, php, macOS, apache]
 ---
+If you got a new Mac with the latest OS, and you need to develop some PHP projects, you may be surprised that it doesn't work out-of-the-box any more.  
 PHP is NOT included in Monterey. Apple even included a note about it in `/etc/apache2/httpd.conf` saying:
 ```
 #PHP was deprecated in macOS 11 and removed from macOS 12
@@ -43,5 +44,5 @@ sudo apachectl restart
 ```
 brew services start httpd
 ```
-7. Put an HTMLor PHP file in `/Library/WebServer/Documents/`
+7. Put an HTML or PHP file in `/Library/WebServer/Documents/`
 8. In your wbe browser, visit `http://localhost` and check if you get the code running.
