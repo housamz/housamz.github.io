@@ -39,8 +39,7 @@ brew install openssl
 brew install httpd
 ```
 - Edit httpd.conf, you can find it on: `/opt/homebrew/etc/httpd/httpd.conf`
-- If you are using nano, scroll to the end by pressing CTRL + W and then CTRL + V and add the above lines.
-- Add the following to the conf file
+- If you are using nano, scroll to the end by pressing CTRL + W and then CTRL + V and add the following to the conf file
 
 ```
 LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
