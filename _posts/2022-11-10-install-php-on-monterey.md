@@ -17,20 +17,20 @@ To Install PHP and get Apache to run on macOS 12, follow these steps:
 `brew install php`  
 After brew finishes installing, it shows the following message:  
 ```
-a. To enable PHP in Apache add the following to httpd.conf and restart Apache:
+To enable PHP in Apache add the following to httpd.conf and restart Apache:
   LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so
 
   <FilesMatch \.php$>
     SetHandler application/x-httpd-php
   </FilesMatch>
 
-b. Finally, check DirectoryIndex includes index.php
+Finally, check DirectoryIndex includes index.php
   DirectoryIndex index.php index.html
 
 The php.ini and php-fpm.ini file can be found in:
   /opt/homebrew/etc/php/8.1/
 ```
-3. Follow the two steps by editing httpd.conf, you can find it on: `/etc/apache2/httpd.conf`
+3. Follow the two steps by editing httpd.conf, you can find it on: `/opt/homebrew/etc/httpd/httpd.conf`
 4. Using Homebrew, install the following libraries:
 ```
 brew install openssl
