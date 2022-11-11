@@ -154,6 +154,11 @@ article.post {
       color: $blue;
     }
   }
+  
+  .post-excerpt p {
+    height: 200px;
+    overflow: hidden;
+  }
 }
 
 #back-top {
