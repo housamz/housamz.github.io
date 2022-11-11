@@ -101,11 +101,11 @@ article.post {
 }
 
 .basic-grid {
-  // display: grid;
-  // gap: 2rem;
-  // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  column-count: 3;
-  gap: 2rem;
+    // column-count: 3;
+    align-items: start;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
 
   .post {
     break-inside: avoid;
