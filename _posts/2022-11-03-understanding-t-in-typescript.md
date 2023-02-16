@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Does <T> Mean in TypeScript?
+title: What Does \<T\> Mean in TypeScript?
 category: Development
 tags: [development, TypeScript]
 ---
