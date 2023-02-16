@@ -45,7 +45,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #7cc8ff;
+  color: var(--blue-title);
   font-family: $titles-font;
   margin-bottom: 0;
   text-transform: lowercase;
