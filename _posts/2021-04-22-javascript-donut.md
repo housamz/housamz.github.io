@@ -15,3 +15,6 @@ I decided to try that in JavaScript and here's the result
   See the Pen <a href='https://codepen.io/housamz/pen/zYNmppq'>JavaScript Donut - ASCII Art</a> by Housamz
   (<a href='https://codepen.io/housamz'>@housamz</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+
+Updtae [2022-04-07]: Featured on [Specky Boy](https://speckyboy.com/css-javascript-ascii-artwork-snippets/)
