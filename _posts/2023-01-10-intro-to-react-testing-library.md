@@ -189,14 +189,16 @@ test("displays data when loaded", () => {
   expect(item2).toBeInTheDocument();
 });
 ```
+
 In this test, we use the `jest.mock` function to mock the `useData` hook and return some sample data. We then use the `render` function to render the `MyComponent` component, and we use the `screen` object to find the elements that should contain the data. Finally, we use the `toBeInTheDocument` function to assert that the elements are present in the document.
 
 ### Testing a Component that Uses React Router
+
 Let's say we have a React component that uses React Router to display different content based on the URL. We want to test that the component renders the correct content for each URL. Here is the code for the component:
 
 ```javascript
-import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import React from "react";
+import { Switch, Route, Link } from "react-router-dom";
 
 function MyRouter() {
   return (
@@ -229,27 +231,27 @@ export default MyRouter;
 To test this component using React Testing Library, we can create a test file and write the following test:
 
 ```javascript
-import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
-import MyRouter from './MyRouter';
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import MyRouter from "./MyRouter";
 
-test('renders home content for the home URL', () => {
+test("renders home content for the home URL", () => {
   render(
-    <MemoryRouter initialEntries={['/']}>
+    <MemoryRouter initialEntries={["/"]}>
       <MyRouter />
     </MemoryRouter>
   );
-  const homeContent = screen.getByText('Home content');
+  const homeContent = screen.getByText("Home content");
   expect(homeContent).toBeInTheDocument();
 });
 
-test('renders about content for the about URL', () => {
+test("renders about content for the about URL", () => {
   render(
-    <MemoryRouter initialEntries={['/about']}>
+    <MemoryRouter initialEntries={["/about"]}>
       <MyRouter />
     </MemoryRouter>
   );
-  const aboutContent = screen.getByText('About content');
+  const aboutContent = screen.getByText("About content");
   expect(aboutContent).toBeInTheDocument();
 });
 ```
@@ -257,4 +259,5 @@ test('renders about content for the about URL', () => {
 In these tests, we use the `MemoryRouter` component from React Router to simulate different URLs. We use the `initialEntries` prop to set the initial URL to either "/" or "/about". We then use the `render` function to render the `MyRouter` component inside the `MemoryRouter`. Finally, we use the `screen` object to find the elements that should contain the content for each URL, and we use the `toBeInTheDocument` function to assert that the elements are present in the document.
 
 ## Conclusion
+
 React Testing Library is a powerful tool that can help us test React applications more efficiently. By focusing on the user's perspective, we can write tests that are more resilient to changes in the implementation details of our application. We can use the library to test various aspects of our application, including user interactions, state changes, and component rendering. With the examples above, you can get started with React Testing Library and start writing efficient tests for your React applications.
