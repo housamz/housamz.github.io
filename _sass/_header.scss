@@ -91,6 +91,10 @@
               transition: opacity 0.4s ease 0.4s;
             }
           }
+          
+          h3 {
+            color: $primary-color;
+          }
         }
 
         &:hover + .hamburger > div {
