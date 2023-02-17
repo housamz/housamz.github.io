@@ -74,20 +74,26 @@ $greenish: #468966;
   color: $light-color;
   overflow: hidden;
   position: relative;
-  padding: 2rem 0 1rem;
+  padding: 0 0 1rem;
 
   #years {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
     section {
       border-left: 1px dashed #333;
       color: #777;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      padding: 0.5rem 0 0 0.6rem;
+      padding: 1rem 0 0 0;
+      text-align: center;
+      width: 100%;
     }
   }
 
   #events {
+    padding-top: 3rem;
     position: relative;
   }
 
