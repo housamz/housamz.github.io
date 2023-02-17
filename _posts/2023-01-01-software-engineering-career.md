@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Engineering Career Paths [Regulary Updated]
-category: Development
+category: Software Engineering
 tags: [development, software-engineering, career]
 ---
 
