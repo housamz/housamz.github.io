@@ -14,7 +14,7 @@ description: This is my blog where I write tips about programming and UX, and li
 avatar: images/logo.svg
 
 keywords: research, software engineer, designer, web developer, UI, UX, user experience, user interface, natural language processing, data analytics, developer, programming, coding, design, seo, search engine optimisation
-skills: Full-stack Engineer, Graphic Designer, UX Developer, Researcher, SEO Expert, Linguist, Entrepreneur, Traveler, Tech Geek
+skills: Full-stack Engineer, Graphic Designer, UX Developer, Researcher, Linguist, Tech Geek
 
 #
 # Flags below are optional
@@ -22,19 +22,9 @@ skills: Full-stack Engineer, Graphic Designer, UX Developer, Researcher, SEO Exp
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
   github: housamz
-  instagram: housamz
   linkedin: housamz
-  pinterest:
   rss: housamz
-  twitter: housamz
-  stackoverflow: users/329847/housamz
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus:
   googlescholar: 48PxDb0AAAAJ
   codepen: housamz
   behance: housamz
@@ -42,7 +32,7 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: housamz
+# disqus: housamz
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-1386199-11

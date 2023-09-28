@@ -24,9 +24,9 @@
 #publications {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 .paper {
-  min-height: 10rem;
   background-color: white;
   background-image: repeating-linear-gradient(
     transparent 0,
@@ -34,9 +34,15 @@
     skyblue 0,
     skyblue 1.1em
   );
+  color: $dark-color;
   position: relative;
-  width: 20%;
-  padding: 0 0 1rem 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  min-width: 20%;
+  max-width: 45%;
+
+  a, a h4 {
+    color: $blue;
+  }
 
   & a:after {
     content: "";
@@ -61,7 +67,7 @@ $greenish: #468966;
   display: flex;
   justify-content: space-evenly;
   div {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     color: white;
     margin-bottom: 1rem;
   }
@@ -82,7 +88,7 @@ $greenish: #468966;
     position: absolute;
     width: 100%;
     height: 100%;
-    
+
     section {
       border-left: 1px dashed #333;
       color: #777;

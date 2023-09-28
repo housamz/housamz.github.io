@@ -1,7 +1,7 @@
 #site-header {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 4rem;
+  padding: 3rem 0 1rem;
 
   #site-brand {
     align-items: center;
@@ -91,7 +91,7 @@
               transition: opacity 0.4s ease 0.4s;
             }
           }
-          
+
           h3 {
             color: $secondary-color;
           }

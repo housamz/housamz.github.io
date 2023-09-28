@@ -5,7 +5,7 @@
   color: $primary-color;
   cursor: pointer;
   position: relative;
-  padding: .5rem 1.8rem;
+  padding: 0.5rem 1.8rem;
 
   &:hover {
     box-shadow: none;
@@ -22,7 +22,13 @@
     right: -9px;
     width: 100%;
     height: 100%;
-    background: repeating-linear-gradient(45deg, $primary-color, $primary-color .4rem, transparent .4rem, transparent .8rem);
+    background: repeating-linear-gradient(
+      45deg,
+      $primary-color,
+      $primary-color 0.4rem,
+      transparent 0.4rem,
+      transparent 0.8rem
+    );
   }
 
   &:after {

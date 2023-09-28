@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Major+Mono+Display&display=swap');
 
 :root {
-  --primary: #121212; //#2B233B
+  --primary: #121212;
   --secondary: #f7f7f7;
   --blue: #0f4e8d;
   --blue-title: #0f4e8d;
@@ -14,7 +14,7 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #ccc;
+    --primary: #f7f7f7;
     --secondary: #121212;
     --blue: #4890c3;
     --blue-title: #7cc8ff;
@@ -23,21 +23,22 @@
 
 @media (prefers-dark-interface) {
   :root {
-    --primary: #ccc;
+    --primary: #f7f7f7;
     --secondary: #121212;
     --blue: #4890c3;
   }
 }
 
 // Colors
-$primary-color: var(--primary);
-$secondary-color: var(--secondary);
-$dark-color: #121212;
-$light-color: #f7f7f7;
-$red: #ab0044;//#a96d85;
 $blue: var(--blue);
+$blue-title: var(--blue-title);
+$dark-color: #121212;
 $light-blue: #4890c3;
+$light-color: #f7f7f7;
 $light-red: #d5c4d3;
+$primary-color: var(--primary);
+$red: #ab0044;
+$secondary-color: var(--secondary);
 
 // Font stacks
 $sans: 'Inconsolata', monospace;
