@@ -22,7 +22,7 @@
   },
   "work": [
     {
-      "name": "Oracle",
+      "company": "Oracle",
       "position": "Principal Software Engineer",
       "startDate": "2019-08-31",
       "endDate": "Now",
@@ -32,7 +32,7 @@
       "location": "Dublin, County Dublin, Ireland"
     },
     {
-      "name": "Pulse College",
+      "company": "Pulse College",
       "position": "Associate Lecturer in UI Design",
       "startDate": "2023-09-30",
       "endDate": "Now",
@@ -42,7 +42,7 @@
       "location": "Dublin, County Dublin, Ireland"
     },
     {
-      "name": "University of Galway",
+      "company": "University of Galway",
       "position": "IT Online Lecturer",
       "startDate": "2019-08-31",
       "endDate": "Now",
@@ -52,7 +52,7 @@
       "location": "Galway, County Galway, Ireland"
     },
     {
-      "name": "National University of Ireland, Galway",
+      "company": "National University of Ireland, Galway",
       "position": "Senior Software Engineer",
       "startDate": "2014-10-31",
       "endDate": "2019-07-31",
@@ -62,7 +62,7 @@
       "location": "Galway, County Galway, Ireland"
     },
     {
-      "name": "emind Creative Solutions",
+      "company": "emind Creative Solutions",
       "position": "Full-stack Engineer / Founder",
       "startDate": "2008-01-31",
       "endDate": "2014-10-31",
@@ -72,7 +72,7 @@
       "location": "Dubai, United Arab Emirates"
     },
     {
-      "name": "Syria Nobles",
+      "company": "Syria Nobles",
       "position": "Development Team Lead",
       "startDate": "2006-01-31",
       "endDate": "2009-02-28",
@@ -82,7 +82,7 @@
       "location": "Damascus, Syria"
     },
     {
-      "name": "Syria Nobles",
+      "company": "Syria Nobles",
       "position": "Web Developer",
       "startDate": "2004-01-31",
       "endDate": "2006-01-31",
@@ -91,7 +91,7 @@
       "location": "Damascus, Syria"
     },
     {
-      "name": "New Horizons Computer Learning Centers",
+      "company": "New Horizons Computer Learning Centers",
       "position": "Web Design Instructor",
       "startDate": "2003-04-30",
       "endDate": "2005-12-31",
@@ -101,7 +101,7 @@
       "location": "Damascus, Syria"
     },
     {
-      "name": "Trust Lines",
+      "company": "Trust Lines",
       "position": "Senior Web Designer",
       "startDate": "2001-01-31",
       "endDate": "2003-12-31",
@@ -110,7 +110,7 @@
       "location": "Damascus, Syria"
     },
     {
-      "name": "Trust Lines",
+      "company": "Trust Lines",
       "position": "Web Designer",
       "startDate": "1998-06-30",
       "endDate": "2001-01-31",
