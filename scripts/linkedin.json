@@ -29,7 +29,8 @@
       "highlights": [],
       "summary": "Working with the Private Cloud Appliance (PCA) team to build the user interface to control the machine, including high-accessibility availability for the system.",
       "url": "https://www.linkedin.com/company/oracle/",
-      "location": "Dublin, County Dublin, Ireland"
+      "location": "Dublin",
+      "type": "Full Time"
     },
     {
       "company": "Pulse College",
@@ -39,7 +40,8 @@
       "highlights": [],
       "summary": "- Guided and mentored aspiring UI designers to excel in the dynamic field of user interface design.\n- Equipped students with a comprehensive understanding of theory and practice to develop innovative and user-centric solutions.\n- Delivered an immersive curriculum covering the psychology of UI Design, Functional UI Design, Positive User Experience (UX), World vs. Screen Space, and Interactive User Interfaces.",
       "url": "https://www.linkedin.com/school/pulse-college/",
-      "location": "Dublin, County Dublin, Ireland"
+      "location": "Dublin",
+      "type": "Part Time"
     },
     {
       "company": "University of Galway",
@@ -49,17 +51,19 @@
       "highlights": [],
       "summary": "- Instructed and guided students enrolled in the MSc and Diploma programs for Software Engineering & Database Technologies.\n- Served as a valuable member of the IT Online Programme team at NUI Galway.\n- Delivered courses on various subjects, including Software Engineering, Object-oriented Programming (Java), Fundamentals of Database, Artificial Intelligence, and Thesis Fundamentals.",
       "url": "https://www.linkedin.com/school/universityofgalway/",
-      "location": "Galway, County Galway, Ireland"
+      "location": "Galway",
+      "type": "Part Time"
     },
     {
-      "company": "National University of Ireland, Galway",
+      "company": "University of Galway",
       "position": "Senior Software Engineer",
       "startDate": "2014-10-31",
       "endDate": "2019-07-31",
       "highlights": [],
       "summary": "I worked on filling the gap between research and industry by converting research into real-world software, using my mixed business and technical skills.\nMy personal research was to build an NLP platform, Teanga [1], that uses Linked Data to achieve interoperability among NLP services, a new approach to utilising UX in NLP. Teanga was well-received by domain experts and during LREC 2018 in Miyazaki, Japan.\nWhile working at the Insight Centre, I completed a Master’s degree with First-Class Honours in 2017.\n\nLibraries: Angular, AngularJS, SASS, D3, Bootstrap, Python Flask, Jinja, Handlebars.\n\n[1] http://www.teanga.io",
       "url": "https://www.linkedin.com/school/universityofgalway/",
-      "location": "Galway, County Galway, Ireland"
+      "location": "Galway",
+      "type": "Full Time"
     },
     {
       "company": "emind Creative Solutions",
@@ -69,7 +73,8 @@
       "highlights": [],
       "summary": "I founded emind Creative Solutions to fulfil clients' web development and applications needs. My vision was to apply user-oriented design and use modern web technologies, including mobile-first design processes, to help clients achieve more in the era of hand-held devices while simultaneously serving users from laptops and desktop computers.\nFor six years, emind worked with big clients like Nissan, Garmin, Honda, Infiniti, Lipton, Pepsi co, McVities, and others.",
       "url": "https://www.linkedin.com/company/emind-creative-for-web-solutions/",
-      "location": "Dubai, United Arab Emirates"
+      "location": "Dubai",
+      "type": "Full Time"
     },
     {
       "company": "Syria Nobles",
@@ -79,7 +84,8 @@
       "highlights": [],
       "summary": "Leading the development team through the company's project. My tasks included collecting requirements from stockholders and project planning/management.",
       "url": "https://www.linkedin.com/company/syria-nobles/",
-      "location": "Damascus, Syria"
+      "location": "Damascus",
+      "type": "Full Time"
     },
     {
       "company": "Syria Nobles",
@@ -88,7 +94,8 @@
       "endDate": "2006-01-31",
       "highlights": [],
       "url": "https://www.linkedin.com/company/syria-nobles/",
-      "location": "Damascus, Syria"
+      "location": "Damascus",
+      "type": "Full Time"
     },
     {
       "company": "New Horizons Computer Learning Centers",
@@ -98,7 +105,8 @@
       "highlights": [],
       "summary": "Teaching all-level classes of Programming, Adobe Suite, and Microsoft Office.",
       "url": "https://www.linkedin.com/company/new-horizons-computer-learning-centers/",
-      "location": "Damascus, Syria"
+      "location": "Damascus",
+      "type": "Part Time"
     },
     {
       "company": "Trust Lines",
@@ -107,7 +115,8 @@
       "endDate": "2003-12-31",
       "highlights": [],
       "url": "",
-      "location": "Damascus, Syria"
+      "location": "Damascus",
+      "type": "Full Time"
     },
     {
       "company": "Trust Lines",
@@ -116,7 +125,8 @@
       "endDate": "2001-01-31",
       "highlights": [],
       "url": "",
-      "location": "Damascus, Syria"
+      "location": "Damascus",
+      "type": "Full Time"
     }
   ],
   "volunteer": [
@@ -174,7 +184,9 @@
       "startDate": "2015-12-31",
       "endDate": "2017-12-31",
       "score": "1st class honours",
-      "courses": []
+      "courses": [],
+      "location": "Galway",
+      "type": "Part Time"
     },
     {
       "institution": "Damascus University",
@@ -183,7 +195,9 @@
       "startDate": "2004-12-31",
       "endDate": "2008-12-31",
       "score": "",
-      "courses": []
+      "courses": [],
+      "location": "Damascus",
+      "type": "Full Time"
     }
   ],
   "awards": [
