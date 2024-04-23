@@ -5,7 +5,7 @@ category: Music
 tags: [music, react]
 ---
 
-<img src="https://www.hmz.ie/images/media/2024/umm-kulthum.png" alt="Umm Kulthum" width="400" />
+<img src="https://www.hmz.ie/images/media/2024/umm-kulthum.png" alt="Umm Kulthum" width="600" />
 
 <div class="tabs">
   <input type="radio" name="tabs" id="tabone" checked="checked">
