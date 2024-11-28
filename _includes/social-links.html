@@ -1,0 +1,25 @@
+<div class="social-links flex">
+  {% if site.footer-links.behance %}
+  <a href="https://www.behance.com/{{ site.footer-links.behance }}" target="_blank">
+    behance
+  </a>
+  {% endif %} {% if site.footer-links.linkedin %}
+  <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank">
+    linkedin
+  </a>
+  {% endif %} {% if site.footer-links.github %}
+  <a href="https://github.com/{{ site.footer-links.github }}" target="_blank">
+    github
+  </a>
+  {% endif %} {% if site.footer-links.codepen %}
+  <a href="https://codepen.io/{{ site.footer-links.codepen }}" target="_blank">
+    codepen
+  </a>
+  {% endif %} {% if site.footer-links.googlescholar %}
+  <a href="https://scholar.google.com/citations?user={{ site.footer-links.googlescholar }}" target="_blank">
+    googlescholar
+  </a>
+  {% endif %} {% if site.footer-links.rss %}
+  <a href="{{ site.baseurl }}/feed.xml" target="_blank"> rss </a>
+  {% endif %}
+</div>

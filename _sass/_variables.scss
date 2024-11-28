@@ -1,27 +1,46 @@
-
 //
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Major+Mono+Display&display=swap');
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+:root {
+  --primary: #121212;
+  --secondary: #f7f7f7;
+  --blue: #0f4e8d;
+  --blue-title: #0f4e8d;
+}
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #f7f7f7;
+    --secondary: #121212;
+    --blue: #4890c3;
+    --blue-title: #7cc8ff;
   }
 }
+
+@media (prefers-dark-interface) {
+  :root {
+    --primary: #f7f7f7;
+    --secondary: #121212;
+    --blue: #4890c3;
+  }
+}
+
+// Colors
+$blue: var(--blue);
+$blue-title: var(--blue-title);
+$dark-color: #121212;
+$light-blue: #4890c3;
+$light-color: #f7f7f7;
+$light-red: #d5c4d3;
+$primary-color: var(--primary);
+$red: #ab0044;
+$secondary-color: var(--secondary);
+
+// Font stacks
+$sans: 'Inconsolata', monospace;
+$titles-font: 'Major Mono Display', monospace;
+

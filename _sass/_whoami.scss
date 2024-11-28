@@ -1,0 +1,138 @@
+#timeOnEarthSvg {
+  float: right;
+  margin-left: 2rem;
+
+  #earth {
+    transform-origin: center center;
+  }
+
+  text,
+  #earth path {
+    fill: $primary-color;
+    transform-origin: center center;
+  }
+}
+
+.pill {
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+#publications {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.paper {
+  background-color: white;
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    transparent 1em,
+    skyblue 0,
+    skyblue 1.1em
+  );
+  color: $dark-color;
+  position: relative;
+  padding: 1rem 1rem 1rem 3rem;
+  min-width: 20%;
+  max-width: 45%;
+
+  a, a h4 {
+    color: $blue;
+  }
+
+  & a:after {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    height: 100%;
+    width: 0.1rem;
+    border-color: rgba(220, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 0 0.1rem 0 0.1rem;
+  }
+}
+
+$bg-color: #1e1e20;
+$link-color: #dc3522;
+$work-color: #b64926;
+$edu-color: #ffb03b;
+$greenish: #468966;
+
+.chart-key {
+  display: flex;
+  justify-content: space-evenly;
+  div {
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+}
+
+#timeline {
+  background-color: $dark-color;
+  border: 1px solid var(--blue);
+  border-top-width: 10px;
+  color: $light-color;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 1rem;
+
+  #years {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    section {
+      border-left: 1px dashed #333;
+      color: #777;
+      padding: 1rem 0 0 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  #events {
+    padding-top: 3rem;
+    position: relative;
+  }
+
+  .event {
+    padding: 1rem 0 0 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+    & > * {
+      padding: 0 0.4rem;
+    }
+
+    .bar {
+      display: inline-block;
+      background: #333;
+      height: 0.5rem;
+      border-radius: 0.5rem;
+      position: absolute;
+    }
+
+    a {
+      color: cyan;
+    }
+  }
+}
+
+#timeline .event.work .bar,
+.work-bar {
+  background: linear-gradient(to left, #dc3522 0%, #b64926 100%);
+}
+
+#timeline .event.education .bar,
+.education-bar {
+  background: linear-gradient(to left, var(--blue) 0%, #468966 100%);
+}

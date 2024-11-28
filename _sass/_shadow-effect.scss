@@ -1,0 +1,55 @@
+.shadow-effect {
+  border: 4px solid $primary-color;
+  box-shadow: 5px 5px $primary-color;
+  background-color: $secondary-color;
+  color: $primary-color;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 1.8rem;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:before {
+    animation: shadow-effect linear 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    bottom: -9px;
+    right: -9px;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      $primary-color,
+      $primary-color 0.4rem,
+      transparent 0.4rem,
+      transparent 0.8rem
+    );
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: $secondary-color;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+  }
+}
+
+@keyframes shadow-effect {
+  0% {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 10rem;
+  }
+}

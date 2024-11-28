@@ -2,16 +2,28 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<div>
+  <article class="post">
+    <h1>{{ page.title }}</h1>
+    <small>
+      {{ page.date | date: "%B %e, %Y" }} in
+      <a href="{{ site.url }}{{ site.category_page }}#{{ page.category | slugify }}">{{page.category}}</a>
+      | {% assign words = content | number_of_words %} {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180
+        }} mins {% endif %} read | Tagged: {% if page.tags %} {% for tag in page.tags %} <a
+        href="{{ site.url }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+        {% endfor %} {% endif %}
+    </small>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+    <div class="entry">{{ content }}</div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+    <div class="posts-navigation">
+      {% if page.previous.url %}
+      <a href="{{page.previous.url}}">&laquo; Previous</a>
+      {% endif %} {% if page.next.url %}
+      <a href="{{page.next.url}}">Next &raquo;</a>
+      {% endif %}
+    </div>
 
-  {% include disqus.html %}
-</article>
+    {% include social-links.html %} <br />
+  </article>
+</div>
