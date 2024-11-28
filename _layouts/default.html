@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <!--
 	Retro Vibes Theme 1.0.1 by Housam Ziad
@@ -8,12 +5,15 @@
 	Free for personal and commercial use under the MIT license
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include header.html %}
-    <div class="container" id="main">{{ content }}</div>
-    {% include footer.html %}
-  </body>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  {% include header.html %}
+  <div class="container" id="main">{{ content }}</div>
+  {% include footer.html %}
+</body>
+
 </html>

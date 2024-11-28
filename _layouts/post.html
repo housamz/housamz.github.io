@@ -4,22 +4,14 @@ layout: default
 
 <div>
   <article class="post">
-    <h3>{{ page.title }}</h3>
+    <h1>{{ page.title }}</h1>
     <small>
       {{ page.date | date: "%B %e, %Y" }} in
-      <a
-        href="{{ site.url }}{{ site.category_page }}#{{ page.category | slugify }}"
-        >{{page.category}}</a
-      >
-      | {% assign words = content | number_of_words %} {% if words < 360 %} 1
-      min {% else %} {{ words | divided_by:180 }} mins {% endif %} read |
-      Tagged: {% if page.tags %} {% for tag in page.tags %}
-      <a
-        href="{{ site.url }}{{ site.tag_page }}#{{ tag | slugify }}"
-        class="post-tag"
-        >{{ tag }}</a
-      >
-      {% endfor %} {% endif %}
+      <a href="{{ site.url }}{{ site.category_page }}#{{ page.category | slugify }}">{{page.category}}</a>
+      | {% assign words = content | number_of_words %} {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180
+        }} mins {% endif %} read | Tagged: {% if page.tags %} {% for tag in page.tags %} <a
+        href="{{ site.url }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+        {% endfor %} {% endif %}
     </small>
 
     <div class="entry">{{ content }}</div>

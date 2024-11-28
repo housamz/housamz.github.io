@@ -27,7 +27,7 @@ layout: default
   </p>
 </div>
 
-<div class="basic-grid">
+<div class="posts basic-grid">
   {% for post in site.posts %}
   <div class="post shadow-effect">
     <a href="{{ post.url }}" class="post-link">
@@ -35,10 +35,7 @@ layout: default
     </a>
     <p class="post-meta">
       {{ post.date | date: "%B %e, %Y" }} |
-      <a
-        href="{{ site.url }}{{ site.category_page }}#{{ post.category | slugify }}"
-        >{{post.category}}</a
-      >
+      <a href="{{ site.url }}{{ site.category_page }}#{{ post.category | slugify }}">{{post.category}}</a>
     </p>
   </div>
   {% endfor %}
