@@ -247,7 +247,11 @@ footer {
   }
 
   #publications {
-    flex-wrap: wrap;
+    flex-direction: column;
+
+    .paper {
+      max-width: unset;
+    }
   }
 }
 
