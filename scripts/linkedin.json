@@ -22,6 +22,17 @@
   },
   "work": [
     {
+      "company": "UCD Professional Academy",
+      "position": "Lecturer",
+      "startDate": "2024-01-01",
+      "endDate": "Now",
+      "highlights": [],
+      "summary": "Empowering aspiring web developers as a lecturer for the Professional Diploma in Software Development at UCD Professional Academy. This program equips students with in-demand languages like HTML, CSS, JavaScript, Python, and SQL to become full-stack developers. I create a dynamic learning environment, fostering expertise in web development fundamentals and practical application through real-world project development.",
+      "url": "https://www.linkedin.com/company/36160466/",
+      "location": "Dublin",
+      "type": "Part Time"
+    },
+    {
       "company": "Oracle",
       "position": "Principal Software Engineer",
       "startDate": "2019-08-31",
@@ -33,10 +44,21 @@
       "type": "Full Time"
     },
     {
+      "company": "Government of Ireland",
+      "position": "Peace Commissioner",
+      "startDate": "2024-04-01",
+      "endDate": "Now",
+      "highlights": [],
+      "summary": "A Peace Commissioner is an honorary position that carries specific powers and duties, including taking statutory declarations, witnessing signatures on documents required by various authorities, and signing certificates and orders under various Acts. Additionally, according to the Courts of Justice Act 1924, Peace Commissioners have the authority to issue summons and warrants.",
+      "url": "https://www.linkedin.com/company/18551789/",
+      "location": "Dublin",
+      "type": "Part Time"
+    },
+    {
       "company": "Pulse College",
       "position": "Associate Lecturer in UI Design",
-      "startDate": "2023-09-30",
-      "endDate": "Now",
+      "startDate": "2023-04-01",
+      "endDate": "2024-04-30",
       "highlights": [],
       "summary": "- Guided and mentored aspiring UI designers to excel in the dynamic field of user interface design.\n- Equipped students with a comprehensive understanding of theory and practice to develop innovative and user-centric solutions.\n- Delivered an immersive curriculum covering the psychology of UI Design, Functional UI Design, Positive User Experience (UX), World vs. Screen Space, and Interactive User Interfaces.",
       "url": "https://www.linkedin.com/school/pulse-college/",
