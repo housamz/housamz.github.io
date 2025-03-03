@@ -42,6 +42,7 @@
 
   a, a h4 {
     color: $blue;
+    line-height: 1.1;
   }
 
   & a:after {
@@ -57,74 +58,89 @@
   }
 }
 
-$bg-color: #1e1e20;
-$link-color: #dc3522;
-$work-color: #b64926;
-$edu-color: #ffb03b;
-$greenish: #468966;
-
 .chart-key {
   display: flex;
   justify-content: space-evenly;
   div {
-    padding: 0.5rem 1rem;
-    color: white;
+    color: $light-color;
     margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
-#timeline {
+.timeline-container {
   background-color: $dark-color;
   border: 1px solid var(--blue);
   border-top-width: 10px;
   color: $light-color;
-  overflow: hidden;
-  position: relative;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.timeline {
+  margin: auto;
   padding: 0 0 1rem;
+  position: relative;
+}
 
-  #years {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+#years {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
-    section {
-      border-left: 1px dashed #333;
-      color: #777;
-      padding: 1rem 0 0 0;
-      text-align: center;
-      width: 100%;
-    }
-  }
+.year-marker {
+  border-left: 1px dashed #333;
+  color: #aaa;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  width: 100%;
+}
 
-  #events {
-    padding-top: 3rem;
-    position: relative;
-  }
+.event {
+  cursor: pointer;
+  position: absolute;
+  width: 200px;
+}
 
-  .event {
-    padding: 1rem 0 0 0;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
+.event-line {
+  border-radius: 0.5rem;
+  height: 0.5rem;
+  margin: 5px auto;
+}
 
-    & > * {
-      padding: 0 0.4rem;
-    }
+.em {
+  color: #bae8ff;
+  font-weight: bold;
+}
 
-    .bar {
-      display: inline-block;
-      background: #333;
-      height: 0.5rem;
-      border-radius: 0.5rem;
-      position: absolute;
-    }
+.education .event-line {
+  background: linear-gradient(to left, var(--blue) 0%, #468966 100%);
+}
 
-    a {
-      color: cyan;
-    }
-  }
+.work .event-line {
+  background: linear-gradient(to left, #dc3522 0%, #b64926 100%);
+}
+
+.event-text {
+  line-height: 1.1;
+  position: absolute;
+  width: max-content;
+}
+
+.tooltip {
+  background-color: $dark-color;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: $light-color;
+  max-width: 200px;
+  opacity: 0;
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.3s;
 }
 
 #timeline .event.work .bar,

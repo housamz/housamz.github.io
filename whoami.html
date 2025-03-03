@@ -28,38 +28,10 @@ permalink: /whoami/
     <div class="work-bar">Work Experience</div>
     <div class="education-bar">Education</div>
   </div>
-  <div id="timeline" startYear="1998">
-    <div bind="foreach | work">
-      <foreach-template>
-        <div class="event work" bind="attr | { startYear: startDate[0-4], endYear: endDate[0-4] }">
-          <span class="dates">
-            (<span bind="text | startDate[0-4]"></span> -
-            <span bind="text | endDate[0-4]"></span>)
-          </span>
-          <a bind="attr | { href : website }">
-            <span bind="text | company"></span>
-          </a>
-          <span class="position" bind="text | position"></span>
-        </div>
-      </foreach-template>
+  <div class="timeline-container">
+    <div id="timeline" class="timeline">
     </div>
-    <div bind="foreach | education">
-      <foreach-template>
-        <div class="event education" bind="attr | { startYear: startDate[0-4], endYear: endDate[0-4] }">
-          <span class="dates">
-            (<span bind="text | startDate[0-4]"></span> -
-            <span bind="text | endDate[0-4]"></span>)
-          </span>
-          <a bind="attr | { href : website }">
-            <span bind="text | institution"></span>
-          </a>
-          <span class="position">
-            <span bind="text | studyType"></span> -
-            <span bind="text | area"></span>
-          </span>
-        </div>
-      </foreach-template>
-    </div>
+    <div id="tooltip" class="tooltip"></div>
   </div>
 
   <h3>Publications</h3>
