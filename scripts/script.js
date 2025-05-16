@@ -471,7 +471,7 @@ class Timeline {
     this.tooltip = document.getElementById("tooltip");
 
     this.endYear = 1998;
-    this.pixelsPerYear = 50; // Width in pixels per year
+    this.pixelsPerYear = 60; // Width in pixels per year
     this.baseOffset = 50; // Starting Y position
     this.rowSpacing = 80; // Space between rows
     this.maxRows = 4; // Number of rows to distribute events
@@ -504,7 +504,7 @@ class Timeline {
       ...this.data.work.map((work) => ({
         title: work.position,
         subtitle: work.company,
-        type: "work",
+        type: work.academic ? "teaching" : "work",
         parsedStart: this.parseDate(work.startDate),
         parsedEnd: this.parseDate(work.endDate),
         tooltipContent: `${work.position}: ${work.company}\n${work.startDate} - ${work.endDate}`,

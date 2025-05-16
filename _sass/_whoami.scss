@@ -116,14 +116,6 @@
   font-weight: bold;
 }
 
-.education .event-line {
-  background: linear-gradient(to left, var(--blue) 0%, #468966 100%);
-}
-
-.work .event-line {
-  background: linear-gradient(to left, #dc3522 0%, #b64926 100%);
-}
-
 .event-text {
   line-height: 1.1;
   position: absolute;
@@ -143,12 +135,20 @@
   transition: opacity 0.3s;
 }
 
+.work-bar,
 #timeline .event.work .bar,
-.work-bar {
+.work .event-line {
   background: linear-gradient(to left, #dc3522 0%, #b64926 100%);
 }
 
+.teaching-bar,
+#timeline .event.teaching .bar,
+.teaching .event-line {
+  background: linear-gradient(to left, var(--blue) 0%, #2391f1 100%);
+}
+
+.education-bar,
 #timeline .event.education .bar,
-.education-bar {
-  background: linear-gradient(to left, var(--blue) 0%, #468966 100%);
+.education .event-line {
+  background: linear-gradient(to left, #5caa82 0%, #468966 100%);
 }

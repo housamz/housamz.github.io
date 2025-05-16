@@ -30,7 +30,8 @@
       "summary": "Empowering aspiring web developers as a lecturer for the Professional Diploma in Software Development at UCD Professional Academy. This program equips students with in-demand languages like HTML, CSS, JavaScript, Python, and SQL to become full-stack developers. I create a dynamic learning environment, fostering expertise in web development fundamentals and practical application through real-world project development.",
       "url": "https://www.linkedin.com/company/36160466/",
       "location": "Dublin",
-      "type": "Part Time"
+      "type": "Part Time",
+      "academic": true
     },
     {
       "company": "Oracle",
@@ -63,7 +64,8 @@
       "summary": "- Guided and mentored aspiring UI designers to excel in the dynamic field of user interface design.\n- Equipped students with a comprehensive understanding of theory and practice to develop innovative and user-centric solutions.\n- Delivered an immersive curriculum covering the psychology of UI Design, Functional UI Design, Positive User Experience (UX), World vs. Screen Space, and Interactive User Interfaces.",
       "url": "https://www.linkedin.com/school/pulse-college/",
       "location": "Dublin",
-      "type": "Part Time"
+      "type": "Part Time",
+      "academic": true
     },
     {
       "company": "University of Galway",
@@ -74,7 +76,8 @@
       "summary": "- Instructed and guided students enrolled in the MSc and Diploma programs for Software Engineering & Database Technologies.\n- Served as a valuable member of the IT Online Programme team at NUI Galway.\n- Delivered courses on various subjects, including Software Engineering, Object-oriented Programming (Java), Fundamentals of Database, Artificial Intelligence, and Thesis Fundamentals.",
       "url": "https://www.linkedin.com/school/universityofgalway/",
       "location": "Galway",
-      "type": "Part Time"
+      "type": "Part Time",
+      "academic": true
     },
     {
       "company": "University of Galway",
@@ -128,7 +131,8 @@
       "summary": "Teaching all-level classes of Programming, Adobe Suite, and Microsoft Office.",
       "url": "https://www.linkedin.com/company/new-horizons-computer-learning-centers/",
       "location": "Damascus",
-      "type": "Part Time"
+      "type": "Part Time",
+      "academic": true
     },
     {
       "company": "Trust Lines",
