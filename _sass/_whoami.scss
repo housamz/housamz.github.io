@@ -14,11 +14,12 @@
 }
 
 .pill {
-  display: inline-block;
-  padding: 0 0.5rem;
-  margin: 0 0.5rem 0.5rem 0;
   background-color: $primary-color;
   color: $secondary-color;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.5rem;
 }
 
 #publications {
@@ -117,6 +118,7 @@
 }
 
 .event-text {
+  font-size: 1rem;
   line-height: 1.1;
   position: absolute;
   width: max-content;

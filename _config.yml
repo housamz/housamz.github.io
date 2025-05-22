@@ -20,6 +20,9 @@ skills: Peace Commissioner, Full-stack Engineer, Graphic Designer, UX Developer,
 # Flags below are optional
 #
 
+paginate: 6
+paginate_path: "/page:num"
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   github: housamz
@@ -91,3 +94,4 @@ exclude:
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate

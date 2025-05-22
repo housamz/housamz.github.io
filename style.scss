@@ -141,13 +141,18 @@ h2 {
 
 .social-links {
   display: flex;
-  justify-content: space-evenly;
-  margin: 2rem 0;
+  justify-content: center;
+
+  a {
+    margin: 0 1rem;
+  }
 }
 
 footer {
   border-top: 4px dotted $primary-color;
-  padding: 2rem 0 4rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -279,4 +284,25 @@ footer {
 .posts-navigation {
   display: flex;
   justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  span, a {
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 2rem;
+  }
+
+  .current {
+    background-color: $blue;
+    color: white;
+  }
+}
+
+#portfolio {
+  margin-bottom: 3rem;
 }

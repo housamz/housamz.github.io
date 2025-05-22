@@ -28,7 +28,7 @@ layout: default
 </div>
 
 <div class="posts basic-grid">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <div class="post shadow-effect">
     <a href="{{ post.url }}" class="post-link">
       <h3 class="post-title">{{ post.title }}</h3>
@@ -37,8 +37,29 @@ layout: default
       {{ post.date | date: "%B %e, %Y" }} |
       <a href="{{ site.url }}{{ site.category_page }}#{{ post.category | slugify }}">{{post.category}}</a>
     </p>
+    <p>{{ post.excerpt }}</p>
   </div>
   {% endfor %}
 </div>
 
-{% include social-links.html %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="prev">&laquo;</a>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="current">{{ page }}</span>
+    {% else %}
+      {% if page == 1 %}
+        <a href="/">1</a>
+      {% else %}
+        <a href="/page{{ page }}">{{ page }}</a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">&raquo;</a>
+  {% endif %}
+</div>
