@@ -1,7 +1,7 @@
 #site-header {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0 1rem;
+  padding: 1rem 0 0.5rem;
 
   #site-brand {
     align-items: center;
@@ -9,7 +9,7 @@
     position: relative;
 
     & svg {
-      width: 5rem;
+      height: 40px;
       fill: $primary-color;
     }
 
@@ -36,7 +36,7 @@
       pointer-events: none;
       position: absolute;
       text-align: left;
-      left: -100%;
+      left: -140%;
       width: 30rem;
       z-index: -1;
       transition: left 200ms ease-in-out, opacity 200ms ease-in-out;
@@ -94,6 +94,7 @@
 
           h3 {
             color: $secondary-color;
+            font-family: "Major Mono Display", monospace;
           }
         }
 

@@ -2,7 +2,7 @@
 // VARIABLES
 //
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inconsolata:wght@400;700&family=Major+Mono+Display&display=swap');
 
 :root {
   --primary: #121212;
@@ -41,6 +41,7 @@ $red: #ab0044;
 $secondary-color: var(--secondary);
 
 // Font stacks
-$sans: 'Inconsolata', monospace;
-$titles-font: 'Major Mono Display', monospace;
+$sans: 'Helvetica', 'Inconsolata', monospace;
+$titles-font: 'Helvetica', sans-serif;
+$arabic-font: 'Cairo', 'Helvetica', sans-serif;
 

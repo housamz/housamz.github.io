@@ -20,8 +20,8 @@ body {
   background-color: $secondary-color;
   color: $primary-color;
   font-family: $sans;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
 
   &:before {
     background: transparent radial-gradient($primary-color 10%, transparent 10%);
@@ -53,9 +53,16 @@ h2,
 h3,
 h4 {
   color: $blue-title;
-  font-family: $titles-font;
   margin-bottom: 0;
-  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.3rem;
 }
 
 .container,
@@ -70,6 +77,7 @@ h4 {
 
 #site-intro {
   padding-bottom: 1rem;
+  text-align: justify;
 }
 
 .post {
@@ -83,12 +91,11 @@ h4 {
 .basic-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   .post {
     break-inside: avoid;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
 
     & .post-title {
       font-size: 1.3rem;
@@ -120,6 +127,10 @@ h4 {
     .post-category {
       color: $blue;
     }
+
+    .post-meta {
+      font-size: 1rem;
+    }
   }
 
   .post-excerpt p {
@@ -142,6 +153,7 @@ footer {
 
 #back-top {
   bottom: 2rem;
+  font-size: 1rem;
   padding: 1rem 2rem;
   position: fixed;
   right: 0;
@@ -174,6 +186,8 @@ footer {
 /* Arabic */
 .arabic {
   direction: rtl;
+  font-family: $arabic-font;
+  font-weight: 500;
 }
 
 /**
@@ -220,12 +234,19 @@ footer {
   body {
     font-size: 1rem;
   }
-  .container {
+  .container,
+  #site-header {
     width: 90%;
   }
 
   h3 {
     font-size: 1rem;
+  }
+
+  #site-header #site-brand strong {
+    font-size: 1rem;
+    left: -120%;
+    width: 24rem;
   }
 
   #site-header #site-name h1 {
