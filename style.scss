@@ -11,6 +11,7 @@
 @import "whoami";
 @import "highlights";
 @import "game";
+@import "curl";
 
 * {
   box-sizing: border-box;
@@ -263,13 +264,6 @@ footer {
   }
   .social-links {
     flex-wrap: wrap;
-
-    a {
-      display: block;
-      margin: 0.5rem 0;
-      border: 1px solid $blue-title;
-      padding: 0.5rem;
-    }
   }
 
   #publications {
@@ -278,6 +272,10 @@ footer {
     .paper {
       max-width: unset;
     }
+  }
+
+  .curl {
+    display: none;
   }
 }
 
