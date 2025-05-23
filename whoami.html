@@ -41,7 +41,9 @@ permalink: /whoami/
       <a bind="attr | { href : website }">
         <h4 bind="text | name"></h4>
       </a>
-      <span bind="text | publisher"></span> (<span bind="text | releaseDate[0-4]"></span>)
+      <div class="paper-meta">
+        <span bind="text | publisher"></span> (<span bind="text | releaseDate[0-4]"></span>)
+      </div>
     </div>
   </div>
 
