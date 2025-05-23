@@ -23,11 +23,6 @@
   padding: 0 0.5rem;
 }
 
-#publications {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
 .paper {
   background-color: white;
   background-image: repeating-linear-gradient(
@@ -39,8 +34,6 @@
   color: $dark-color;
   position: relative;
   padding: 1rem 1rem 1rem 3rem;
-  min-width: 20%;
-  max-width: 45%;
 
   a h4 {
     font-size: 1rem;
