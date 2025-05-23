@@ -158,24 +158,24 @@ footer {
 }
 
 #back-top {
-  bottom: 2rem;
+  bottom: 0.5rem;
   font-size: 1rem;
   padding: 1rem 2rem;
   position: fixed;
   right: 0;
 
   & span {
-    width: 0;
-    height: 0;
+    border-bottom: 1.5rem solid $blue-title;
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
-    border-bottom: 1.5rem solid $blue-title;
     display: inline-block;
-    position: absolute;
-    left: 5rem;
-    top: -1rem;
-    text-transform: uppercase;
+    height: 0;
+    left: 50%;
     margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: -1rem;
+    width: 0;
 
     &.launch {
       animation: launch ease-in-out 3s;
