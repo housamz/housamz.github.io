@@ -1,0 +1,147 @@
+// --- Variables (adjust to match your site palette) ---------------------------
+$pc-border: #333333;
+$pc-accent: #4caf78; // soft green — adjust to match your site accent
+$pc-warning-bg: rgba(255, 193, 7, 0.08);
+$pc-warning-bdr: rgba(108, 81, 0, 0.35);
+$pc-warning-txt: #856b00;
+$pc-radius: 6px;
+
+strong {
+  color: $pc-accent;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+// --- Tabs --------------------------------------------------------------------
+.pc-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid $pc-border;
+  flex-wrap: wrap;
+}
+
+.pc-tab {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.1rem;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+  margin-bottom: -1px;
+
+  &--active {
+    color: $pc-accent;
+    border-bottom-color: $pc-accent;
+  }
+}
+
+// --- Tab Panels --------------------------------------------------------------
+.pc-tab-panels {
+  border: 1px solid $pc-border;
+  border-top: none;
+  border-radius: 0 0 $pc-radius $pc-radius;
+}
+
+.pc-panel {
+  padding: 2rem 2rem 1.75rem;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  &__title {
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    margin: 1.25rem 0 0.5rem;
+  }
+
+  &__desc {
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+// --- Warning Box -------------------------------------------------------------
+.pc-warning {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: $pc-warning-bg;
+  border: 1px solid $pc-warning-bdr;
+  border-radius: $pc-radius;
+  padding: 0.9rem 1.1rem;
+  margin-top: 1.5rem;
+
+  &__icon {
+    flex-shrink: 0;
+    line-height: 1.6;
+  }
+
+  p {
+    color: $pc-warning-txt;
+    line-height: 1.6;
+    margin: 0;
+
+    em {
+      font-style: italic;
+    }
+  }
+}
+
+// --- Notes Section -----------------------------------------------------------
+.pc-notes {
+  &__title {
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+
+.pc-note {
+  border: 1px solid $pc-border;
+  border-radius: $pc-radius;
+  padding: 1.25rem 1.25rem 1.1rem;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: $pc-accent;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+// --- Responsive --------------------------------------------------------------
+@media (max-width: 600px) {
+  .pc-tabs {
+    gap: 0;
+  }
+
+  .pc-tab {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .pc-panel {
+    padding: 1.5rem 1.1rem;
+  }
+
+  .pc-notes__grid {
+    grid-template-columns: 1fr;
+  }
+}
