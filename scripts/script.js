@@ -474,7 +474,7 @@ class Timeline {
     this.pixelsPerYear = 60; // Width in pixels per year
     this.baseOffset = 50; // Starting Y position
     this.rowSpacing = 80; // Space between rows
-    this.maxRows = 4; // Number of rows to distribute events
+    this.maxRows = 5; // Number of rows to distribute events
 
     this.startYear = new Date().getFullYear();
     this.entries = this.getAllEntries(); // Precompute sorted entries
@@ -509,6 +509,14 @@ class Timeline {
         parsedEnd: this.parseDate(work.endDate),
         tooltipContent: `${work.position}: ${work.company}\n${work.startDate} - ${work.endDate}`,
       })),
+      // ...this.data.volunteer.map((vol) => ({
+      //   title: vol.position,
+      //   subtitle: vol.organization,
+      //   type: "volunteer",
+      //   parsedStart: this.parseDate(vol.startDate),
+      //   parsedEnd: this.parseDate(vol.endDate),
+      //   tooltipContent: `${vol.position}: ${vol.organization}\n${vol.startDate} - ${vol.endDate}`,
+      // })),
     ]
 		.sort((a, b) => b.parsedEnd - a.parsedEnd);
   }

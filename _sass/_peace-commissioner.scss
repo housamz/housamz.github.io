@@ -1,24 +1,26 @@
 // --- Variables (adjust to match your site palette) ---------------------------
 $pc-border: #333333;
-$pc-accent: #4caf78; // soft green — adjust to match your site accent
+$pc-accent: #0f8d5f;
 $pc-warning-bg: rgba(255, 193, 7, 0.08);
 $pc-warning-bdr: rgba(108, 81, 0, 0.35);
 $pc-warning-txt: #856b00;
 $pc-radius: 6px;
 
-strong {
-  color: $pc-accent;
-}
+.pc {
+  & section {
+    padding: 1rem 0;
+  }
 
-section {
-  padding: 1rem 0;
+  & strong {
+    color: $pc-accent;
+  }
 }
 
 // --- Tabs --------------------------------------------------------------------
 .pc-tabs {
   display: flex;
   gap: 0.5rem;
-  border-bottom: 1px solid $pc-border;
+  border-bottom: 3px solid $pc-border;
   flex-wrap: wrap;
 }
 
@@ -32,23 +34,26 @@ section {
   transition:
     color 0.2s ease,
     border-color 0.2s ease;
-  margin-bottom: -1px;
+  margin-bottom: -3px;
 
   &--active {
-    color: $pc-accent;
-    border-bottom-color: $pc-accent;
+    border: 3px solid $pc-border;
+    border-bottom-color: $pc-border;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    font-weight: bold;
   }
 }
 
 // --- Tab Panels --------------------------------------------------------------
 .pc-tab-panels {
-  border: 1px solid $pc-border;
+  border: 3px solid $pc-border;
   border-top: none;
   border-radius: 0 0 $pc-radius $pc-radius;
 }
 
 .pc-panel {
-  padding: 2rem 2rem 1.75rem;
+  padding: 1rem 2rem 1.75rem;
   display: none;
 
   &--active {
@@ -113,17 +118,59 @@ section {
 }
 
 .pc-note {
-  border: 1px solid $pc-border;
+  border: 3px solid $pc-border;
   border-radius: $pc-radius;
   padding: 1.25rem 1.25rem 1.1rem;
   transition: border-color 0.2s ease;
 
-  &:hover {
-    border-color: $pc-accent;
-  }
-
   h3 {
     margin: 0;
+  }
+}
+
+// --- Booking Checklist Gate --------------------------------------------------
+.pc-checklist {
+  &__intro {
+    margin: 0 0 1rem;
+    font-weight: 600;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid $pc-border;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 0.2rem;
+      accent-color: $pc-accent;
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    span {
+      line-height: 1.5;
+    }
+  }
+}
+
+.pc-calendar {
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+
+  iframe {
+    display: block;
   }
 }
 

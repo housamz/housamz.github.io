@@ -94,7 +94,6 @@
 
           h3 {
             color: $secondary-color;
-            font-family: "Major Mono Display", monospace;
           }
         }
 
@@ -179,10 +178,6 @@
 
               &:hover {
                 color: $red;
-              }
-
-              & h3 {
-                text-transform: uppercase;
               }
             }
           }
