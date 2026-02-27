@@ -230,7 +230,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
 
-  & label {
+  & > label {
     order: 1;
     display: block;
     padding: 1rem 2rem;
@@ -240,20 +240,20 @@ footer {
   }
 
   & .tab {
+    border: 3px solid $primary-color;
     order: 99;
     flex-grow: 1;
     width: 100%;
     display: none;
-    padding: 1rem;
-    background: $secondary-color;
+    padding: 1rem 2rem;
   }
 
   & input[type="radio"] {
     display: none;
 
     &:checked + label {
-      background: $primary-color;
-      color: $secondary-color;
+      border: 3px solid $primary-color;
+      margin-bottom: -3px;
       font-weight: bold;
 
       & + .tab {
@@ -330,4 +330,12 @@ footer {
 
 #portfolio {
   margin-bottom: 3rem;
+}
+
+.warning-box {
+  background: $warning-bg;
+  border: 1px solid $warning-bdr;
+  padding: 1rem;
+  margin: 1.5rem;
+  color: $warning-txt;
 }

@@ -16,339 +16,218 @@ permalink: /peace-commissioner/
       <strong>County Dublin &amp; Adjacent Counties</strong>: Kildare · Wicklow
       · Meath · Louth
     </p>
-
-    <div class="pc-actions">
-      <button
-        class="pc-toggle pc-toggle--active"
-        data-toggle="pc-booking"
-        data-closes="pc-services"
-      >
-        Book an Appointment <span class="pc-toggle__icon">▾</span>
-      </button>
-      <button
-        class="pc-toggle"
-        data-toggle="pc-services"
-        data-closes="pc-booking"
-      >
-        Services <span class="pc-toggle__icon">▸</span>
-      </button>
-    </div>
   </section>
 
-  <div id="pc-services" class="pc-section" hidden>
-    <div
-      class="pc-tabs"
-      role="tablist"
-      aria-label="Peace Commissioner Services"
-    >
-      <button
-        class="pc-tab pc-tab--active"
-        role="tab"
-        data-tab="documents"
-        aria-selected="true"
-        aria-controls="tab-documents"
-      >
-        Document Certification
-      </button>
-      <button
-        class="pc-tab"
-        role="tab"
-        data-tab="identity"
-        aria-selected="false"
-        aria-controls="tab-identity"
-      >
-        Identity Verification
-      </button>
-      <button
-        class="pc-tab"
-        role="tab"
-        data-tab="signatures"
-        aria-selected="false"
-        aria-controls="tab-signatures"
-      >
-        Witnessing Signatures
-      </button>
+  <div class="tabs">
+    <input type="radio" name="tabs" id="tabone" checked="checked" />
+    <label for="tabone">Book an Appointment</label>
+    <div class="tab">
+      <section class="pc-notes">
+        <h2 class="pc-notes__title">Good to Know</h2>
+        <div class="pc-notes__grid">
+          <div class="pc-note">
+            <h3>Everyone Must Attend</h3>
+            <p>
+              All individuals named on the documents must attend the
+              appointment, regardless of age.<br />
+              <small><strong>Adults and children are required.</strong></small>
+            </p>
+          </div>
+          <div class="pc-note">
+            <h3>Bring All Passports</h3>
+            <p>
+              Bring every passport held since your first entry to Ireland,
+              including expired passports.<br />
+              <small><strong>All versions must be provided.</strong></small>
+            </p>
+          </div>
+          <div class="pc-note">
+            <h3>Passport Form</h3>
+            <p>
+              A
+              <a
+                href="https://www.irishimmigration.ie/wp-content/uploads/2023/05/citizenship/Passport-Certification-Form.pdf"
+                target="_blank"
+                >Passport Certification Form</a
+              >
+              is required for each passport submitted for certification.<br />
+              <small><strong>Please print and bring the form.</strong></small>
+            </p>
+          </div>
+          <div class="pc-note">
+            <h3>Prepare Prints</h3>
+            <p>
+              Ensure all forms are printed and photocopies prepared before your
+              appointment.<br />
+              <small
+                ><strong
+                  >No printing facilities are available onsite.</strong
+                ></small
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="book-appointment">
+        <h2>Book an Appointment</h2>
+        <p>All appointments are <strong>free of charge</strong>.</p>
+
+        <div class="pc-checklist">
+          <p class="pc-checklist__intro">Please tick all boxes to proceed:</p>
+
+          <label class="pc-checklist__item">
+            <input type="checkbox" data-gate />
+            <span
+              >I will bring the <strong>original document(s)</strong>,
+              <strong>passport(s)</strong>, and <strong>photocopies</strong> to
+              the appointment.</span
+            >
+          </label>
+
+          <label class="pc-checklist__item">
+            <input type="checkbox" data-gate />
+            <span
+              >I have <strong>all documents printed and ready</strong>,
+              including the
+              <a
+                href="https://www.irishimmigration.ie/wp-content/uploads/2023/05/citizenship/Passport-Certification-Form.pdf"
+                target="_blank"
+                >Passport Certification Form</a
+              >.</span
+            >
+          </label>
+
+          <label class="pc-checklist__item">
+            <input type="checkbox" data-gate />
+            <span
+              >I have
+              <strong>confirmed with the requesting organisation</strong> that a
+              Peace Commissioner's certification is accepted.</span
+            >
+          </label>
+
+          <label class="pc-checklist__item">
+            <input type="checkbox" data-gate />
+            <span
+              >I understand that a Peace Commissioner
+              <strong>is not a lawyer</strong> and cannot provide legal
+              advice.</span
+            >
+          </label>
+        </div>
+
+        <div class="pc-calendar" id="pc-calendar">
+          <iframe
+            src="https://calendly.com/housamz/peace-commissioner?hide_gdpr_banner=1&hide_landing_page_details=1"
+            width="100%"
+            height="700"
+            frameborder="0"
+            title="Book a Peace Commissioner Appointment with Housam Ziad"
+          ></iframe>
+        </div>
+      </section>
     </div>
 
-    <div class="pc-tab-panels">
-      <!-- Tab 1: Document Certification -->
-      <div id="tab-documents" class="pc-panel pc-panel--active" role="tabpanel">
+    <input type="radio" name="tabs" id="tabtwo" />
+    <label for="tabtwo">Services</label>
+    <div class="tab">
+      <section>
         <h2>Certification of Documents as True Copies</h2>
         <p>
           I can certify that a photocopy is a true and accurate copy of an
           original document. The original document must be presented at the
           appointment — copies of copies cannot be certified.
         </p>
-        <h3>Common documents include:</h3>
-        <ul>
-          <li>Passports &amp; travel documents</li>
-          <li>Birth, marriage &amp; death certificates</li>
-          <li>Driving licences</li>
-          <li>Irish Residency Permits (IRP)</li>
-          <li>Educational &amp; professional qualifications</li>
-        </ul>
-        <div class="pc-warning">
-          <span class="pc-warning__icon">⚠️</span>
-          <p>
-            Some organisations (e.g. banks, solicitors, notary publics) may
-            require certification by a specific authority. Please confirm they
-            accept a Peace Commissioner's certification
-            <em>before</em> booking your appointment.
-          </p>
+        <div class="pc-grid">
+          <div>
+            <h3>Common documents include:</h3>
+            <ul>
+              <li>Passports &amp; travel documents</li>
+              <li>Birth, marriage &amp; death certificates</li>
+              <li>Driving licences</li>
+              <li>Irish Residency Permits (IRP)</li>
+              <li>Educational &amp; professional qualifications</li>
+            </ul>
+          </div>
+          <div class="warning-box">
+            <p>
+              Some organisations (e.g. banks, solicitors, notary publics) may
+              require certification by a specific authority. Please confirm they
+              accept a Peace Commissioner's certification
+              <em>before</em> booking your appointment.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Tab 2: Identity Verification -->
-      <div id="tab-identity" class="pc-panel" role="tabpanel" hidden>
+      <section>
         <h2>Identity &amp; Verification Form Certification</h2>
         <p>
           I can certify the identity and verification sections of official
           application forms where a Peace Commissioner is an accepted certifying
           authority.
         </p>
-        <h3>Common examples include:</h3>
-        <ul>
-          <li>Irish citizenship &amp; naturalisation application forms</li>
-          <li>Passport application forms</li>
-          <li>Immigration &amp; residency-related forms</li>
-          <li>Government agency application forms</li>
-          <li>Public service &amp; benefit application forms</li>
-        </ul>
-        <div class="pc-warning">
-          <span class="pc-warning__icon">⚠️</span>
-          <p>
-            Certification requirements vary depending on the form and the
-            issuing authority. Always check in advance that a Peace Commissioner
-            is an accepted certifier for your specific form before booking.
-          </p>
+        <div class="pc-grid">
+          <div>
+            <h3>Common examples include:</h3>
+            <ul>
+              <li>Irish citizenship &amp; naturalisation application forms</li>
+              <li>Passport application forms</li>
+              <li>Immigration &amp; residency-related forms</li>
+              <li>Government agency application forms</li>
+              <li>Public service &amp; benefit application forms</li>
+            </ul>
+          </div>
+          <div class="warning-box">
+            <p>
+              Certification requirements vary depending on the form and the
+              issuing authority. Always check in advance that a Peace
+              Commissioner is an accepted certifier for your specific form
+              before booking.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Tab 3: Witnessing Signatures -->
-      <div id="tab-signatures" class="pc-panel" role="tabpanel" hidden>
+      <section>
         <h2>Witnessing of Signatures</h2>
         <p>
           I can witness signatures on certain official forms and statutory
           declarations, provided the signer is present in person with valid
           photo identification.
         </p>
-        <h3>Typical use cases:</h3>
-        <ul>
-          <li>Statutory declarations</li>
-          <li>Sworn statements (where a Peace Commissioner is accepted)</li>
-          <li>Official application forms requiring a witnessed signature</li>
-          <li>Consent forms and authorisation documents (where applicable)</li>
-        </ul>
-        <div class="pc-warning">
-          <span class="pc-warning__icon">⚠️</span>
-          <p>
-            The person signing must be physically present and must produce valid
-            photo ID. Signatures cannot be witnessed remotely or
-            retrospectively. Some documents require a Commissioner for Oaths or
-            solicitor — please verify before booking.
-          </p>
+        <div class="pc-grid">
+          <div>
+            <h3>Typical use cases:</h3>
+            <ul>
+              <li>Statutory declarations</li>
+              <li>Sworn statements (where a Peace Commissioner is accepted)</li>
+              <li>
+                Official application forms requiring a witnessed signature
+              </li>
+              <li>
+                Consent forms and authorisation documents (where applicable)
+              </li>
+            </ul>
+          </div>
+          <div class="warning-box">
+            <p>
+              The person signing must be physically present and must produce
+              valid photo ID. Signatures cannot be witnessed remotely or
+              retrospectively. Some documents require a Commissioner for Oaths
+              or solicitor — please verify before booking.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
-  <!-- /#pc-services -->
-
-  <div id="pc-booking" class="pc-section">
-    <section class="pc-notes">
-      <h2 class="pc-notes__title">Good to Know</h2>
-      <div class="pc-notes__grid">
-        <div class="pc-note">
-          <h3>Everyone Must Attend</h3>
-          <p>
-            All individuals named on the documents must attend the appointment,
-            regardless of age.<br />
-            <small><strong>Adults and children are required.</strong></small>
-          </p>
-        </div>
-        <div class="pc-note">
-          <h3>Bring All Passports</h3>
-          <p>
-            Bring every passport held since your first entry to Ireland,
-            including expired passports.<br />
-            <small><strong>All versions must be provided.</strong></small>
-          </p>
-        </div>
-        <div class="pc-note">
-          <h3>Passport Form</h3>
-          <p>
-            A
-            <a
-              href="https://www.irishimmigration.ie/wp-content/uploads/2023/05/citizenship/Passport-Certification-Form.pdf"
-              target="_blank"
-              >Passport Certification Form</a
-            >
-            is required for each passport submitted for certification.<br />
-            <small><strong>Please print and bring the form.</strong></small>
-          </p>
-        </div>
-        <div class="pc-note">
-          <h3>Prepare Prints</h3>
-          <p>
-            Ensure all forms are printed and photocopies prepared before your
-            appointment.<br />
-            <small
-              ><strong
-                >No printing facilities are available onsite.</strong
-              ></small
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="book-appointment">
-      <h2>Book an Appointment</h2>
-      <p>All appointments are <strong>free of charge</strong>.</p>
-
-      <div class="pc-checklist">
-        <p class="pc-checklist__intro">Please tick all boxes to proceed:</p>
-
-        <label class="pc-checklist__item">
-          <input type="checkbox" data-gate />
-          <span
-            >I will bring the <strong>original document(s)</strong>,
-            <strong>passport(s)</strong>, and <strong>photocopies</strong> to
-            the appointment.</span
-          >
-        </label>
-
-        <label class="pc-checklist__item">
-          <input type="checkbox" data-gate />
-          <span
-            >I have <strong>all documents printed and ready</strong>, including
-            the
-            <a
-              href="https://www.irishimmigration.ie/wp-content/uploads/2023/05/citizenship/Passport-Certification-Form.pdf"
-              target="_blank"
-              >Passport Certification Form</a
-            >.</span
-          >
-        </label>
-
-        <label class="pc-checklist__item">
-          <input type="checkbox" data-gate />
-          <span
-            >I have
-            <strong>confirmed with the requesting organisation</strong> that a
-            Peace Commissioner's certification is accepted.</span
-          >
-        </label>
-
-        <label class="pc-checklist__item">
-          <input type="checkbox" data-gate />
-          <span
-            >I understand that a Peace Commissioner
-            <strong>is not a lawyer</strong> and cannot provide legal
-            advice.</span
-          >
-        </label>
-      </div>
-
-      <div class="pc-calendar" id="pc-calendar">
-        <iframe
-          src="https://calendly.com/housamz/peace-commissioner?hide_gdpr_banner=1&hide_landing_page_details=1"
-          width="100%"
-          height="700"
-          frameborder="0"
-          title="Book a Peace Commissioner Appointment with Housam Ziad"
-        ></iframe>
-      </div>
-    </section>
-  </div>
-  <!-- /#pc-booking -->
 </div>
 
 <script>
   (function () {
-    // -------------------------------------------------------------------------
-    // Generic section toggle engine
-    // Usage in HTML:
-    //   <button class="pc-toggle" data-toggle="sectionId" data-closes="id1,id2">
-    // -------------------------------------------------------------------------
-    function getSection(id) {
-      return document.getElementById(id);
-    }
-
-    function collapseSection(id) {
-      var section = getSection(id);
-      if (!section) return;
-      section.setAttribute("hidden", "");
-      // Update any toggle buttons pointing at this section
-      document
-        .querySelectorAll(".pc-toggle[data-toggle='" + id + "']")
-        .forEach(function (btn) {
-          btn.classList.remove("pc-toggle--active");
-          btn.querySelector(".pc-toggle__icon").textContent = "▸";
-        });
-    }
-
-    function expandSection(id) {
-      var section = getSection(id);
-      if (!section) return;
-      section.removeAttribute("hidden");
-      document
-        .querySelectorAll(".pc-toggle[data-toggle='" + id + "']")
-        .forEach(function (btn) {
-          btn.classList.add("pc-toggle--active");
-          btn.querySelector(".pc-toggle__icon").textContent = "▾";
-        });
-    }
-
-    document.querySelectorAll(".pc-toggle").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var targetId = btn.getAttribute("data-toggle");
-        var closesIds = (btn.getAttribute("data-closes") || "")
-          .split(",")
-          .map(function (s) {
-            return s.trim();
-          })
-          .filter(Boolean);
-        var isExpanded = !getSection(targetId).hasAttribute("hidden");
-
-        // Close any sections this button should close
-        closesIds.forEach(collapseSection);
-
-        // Toggle the target section
-        if (isExpanded) {
-          collapseSection(targetId);
-        } else {
-          expandSection(targetId);
-        }
-      });
-    });
-
-    // -------------------------------------------------------------------------
-    // Tab switching
-    // -------------------------------------------------------------------------
-    document.querySelectorAll(".pc-tab").forEach(function (tab) {
-      tab.addEventListener("click", function () {
-        var target = tab.getAttribute("data-tab");
-
-        document.querySelectorAll(".pc-tab").forEach(function (t) {
-          t.classList.remove("pc-tab--active");
-          t.setAttribute("aria-selected", "false");
-        });
-        document.querySelectorAll(".pc-panel").forEach(function (p) {
-          p.classList.remove("pc-panel--active");
-          p.setAttribute("hidden", "");
-        });
-
-        tab.classList.add("pc-tab--active");
-        tab.setAttribute("aria-selected", "true");
-        var activePanel = document.getElementById("tab-" + target);
-        activePanel.classList.add("pc-panel--active");
-        activePanel.removeAttribute("hidden");
-      });
-    });
-
-    // -------------------------------------------------------------------------
-    // Booking checklist gate
-    // -------------------------------------------------------------------------
+    // --- Booking checklist gate ---
     var checkboxes = document.querySelectorAll("[data-gate]");
     var calendar = document.getElementById("pc-calendar");
 

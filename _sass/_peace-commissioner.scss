@@ -8,130 +8,12 @@
   }
 }
 
-// --- Generic Section Toggles -------------------------------------------------
-// Add more sections with no extra CSS needed — just add a new .pc-toggle
-// button in HTML with data-toggle="yourSectionId".
-
-.pc-actions {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 1.25rem;
-}
-
-.pc-toggle {
-  background: none;
-  border: 1px solid $dark-color;
-  cursor: pointer;
-  font-size: 0.95rem;
-  padding: 0.45rem 0.9rem;
-  transition:
-    color 0.2s ease,
-    border-color 0.2s ease;
-
-  &:hover {
-    color: $blue;
-    border-color: $blue;
-  }
-
-  &--active {
-    color: $blue;
-    border-color: $blue;
-  }
-
-  &__icon {
-    font-style: normal;
-  }
-}
-
-.pc-section {
-  margin-top: 1rem;
-}
-
-// --- Tabs --------------------------------------------------------------------
-.pc-tabs {
-  display: flex;
-  gap: 0.5rem;
-  border-bottom: 3px solid $primary-color;
-  flex-wrap: wrap;
-}
-
-.pc-tab {
-  background: none;
-  border: none;
-  color: $primary-color;
-  border-bottom: 3px solid transparent;
-  cursor: pointer;
-  font-size: 1.2rem;
-  padding: 0.75rem 1.1rem;
-  transition:
-    color 0.2s ease,
-    border-color 0.2s ease;
-  margin-bottom: -3px;
-
-  &--active {
-    border: 3px solid $primary-color;
-    border-bottom-color: $primary-color;
-    border-radius: 0.25rem 0.25rem 0 0;
-    color: $blue-title;
-    font-weight: bold;
-  }
-}
-
-// --- Tab Panels --------------------------------------------------------------
-.pc-tab-panels {
-  border: 3px solid $primary-color;
-  border-top: none;
-}
-
-.pc-panel {
-  padding: 1rem 2rem 1.75rem;
-  display: none;
-
-  &--active {
-    display: block;
-  }
-
-  &__title {
-    font-weight: 600;
-    margin: 0 0 0.75rem;
-  }
-
-  &__subtitle {
-    font-weight: normal;
-    margin: 1.25rem 0 0.5rem;
-  }
-
-  &__desc {
-    line-height: 1.7;
-    margin: 0;
-  }
-}
-
-// --- Warning Box -------------------------------------------------------------
-.pc-warning {
-  display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
-  background: $warning-bg;
-  border: 1px solid $warning-bdr;
-  padding: 0.9rem 1.1rem;
-  margin-top: 1.5rem;
-
-  &__icon {
-    flex-shrink: 0;
-    line-height: 1.6;
-  }
-
-  p {
-    color: $warning-txt;
-    line-height: 1.6;
-    margin: 0;
-
-    em {
-      font-style: italic;
-    }
-  }
+.pc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 // --- Notes Section -----------------------------------------------------------
@@ -161,7 +43,6 @@
 // --- Booking Checklist Gate --------------------------------------------------
 .pc-checklist {
   &__intro {
-    margin: 0 0 1rem;
     font-weight: 600;
   }
 
@@ -220,5 +101,13 @@
 
   .pc-notes__grid {
     grid-template-columns: 1fr;
+  }
+
+  .pc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pc .warning-box {
+    margin: 0;
   }
 }
