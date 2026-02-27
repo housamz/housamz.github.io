@@ -1,5 +1,3 @@
-@use "variables" as *;
-
 .pc {
   & section {
     padding: 1rem 0;
@@ -8,6 +6,46 @@
   & strong {
     color: #00b800;
   }
+}
+
+// --- Generic Section Toggles -------------------------------------------------
+// Add more sections with no extra CSS needed — just add a new .pc-toggle
+// button in HTML with data-toggle="yourSectionId".
+
+.pc-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.pc-toggle {
+  background: none;
+  border: 1px solid $dark-color;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.9rem;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+  }
+
+  &--active {
+    color: $blue;
+    border-color: $blue;
+  }
+
+  &__icon {
+    font-style: normal;
+  }
+}
+
+.pc-section {
+  margin-top: 1rem;
 }
 
 // --- Tabs --------------------------------------------------------------------
