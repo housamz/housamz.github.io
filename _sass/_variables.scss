@@ -9,6 +9,7 @@
   --secondary: #f7f7f7;
   --blue: #0f4e8d;
   --blue-title: #0f4e8d;
+  --warning-txt: #856b00;
 }
 
 /* Dark mode */
@@ -18,6 +19,7 @@
     --secondary: #121212;
     --blue: #4890c3;
     --blue-title: #7cc8ff;
+    --warning-txt: #eebf05;
   }
 }
 
@@ -39,6 +41,9 @@ $light-red: #d5c4d3;
 $primary-color: var(--primary);
 $red: #ab0044;
 $secondary-color: var(--secondary);
+$warning-bg: rgba(255, 193, 7, 0.08);
+$warning-bdr: rgba(108, 81, 0, 0.35);
+$warning-txt: var(--warning-txt);
 
 // Font stacks
 $sans: 'Helvetica', 'Inconsolata', monospace;

@@ -1,10 +1,4 @@
-// --- Variables (adjust to match your site palette) ---------------------------
-$pc-border: #333333;
-$pc-accent: #0f8d5f;
-$pc-warning-bg: rgba(255, 193, 7, 0.08);
-$pc-warning-bdr: rgba(108, 81, 0, 0.35);
-$pc-warning-txt: #856b00;
-$pc-radius: 6px;
+@use "variables" as *;
 
 .pc {
   & section {
@@ -12,7 +6,7 @@ $pc-radius: 6px;
   }
 
   & strong {
-    color: $pc-accent;
+    color: #00b800;
   }
 }
 
@@ -20,13 +14,14 @@ $pc-radius: 6px;
 .pc-tabs {
   display: flex;
   gap: 0.5rem;
-  border-bottom: 3px solid $pc-border;
+  border-bottom: 3px solid $primary-color;
   flex-wrap: wrap;
 }
 
 .pc-tab {
   background: none;
   border: none;
+  color: $primary-color;
   border-bottom: 3px solid transparent;
   cursor: pointer;
   font-size: 1.2rem;
@@ -37,19 +32,18 @@ $pc-radius: 6px;
   margin-bottom: -3px;
 
   &--active {
-    border: 3px solid $pc-border;
-    border-bottom-color: $pc-border;
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    border: 3px solid $primary-color;
+    border-bottom-color: $primary-color;
+    border-radius: 0.25rem 0.25rem 0 0;
+    color: $blue-title;
     font-weight: bold;
   }
 }
 
 // --- Tab Panels --------------------------------------------------------------
 .pc-tab-panels {
-  border: 3px solid $pc-border;
+  border: 3px solid $primary-color;
   border-top: none;
-  border-radius: 0 0 $pc-radius $pc-radius;
 }
 
 .pc-panel {
@@ -81,9 +75,8 @@ $pc-radius: 6px;
   display: flex;
   gap: 0.75rem;
   align-items: flex-start;
-  background: $pc-warning-bg;
-  border: 1px solid $pc-warning-bdr;
-  border-radius: $pc-radius;
+  background: $warning-bg;
+  border: 1px solid $warning-bdr;
   padding: 0.9rem 1.1rem;
   margin-top: 1.5rem;
 
@@ -93,7 +86,7 @@ $pc-radius: 6px;
   }
 
   p {
-    color: $pc-warning-txt;
+    color: $warning-txt;
     line-height: 1.6;
     margin: 0;
 
@@ -118,8 +111,7 @@ $pc-radius: 6px;
 }
 
 .pc-note {
-  border: 3px solid $pc-border;
-  border-radius: $pc-radius;
+  border: 3px solid $primary-color;
   padding: 1.25rem 1.25rem 1.1rem;
   transition: border-color 0.2s ease;
 
@@ -140,7 +132,7 @@ $pc-radius: 6px;
     align-items: flex-start;
     gap: 0.75rem;
     padding: 0.6rem 0;
-    border-bottom: 1px solid $pc-border;
+    border-bottom: 1px solid $primary-color;
     cursor: pointer;
 
     &:last-child {
@@ -149,7 +141,7 @@ $pc-radius: 6px;
 
     input[type="checkbox"] {
       margin-top: 0.2rem;
-      accent-color: $pc-accent;
+      accent-color: $blue;
       width: 1rem;
       height: 1rem;
       flex-shrink: 0;
