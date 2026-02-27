@@ -5,14 +5,14 @@
 // IMPORTS
 //
 
-@use "variables" as *;
-@use "shadow-effect";
-@use "header";
-@use "whoami";
-@use "highlights";
-@use "game";
-@use "curl";
-@use "peace-commissioner" as *;
+@import "variables";
+@import "shadow-effect";
+@import "header";
+@import "whoami";
+@import "highlights";
+@import "game";
+@import "curl";
+@import "peace-commissioner";
 
 * {
   box-sizing: border-box;
