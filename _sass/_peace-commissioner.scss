@@ -1,5 +1,3 @@
-
-
 .pc-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,5 +99,18 @@
 
   .pc .warning-box {
     margin: 0;
+  }
+
+  .pc-note {
+    border: none;
+    padding: 0;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  #book-appointment {
+    padding: 0;
   }
 }
