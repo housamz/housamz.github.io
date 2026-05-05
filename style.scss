@@ -95,6 +95,18 @@ h2 {
   display: none;
 }
 
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 #site-intro {
   color: $primary-color;
   font-family: $serif;
@@ -161,9 +173,18 @@ section {
   justify-content: flex-end;
 
   a {
+    align-items: center;
     color: $muted-color;
-    font-size: 0.85rem;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 1.5rem;
+    justify-content: center;
     text-decoration: none;
+    width: 1.5rem;
+
+    &:hover {
+      color: $blue-title;
+    }
   }
 }
 

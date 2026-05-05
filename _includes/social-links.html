@@ -1,25 +1,33 @@
 <div class="social-links">
   {% if site.footer-links.behance %}
-  <a href="https://www.behance.com/{{ site.footer-links.behance }}" target="_blank">
-    behance
+  <a href="https://www.behance.com/{{ site.footer-links.behance }}" target="_blank" aria-label="Behance">
+    <i class="fa-brands fa-behance" aria-hidden="true"></i>
+    <span class="sr-only">Behance</span>
   </a>
   {% endif %} {% if site.footer-links.linkedin %}
-  <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank">
-    linkedin
+  <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank" aria-label="LinkedIn">
+    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+    <span class="sr-only">LinkedIn</span>
   </a>
   {% endif %} {% if site.footer-links.github %}
-  <a href="https://github.com/{{ site.footer-links.github }}" target="_blank">
-    github
+  <a href="https://github.com/{{ site.footer-links.github }}" target="_blank" aria-label="GitHub">
+    <i class="fa-brands fa-github" aria-hidden="true"></i>
+    <span class="sr-only">GitHub</span>
   </a>
   {% endif %} {% if site.footer-links.codepen %}
-  <a href="https://codepen.io/{{ site.footer-links.codepen }}" target="_blank">
-    codepen
+  <a href="https://codepen.io/{{ site.footer-links.codepen }}" target="_blank" aria-label="CodePen">
+    <i class="fa-brands fa-codepen" aria-hidden="true"></i>
+    <span class="sr-only">CodePen</span>
   </a>
   {% endif %} {% if site.footer-links.googlescholar %}
-  <a href="https://scholar.google.com/citations?user={{ site.footer-links.googlescholar }}" target="_blank">
-    googlescholar
+  <a href="https://scholar.google.com/citations?user={{ site.footer-links.googlescholar }}" target="_blank" aria-label="Google Scholar">
+    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+    <span class="sr-only">Google Scholar</span>
   </a>
   {% endif %} {% if site.footer-links.rss %}
-  <a href="{{ site.baseurl }}/feed.xml" target="_blank"> rss </a>
+  <a href="{{ site.baseurl }}/feed.xml" target="_blank" aria-label="RSS">
+    <i class="fa-solid fa-rss" aria-hidden="true"></i>
+    <span class="sr-only">RSS</span>
+  </a>
   {% endif %}
 </div>

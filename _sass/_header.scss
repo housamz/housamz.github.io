@@ -54,33 +54,36 @@
       color: $muted-color;
       display: inline-flex;
       font-size: 0.9rem;
+      gap: 1rem;
       line-height: 1.5;
       position: relative;
       text-decoration: none;
       transition: color 160ms ease, opacity 160ms ease;
 
-      &:before {
-        background: $blue-title;
-        border-radius: 50%;
-        content: "";
-        height: 4px;
-        margin-right: 0.55rem;
-        transform: scale(0);
-        transition: transform 160ms ease;
-        width: 4px;
+      i {
+        color: $muted-color;
+        font-size: 0.85rem;
+        text-align: center;
+        transition: color 160ms ease, transform 160ms ease;
+        width: 1rem;
       }
 
       &:hover {
         color: $primary-color;
         opacity: 0.7;
         text-decoration: none;
+
+        i {
+          color: $primary-color;
+        }
       }
 
       &.active {
         color: $blue-title;
 
-        &:before {
-          transform: scale(1.25);
+        i {
+          color: $blue-title;
+          transform: scale(1.12);
         }
       }
     }

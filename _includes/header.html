@@ -61,12 +61,18 @@
       <a
         href="{{ nav_page.url | relative_url }}"
         class="{% if page.url == nav_page.url %}active{% endif %}"
-        >{{ nav_title }}</a
       >
+        {% if nav_page.nav_icon %}
+          <i class="{{ nav_page.nav_icon }}" aria-hidden="true"></i>
+        {% endif %}
+        <span>{{ nav_title }}</span>
+      </a>
     {% endfor %}
     <a
       href="{{ site.baseurl }}/terminal"
-      >Terminal</a
     >
+      <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+      <span>Terminal</span>
+    </a>
   </nav>
 </header>
