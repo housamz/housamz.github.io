@@ -2,6 +2,7 @@
 layout: page
 title: Whoami
 permalink: /whoami/
+nav_order: 1
 ---
 
 <div id="whoami">
@@ -37,8 +38,8 @@ permalink: /whoami/
   </div>
 
   <h3>Publications</h3>
-  <div bind="foreach | publications" class="basic-grid">
-    <div class="paper shadow-effect">
+  <div bind="foreach | publications">
+    <div class="paper">
       <a bind="attr | { href : website }">
         <h4 bind="text | name"></h4>
       </a>

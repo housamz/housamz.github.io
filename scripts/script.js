@@ -2,7 +2,9 @@
 
 jQuery(function ($) {
   // typing effect
-  new TypedText($("#site-skills"));
+  if ($("#site-skills").length) {
+    new TypedText($("#site-skills"));
+  }
 
   // game
   new FThisWebsite($("#main")[0], " fudge ");
@@ -28,37 +30,6 @@ jQuery(function ($) {
     });
   });
 
-  if ($("#portfolio")) {
-    // portfolio
-    $.ajax({
-      url: "https://t.hmz.ie/apis/behance.php",
-      type: "GET",
-      dataType: "json",
-      contentType: "json",
-      success: function (data) {
-        data = JSON.parse(data);
-        for (i = 0; i < data.projects.length; i++) {
-          let obj = data.projects[i];
-          $("#portfolio").append(
-            $("<div/>", { class: "post shadow-effect" }).append([
-              $("<h3/>", { text: obj.name }),
-              $("<img/>", { src: obj.covers["404"], alt: obj.name }),
-              $("<p/>").append($("<small/>", { text: obj.fields.join(", ") })),
-              $("<a/>", {
-                class: "post-link",
-                href: obj.url,
-                target: "_blank",
-              }),
-            ])
-          );
-        }
-      },
-      error: function (data) {
-        console.log("ERROR: ", data);
-      },
-    });
-  }
-
   // check if whoami
   if ($("#whoami").html()) {
     // on earth for
@@ -80,7 +51,7 @@ jQuery(function ($) {
     });
 
     // reading data from linkedin.json
-    fetch("../scripts/linkedin.json")
+    fetch("../scripts/resume.json")
       .then((response) => response.json())
       .then((data) => {
         bind(data, document.querySelector("#whoami"));
@@ -426,43 +397,6 @@ class FThisWebsite {
   }
 }
 
-// Typing Effect Class
-class TypedText {
-  constructor(el) {
-    this.textArray = el.attr("data-type").split(", ");
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(el.attr("data-period"), 10) || 1000;
-    this.txt = "";
-    this.isDeleting = false;
-    this.type();
-    this.self = this;
-  }
-
-  type() {
-    const i = this.loopNum % this.textArray.length;
-    const fullTxt = this.textArray[i];
-    this.txt = this.isDeleting
-      ? fullTxt.substring(0, this.txt.length - 1)
-      : fullTxt.substring(0, this.txt.length + 1);
-
-    this.el.html(this.txt);
-    let delay = 200 - Math.random() * 100;
-    if (this.isDeleting) {
-      delay /= 2;
-    }
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delay = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === "") {
-      this.isDeleting = false;
-      this.loopNum++;
-      delay = 500;
-    }
-    setTimeout(() => this.self.type(), delay);
-  }
-}
-
 // Timeline class
 class Timeline {
   constructor(element, data) {
@@ -470,11 +404,11 @@ class Timeline {
     this.data = data;
     this.tooltip = document.getElementById("tooltip");
 
-    this.endYear = 1998;
+    this.endYear = 1996;
     this.pixelsPerYear = 60; // Width in pixels per year
     this.baseOffset = 50; // Starting Y position
-    this.rowSpacing = 80; // Space between rows
-    this.maxRows = 5; // Number of rows to distribute events
+    this.rowSpacing = 60; // Space between rows
+    this.maxRows = 10; // Number of rows to distribute events
 
     this.startYear = new Date().getFullYear();
     this.entries = this.getAllEntries(); // Precompute sorted entries
@@ -509,14 +443,6 @@ class Timeline {
         parsedEnd: this.parseDate(work.endDate),
         tooltipContent: `${work.position}: ${work.company}\n${work.startDate} - ${work.endDate}`,
       })),
-      // ...this.data.volunteer.map((vol) => ({
-      //   title: vol.position,
-      //   subtitle: vol.organization,
-      //   type: "volunteer",
-      //   parsedStart: this.parseDate(vol.startDate),
-      //   parsedEnd: this.parseDate(vol.endDate),
-      //   tooltipContent: `${vol.position}: ${vol.organization}\n${vol.startDate} - ${vol.endDate}`,
-      // })),
     ]
 		.sort((a, b) => b.parsedEnd - a.parsedEnd);
   }

@@ -30,7 +30,8 @@
       "website": "",
       "startDate": "2024-01-01",
       "summary": "Empowering aspiring web developers as a lecturer for the Professional Diploma in Software Development at UCD Professional Academy. This program equips students with in-demand languages like HTML, CSS, JavaScript, Python, and SQL to become full-stack developers. I create a dynamic learning environment, fostering expertise in web development fundamentals and practical application through real-world project development.",
-      "highlights": []
+      "highlights": [],
+      "academic": true
     },
     {
       "company": "Pulse College",
@@ -39,7 +40,8 @@
       "startDate": "2023-04-01",
       "summary": "- Led and supported budding designers through the exciting realms of Game UI Design, Game Design, and Architecture, actively shaping their journeys in these dynamic fields. - Crafted comprehensive curricula for Game UI Design and Game Design & Architecture, ensuring students received a balanced blend of theory and practical know-how. - Designed engaging lessons that explored the psychology of UI Design, practical methodologies for creating functional UI, and strategies for delivering positive user experiences. - Oversaw day-to-day class activities, from interactive lectures to hands-on workshops, fostering an environment where students could thrive and experiment with their newfound skills. - Assigned projects and assignments that mirrored real-world challenges, providing students with invaluable experience and preparing them for the demands of the industry.",
       "highlights": [],
-      "endDate": "2024-04-01"
+      "endDate": "2024-04-01",
+      "academic": true
     },
     {
       "company": "Oracle",
@@ -72,7 +74,8 @@
       "startDate": "2019-08-01",
       "summary": "- Instructed and guided students enrolled in the MSc and Diploma programs for Software Engineering & Database Technologies. - Served as a valuable member of the IT Online Programme team at NUI Galway. - Delivered courses on various subjects, including Software Engineering, Object-oriented Programming (Java), Fundamentals of Database, Artificial Intelligence, and Thesis Fundamentals.",
       "highlights": [],
-      "endDate": "2023-09-01"
+      "endDate": "2023-09-01",
+      "academic": true
     },
     {
       "company": "Insight Research Ireland Centre for Data Analytics",
@@ -108,7 +111,8 @@
       "startDate": "2003-04-01",
       "summary": "Teaching all-level classes of Programming, Adobe Suite, and Microsoft Office.",
       "highlights": [],
-      "endDate": "2008-12-01"
+      "endDate": "2008-12-01",
+      "academic": true
     },
     {
       "company": "Al Awael",

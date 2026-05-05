@@ -7,51 +7,10 @@ layout: default
     Software Engineer by day, lecturer by night, electronics hobbyist
     in between — basically a 24/7 nerd on a quest for <em>happyness</em>, one
     pixel at a time.
-  <br />
+  </p>
+  <p>
     I'm also a <strong>Peace Commissioner</strong> appointed for County Dublin
     and adjacent counties, providing certification and witnessing services
     to the public.
   </p>
-
-  <!-- <div id="pc-banner">
-    <span><strong>Peace Commissioner Appointments</strong> — Book a free certification or witnessing session.</span>
-    <a href="/pc/">Book an appointment &rarr;</a>
-  </div> -->
-</div>
-
-<div class="posts basic-grid">
-  {% for post in paginator.posts %}
-  <div class="post shadow-effect">
-    <a href="{{ post.url }}" class="post-link">
-      <h3 class="post-title">{{ post.title }}</h3>
-    </a>
-    <p class="post-meta">
-      {{ post.date | date: "%B %e, %Y" }} |
-      <a href="{{ site.url }}{{ site.category_page }}#{{ post.category | slugify }}">{{post.category}}</a>
-    </p>
-    <p>{{ post.excerpt }}</p>
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="prev shadow-effect">&laquo;</a>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="current shadow-effect">{{ page }}</span>
-    {% else %}
-      {% if page == 1 %}
-        <a class="shadow-effect" href="/">1</a>
-      {% else %}
-        <a class="shadow-effect" href="/page{{ page }}">{{ page }}</a>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next  shadow-effect">&raquo;</a>
-  {% endif %}
 </div>

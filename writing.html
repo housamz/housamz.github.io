@@ -1,0 +1,17 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+nav_order: 2
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <a href="{{ post.url }}" class="post-link">
+      <h3 class="post-title">{{ post.title }}</h3>
+      <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    </a>
+  </div>
+  {% endfor %}
+</div>

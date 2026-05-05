@@ -1,0 +1,166 @@
+---
+layout: page
+title: Travels
+permalink: /travels/
+nav_order: 3
+---
+
+<div>
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <div id="map"></div>
+</div>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+
+<script>
+  const travels = [
+    {city:"Brussels", country:"Belgium", flag:"🇧🇪", lat:50.901, lng:4.4856},
+    {city:"Shenzhen", country:"China", flag:"🇨🇳", lat:22.6393, lng:113.8107},
+    {city:"Dubrovnik", country:"Croatia", flag:"🇭🇷", lat:42.5614, lng:18.2682},
+    {city:"Prague", country:"Czech Republic", flag:"🇨🇿", lat:50.1008, lng:14.26},
+    {city:"Billund", country:"Denmark", flag:"🇩🇰", lat:55.7404, lng:9.1517},
+    {city:"Cairo", country:"Egypt", flag:"🇪🇬", lat:30.1219, lng:31.4056},
+    {city:"Sharm El-Sheikh", country:"Egypt", flag:"🇪🇬", lat:27.9772, lng:34.3955},
+    {city:"Giza", country:"Egypt", flag:"🇪🇬", lat:29.9765, lng:31.1313},
+    {city:"6th of October City", country:"Egypt", flag:"🇪🇬", lat:29.9714, lng:30.9151},
+    {city:"Suez", country:"Egypt", flag:"🇪🇬", lat:29.5352, lng:32.2708},
+    {city:"Dahab", country:"Egypt", flag:"🇪🇬", lat:28.6656, lng:34.4958},
+    {city:"Paris", country:"France", flag:"🇫🇷", lat:48.8566, lng:2.3522},
+    {city:"Caen", country:"France", flag:"🇫🇷", lat:49.1829, lng:-0.3707},
+    {city:"Rouen", country:"France", flag:"🇫🇷", lat:49.4431, lng:1.0993},
+    {city:"Paris", country:"France", flag:"🇫🇷", lat:49.0097, lng:2.5479},
+    {city:"Frankfurt", country:"Germany", flag:"🇩🇪", lat:50.0379, lng:8.5622},
+    {city:"Bremen", country:"Germany", flag:"🇩🇪", lat:53.0475, lng:8.7873},
+    {city:"Hamburg", country:"Germany", flag:"🇩🇪", lat:53.6304, lng:9.9882},
+    {city:"Munich", country:"Germany", flag:"🇩🇪", lat:48.3537, lng:11.786},
+    {city:"Athens", country:"Greece", flag:"🇬🇷", lat:37.9364, lng:23.9445},
+    {city:"Egina", country:"Greece", flag:"🇬🇷", lat:37.7508, lng:23.4322},
+    {city:"Hong Kong", country:"Hong Kong", flag:"🇭🇰", lat:22.308, lng:113.9185},
+    {city:"Dehradun", country:"India", flag:"🇮🇳", lat:30.1873, lng:78.1801},
+    {city:"Rishikesh", country:"India", flag:"🇮🇳", lat:30.0869, lng:78.2676},
+    {city:"Agra", country:"India", flag:"🇮🇳", lat:27.155, lng:78.0421},
+    {city:"Jaipur", country:"India", flag:"🇮🇳", lat:26.8244, lng:75.7989},
+    {city:"Fatehpur Sikri", country:"India", flag:"🇮🇳", lat:27.0924, lng:77.6608},
+    {city:"New Delhi", country:"India", flag:"🇮🇳", lat:28.6139, lng:77.209},
+    {city:"Dublin", country:"Ireland", flag:"🇮🇪", lat:53.4264, lng:-6.2499},
+    {city:"Shannon", country:"Ireland", flag:"🇮🇪", lat:52.7019, lng:-8.9248},
+    {city:"Cork", country:"Ireland", flag:"🇮🇪", lat:51.8498, lng:-8.4915},
+    {city:"Limerick", country:"Ireland", flag:"🇮🇪", lat:52.7019, lng:-8.9248},
+    {city:"Galway", country:"Ireland", flag:"🇮🇪", lat:53.2707, lng:-9.0568},
+    {city:"Killarney", country:"Ireland", flag:"🇮🇪", lat:52.0576, lng:-9.5069},
+    {city:"Bantry", country:"Ireland", flag:"🇮🇪", lat:51.6556, lng:-9.5332},
+    {city:"Derry", country:"Ireland", flag:"🇮🇪", lat:54.0027, lng:-7.3183},
+    {city:"Belfast", country:"Ireland", flag:"🇮🇪", lat:54.6178, lng:-6.2159},
+    {city:"Sligo", country:"Ireland", flag:"🇮🇪", lat:54.2696, lng:-8.4761},
+    {city:"Londonderry", country:"Ireland", flag:"🇮🇪", lat:54.9972, lng:-7.3092},
+    {city:"Carrick-on-Shannon", country:"Ireland", flag:"🇮🇪", lat:54.0798, lng:-7.3112},
+    {city:"Athlone", country:"Ireland", flag:"🇮🇪", lat:53.4239, lng:-7.9407},
+    {city:"Waterford", country:"Ireland", flag:"🇮🇪", lat:52.1879, lng:-7.1101},
+    {city:"Wexford", country:"Ireland", flag:"🇮🇪", lat:52.336, lng:-6.4628},
+    {city:"Wicklow", country:"Ireland", flag:"🇮🇪", lat:52.9986, lng:-6.0648},
+    {city:"Loughrea", country:"Ireland", flag:"🇮🇪", lat:53.1616, lng:-8.5832},
+    {city:"Ennis", country:"Ireland", flag:"🇮🇪", lat:52.8433, lng:-8.9864},
+    {city:"Tralee", country:"Ireland", flag:"🇮🇪", lat:52.2693, lng:-9.7021},
+    {city:"Kilkenny", country:"Ireland", flag:"🇮🇪", lat:52.6541, lng:-7.2448},
+    {city:"Dingle", country:"Ireland", flag:"🇮🇪", lat:52.1408, lng:-10.2707},
+    {city:"Milan", country:"Italy", flag:"🇮🇹", lat:45.4642, lng:9.1900},
+    {city:"Venice", country:"Italy", flag:"🇮🇹", lat:45.5051, lng:12.3519},
+    {city:"Florence", country:"Italy", flag:"🇮🇹", lat:43.7711, lng:11.2486},
+    {city:"Fukuoka", country:"Japan", flag:"🇯🇵", lat:33.5897, lng:130.4513},
+    {city:"Tokyo", country:"Japan", flag:"🇯🇵", lat:35.5494, lng:139.7798},
+    {city:"Osaka", country:"Japan", flag:"🇯🇵", lat:34.432, lng:135.2304},
+    {city:"Mayazaki", country:"Japan", flag:"🇯🇵", lat:31.8772, lng:131.4489},
+    {city:"Kumamoto", country:"Japan", flag:"🇯🇵", lat:32.8371, lng:130.8544},
+    {city:"Nagasaki", country:"Japan", flag:"🇯🇵", lat:32.7851, lng:129.8772},
+    {city:"Asonoyu", country:"Japan", flag:"🇯🇵", lat:32.8371, lng:130.8544},
+    {city:"Amman", country:"Jordan", flag:"🇯🇴", lat:31.9454, lng:35.9284},
+    {city:"Zarqa", country:"Jordan", flag:"🇯🇴", lat:32.0738, lng:36.0886},
+    {city:"Beirut", country:"Lebanon", flag:"🇱🇧", lat:33.8209, lng:35.4884},
+    {city:"Zahle", country:"Lebanon", flag:"🇱🇧", lat:33.8092, lng:35.8798},
+    {city:"Nabatieh", country:"Lebanon", flag:"🇱🇧", lat:33.3708, lng:35.4817},
+    {city:"Kuala Lumpur", country:"Malaysia", flag:"🇲🇾", lat:2.7456, lng:101.7099},
+    {city:"Valletta", country:"Malta", flag:"🇲🇹", lat:35.8517, lng:14.4863},
+    {city:"Amsterdam", country:"Netherlands", flag:"🇳🇱", lat:52.3105, lng:4.7683},
+    {city:"Faro", country:"Portugal", flag:"🇵🇹", lat:37.0146, lng:-7.9659},
+    {city:"Doha", country:"Qatar", flag:"🇶🇦", lat:25.2609, lng:51.6138},
+    {city:"Bucharest", country:"Romania", flag:"🇷🇴", lat:44.5711, lng:26.0858},
+    {city:"Jeddah", country:"Saudi Arabia", flag:"🇸🇦", lat:21.6804, lng:39.1563},
+    {city:"Riyadh", country:"Saudi Arabia", flag:"🇸🇦", lat:24.9578, lng:46.6989},
+    {city:"Mecca", country:"Saudi Arabia", flag:"🇸🇦", lat:21.4225, lng:39.8262},
+    {city:"Singapore", country:"Singapore", flag:"🇸🇬", lat:1.3644, lng:103.9915},
+    {city:"Barcelona", country:"Spain", flag:"🇪🇸", lat:41.2971, lng:2.0785},
+    {city:"Cordoba", country:"Spain", flag:"🇪🇸", lat:37.8444, lng:-4.7869},
+    {city:"Granada", country:"Spain", flag:"🇪🇸", lat:37.1882, lng:-3.7779},
+    {city:"Malaga", country:"Spain", flag:"🇪🇸", lat:36.674, lng:-4.4969},
+    {city:"Las Palmas", country:"Spain", flag:"🇪🇸", lat:27.9319, lng:-15.3866},
+    {city:"Tenerife", country:"Spain", flag:"🇪🇸", lat:28.0444, lng:-16.5728},
+    {city:"Geneva", country:"Switzerland", flag:"🇨🇭", lat:46.237, lng:6.1086},
+    {city:"Aleppo", country:"Syria", flag:"🇸🇾", lat:36.1807, lng:37.2244},
+    {city:"Damascus", country:"Syria", flag:"🇸🇾", lat:33.4109, lng:36.5156},
+    {city:"Latakia", country:"Syria", flag:"🇸🇾", lat:35.4017, lng:35.9486},
+    {city:"Homs", country:"Syria", flag:"🇸🇾", lat:34.6414, lng:36.8198},
+    {city:"Hama", country:"Syria", flag:"🇸🇾", lat:35.1318, lng:36.7556},
+    {city:"Tartus", country:"Syria", flag:"🇸🇾", lat:34.8858, lng:35.8869},
+    {city:"Suwayda", country:"Syria", flag:"🇸🇾", lat:33.3178, lng:36.5667},
+    {city:"Palmyra", country:"Syria", flag:"🇸🇾", lat:34.5536, lng:38.2742},
+    {city:"Dara", country:"Syria", flag:"🇸🇾", lat:32.6242, lng:36.1058},
+    {city:"Tunis", country:"Tunisia", flag:"🇹🇳", lat:36.84, lng:10.2275},
+    {city:"Hammamet", country:"Tunisia", flag:"🇹🇳", lat:36.4004, lng:10.6228},
+    {city:"Carthage", country:"Tunisia", flag:"🇹🇳", lat:36.8529, lng:10.3239},
+    {city:"Istanbul", country:"Turkey", flag:"🇹🇷", lat:40.9774, lng:28.8142},
+    {city:"Dubai", country:"United Arab Emirates", flag:"🇦🇪", lat:25.2532, lng:55.3657},
+    {city:"Sharjah", country:"United Arab Emirates", flag:"🇦🇪", lat:25.3562, lng:55.4272},
+    {city:"Abu Dhabi", country:"United Arab Emirates", flag:"🇦🇪", lat:24.4332, lng:54.6518},
+    {city:"London", country:"United Kingdom", flag:"🇬🇧", lat:51.4706, lng:-0.4619},
+    {city:"Liverpool", country:"United Kingdom", flag:"🇬🇧", lat:53.3331, lng:-2.8497},
+    {city:"New York", country:"United States", flag:"🇺🇸", lat:40.6413, lng:-73.7781},
+    {city:"Manhattan", country:"United States", flag:"🇺🇸", lat:40.7831, lng:-73.9712},
+    {city:"Los Angeles", country:"United States", flag:"🇺🇸", lat:33.9416, lng:-118.4085},
+    {city:"Hollywood", country:"United States", flag:"🇺🇸", lat:34.0928, lng:-118.3287},
+    {city:"San Francisco", country:"United States", flag:"🇺🇸", lat:37.6213, lng:-122.379},
+    {city:"Palo Alto", country:"United States", flag:"🇺🇸", lat:37.4419, lng:-122.143},
+    {city:"Ho Chi Minh City", country:"Vietnam", flag:"🇻🇳", lat:10.8188, lng:106.652},
+    {city:"Cardiff", country:"Wales", flag:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", lat:51.3985, lng:-3.3433},
+    {city:"Bristol", country:"Wales", flag:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", lat:51.3827, lng:-2.7188},
+  ];
+
+  const map = L.map("map").setView([35, 20], 2);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    minZoom: 2,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  const markerGroup = L.layerGroup().addTo(map);
+  const markers = new Map();
+
+  function popupContent(place) {
+    return `
+    <strong>${place.flag} ${place.city}, ${place.country}</strong>
+  `;
+  }
+
+  travels.forEach((place) => {
+    const marker = L.marker([place.lat, place.lng])
+      .bindPopup(popupContent(place))
+      .addTo(markerGroup);
+    markers.set(place.id, marker);
+  });
+
+  const bounds = L.latLngBounds(travels.map((place) => [place.lat, place.lng]));
+  map.fitBounds(bounds, { padding: [30, 30] });
+</script>

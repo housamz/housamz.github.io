@@ -2,23 +2,29 @@
 // VARIABLES
 //
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inconsolata:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@400;500;700;800&family=PT+Serif:wght@400;700&display=swap");
 
 :root {
-  --primary: #121212;
-  --secondary: #f7f7f7;
-  --blue: #0f4e8d;
-  --blue-title: #0f4e8d;
+  --primary: #1f2937;
+  --secondary: #ffffff;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --code-bg: #f9fafb;
+  --blue: #2563eb;
+  --blue-title: #1d4ed8;
   --warning-txt: #856b00;
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #f7f7f7;
-    --secondary: #121212;
-    --blue: #4890c3;
-    --blue-title: #7cc8ff;
+    --primary: #f9fafb;
+    --secondary: #0b0f16;
+    --muted: #9ca3af;
+    --border: #1f2937;
+    --code-bg: #0e121a;
+    --blue: #60a5fa;
+    --blue-title: #93c5fd;
     --warning-txt: #eebf05;
   }
 }
@@ -26,14 +32,16 @@
 @media (prefers-dark-interface) {
   :root {
     --primary: #f7f7f7;
-    --secondary: #121212;
-    --blue: #4890c3;
+    --secondary: #0b0f16;
+    --blue: #60a5fa;
   }
 }
 
 // Colors
 $blue: var(--blue);
 $blue-title: var(--blue-title);
+$border-color: var(--border);
+$code-bg: var(--code-bg);
 $dark-color: #121212;
 $light-blue: #4890c3;
 $light-color: #f7f7f7;
@@ -41,12 +49,14 @@ $light-red: #d5c4d3;
 $primary-color: var(--primary);
 $red: #ab0044;
 $secondary-color: var(--secondary);
+$muted-color: var(--muted);
 $warning-bg: rgba(255, 193, 7, 0.08);
 $warning-bdr: rgba(108, 81, 0, 0.35);
 $warning-txt: var(--warning-txt);
 
 // Font stacks
-$sans: 'Helvetica', 'Inconsolata', monospace;
-$titles-font: 'Helvetica', sans-serif;
+$sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$serif: "PT Serif", Georgia, "Times New Roman", serif;
+$mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+$titles-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $arabic-font: 'Cairo', 'Helvetica', sans-serif;
-

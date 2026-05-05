@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Declarative vs Procedural Programming - Understanding the Differences
+title: Declarative vs Procedural Programming
 category: Software Engineering
 tags: [development, software-engineering]
 ---
