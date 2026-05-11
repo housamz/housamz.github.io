@@ -66,6 +66,47 @@ section {
   margin-top: 1.5rem;
 }
 
+.entry h2 {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.entry h3 {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.entry p,
+.entry ul,
+.entry ol,
+.entry blockquote,
+.entry pre {
+  margin: 0 0 1rem;
+}
+
+.entry ul,
+.entry ol {
+  padding-left: 1.5rem;
+}
+
+.entry ul {
+  list-style: disc;
+}
+
+.entry ol {
+  list-style: decimal;
+}
+
+.entry li {
+  margin: 0.25rem 0;
+}
+
+.entry blockquote {
+  border-left: 3px solid $border-color;
+  color: $dark-color;
+  padding-left: 1rem;
+}
+
 .entry img,
 .post img {
   height: auto;
