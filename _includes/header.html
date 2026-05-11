@@ -1,5 +1,5 @@
 <header
-  class="sticky top-20 w-[200px] shrink-0 self-start max-md:static"
+  class="sticky top-20 w-[150px] shrink-0 self-start max-md:static"
   id="site-header"
 >
   <div class="mb-16 flex items-center gap-4 max-md:mb-6">
@@ -76,10 +76,11 @@
       sort: "nav_order" %} {% for nav_page in nav_pages %} {% assign nav_title =
       nav_page.nav_title | default: nav_page.title %}
       <div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
+        {% if page.url == nav_page.url %}
         <div
-          class="{% if page.url != nav_page.url %}scale-0{% endif %} md:relative rounded-full md:mr-2 md:left-px w-[4px] h-[4px] mt-1 md:mt-0 transition-transform bg-sky-700"
+          class="md:relative rounded-full md:mr-2 md:left-px w-[4px] h-[4px] mt-1 md:mt-0 transition-transform bg-sky-700"
         ></div>
-
+        {% endif %}
         <!-- {% if nav_page.nav_icon %}
           <i class="{{ nav_page.nav_icon }} w-4 text-center text-[0.85rem]" aria-hidden="true"></i>
         {% endif %} -->
@@ -92,9 +93,6 @@
       </div>
       {% endfor %}
       <div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
-        <div
-          class="md:relative rounded-full md:mr-2 md:left-px w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-0 dark:bg-secondary-500"
-        ></div>
         <a
           class="inline-flex items-center gap-2 whitespace-nowrap text-sm text-gray-500 no-underline transition hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"
           href="{{ site.baseurl }}/terminal"

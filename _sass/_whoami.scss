@@ -8,19 +8,10 @@
 
   text,
   #earth path {
-    fill: #f00;
+    fill: rgb(31 41 55);
     letter-spacing: 1.28pt;
     transform-origin: center center;
   }
-}
-
-.pill {
-  background-color: #f00;
-  color: #fff;
-  display: inline-block;
-  font-size: 0.9rem;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.5rem;
 }
 
 .paper {
@@ -36,14 +27,7 @@
   padding: 1rem 1rem 1rem 2.4rem;
 
   a h4 {
-    font-size: 1rem;
-    line-height: 1.24;
-    margin: 7px 0 0;
-  }
-
-  a,
-  a h4 {
-    color: $blue;
+    line-height: 1.2;
   }
 
   & a:after {

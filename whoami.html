@@ -24,8 +24,8 @@ nav_icon: fa-solid fa-user
       </svg>
     </foreignObject>
   </svg>
-  <p bind="text | basics.summary"></p>
-  <h3>History</h3>
+  <div bind="paragraphs | basics.summary"></div>
+  <h3 class="text-lg font-bold mt-6 mb-3">History</h3>
   <div class="chart-key">
     <div class="work-bar">Work Experience</div>
     <div class="teaching-bar">Teaching</div>
@@ -38,10 +38,10 @@ nav_icon: fa-solid fa-user
     <div id="tooltip" class="tooltip"></div>
   </div>
 
-  <h3>Publications</h3>
-  <div bind="foreach | publications">
+  <h3 class="text-lg font-bold mt-6 mb-3">Publications</h3>
+  <div bind="foreach | publications" class="grid grid-cols-2 gap-4">
     <div class="paper">
-      <a bind="attr | { href : website }">
+      <a bind="attr | { href : website }" class="text-sky-600">
         <h4 bind="text | name"></h4>
       </a>
       <div class="paper-meta">
@@ -50,9 +50,9 @@ nav_icon: fa-solid fa-user
     </div>
   </div>
 
-  <h3>Skills</h3>
-  <div bind="foreach | skills">
-    <div class="pill">
+  <h3 class="text-lg font-bold mt-6 mb-3">Skills</h3>
+  <div bind="foreach | skills" class="flex gap-1 flex-wrap">
+    <div class="bg-sky-700 text-white px-2">
       <span bind="text | name"></span>
     </div>
   </div>

@@ -92,6 +92,7 @@ section {
 .tabs {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
 
   & > label {
     order: 1;
@@ -103,19 +104,19 @@ section {
   }
 
   & .tab {
-    border: 1px solid #f00;
+    border-top: 1px solid rgb(31 41 55);
     order: 99;
     flex-grow: 1;
     width: 100%;
     display: none;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
   }
 
   & input[type="radio"] {
     display: none;
 
     &:checked + label {
-      border: 1px solid #f00;
+      border: 1px solid rgb(31 41 55);
       margin-bottom: -1px;
       font-weight: bold;
 

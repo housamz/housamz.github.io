@@ -94,7 +94,7 @@ class DateBetween {
 
     if (!this.html) output = output.replace(/(<([^>]+)>)/gi, "");
 
-    parent.innerHTML = output;
+    parent.innerHTML = `${output} •`;
   }
 
   calculate() {
@@ -102,7 +102,7 @@ class DateBetween {
     let endDate = new Date(
       this.endingDate
         ? new Date(this.endingDate).toISOString()
-        : new Date().toISOString()
+        : new Date().toISOString(),
     );
 
     if (startDate > endDate) {
@@ -325,7 +325,7 @@ class FThisWebsite {
         monsterDiv,
         (Math.random() - 0.5) * 2 * this.speed,
         this.speed,
-        "monster"
+        "monster",
       );
     }
 
@@ -333,13 +333,13 @@ class FThisWebsite {
       const m = this.create(
         "monster monster-" + className,
         this.gameDiv,
-        "monster"
+        "monster",
       );
       this.move(
         m,
         this.rand(this.speed, this.maxX),
         this.rand(this.speed, this.speed * 20),
-        "monster"
+        "monster",
       );
     }
 
@@ -408,7 +408,7 @@ class Timeline {
     this.pixelsPerYear = 60; // Width in pixels per year
     this.baseOffset = 50; // Starting Y position
     this.rowSpacing = 60; // Space between rows
-    this.maxRows = 10; // Number of rows to distribute events
+    this.maxRows = 5; // Number of rows to distribute events
 
     this.startYear = new Date().getFullYear();
     this.entries = this.getAllEntries(); // Precompute sorted entries
@@ -443,8 +443,7 @@ class Timeline {
         parsedEnd: this.parseDate(work.endDate),
         tooltipContent: `${work.position}: ${work.company}\n${work.startDate} - ${work.endDate}`,
       })),
-    ]
-		.sort((a, b) => b.parsedEnd - a.parsedEnd);
+    ].sort((a, b) => b.parsedEnd - a.parsedEnd);
   }
 
   init() {
@@ -567,7 +566,7 @@ const VARS = {
 // clone children as much as the data length
 const cloneNode = (node, count) => {
   [...Array(count)].forEach(() =>
-    node.parentNode.insertBefore(node.cloneNode(true), node)
+    node.parentNode.insertBefore(node.cloneNode(true), node),
   );
 };
 
@@ -578,7 +577,7 @@ const findData = (obj, bindParams, index) => {
     operations.substr = true;
     extra.substr = bindParams.substring(
       bindParams.indexOf("["),
-      bindParams.lastIndexOf("]") + 1
+      bindParams.lastIndexOf("]") + 1,
     );
   }
 
@@ -642,6 +641,14 @@ const bindOne = (data, node, index) => {
       break;
     case "html":
       node.innerHTML = findData(data, bindParams[1], index);
+      break;
+    case "paragraphs":
+      const paragraphs =
+        `<p>${findData(data, bindParams[1], index).split(".").join(".</p><p>")}</p>`.replace(
+          /<p><\/p>/g,
+          "",
+        );
+      node.innerHTML = paragraphs;
       break;
     case "text":
       node.innerText = findData(data, bindParams[1], index);
