@@ -5,10 +5,10 @@
 // IMPORTS
 //
 
-@use "variables" as *;
-@use "whoami";
-@use "highlights";
-@use "game";
+@import "variables";
+@import "whoami";
+@import "highlights";
+@import "game";
 
 body {
   font-family: $sans;
