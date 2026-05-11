@@ -145,7 +145,7 @@ section {
   }
 
   & .tab {
-    border-top: 1px solid rgb(31 41 55);
+    border-top: 1px solid rgb(31, 41, 55);
     order: 99;
     flex-grow: 1;
     width: 100%;
@@ -157,7 +157,7 @@ section {
     display: none;
 
     &:checked + label {
-      border: 1px solid rgb(31 41 55);
+      border: 1px solid rgb(31, 41, 55);
       margin-bottom: -1px;
       font-weight: bold;
 
