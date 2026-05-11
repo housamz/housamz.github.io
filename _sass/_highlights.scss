@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 div.highlight {
   background-color: $dark-color;
   border-radius: 6px;
