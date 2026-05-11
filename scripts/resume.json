@@ -9,11 +9,17 @@
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "",
-      "countryCode": "",
-      "region": ""
+      "city": "Dublin",
+      "countryCode": "IE",
+      "region": "Leinster"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "housamz",
+        "url": "https://www.linkedin.com/in/housamz/"
+      }
+    ]
   },
   "work": [
     {
@@ -151,24 +157,89 @@
       "endDate": "1998-06-01"
     }
   ],
+  "volunteer": [
+    {
+      "organization": "Depaul (Ireland)",
+      "position": "Consultant",
+      "startDate": "2021-02-28",
+      "endDate": "",
+      "summary": null,
+      "highlights": [],
+      "website": ""
+    },
+    {
+      "organization": "My Streets Ireland CLG",
+      "position": "Consultant",
+      "startDate": "2019-12-31",
+      "endDate": "",
+      "summary": null,
+      "highlights": [],
+      "website": ""
+    },
+    {
+      "organization": "CoderDojo",
+      "position": "Programming Instructor",
+      "startDate": "2015-09-30",
+      "endDate": "",
+      "summary": "Teaching kids programming using Scratch and web development using HTML, CSS, and JS.",
+      "highlights": [],
+      "website": ""
+    },
+    {
+      "organization": "Girls Hack Ireland",
+      "position": "Programming Instructor",
+      "startDate": "2015-02-28",
+      "endDate": "",
+      "summary": null,
+      "highlights": [],
+      "website": ""
+    },
+    {
+      "organization": "Online Marketing in Galway (OMiG)",
+      "position": "Web Designer, Digital Marketing",
+      "startDate": "2014-04-30",
+      "endDate": "2021-06-30",
+      "summary": null,
+      "highlights": [],
+      "website": ""
+    }
+  ],
   "education": [
     {
-      "institution": "National University of Ireland, Galway",
-      "area": "",
+      "institution": "University of Galway",
+      "area": "Software Engineering and Database Technologies",
       "studyType": "Master of Science (MSc)",
-      "startDate": "2015-01-01",
-      "gpa": "",
+      "startDate": "2015-09-01",
+      "endDate": "2017-11-01",
+      "score": "1st class honours",
       "courses": [],
-      "endDate": "2017-01-01"
+      "location": "Galway",
+      "type": "Part Time"
     },
     {
       "institution": "Damascus University",
-      "area": "",
+      "area": "Language, Literature, and Linguistics",
       "studyType": "Bachelor of Arts (B.A.)",
-      "startDate": "2004-01-01",
-      "gpa": "",
+      "startDate": "2004-12-31",
+      "endDate": "2008-12-31",
+      "score": "",
       "courses": [],
-      "endDate": "2008-01-01"
+      "location": "Damascus",
+      "type": "Full Time"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Oracle 2022 Sustainability Champion",
+      "date": "2022-04-30",
+      "awarder": "Oracle Sustainability",
+      "summary": "Oracle is proud to recognize the 2022 Oracle Sustainability Champions—employees around the world who are leading from the seat they are in and directly contributing to a more sustainable future. Each year, the Oracle Global Sustainability Team honors inspiring employees whose efforts help reduce our environmental footprint and improve the quality of life in the communities where they live and work.\n\nMore on https://blogs.oracle.com/sustainability/post/meet-this-years-sustainability-champions"
+    },
+    {
+      "title": "NASA Space Apps Challenge 2019",
+      "date": "2019-10-31",
+      "awarder": "NASA",
+      "summary": "Space Apps is an international hackathon for coders, scientists, designers, storytellers, makers, builders, technologists, and others in cities around the world, where teams engage with NASA’s free and open data to address real-world problems on Earth and in space. Space Apps 2019 included over 29,000 participants at more than 230 events in 80 countries."
     }
   ],
   "publications": [

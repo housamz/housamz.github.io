@@ -1,20 +1,39 @@
-<div id="back-top">
-  <a href="#top">
-    <span></span>
+<div
+  class="fixed bottom-6 right-6 rounded-md bg-sky-700 px-3 py-2 text-sm text-white shadow-sm transition hover:bg-sky-600"
+  id="back-top"
+>
+  <a class="text-white no-underline" href="#top">
     Back to top
   </a>
 </div>
 
-<footer>
+<footer
+  class="mt-20 flex w-full items-center justify-between text-sm text-gray-500"
+>
   <div>
     &copy;
     <script>
       new Date().getFullYear() > 2006 &&
         document.write(2006 + " - " + new Date().getFullYear());
     </script>
+    {{ site.name }}
   </div>
 
-  {% include social-links.html %}
+  <div class="flex justify-end gap-3">
+    {% for item in site.footer-link-items %} {% assign user = item.user %} {% if
+    user %} {% if item.url %} {% assign href = item.url | relative_url %} {%
+    else %} {% assign href = item.base_url | append: user %} {% endif %}
+    <a
+      class="inline-flex h-6 w-6 items-center justify-center text-base text-gray-500 no-underline hover:text-sky-700 dark:text-gray-400 dark:hover:text-sky-300"
+      href="{{ href }}"
+      target="_blank"
+      aria-label="{{ item.label }}"
+    >
+      <i class="{{ item.icon }}" aria-hidden="true"></i>
+      <span class="sr-only">{{ item.label }}</span>
+    </a>
+    {% endif %} {% endfor %}
+  </div>
 </footer>
 
 <script
@@ -26,4 +45,20 @@
   type="text/javascript"
 ></script>
 
-{% include analytics.html %}
+{% if site.google_analytics %}
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-93G01ZXVH0"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-93G01ZXVH0");
+</script>
+<!-- End Google Analytics -->
+{% endif %}

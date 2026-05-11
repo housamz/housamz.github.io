@@ -9,9 +9,9 @@ nav_icon: fa-solid fa-pen-nib
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
-    <a href="{{ post.url }}" class="post-link">
-      <h3 class="post-title">{{ post.title }}</h3>
-      <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    <a class="mb-6 flex items-center justify-between text-gray-800 no-underline hover:text-sky-700 dark:text-gray-100 dark:hover:text-sky-300" href="{{ post.url }}">
+      <h3 class="m-0 max-w-[70%] truncate text-base font-bold">{{ post.title }}</h3>
+      <p class="m-0 text-sm text-gray-500">{{ post.date | date: "%B %d, %Y" }}</p>
     </a>
   </div>
   {% endfor %}

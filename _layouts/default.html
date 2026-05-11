@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-	Retro Vibes Theme 1.0.1 by Housam Ziad
-	Copyright 2016-2021 Housam Ziad - hmz.ie | @housamz
+	m1n1m0m by Housam Ziad
+	Copyright 2016-2026 Housam Ziad - hmz.ie | @housamz
 	Free for personal and commercial use under the MIT license
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
@@ -10,14 +10,14 @@
   {% include head.html %}
 </head>
 
-<body>
-  <div class="site-shell">
+<body class="bg-white font-sans text-gray-800 antialiased dark:bg-[#0b0f16] dark:text-gray-100">
+  <div class="mx-auto flex max-w-5xl px-4 pb-20 pt-8 md:pt-20 lg:pt-32 max-md:block">
     {% include header.html %}
-    <main class="site-main">
-      <h1 class="site-title site-title-desktop">
-        <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+    <main class="min-w-0 flex-auto">
+      <h1 class="mb-16 hidden min-h-12 text-base font-extrabold uppercase leading-tight md:flex items-center">
+        <a class="text-gray-800 no-underline hover:text-sky-700 dark:text-gray-100 dark:hover:text-sky-300" href="{{ site.baseurl }}/">{{ site.name }}</a>
       </h1>
-      <div class="container" id="main">{{ content }}</div>
+      <div class="w-full" id="main">{{ content }}</div>
       {% include footer.html %}
     </main>
   </div>

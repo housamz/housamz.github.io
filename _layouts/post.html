@@ -4,8 +4,8 @@ layout: default
 
 <div>
   <article class="post">
-    <h1>{{ page.title }}</h1>
-    <small>
+    <h1 class="mb-2 mt-0 text-base font-semibold">{{ page.title }}</h1>
+    <small class="block text-sm text-gray-500">
       {{ page.date | date: "%B %e, %Y" }} in
       <a href="{{ site.url }}{{ site.category_page }}#{{ page.category | slugify }}">{{page.category}}</a>
       | {% assign words = content | number_of_words %} {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180
@@ -16,7 +16,7 @@ layout: default
 
     <div class="entry">{{ content }}</div>
 
-    <div class="posts-navigation">
+    <div class="mt-10 flex justify-between">
       {% if page.previous.url %}
       <a href="{{page.previous.url}}">&laquo; Previous</a>
       {% endif %} {% if page.next.url %}

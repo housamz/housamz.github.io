@@ -8,15 +8,15 @@
 
   text,
   #earth path {
-    fill: $primary-color;
+    fill: #f00;
     letter-spacing: 1.28pt;
     transform-origin: center center;
   }
 }
 
 .pill {
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: #f00;
+  color: #fff;
   display: inline-block;
   font-size: 0.9rem;
   margin: 0 0.5rem 0.5rem 0;

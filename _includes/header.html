@@ -1,12 +1,15 @@
-
-<header id="site-header">
-  <div id="site-brand">
+<header
+  class="sticky top-20 w-[200px] shrink-0 self-start max-md:static"
+  id="site-header"
+>
+  <div class="mb-16 flex items-center gap-4 max-md:mb-6">
     <a
-      class="site-mark"
+      class="inline-flex h-12 w-12 items-center justify-center rounded-md bg-sky-700 text-white no-underline transition hover:opacity-80"
       href="{{ site.baseurl }}/"
       aria-label="{{ site.name }}"
     >
       <svg
+        class="h-9 w-9 fill-current"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -49,30 +52,56 @@
         </g>
       </svg>
     </a>
-    <h1 class="site-title site-title-mobile">
-      <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+    <h1
+      class="m-0 hidden text-base font-extrabold uppercase leading-tight max-md:block"
+    >
+      <a
+        class="text-gray-800 no-underline dark:text-gray-100"
+        href="{{ site.baseurl }}/"
+        >{{ site.name }}</a
+      >
     </h1>
   </div>
 
-  <nav role="navigation" aria-label="Primary navigation">
-    {% assign nav_pages = site.pages | where_exp: "item", "item.nav_order" | sort: "nav_order" %}
-    {% for nav_page in nav_pages %}
-      {% assign nav_title = nav_page.nav_title | default: nav_page.title %}
-      <a
-        href="{{ nav_page.url | relative_url }}"
-        class="{% if page.url == nav_page.url %}active{% endif %}"
-      >
-        {% if nav_page.nav_icon %}
-          <i class="{{ nav_page.nav_icon }}" aria-hidden="true"></i>
-        {% endif %}
-        <span>{{ nav_title }}</span>
-      </a>
-    {% endfor %}
-    <a
-      href="{{ site.baseurl }}/terminal"
+  <nav
+    class="flex flex-col items-start gap-2 max-md:-mx-4 max-md:mb-8 max-md:flex-row max-md:overflow-x-auto max-md:border-b max-md:border-gray-200 max-md:px-4 max-md:pb-4 max-md:dark:border-gray-800"
+    role="navigation"
+    aria-label="Primary navigation"
+  >
+    <div
+      class="flex flex-row md:flex-col space-x-4 md:space-x-0 pr-10"
+      id="nav"
     >
-      <i class="fa-solid fa-terminal" aria-hidden="true"></i>
-      <span>Terminal</span>
-    </a>
+      {% assign nav_pages = site.pages | where_exp: "item", "item.nav_order" |
+      sort: "nav_order" %} {% for nav_page in nav_pages %} {% assign nav_title =
+      nav_page.nav_title | default: nav_page.title %}
+      <div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
+        <div
+          class="{% if page.url != nav_page.url %}scale-0{% endif %} md:relative rounded-full md:mr-2 md:left-px w-[4px] h-[4px] mt-1 md:mt-0 transition-transform bg-sky-700"
+        ></div>
+
+        <!-- {% if nav_page.nav_icon %}
+          <i class="{{ nav_page.nav_icon }} w-4 text-center text-[0.85rem]" aria-hidden="true"></i>
+        {% endif %} -->
+        <a
+          id="/"
+          class="transition-opacity hover:opacity-60 dark:text-gray-400 {% if page.url == nav_page.url %}text-sky-700 dark:text-sky-300{% else %}text-gray-500 dark:text-gray-400{% endif %}"
+          href="{{ nav_page.url | relative_url }}"
+          >{{ nav_title }}</a
+        >
+      </div>
+      {% endfor %}
+      <div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
+        <div
+          class="md:relative rounded-full md:mr-2 md:left-px w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-0 dark:bg-secondary-500"
+        ></div>
+        <a
+          class="inline-flex items-center gap-2 whitespace-nowrap text-sm text-gray-500 no-underline transition hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"
+          href="{{ site.baseurl }}/terminal"
+        >
+          <span>Terminal</span>
+        </a>
+      </div>
+    </div>
   </nav>
 </header>

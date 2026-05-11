@@ -11,7 +11,7 @@
   --border: #e5e7eb;
   --code-bg: #f9fafb;
   --blue: #2563eb;
-  --blue-title: #1d4ed8;
+  --sky-title: #1d4ed8;
   --warning-txt: #856b00;
 }
 
@@ -24,7 +24,7 @@
     --border: #1f2937;
     --code-bg: #0e121a;
     --blue: #60a5fa;
-    --blue-title: #93c5fd;
+    --sky-title: #93c5fd;
     --warning-txt: #eebf05;
   }
 }
@@ -39,7 +39,7 @@
 
 // Colors
 $blue: var(--blue);
-$blue-title: var(--blue-title);
+$blue-title: var(--sky-title);
 $border-color: var(--border);
 $code-bg: var(--code-bg);
 $dark-color: #121212;

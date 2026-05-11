@@ -6,23 +6,13 @@
 //
 
 @import "variables";
-@import "header";
 @import "whoami";
 @import "highlights";
 @import "game";
-@import "peace-commissioner";
-
-* {
-  box-sizing: border-box;
-}
 
 body {
-  background-color: $secondary-color;
-  color: $primary-color;
   font-family: $sans;
-  font-size: 1rem;
   line-height: 1.65;
-  margin: 0;
 }
 
 a {
@@ -39,7 +29,6 @@ h1,
 h2,
 h3,
 h4 {
-  color: $primary-color;
   font-family: $titles-font;
   line-height: 1.35;
   margin: 2rem 0 0.75rem;
@@ -53,89 +42,12 @@ h2 {
   font-size: 1rem;
 }
 
-.site-shell {
-  display: flex;
-  gap: 3rem;
-  margin: 0 auto;
-  max-width: 1024px;
-  padding: 8rem 1rem 10rem;
-}
-
-.site-main {
-  flex: 1;
-  min-width: 0;
-}
-
-.container {
-  max-width: 720px;
-  width: 75%;
-}
-
-.site-title {
-  font-family: $titles-font;
-  font-size: 1rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin: 0 0 4rem;
-  text-transform: uppercase;
-  min-height: 48px;
-
-  a {
-    color: $primary-color;
-    text-decoration: none;
-  }
-}
-
-.site-title-mobile {
-  display: none;
-  margin: 0;
-}
-
-.hidden {
-  display: none;
-}
-
-.sr-only {
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 #site-intro {
-  color: $primary-color;
   font-family: $serif;
   font-size: 1.12rem;
   line-height: 1.7;
   margin: -0.35rem 0 2.5rem;
   padding-bottom: 0;
-}
-
-#pc-banner {
-  border: 3px solid $blue;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  a {
-    margin-left: 0.5rem;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: $blue;
-    color: $light-color;
-    padding: 0.4rem 0.9rem;
-
-    &:hover {
-      background-color: $blue-title;
-    }
-  }
 }
 
 section {
@@ -167,38 +79,6 @@ section {
   }
 }
 
-.social-links {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: flex-end;
-
-  a {
-    align-items: center;
-    color: $muted-color;
-    display: inline-flex;
-    font-size: 1rem;
-    height: 1.5rem;
-    justify-content: center;
-    text-decoration: none;
-    width: 1.5rem;
-
-    &:hover {
-      color: $blue-title;
-    }
-  }
-}
-
-footer {
-  align-items: center;
-  color: $muted-color;
-  display: flex;
-  font-size: 0.85rem;
-  justify-content: space-between;
-  margin-top: 5rem;
-  max-width: 720px;
-  width: 75%;
-}
-
 /* Arabic */
 .arabic {
   direction: rtl;
@@ -223,7 +103,7 @@ footer {
   }
 
   & .tab {
-    border: 1px solid $primary-color;
+    border: 1px solid #f00;
     order: 99;
     flex-grow: 1;
     width: 100%;
@@ -235,7 +115,7 @@ footer {
     display: none;
 
     &:checked + label {
-      border: 1px solid $primary-color;
+      border: 1px solid #f00;
       margin-bottom: -1px;
       font-weight: bold;
 
@@ -244,88 +124,6 @@ footer {
       }
     }
   }
-}
-
-@media only screen and (max-width: 900px) {
-  body {
-    font-size: 1rem;
-  }
-
-  .site-shell {
-    display: block;
-    padding: 2rem 1rem 5rem;
-  }
-
-  #site-header {
-    position: static;
-    width: 100%;
-
-    #site-brand {
-      margin-bottom: 1.5rem;
-    }
-
-    nav {
-      border-bottom: 1px solid $border-color;
-      flex-direction: row;
-      gap: 1rem;
-      margin: 0 -1rem 2rem;
-      overflow-x: auto;
-      padding: 0 1rem 1rem;
-      white-space: nowrap;
-
-      a {
-        flex-direction: column-reverse;
-        gap: 0.35rem;
-
-        &:before {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
-  .container,
-  footer {
-    width: 100%;
-  }
-
-  .site-title {
-    margin-bottom: 0;
-  }
-
-  .site-title-desktop {
-    display: none;
-  }
-
-  .site-title-mobile {
-    display: block;
-    min-height: unset;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .social-links {
-    flex-wrap: wrap;
-  }
-
-  #publications {
-    flex-direction: column;
-
-    .paper {
-      max-width: unset;
-    }
-  }
-
-  .curl {
-    display: none;
-  }
-}
-
-.posts-navigation {
-  display: flex;
-  justify-content: space-between;
 }
 
 #map {
@@ -344,14 +142,6 @@ footer {
   margin-bottom: 3rem;
 }
 
-.warning-box {
-  background: $warning-bg;
-  border: 1px solid $warning-bdr;
-  padding: 1rem;
-  margin: 1.5rem;
-  color: $warning-txt;
-}
-
 @media (max-width: 600px) {
   .tabs {
     & > label {
@@ -361,54 +151,5 @@ footer {
     & > .tab {
       padding: 0.5rem 1rem;
     }
-  }
-}
-
-#back-top {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  background-color: $blue-title;
-  color: $light-color;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-size: 0.85rem;
-
-  & a {
-    color: $light-color;
-    text-decoration: none;
-  }
-
-  &:hover {
-    background-color: $blue;
-  }
-}
-
-.post-link {
-  color: $primary-color;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-
-  & .post-meta {
-    margin: 0;
-    font-size: 0.8rem;
-    opacity: 0.5;
-  }
-
-  &:hover {
-    color: $blue-title;
-  }
-
-  & .post-title {
-    max-width: 70%;
-    display: inline-block;
-    margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
