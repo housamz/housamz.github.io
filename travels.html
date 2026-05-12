@@ -6,7 +6,7 @@ nav_order: 3
 nav_icon: fa-solid fa-plane-departure
 ---
 
-<div>
+<div class="travels-page">
   <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
@@ -14,7 +14,54 @@ nav_icon: fa-solid fa-plane-departure
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <div id="map"></div>
+  <!-- Marker cluster CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+  />
+
+  <div class="travel-toolbar" aria-label="Travel stats and filters">
+    <section class="travel-stats" aria-label="Travel stats">
+      <p class="travel-stat bg-sky-800 text-white"><span>Countries</span><strong id="countries-count">0</strong></p>
+      <p class="travel-stat bg-sky-800 text-white"><span>Cities</span><strong id="cities-count">0</strong></p>
+    </section>
+
+    <form class="travel-controls" aria-label="Map filters" onsubmit="return false;">
+      <div class="travel-field">
+        <label for="country-filter">Country</label>
+        <select id="country-filter" name="country-filter">
+          <option value="all">All countries</option>
+        </select>
+      </div>
+
+      <div class="travel-field">
+        <label for="city-search">City</label>
+        <input
+          id="city-search"
+          name="city-search"
+          type="search"
+          placeholder="Search city"
+          autocomplete="off"
+        />
+      </div>
+
+      <button id="clear-filters" type="button">Clear</button>
+    </form>
+  </div>
+
+  <div
+    id="map"
+    role="region"
+    aria-label="World map with markers of visited places"
+  ></div>
+
+  <noscript>
+    JavaScript is disabled, so the interactive map is not available.
+  </noscript>
 </div>
 
 <!-- Leaflet JS -->
@@ -23,6 +70,7 @@ nav_icon: fa-solid fa-plane-departure
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""
 ></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 <script>
   const countries = [
@@ -188,21 +236,109 @@ nav_icon: fa-solid fa-plane-departure
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
-  const markerGroup = L.layerGroup().addTo(map);
+  const markerGroup =
+    typeof L.markerClusterGroup === "function"
+      ? L.markerClusterGroup({
+          showCoverageOnHover: false,
+          disableClusteringAtZoom: 7,
+          chunkedLoading: false,
+        })
+      : L.layerGroup();
+
+  markerGroup.addTo(map);
   const markers = new Map();
+  const countryFilter = document.getElementById("country-filter");
+  const citySearch = document.getElementById("city-search");
+  const clearFilters = document.getElementById("clear-filters");
+  const countriesCount = document.getElementById("countries-count");
+  const citiesCount = document.getElementById("cities-count");
+  const visibleCount = document.getElementById("visible-count");
+  const travelResults = document.getElementById("travel-results");
 
-  function popupContent(p) {
-    const c = countries[p.country - 1];
-    return `<strong>${c.flag} ${p.city}, ${c.name}</strong>`;
-  }
+  const travelData = travels.map((place, index) => ({
+    ...place,
+    id: index + 1,
+    countryData: countries[place.country - 1],
+  }));
 
-  travels.forEach((place) => {
-    const marker = L.marker([place.lat, place.lng])
-      .bindPopup(popupContent(place))
-      .addTo(markerGroup);
-    markers.set(place.id, marker);
+  const totalCountries = new Set(travelData.map((place) => place.country)).size;
+  const totalCities = travelData.length;
+  const allBounds = L.latLngBounds(travelData.map((place) => [place.lat, place.lng]));
+
+  countriesCount.textContent = String(totalCountries);
+  citiesCount.textContent = String(totalCities);
+
+  const usedCountries = countries.filter((_, i) =>
+    travelData.some((place) => place.country === i + 1)
+  );
+
+  usedCountries.forEach((country, index) => {
+    const option = document.createElement("option");
+    option.value = String(countries.indexOf(country) + 1);
+    option.textContent = `${country.flag} ${country.name}`;
+    countryFilter.appendChild(option);
   });
 
-  const bounds = L.latLngBounds(travels.map((place) => [place.lat, place.lng]));
-  map.fitBounds(bounds, { padding: [30, 30] });
+  function popupContent(p) {
+    return `<strong>${p.countryData.flag} ${p.city}, ${p.countryData.name}</strong>`;
+  }
+
+  function getFilteredTravels() {
+    const selectedCountry = countryFilter.value;
+    const cityQuery = citySearch.value.trim().toLowerCase();
+
+    return travelData.filter((place) => {
+      const matchesCountry =
+        selectedCountry === "all" || place.country === Number(selectedCountry);
+      const matchesCity =
+        cityQuery.length === 0 || place.city.toLowerCase().includes(cityQuery);
+
+      return matchesCountry && matchesCity;
+    });
+  }
+
+  function updateMap(filteredTravels) {
+    // Detach group from map before clearing to prevent cluster
+    // animations from overriding the subsequent fitBounds call.
+    map.removeLayer(markerGroup);
+    markerGroup.clearLayers();
+    markers.clear();
+
+    filteredTravels.forEach((place) => {
+      const marker = L.marker([place.lat, place.lng]).bindPopup(popupContent(place));
+      markers.set(place.id, marker);
+      markerGroup.addLayer(marker);
+    });
+
+    markerGroup.addTo(map);
+
+    visibleCount.textContent = String(filteredTravels.length);
+
+    if (filteredTravels.length > 1) {
+      const bounds = L.latLngBounds(filteredTravels.map((place) => [place.lat, place.lng]));
+      map.fitBounds(bounds, { padding: [30, 30] });
+      travelResults.textContent = `Showing ${filteredTravels.length} cities.`;
+      return;
+    }
+
+    if (filteredTravels.length === 1) {
+      const place = filteredTravels[0];
+      map.setView([place.lat, place.lng], 6);
+      travelResults.textContent = `Showing 1 city: ${place.city}, ${place.countryData.name}.`;
+      return;
+    }
+
+    map.fitBounds(allBounds, { padding: [30, 30] });
+    travelResults.textContent = "No cities match this filter.";
+  }
+
+  countryFilter.addEventListener("change", () => updateMap(getFilteredTravels()));
+  citySearch.addEventListener("input", () => updateMap(getFilteredTravels()));
+  clearFilters.addEventListener("click", () => {
+    countryFilter.value = "all";
+    citySearch.value = "";
+    updateMap(travelData);
+  });
+
+  updateMap(travelData);
 </script>

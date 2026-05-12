@@ -180,6 +180,105 @@ section {
   width: 100%;
 }
 
+.travel-stats {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  margin: 0;
+  min-width: max-content;
+}
+
+.entry .travel-stat {
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  font-family: $sans;
+  gap: 0.45rem;
+  margin: 0;
+  min-height: 2.25rem;
+  padding: 0.4rem 0.6rem;
+  white-space: nowrap;
+
+  span {
+    font-size: 0.85rem;
+    opacity: 0.75;
+  }
+
+  strong {
+    font-size: 0.95rem;
+  }
+}
+
+.travel-toolbar {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.1rem;
+}
+
+.travel-controls {
+  align-items: center;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: nowrap;
+  gap: 0.65rem;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  min-width: max-content;
+
+  .travel-field {
+    align-items: center;
+    display: inline-flex;
+    gap: 0.45rem;
+  }
+
+  label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+
+  select,
+  input,
+  button {
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    font-family: $sans;
+    font-size: 0.95rem;
+    min-height: 2.25rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  select,
+  input {
+    min-width: 150px;
+  }
+
+  button {
+    background: transparent;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-weight: 600;
+    line-height: 1.1;
+    white-space: nowrap;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.travel-results {
+  margin: 0 0 0.5rem;
+  min-height: 1.25rem;
+}
+
 .leaflet-container {
   font-family: $sans;
 }
@@ -197,5 +296,21 @@ section {
     & > .tab {
       padding: 0.5rem 1rem;
     }
+  }
+
+  #map {
+    min-height: 300px;
+  }
+
+  .travel-stats {
+    gap: 0.5rem;
+  }
+
+  .travel-toolbar {
+    gap: 0.5rem;
+  }
+
+  .travel-controls {
+    gap: 0.5rem;
   }
 }
