@@ -229,12 +229,36 @@ nav_icon: fa-solid fa-plane-departure
 
   const map = L.map("map").setView([35, 20], 2);
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 18,
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const lightTiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    maxZoom: 20,
     minZoom: 2,
     attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  });
+  const darkTiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+    maxZoom: 20,
+    minZoom: 2,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  });
+
+  let baseLayer;
+  function applyBaseLayer(isDark) {
+    if (baseLayer) {
+      map.removeLayer(baseLayer);
+    }
+    baseLayer = isDark ? darkTiles : lightTiles;
+    baseLayer.addTo(map);
+  }
+
+  applyBaseLayer(prefersDark.matches);
+
+  if (typeof prefersDark.addEventListener === "function") {
+    prefersDark.addEventListener("change", (event) => applyBaseLayer(event.matches));
+  } else if (typeof prefersDark.addListener === "function") {
+    prefersDark.addListener((event) => applyBaseLayer(event.matches));
+  }
 
   const markerGroup =
     typeof L.markerClusterGroup === "function"

@@ -14,9 +14,11 @@
   <div class="mx-auto flex max-w-5xl px-4 pb-20 pt-8 md:pt-10 lg:pt-20 max-md:block">
     {% include header.html %}
     <main class="min-w-0 flex-auto">
-      <h1 class="mb-16 hidden min-h-12 text-base font-extrabold uppercase leading-tight md:flex items-center">
+      {% if page.url == "/" %}
+      <h1 class="mb-16 hidden min-h-8 text-base font-extrabold uppercase leading-tight md:flex items-center">
         <a class="text-gray-800 no-underline hover:text-sky-700 dark:text-gray-100 dark:hover:text-sky-300" href="{{ site.baseurl }}/">{{ site.name }}</a>
       </h1>
+      {% endif %}
       <div class="w-full" id="main">{{ content }}</div>
       {% include footer.html %}
     </main>
