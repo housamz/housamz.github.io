@@ -1,15 +1,13 @@
 ---
-layout: default
-title: "Peace Commissioner – Housam Ziad"
+layout: page
+title: "Peace Commissioner"
 permalink: /peace-commissioner/
 ---
 
 <div class="entry">
   <section class="pb-4 pt-0">
     <p>
-      As a Peace Commissioner, I provide a range of official certification and
-      witnessing services to the public, in accordance with Irish Peace
-      Commissioner guidelines.
+      I provide certification and witnessing services in accordance with Irish Peace Commissioner guidelines.
     </p>
     <p>
       My services are valid in
@@ -54,6 +52,7 @@ permalink: /peace-commissioner/
     </div>
 
     <div class="w-full" data-tab-panel="appointment">
+      <div id="pc-gate-content">
       <section>
         <div class="grid gap-4 sm:grid-cols-2">
           <div class="border border-slate-500 p-5 max-sm:border-0 max-sm:p-0">
@@ -102,11 +101,9 @@ permalink: /peace-commissioner/
 
       <section id="book-appointment">
         <h2 class="mb-1 font-bold text-xl">Book an Appointment</h2>
-        <p>All appointments are <strong>free of charge</strong>.</p>
+        <p>Please tick all boxes to proceed:</p>
 
         <div>
-          <p class="font-semibold">Please tick all boxes to proceed:</p>
-
           <label
             class="flex cursor-pointer items-start gap-3 border-b border-slate-500 py-3"
           >
@@ -167,6 +164,7 @@ permalink: /peace-commissioner/
             >
           </label>
         </div>
+      </div>
 
         <div class="hidden" id="pc-calendar">
           <iframe
@@ -320,15 +318,18 @@ permalink: /peace-commissioner/
     // --- Booking checklist gate ---
     var checkboxes = document.querySelectorAll("[data-gate]");
     var calendar = document.getElementById("pc-calendar");
+    var gateContent = document.getElementById("pc-gate-content");
 
     function updateCalendar() {
       var allChecked = Array.from(checkboxes).every(function (cb) {
         return cb.checked;
       });
       if (allChecked) {
+        gateContent.classList.add("hidden");
         calendar.classList.remove("hidden");
         calendar.scrollIntoView({ behavior: "smooth", block: "start" });
       } else {
+        gateContent.classList.remove("hidden");
         calendar.classList.add("hidden");
       }
     }
