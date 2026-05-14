@@ -90,7 +90,8 @@
       "startDate": "2014-10-01",
       "summary": "I worked on filling the gap between research and industry by converting research into real-world software, using my mixed business and technical skills. My personal research was to build an NLP platform, Teanga [1], that uses Linked Data to achieve interoperability among NLP services, a new approach to utilising UX in NLP. Teanga was well-received by domain experts and during LREC 2018 in Miyazaki, Japan. While working at the Insight Centre, I completed a Master’s degree with First-Class Honours in 2017.  Libraries: Angular, AngularJS, SASS, D3, Bootstrap, Python Flask, Jinja, Handlebars.  [1] http://www.teanga.io",
       "highlights": [],
-      "endDate": "2019-07-01"
+      "endDate": "2019-07-01",
+      "row": 3
     },
     {
       "company": "Emind Software Company",
@@ -118,7 +119,8 @@
       "summary": "Teaching all-level classes of Programming, Adobe Suite, and Microsoft Office.",
       "highlights": [],
       "endDate": "2008-12-01",
-      "academic": true
+      "academic": true,
+      "row": 6
     },
     {
       "company": "Al Awael",
@@ -136,7 +138,8 @@
       "startDate": "2001-01-01",
       "summary": "",
       "highlights": [],
-      "endDate": "2003-03-01"
+      "endDate": "2003-03-01",
+        "row": 1
     },
     {
       "company": "Trust Lines",
@@ -154,7 +157,8 @@
       "startDate": "1996-07-01",
       "summary": "As an Electronics Assembly Operative at Beacon Electronic Industries, I assembled and tested electronic protection and monitoring circuits, including through-hole and SMD work. I carried out functional testing with standard bench equipment, diagnosed and repaired returned units, and supported engineers with prototype builds and early R&D tasks. The role combined hands-on production with problem-solving, quality awareness, and continuous improvement across the assembly process.",
       "highlights": [],
-      "endDate": "1998-06-01"
+      "endDate": "1998-06-01",
+      "row": 1
     }
   ],
   "volunteer": [
@@ -214,7 +218,8 @@
       "score": "1st class honours",
       "courses": [],
       "location": "Galway",
-      "type": "Part Time"
+      "type": "Part Time",
+      "row": 1
     },
     {
       "institution": "Damascus University",

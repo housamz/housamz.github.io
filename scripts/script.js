@@ -482,6 +482,7 @@ class Timeline {
 
     this.startYear = new Date().getFullYear();
     this.entries = this.getAllEntries(); // Precompute sorted entries
+    this.maxRows = this.getConfiguredMaxRows();
     this.endYear = this.getTimelineEndYear();
     this.init();
   }
@@ -507,6 +508,26 @@ class Timeline {
     return this.horizontalPadding + (this.startYear - date) * this.pixelsPerYear;
   }
 
+  parsePreferredRow(rawRow) {
+    const parsed = Number(rawRow);
+    if (!Number.isFinite(parsed)) return null;
+
+    // Support 1-based row numbers in data (row: 3 means third row).
+    const rowIndex = Math.floor(parsed) - 1;
+    return rowIndex >= 0 ? rowIndex : null;
+  }
+
+  getConfiguredMaxRows() {
+    const maxPreferredRow = this.entries.reduce((max, item) => {
+      if (item.preferredRow === null || item.preferredRow === undefined) {
+        return max;
+      }
+      return Math.max(max, item.preferredRow + 1);
+    }, 0);
+
+    return Math.max(this.maxRows, maxPreferredRow);
+  }
+
   getTimelineEndYear() {
     if (!this.entries.length) return this.startYear;
     const allDates = this.entries
@@ -524,6 +545,7 @@ class Timeline {
         title: edu.institution,
         subtitle: edu.area,
         type: "education",
+        preferredRow: this.parsePreferredRow(edu.row),
         parsedStart: this.parseDate(edu.startDate),
         parsedEnd: this.parseDate(edu.endDate),
         tooltipContent: `${edu.institution}: ${edu.area}\n${edu.startDate} - ${edu.endDate}`,
@@ -532,6 +554,7 @@ class Timeline {
         title: work.position,
         subtitle: work.company,
         type: work.academic ? "teaching" : "work",
+        preferredRow: this.parsePreferredRow(work.row),
         parsedStart: this.parseDate(work.startDate),
         parsedEnd: this.parseDate(work.endDate),
         tooltipContent: `${work.position}: ${work.company}\n${work.startDate} - ${work.endDate}`,
@@ -588,11 +611,17 @@ class Timeline {
         Math.abs(endPosition - startPosition),
       );
 
-      let row = rowRightEdges.findIndex(
-        (rightEdge) => leftPosition >= rightEdge + this.rowGap,
-      );
-      if (row === -1) {
-        row = rowRightEdges.indexOf(Math.min(...rowRightEdges));
+      let row = null;
+
+      if (item.preferredRow !== null && item.preferredRow !== undefined) {
+        row = Math.min(Math.max(item.preferredRow, 0), this.maxRows - 1);
+      } else {
+        row = rowRightEdges.findIndex(
+          (rightEdge) => leftPosition >= rightEdge + this.rowGap,
+        );
+        if (row === -1) {
+          row = rowRightEdges.indexOf(Math.min(...rowRightEdges));
+        }
       }
 
       // Alternate label side to reduce text collisions in dense areas.
