@@ -15,21 +15,15 @@ body {
   line-height: 1.65;
 }
 
-a {
-  color: $blue-title;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-
-  &:hover {
-    opacity: 0.75;
-  }
+a:hover {
+  opacity: 0.75;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: $titles-font;
+  font-family: $sans;
   line-height: 1.35;
   margin: 2rem 0 0.75rem;
 }
@@ -151,7 +145,7 @@ section {
   }
 
   & .tab {
-    border-top: 1px solid rgb(100, 100, 100);
+    border-top: 1px solid $tab-border;
     order: 99;
     flex-grow: 1;
     width: 100%;
@@ -163,7 +157,7 @@ section {
     display: none;
 
     &:checked + label {
-      border: 1px solid rgb(100, 100, 100);
+      border: 1px solid $tab-border;
       margin-bottom: -1px;
       font-weight: bold;
 
@@ -176,7 +170,7 @@ section {
 
 #map {
   border: 1px solid $border-color;
-  border-radius: 6px;
+  border-radius: $border-radius;
   height: min(70vh, 560px);
   min-height: 360px;
   width: 100%;
@@ -193,7 +187,7 @@ section {
 
 .entry .travel-stat {
   align-items: center;
-  border-radius: 6px;
+  border-radius: $border-radius;
   display: inline-flex;
   font-family: $sans;
   gap: 0.45rem;
@@ -250,7 +244,7 @@ section {
   input,
   button {
     border: 1px solid $border-color;
-    border-radius: 6px;
+    border-radius: $border-radius;
     font-family: $sans;
     font-size: 0.95rem;
     min-height: 2.25rem;

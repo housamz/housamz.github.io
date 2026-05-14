@@ -4,59 +4,117 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@400;500;700;800&family=PT+Serif:wght@400;700&display=swap");
 
-:root {
-  --primary: #1f2937;
-  --secondary: #ffffff;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --code-bg: #f9fafb;
-  --blue: #2563eb;
-  --sky-title: #1d4ed8;
-  --warning-txt: #856b00;
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #f9fafb;
-    --secondary: #0b0f16;
-    --muted: #9ca3af;
-    --border: #1f2937;
-    --code-bg: #0e121a;
-    --blue: #60a5fa;
-    --sky-title: #93c5fd;
-    --warning-txt: #eebf05;
-  }
-}
-
-@media (prefers-dark-interface) {
-  :root {
-    --primary: #f7f7f7;
-    --secondary: #0b0f16;
-    --blue: #60a5fa;
-  }
-}
-
-// Colors
-$blue: var(--blue);
-$blue-title: var(--sky-title);
-$border-color: var(--border);
-$code-bg: var(--code-bg);
-$dark-color: #121212;
-$light-blue: #4890c3;
-$light-color: #f7f7f7;
-$light-red: #d5c4d3;
-$primary-color: var(--primary);
-$red: #ab0044;
-$secondary-color: var(--secondary);
-$muted-color: var(--muted);
-$warning-bg: rgba(255, 193, 7, 0.08);
-$warning-bdr: rgba(108, 81, 0, 0.35);
-$warning-txt: var(--warning-txt);
-
+// ============================================
 // Font stacks
+// ============================================
 $sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $serif: "PT Serif", Georgia, "Times New Roman", serif;
 $mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-$titles-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $arabic-font: 'Cairo', 'Helvetica', sans-serif;
+
+// ============================================
+// Defaults
+// ============================================
+$primary: #1f2937;
+$secondary: #ffffff;
+$muted: #6b7280;
+$border-color: #e5e7eb;
+$code-bg: #f9fafb;
+$blue: #2563eb;
+$sky-title: #1d4ed8;
+$warning-txt: #856b00;
+$red: #dc3522;
+$green: #5caa82;
+$gold: #aa945c;
+$tab-border: #646464;
+$dark-color: #0d1e2e;
+$light-color: #f7f7f7;
+$border-radius: 0.45rem;
+
+// ============================================
+// Dark Mode Colors (SCSS)
+// ============================================
+$primary-dark: #f9fafb;
+$secondary-dark: #0b0f16;
+$muted-dark: #9ca3af;
+$border-dark: #1f2937;
+$code-bg-dark: #0e121a;
+$blue-dark: #60a5fa;
+$sky-title-dark: #93c5fd;
+$warning-txt-dark: #eebf05;
+
+// ============================================
+// Export as CSS Custom Properties
+// ============================================
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --muted: #{$muted};
+  --border: #{$border-color};
+  --code-bg: #{$code-bg};
+  --blue: #{$blue};
+  --sky-title: #{$sky-title};
+  --warning-txt: #{$warning-txt};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #{$primary-dark};
+    --secondary: #{$secondary-dark};
+    --muted: #{$muted-dark};
+    --border: #{$border-color};
+    --code-bg: #{$code-bg-dark};
+    --blue: #{$blue-dark};
+    --sky-title: #{$sky-title-dark};
+    --warning-txt: #{$warning-txt-dark};
+  }
+}
+
+// Function to generate gradients with automatic darkening
+@function gradient-color($color, $darken-amount) {
+  @return linear-gradient(to left, $color 0%, darken($color, $darken-amount) 100%);
+}
+
+// ============================================
+// Syntax Highlighting Colors (Solarized)
+// ============================================
+$syntax-comment: #586e75;
+$syntax-error: #93a1a1;
+$syntax-generic: #93a1a1;
+$syntax-keyword: #859900;
+$syntax-literal: #93a1a1;
+$syntax-name: #93a1a1;
+$syntax-operator: #859900;
+$syntax-other: #cb4b16;
+$syntax-punctuation: #93a1a1;
+$syntax-deleted: #2aa198;
+$syntax-emph: #93a1a1;
+$syntax-error-text: #dc322f;
+$syntax-heading: #cb4b16;
+$syntax-inserted: #859900;
+$syntax-output: #93a1a1;
+$syntax-prompt: #93a1a1;
+$syntax-strong: #93a1a1;
+$syntax-subheading: #cb4b16;
+$syntax-traceback: #93a1a1;
+$syntax-constant: #cb4b16;
+$syntax-declaration: #268bd2;
+$syntax-namespace: #859900;
+$syntax-pseudo: #859900;
+$syntax-reserved: #268bd2;
+$syntax-type: #dc322f;
+$syntax-date: #93a1a1;
+$syntax-number: #2aa198;
+$syntax-string: #2aa198;
+$syntax-attribute: #93a1a1;
+$syntax-builtin: #b58900;
+$syntax-class: #268bd2;
+$syntax-entity: #cb4b16;
+$syntax-exception: #cb4b16;
+$syntax-function: #268bd2;
+$syntax-label: #93a1a1;
+$syntax-property: #268bd2;
+$syntax-tag: #268bd2;
+$syntax-variable: #268bd2;
+$syntax-whitespace: #ddd;
+

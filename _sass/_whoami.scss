@@ -1,3 +1,7 @@
+// ============================================
+// Timeline Event Gradients
+// ============================================
+
 #whoami {
   position: relative;
   isolation: isolate;
@@ -53,15 +57,15 @@
 }
 
 .paper {
-  background-color: white;
+  background-color: $light-color;
   background-image: repeating-linear-gradient(
     transparent 0,
     transparent 1em,
-    skyblue 0,
-    skyblue 1.1em
+    $border-color 0,
+    $border-color 1.1em
   );
-  border: 1px solid rgba(220, 220, 220, 1);
-  border-radius: 0.45rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
   color: $dark-color;
   position: relative;
   padding: 1rem 1rem 1rem 2.4rem;
@@ -77,7 +81,7 @@
     top: 0;
     height: 100%;
     width: 0.1rem;
-    border-color: rgba(220, 0, 0, 0.5);
+    border-color: $red;
     border-style: solid;
     border-width: 0 0.1rem 0 0.1rem;
   }
@@ -105,52 +109,41 @@
     font-weight: 700;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.45rem;
+    border-radius: $border-radius;
     cursor: pointer;
     user-select: none;
-    transition: opacity 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease,
-      border-color 0.16s ease, background 0.16s ease;
+    transition:
+      opacity 0.16s ease,
+      transform 0.16s ease,
+      box-shadow 0.16s ease,
+      border-color 0.16s ease,
+      background 0.16s ease;
 
     &::before {
       content: "";
       padding: 0.25rem;
-      border-radius: 999px;
-      background: rgba(251, 17, 1);
-      color: #dbe7f0;
+      border-radius: $border-radius;
+      background: $red;
+      color: $green;
     }
 
     &[aria-pressed="true"] {
-      border-color: rgba(255, 255, 255, 0.55);
-      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.14);
-
       &::before {
-        background: rgba(16, 185, 129);
-        color: #e7fff4;
+        background: $green;
+        color: $light-color;
       }
-    }
-
-    &:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.22);
-    }
-
-    &:focus-visible {
-      outline: 2px solid rgba(255, 255, 255, 0.7);
-      outline-offset: 2px;
     }
 
     &.is-off {
       opacity: 0.5;
       filter: grayscale(0.15);
-
-
     }
   }
 }
 
 .timeline-container {
   background-color: $dark-color;
-  border-radius: 0.45rem;
+  border-radius: $border-radius;
   color: $light-color;
   overflow-x: auto;
   overflow-y: hidden;
@@ -175,8 +168,8 @@
 
 .year-marker {
   position: absolute;
-  border-left: 1px dashed #333;
-  color: #aaa;
+  border-left: 1px dashed $tab-border;
+  color: $border-color;
   padding: 1rem 0 0 0;
   transform: translateX(-0.5px);
   height: 100%;
@@ -195,13 +188,13 @@
 }
 
 .event-line {
-  border-radius: 0.5rem;
+  border-radius: $border-radius;
   height: 0.5rem;
   margin: 5px auto;
 }
 
 .em {
-  color: #bae8ff;
+  color: $light-color;
   font-weight: bold;
 }
 
@@ -214,8 +207,8 @@
 
 .tooltip {
   background-color: $dark-color;
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
   color: $light-color;
   max-width: 200px;
   opacity: 0;
@@ -225,26 +218,22 @@
   transition: opacity 0.3s;
 }
 
-.work-bar,
-#timeline .event.work .bar,
-.work .event-line {
-  background: linear-gradient(to left, #dc3522 0%, #b64926 100%);
-}
+// ============================================
+// Timeline Event Bar Styles (Auto-generated)
+// ============================================
+$event-types: (
+  "work": $red,
+  "teaching": $blue,
+  "education": $green,
+  "volunteer": $gold,
+);
 
-.teaching-bar,
-#timeline .event.teaching .bar,
-.teaching .event-line {
-  background: linear-gradient(to left, var(--blue) 0%, #2391f1 100%);
-}
+$event-darken-default: 15%;
 
-.education-bar,
-#timeline .event.education .bar,
-.education .event-line {
-  background: linear-gradient(to left, #5caa82 0%, #468966 100%);
-}
-
-.volunteer-bar,
-#timeline .event.volunteer .bar,
-.volunteer .event-line {
-  background: linear-gradient(to left, #aa945c 0%, #897346 100%);
+@each $type, $color in $event-types {
+  .#{$type}-bar,
+  #timeline .event.#{$type} .bar,
+  .#{$type} .event-line {
+    background: gradient-color($color, $event-darken-default);
+  }
 }
