@@ -1,15 +1,54 @@
+#whoami {
+  position: relative;
+  isolation: isolate;
+
+  > :not(#timeOnEarthSvg) {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
 #timeOnEarthSvg {
   float: right;
-  margin-left: 2rem;
+  position: sticky;
+  top: 6rem;
+  width: min(32vw, 250px);
+  height: auto;
+  pointer-events: none;
+  transform: translate3d(var(--earth-shift, 0px), 0, 0)
+    scale(var(--earth-scale, 1));
 
   #earth {
     transform-origin: center center;
+    will-change: transform;
   }
 
   text,
   #earth path {
     letter-spacing: 1.28pt;
     transform-origin: center center;
+  }
+
+  #timeOnEarthParent {
+    will-change: transform;
+  }
+}
+
+@media (max-width: 960px) {
+  #timeOnEarthSvg {
+    float: none;
+    position: relative;
+    top: auto;
+    margin: 0 auto 1.5rem;
+    width: min(64vw, 240px);
+    display: block;
+    transform: scale(1);
   }
 }
 

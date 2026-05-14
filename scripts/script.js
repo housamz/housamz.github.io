@@ -35,26 +35,93 @@ jQuery(function ($) {
     // on earth for
     new DateBetween("timeOnEarth", "On earth for", "1981-08-03T04:30:00", null);
 
-    // rotate time on earth while scrolling
-    const timeText = document.querySelector("#timeOnEarth");
+    // keep earth/time rotating and boost speed while scrolling
+    const whoami = document.querySelector("#whoami");
+    const earthSvg = document.querySelector("#timeOnEarthSvg");
+    const timeTextParent = document.querySelector("#timeOnEarthParent");
     const earth = document.querySelector("#earth");
-    const h = document.documentElement,
-      b = document.body;
+    let updateEarthPlacement = null;
 
-    document.addEventListener("scroll", (e) => {
-      let percent =
-        ((h.scrollTop || b.scrollTop) /
-          ((h.scrollHeight || b.scrollHeight) - h.clientHeight)) *
-        100;
-      timeText.parentNode.style.transform = `rotate(${percent}deg)`;
-      earth.style.transform = `rotate(${-percent}deg)`;
-    });
+    if (whoami && earthSvg && timeTextParent && earth) {
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      const maxScale = 1.55;
+      const maxRightShift = 260;
+
+      const getWhoamiScrollProgress = () => {
+        const rect = whoami.getBoundingClientRect();
+        const total = rect.height + window.innerHeight;
+        const seen = window.innerHeight - rect.top;
+        return Math.min(1, Math.max(0, seen / total));
+      };
+
+      updateEarthPlacement = () => {
+        const progress = getWhoamiScrollProgress();
+        const scale = 1 + (maxScale - 1) * progress;
+        const shift = maxRightShift * progress;
+
+        earthSvg.style.setProperty("--earth-scale", scale.toFixed(3));
+        earthSvg.style.setProperty("--earth-shift", `${Math.round(shift)}px`);
+      };
+
+      window.addEventListener("scroll", updateEarthPlacement, { passive: true });
+      window.addEventListener("resize", updateEarthPlacement);
+      window.addEventListener("load", updateEarthPlacement);
+      updateEarthPlacement();
+
+      if (!prefersReducedMotion) {
+        let rotation = 0;
+        let speedBoost = 0;
+        let lastScrollY = window.scrollY || window.pageYOffset || 0;
+        let lastTimestamp = null;
+
+        const baseSpeed = 0.012;
+        const maxBoost = 0.24;
+
+        window.addEventListener(
+          "scroll",
+          () => {
+            const currentScrollY = window.scrollY || window.pageYOffset || 0;
+            const delta = Math.abs(currentScrollY - lastScrollY);
+            lastScrollY = currentScrollY;
+
+            speedBoost = Math.min(speedBoost + delta * 0.0012, maxBoost);
+          },
+          { passive: true },
+        );
+
+        const animateEarth = (timestamp) => {
+          if (!lastTimestamp) {
+            lastTimestamp = timestamp;
+          }
+
+          const deltaTime = Math.min(timestamp - lastTimestamp, 64);
+          lastTimestamp = timestamp;
+
+          rotation = (rotation + (baseSpeed + speedBoost) * deltaTime) % 360;
+          timeTextParent.style.transform = `rotate(${rotation}deg)`;
+          earth.style.transform = `rotate(${-rotation}deg)`;
+
+          // Smoothly settle back to the base speed after scroll bursts.
+          speedBoost = Math.max(0, speedBoost - deltaTime * 0.00025);
+
+          window.requestAnimationFrame(animateEarth);
+        };
+
+        window.requestAnimationFrame(animateEarth);
+      }
+    }
 
     // reading data from linkedin.json
     fetch("../scripts/resume.json")
       .then((response) => response.json())
       .then((data) => {
         bind(data, document.querySelector("#whoami"));
+        if (typeof updateEarthPlacement === "function") {
+          updateEarthPlacement();
+          window.requestAnimationFrame(updateEarthPlacement);
+        }
         new Timeline("timeline", data);
       })
       .catch((err) => console.log(err));
