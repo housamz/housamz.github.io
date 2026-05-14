@@ -145,7 +145,10 @@ class DateBetween {
       seconds: 0,
     };
     const self = this;
-    if (!this.endingDate) setInterval(() => self.view(), 1000);
+    if (!this.endingDate) {
+      self.view();
+      setInterval(() => self.view(), 1000);
+    }
   }
 
   view() {
