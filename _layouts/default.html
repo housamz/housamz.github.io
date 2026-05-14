@@ -238,21 +238,25 @@
           src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
         ></script>
         <script
-          src="{{ site.baseurl }}/scripts/classes/date-between.js"
+          src="{{ site.baseurl }}/scripts/classes/f-this-website.js"
           type="text/javascript"
         ></script>
+        {% if page.url == '/whoami/' %}
         <script
-          src="{{ site.baseurl }}/scripts/classes/f-this-website.js"
+          src="{{ site.baseurl }}/scripts/classes/date-between.js"
           type="text/javascript"
         ></script>
         <script
           src="{{ site.baseurl }}/scripts/classes/timeline.js"
           type="text/javascript"
         ></script>
+        {% endif %}
+        {% if page.body_class == 'terminal-page' %}
         <script
           src="{{ site.baseurl }}/scripts/classes/terminal.js"
           type="text/javascript"
         ></script>
+        {% endif %}
         <script
           src="{{ site.baseurl }}/scripts/script.js"
           type="text/javascript"

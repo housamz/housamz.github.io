@@ -1,27 +1,5 @@
 ---
 layout: default
-projects:
-  - name: Oorlish
-    href: https://oorlish.netlify.app/
-    description: A collection of everyday online tools and utilities built with simplicity and usability in mind.
-  - name: ASCII Donut
-    href: https://codepen.io/housamz/pen/zYNmppq
-    description: A spinning 3-D donut rendered in ASCII art, ported and animated in JavaScript.
-  - name: Ireland EV Chargers
-    href: https://ie-chargers.netlify.app/
-    description: Interactive map of electric vehicle charging stations across Ireland.
-  - name: JavaScript Food
-    href: https://codepen.io/housamz/full/jOjPmrM
-    description: A fun visual experiment combining JavaScript animations with food themes.
-  - name: Retro Composer
-    href: https://codepen.io/housamz/pen/JjOVEdp
-    description: A browser-based retro music composer with 8-bit style sounds and patterns.
-  - name: Teevee
-    href: https://teevee.netlify.app/
-    description: A minimal TV show tracker to keep tabs on what you are watching.
-  - name: Umm Kulthum Encyclopedia
-    href: https://umm-kulthum.com/
-    description: A comprehensive encyclopedia dedicated to the legendary Egyptian singer Umm Kulthum.
 ---
 
 <div id="site-intro">
@@ -40,7 +18,7 @@ projects:
 <section>
   <h2 class="mb-4 text-lg font-bold">Projects</h2>
   <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-    {% for project in page.projects %}
+    {% for project in site.projects %}
     <article
       class="overflow-hidden rounded-lg border border-[var(--border)] transition duration-150 hover:-translate-y-0.5 hover:shadow-lg"
     >

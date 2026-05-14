@@ -2,12 +2,14 @@
 
 jQuery(function ($) {
   // typing effect
-  if ($("#site-skills").length) {
+  if ($("#site-skills").length && typeof window.TypedText === "function") {
     new TypedText($("#site-skills"));
   }
 
   // game
-  new FThisWebsite($("#main")[0], " fudge ");
+  if ($("#main").length && typeof window.FThisWebsite === "function") {
+    new FThisWebsite($("#main")[0], " fudge ");
+  }
 
   // back to top
   $("#back-top").hide();
@@ -31,7 +33,11 @@ jQuery(function ($) {
   });
 
   // check if whoami
-  if ($("#whoami").html()) {
+  if (
+    $("#whoami").html() &&
+    typeof window.DateBetween === "function" &&
+    typeof window.Timeline === "function"
+  ) {
     // on earth for
     new DateBetween("timeOnEarth", "On earth for", "1981-08-03T04:30:00", null);
 
@@ -234,6 +240,8 @@ const bind = (data, parent, index = 0) =>
 
 jQuery(function ($) {
   if (document.getElementById("command-history") && document.getElementById("command-input")) {
-    new Terminal().initialize();
+    if (typeof window.Terminal === "function") {
+      new Terminal().initialize();
+    }
   }
 });
