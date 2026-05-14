@@ -119,18 +119,15 @@ jQuery(function ($) {
       }
     }
 
-    // reading data from linkedin.json
-    fetch("../scripts/resume.json")
-      .then((response) => response.json())
-      .then((data) => {
-        bind(data, document.querySelector("#whoami"));
-        if (typeof updateEarthPlacement === "function") {
-          updateEarthPlacement();
-          window.requestAnimationFrame(updateEarthPlacement);
-        }
-        new Timeline("timeline", data);
-      })
-      .catch((err) => console.log(err));
+    const data = window.__SITE_DATA__;
+    if (!data) return;
+
+    bind(data, document.querySelector("#whoami"));
+    if (typeof updateEarthPlacement === "function") {
+      updateEarthPlacement();
+      window.requestAnimationFrame(updateEarthPlacement);
+    }
+    new Timeline("timeline", data);
   }
 });
 

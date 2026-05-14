@@ -138,7 +138,7 @@
       "summary": "",
       "highlights": [],
       "endDate": "2003-03-01",
-        "row": 1
+      "row": 1
     },
     {
       "company": "Trust Lines",
@@ -612,5 +612,995 @@
       "url": "http://www.infinitipress.me",
       "endDate": "2013-05-01"
     }
-  ]
+  ],
+  "site": {
+    "name": "Housam Ziad",
+    "tagline": "Putting the fun in function",
+    "description": "Software Engineer by day, lecturer by night, electronics hobbyist in between — basically a 24/7 nerd on a quest for happyness, one pixel at a time.  I'm also a Peace Commissioner appointed for County Dublin and adjacent counties, providing certification and witnessing services to the public.",
+    "keywords": "research, software engineer, designer, web developer, UI, UX, user experience, user interface, natural language processing, data analytics, developer, programming, coding, design, seo, search engine optimisation",
+    "footerLinkItems": [
+      {
+        "key": "behance",
+        "label": "Behance",
+        "icon": "fa-brands fa-behance",
+        "base_url": "https://www.behance.com/",
+        "user": "housamz"
+      },
+      {
+        "key": "linkedin",
+        "label": "LinkedIn",
+        "icon": "fa-brands fa-linkedin-in",
+        "base_url": "https://www.linkedin.com/in/",
+        "user": "housamz"
+      },
+      {
+        "key": "github",
+        "label": "GitHub",
+        "icon": "fa-brands fa-github",
+        "base_url": "https://github.com/",
+        "user": "housamz"
+      },
+      {
+        "key": "codepen",
+        "label": "CodePen",
+        "icon": "fa-brands fa-codepen",
+        "base_url": "https://codepen.io/",
+        "user": "housamz"
+      },
+      {
+        "key": "googlescholar",
+        "label": "Google Scholar",
+        "icon": "fa-solid fa-graduation-cap",
+        "base_url": "https://scholar.google.com/citations?user=",
+        "user": "48PxDb0AAAAJ"
+      },
+      {
+        "key": "rss",
+        "label": "RSS",
+        "icon": "fa-solid fa-rss",
+        "url": "/feed.xml",
+        "user": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "Oorlish",
+        "href": "https://oorlish.netlify.app/",
+        "description": "A collection of everyday online tools and utilities built with simplicity and usability in mind."
+      },
+      {
+        "name": "ASCII Donut",
+        "href": "https://codepen.io/housamz/pen/zYNmppq",
+        "description": "A spinning 3-D donut rendered in ASCII art, ported and animated in JavaScript."
+      },
+      {
+        "name": "Ireland EV Chargers",
+        "href": "https://ie-chargers.netlify.app/",
+        "description": "Interactive map of electric vehicle charging stations across Ireland."
+      },
+      {
+        "name": "JavaScript Food",
+        "href": "https://codepen.io/housamz/full/jOjPmrM",
+        "description": "A fun visual experiment combining JavaScript animations with food themes."
+      },
+      {
+        "name": "Retro Composer",
+        "href": "https://codepen.io/housamz/pen/JjOVEdp",
+        "description": "A browser-based retro music composer with 8-bit style sounds and patterns."
+      },
+      {
+        "name": "Teevee",
+        "href": "https://teevee.netlify.app/",
+        "description": "A minimal TV show tracker to keep tabs on what you are watching."
+      },
+      {
+        "name": "Umm Kulthum Encyclopedia",
+        "href": "https://umm-kulthum.com/",
+        "description": "A comprehensive encyclopedia dedicated to the legendary Egyptian singer Umm Kulthum."
+      }
+    ],
+    "googleAnalytics": "G-93G01ZXVH0",
+    "url": "https://hmz.ie",
+    "baseurl": "",
+    "imagesUrl": "https://www.hmz.ie/images/media/"
+  },
+  "travels": {
+    "countries": [
+      {
+        "name": "Belgium",
+        "flag": "🇧🇪"
+      },
+      {
+        "name": "China",
+        "flag": "🇨🇳"
+      },
+      {
+        "name": "Croatia",
+        "flag": "🇭🇷"
+      },
+      {
+        "name": "Czech Republic",
+        "flag": "🇨🇿"
+      },
+      {
+        "name": "Denmark",
+        "flag": "🇩🇰"
+      },
+      {
+        "name": "Egypt",
+        "flag": "🇪🇬"
+      },
+      {
+        "name": "France",
+        "flag": "🇫🇷"
+      },
+      {
+        "name": "Germany",
+        "flag": "🇩🇪"
+      },
+      {
+        "name": "Greece",
+        "flag": "🇬🇷"
+      },
+      {
+        "name": "Hong Kong",
+        "flag": "🇭🇰"
+      },
+      {
+        "name": "India",
+        "flag": "🇮🇳"
+      },
+      {
+        "name": "Ireland",
+        "flag": "🇮🇪"
+      },
+      {
+        "name": "Italy",
+        "flag": "🇮🇹"
+      },
+      {
+        "name": "Japan",
+        "flag": "🇯🇵"
+      },
+      {
+        "name": "Jordan",
+        "flag": "🇯🇴"
+      },
+      {
+        "name": "Lebanon",
+        "flag": "🇱🇧"
+      },
+      {
+        "name": "Malaysia",
+        "flag": "🇲🇾"
+      },
+      {
+        "name": "Malta",
+        "flag": "🇲🇹"
+      },
+      {
+        "name": "Netherlands",
+        "flag": "🇳🇱"
+      },
+      {
+        "name": "Portugal",
+        "flag": "🇵🇹"
+      },
+      {
+        "name": "Qatar",
+        "flag": "🇶🇦"
+      },
+      {
+        "name": "Romania",
+        "flag": "🇷🇴"
+      },
+      {
+        "name": "Saudi Arabia",
+        "flag": "🇸🇦"
+      },
+      {
+        "name": "Singapore",
+        "flag": "🇸🇬"
+      },
+      {
+        "name": "Spain",
+        "flag": "🇪🇸"
+      },
+      {
+        "name": "Switzerland",
+        "flag": "🇨🇭"
+      },
+      {
+        "name": "Syria",
+        "flag": "🇸🇾"
+      },
+      {
+        "name": "Tunisia",
+        "flag": "🇹🇳"
+      },
+      {
+        "name": "Turkey",
+        "flag": "🇹🇷"
+      },
+      {
+        "name": "United Arab Emirates",
+        "flag": "🇦🇪"
+      },
+      {
+        "name": "United Kingdom",
+        "flag": "🇬🇧"
+      },
+      {
+        "name": "United States",
+        "flag": "🇺🇸"
+      },
+      {
+        "name": "Vietnam",
+        "flag": "🇻🇳"
+      },
+      {
+        "name": "Wales",
+        "flag": "🏴"
+      }
+    ],
+    "places": [
+      {
+        "city": "Brussels",
+        "country": 1,
+        "lat": 50.901,
+        "lng": 4.4856
+      },
+      {
+        "city": "Shenzhen",
+        "country": 2,
+        "lat": 22.6393,
+        "lng": 113.8107
+      },
+      {
+        "city": "Dubrovnik",
+        "country": 3,
+        "lat": 42.5614,
+        "lng": 18.2682
+      },
+      {
+        "city": "Prague",
+        "country": 4,
+        "lat": 50.1008,
+        "lng": 14.26
+      },
+      {
+        "city": "Billund",
+        "country": 5,
+        "lat": 55.7404,
+        "lng": 9.1517
+      },
+      {
+        "city": "6th of October City",
+        "country": 6,
+        "lat": 29.9714,
+        "lng": 30.9151
+      },
+      {
+        "city": "Cairo",
+        "country": 6,
+        "lat": 30.1219,
+        "lng": 31.4056
+      },
+      {
+        "city": "Dahab",
+        "country": 6,
+        "lat": 28.6656,
+        "lng": 34.4958
+      },
+      {
+        "city": "Giza",
+        "country": 6,
+        "lat": 29.9765,
+        "lng": 31.1313
+      },
+      {
+        "city": "Sharm El-Sheikh",
+        "country": 6,
+        "lat": 27.9772,
+        "lng": 34.3955
+      },
+      {
+        "city": "Suez",
+        "country": 6,
+        "lat": 29.5352,
+        "lng": 32.2708
+      },
+      {
+        "city": "Caen",
+        "country": 7,
+        "lat": 49.1829,
+        "lng": -0.3707
+      },
+      {
+        "city": "Paris",
+        "country": 7,
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "city": "Rouen",
+        "country": 7,
+        "lat": 49.4431,
+        "lng": 1.0993
+      },
+      {
+        "city": "Berlin",
+        "country": 8,
+        "lat": 52.5208,
+        "lng": 13.4094
+      },
+      {
+        "city": "Bremen",
+        "country": 8,
+        "lat": 53.0475,
+        "lng": 8.7873
+      },
+      {
+        "city": "Frankfurt",
+        "country": 8,
+        "lat": 50.0379,
+        "lng": 8.5622
+      },
+      {
+        "city": "Hamburg",
+        "country": 8,
+        "lat": 53.6304,
+        "lng": 9.9882
+      },
+      {
+        "city": "Munich",
+        "country": 8,
+        "lat": 48.3537,
+        "lng": 11.786
+      },
+      {
+        "city": "Athens",
+        "country": 9,
+        "lat": 37.9364,
+        "lng": 23.9445
+      },
+      {
+        "city": "Egina",
+        "country": 9,
+        "lat": 37.7508,
+        "lng": 23.4322
+      },
+      {
+        "city": "Hong Kong",
+        "country": 10,
+        "lat": 22.308,
+        "lng": 113.9185
+      },
+      {
+        "city": "Agra",
+        "country": 11,
+        "lat": 27.155,
+        "lng": 78.0421
+      },
+      {
+        "city": "Dehradun",
+        "country": 11,
+        "lat": 30.1873,
+        "lng": 78.1801
+      },
+      {
+        "city": "Fatehpur Sikri",
+        "country": 11,
+        "lat": 27.0924,
+        "lng": 77.6608
+      },
+      {
+        "city": "Jaipur",
+        "country": 11,
+        "lat": 26.8244,
+        "lng": 75.7989
+      },
+      {
+        "city": "New Delhi",
+        "country": 11,
+        "lat": 28.6139,
+        "lng": 77.209
+      },
+      {
+        "city": "Rishikesh",
+        "country": 11,
+        "lat": 30.0869,
+        "lng": 78.2676
+      },
+      {
+        "city": "Achill Island",
+        "country": 12,
+        "lat": 53.9833,
+        "lng": -10.0167
+      },
+      {
+        "city": "Athlone",
+        "country": 12,
+        "lat": 53.4239,
+        "lng": -7.9407
+      },
+      {
+        "city": "Bantry",
+        "country": 12,
+        "lat": 51.6556,
+        "lng": -9.5332
+      },
+      {
+        "city": "Belfast",
+        "country": 12,
+        "lat": 54.6178,
+        "lng": -6.2159
+      },
+      {
+        "city": "Carrick-on-Shannon",
+        "country": 12,
+        "lat": 54.0798,
+        "lng": -7.3112
+      },
+      {
+        "city": "Clifden",
+        "country": 12,
+        "lat": 53.4875,
+        "lng": -10.0167
+      },
+      {
+        "city": "Cork",
+        "country": 12,
+        "lat": 51.8498,
+        "lng": -8.4915
+      },
+      {
+        "city": "Derry",
+        "country": 12,
+        "lat": 54.0027,
+        "lng": -7.3183
+      },
+      {
+        "city": "Dingle",
+        "country": 12,
+        "lat": 52.1408,
+        "lng": -10.2707
+      },
+      {
+        "city": "Dublin",
+        "country": 12,
+        "lat": 53.3331,
+        "lng": -6.2489
+      },
+      {
+        "city": "Dungarvan",
+        "country": 12,
+        "lat": 52.0828,
+        "lng": -7.6232
+      },
+      {
+        "city": "Ennis",
+        "country": 12,
+        "lat": 52.8433,
+        "lng": -8.9864
+      },
+      {
+        "city": "Galway",
+        "country": 12,
+        "lat": 53.2707,
+        "lng": -9.0568
+      },
+      {
+        "city": "Glendalough",
+        "country": 12,
+        "lat": 53.0117,
+        "lng": -6.3275
+      },
+      {
+        "city": "Inis Mór",
+        "country": 12,
+        "lat": 53.1542,
+        "lng": -9.6967
+      },
+      {
+        "city": "Kilkenny",
+        "country": 12,
+        "lat": 52.6541,
+        "lng": -7.2448
+      },
+      {
+        "city": "Killarney",
+        "country": 12,
+        "lat": 52.0576,
+        "lng": -9.5069
+      },
+      {
+        "city": "Limerick",
+        "country": 12,
+        "lat": 52.6638,
+        "lng": -8.6267
+      },
+      {
+        "city": "Londonderry",
+        "country": 12,
+        "lat": 54.9972,
+        "lng": -7.3092
+      },
+      {
+        "city": "Loughrea",
+        "country": 12,
+        "lat": 53.1616,
+        "lng": -8.5832
+      },
+      {
+        "city": "Shannon",
+        "country": 12,
+        "lat": 52.7019,
+        "lng": -8.9248
+      },
+      {
+        "city": "Sligo",
+        "country": 12,
+        "lat": 54.2696,
+        "lng": -8.4761
+      },
+      {
+        "city": "Tralee",
+        "country": 12,
+        "lat": 52.2693,
+        "lng": -9.7021
+      },
+      {
+        "city": "Tramore",
+        "country": 12,
+        "lat": 52.1586,
+        "lng": -7.1101
+      },
+      {
+        "city": "Waterford",
+        "country": 12,
+        "lat": 52.2593,
+        "lng": -7.1101
+      },
+      {
+        "city": "Wexford",
+        "country": 12,
+        "lat": 52.336,
+        "lng": -6.4628
+      },
+      {
+        "city": "Wicklow",
+        "country": 12,
+        "lat": 52.9986,
+        "lng": -6.0648
+      },
+      {
+        "city": "Florence",
+        "country": 13,
+        "lat": 43.7711,
+        "lng": 11.2486
+      },
+      {
+        "city": "Milan",
+        "country": 13,
+        "lat": 45.4642,
+        "lng": 9.19
+      },
+      {
+        "city": "Venice",
+        "country": 13,
+        "lat": 45.5051,
+        "lng": 12.3519
+      },
+      {
+        "city": "Asonoyu",
+        "country": 14,
+        "lat": 32.8371,
+        "lng": 130.8544
+      },
+      {
+        "city": "Fukuoka",
+        "country": 14,
+        "lat": 33.5897,
+        "lng": 130.4513
+      },
+      {
+        "city": "Kumamoto",
+        "country": 14,
+        "lat": 32.8371,
+        "lng": 130.8544
+      },
+      {
+        "city": "Mayazaki",
+        "country": 14,
+        "lat": 31.8772,
+        "lng": 131.4489
+      },
+      {
+        "city": "Nagasaki",
+        "country": 14,
+        "lat": 32.7851,
+        "lng": 129.8772
+      },
+      {
+        "city": "Osaka",
+        "country": 14,
+        "lat": 34.432,
+        "lng": 135.2304
+      },
+      {
+        "city": "Tokyo",
+        "country": 14,
+        "lat": 35.5494,
+        "lng": 139.7798
+      },
+      {
+        "city": "Amman",
+        "country": 15,
+        "lat": 31.9454,
+        "lng": 35.9284
+      },
+      {
+        "city": "Zarqa",
+        "country": 15,
+        "lat": 32.0738,
+        "lng": 36.0886
+      },
+      {
+        "city": "Beirut",
+        "country": 16,
+        "lat": 33.8209,
+        "lng": 35.4884
+      },
+      {
+        "city": "Nabatieh",
+        "country": 16,
+        "lat": 33.3708,
+        "lng": 35.4817
+      },
+      {
+        "city": "Zahle",
+        "country": 16,
+        "lat": 33.8092,
+        "lng": 35.8798
+      },
+      {
+        "city": "Kuala Lumpur",
+        "country": 17,
+        "lat": 2.7456,
+        "lng": 101.7099
+      },
+      {
+        "city": "Valletta",
+        "country": 18,
+        "lat": 35.8517,
+        "lng": 14.4863
+      },
+      {
+        "city": "Amsterdam",
+        "country": 19,
+        "lat": 52.3105,
+        "lng": 4.7683
+      },
+      {
+        "city": "Faro",
+        "country": 20,
+        "lat": 37.0146,
+        "lng": -7.9659
+      },
+      {
+        "city": "Doha",
+        "country": 21,
+        "lat": 25.2609,
+        "lng": 51.6138
+      },
+      {
+        "city": "Bucharest",
+        "country": 22,
+        "lat": 44.5711,
+        "lng": 26.0858
+      },
+      {
+        "city": "Jeddah",
+        "country": 23,
+        "lat": 21.6804,
+        "lng": 39.1563
+      },
+      {
+        "city": "Mecca",
+        "country": 23,
+        "lat": 21.4225,
+        "lng": 39.8262
+      },
+      {
+        "city": "Riyadh",
+        "country": 23,
+        "lat": 24.9578,
+        "lng": 46.6989
+      },
+      {
+        "city": "Singapore",
+        "country": 24,
+        "lat": 1.3644,
+        "lng": 103.9915
+      },
+      {
+        "city": "Barcelona",
+        "country": 25,
+        "lat": 41.2971,
+        "lng": 2.0785
+      },
+      {
+        "city": "Cordoba",
+        "country": 25,
+        "lat": 37.8444,
+        "lng": -4.7869
+      },
+      {
+        "city": "Granada",
+        "country": 25,
+        "lat": 37.1882,
+        "lng": -3.7779
+      },
+      {
+        "city": "Las Palmas",
+        "country": 25,
+        "lat": 27.9319,
+        "lng": -15.3866
+      },
+      {
+        "city": "Malaga",
+        "country": 25,
+        "lat": 36.674,
+        "lng": -4.4969
+      },
+      {
+        "city": "Tenerife",
+        "country": 25,
+        "lat": 28.0444,
+        "lng": -16.5728
+      },
+      {
+        "city": "Geneva",
+        "country": 26,
+        "lat": 46.237,
+        "lng": 6.1086
+      },
+      {
+        "city": "Aleppo",
+        "country": 27,
+        "lat": 36.1807,
+        "lng": 37.2244
+      },
+      {
+        "city": "Damascus",
+        "country": 27,
+        "lat": 33.4109,
+        "lng": 36.5156
+      },
+      {
+        "city": "Dara",
+        "country": 27,
+        "lat": 32.6242,
+        "lng": 36.1058
+      },
+      {
+        "city": "Hama",
+        "country": 27,
+        "lat": 35.1318,
+        "lng": 36.7556
+      },
+      {
+        "city": "Homs",
+        "country": 27,
+        "lat": 34.6414,
+        "lng": 36.8198
+      },
+      {
+        "city": "Latakia",
+        "country": 27,
+        "lat": 35.4017,
+        "lng": 35.9486
+      },
+      {
+        "city": "Palmyra",
+        "country": 27,
+        "lat": 34.5536,
+        "lng": 38.2742
+      },
+      {
+        "city": "Suwayda",
+        "country": 27,
+        "lat": 33.3178,
+        "lng": 36.5667
+      },
+      {
+        "city": "Tartus",
+        "country": 27,
+        "lat": 34.8858,
+        "lng": 35.8869
+      },
+      {
+        "city": "Carthage",
+        "country": 28,
+        "lat": 36.8529,
+        "lng": 10.3239
+      },
+      {
+        "city": "Hammamet",
+        "country": 28,
+        "lat": 36.4004,
+        "lng": 10.6228
+      },
+      {
+        "city": "Tunis",
+        "country": 28,
+        "lat": 36.84,
+        "lng": 10.2275
+      },
+      {
+        "city": "Istanbul",
+        "country": 29,
+        "lat": 40.9774,
+        "lng": 28.8142
+      },
+      {
+        "city": "Abu Dhabi",
+        "country": 30,
+        "lat": 24.4332,
+        "lng": 54.6518
+      },
+      {
+        "city": "Dubai",
+        "country": 30,
+        "lat": 25.2532,
+        "lng": 55.3657
+      },
+      {
+        "city": "Sharjah",
+        "country": 30,
+        "lat": 25.3562,
+        "lng": 55.4272
+      },
+      {
+        "city": "Liverpool",
+        "country": 31,
+        "lat": 53.3331,
+        "lng": -2.8497
+      },
+      {
+        "city": "London",
+        "country": 31,
+        "lat": 51.4706,
+        "lng": -0.4619
+      },
+      {
+        "city": "Hollywood",
+        "country": 32,
+        "lat": 34.0928,
+        "lng": -118.3287
+      },
+      {
+        "city": "Los Angeles",
+        "country": 32,
+        "lat": 33.9416,
+        "lng": -118.4085
+      },
+      {
+        "city": "Manhattan",
+        "country": 32,
+        "lat": 40.7831,
+        "lng": -73.9712
+      },
+      {
+        "city": "New York",
+        "country": 32,
+        "lat": 40.6413,
+        "lng": -73.7781
+      },
+      {
+        "city": "Palo Alto",
+        "country": 32,
+        "lat": 37.4419,
+        "lng": -122.143
+      },
+      {
+        "city": "San Francisco",
+        "country": 32,
+        "lat": 37.6213,
+        "lng": -122.379
+      },
+      {
+        "city": "Ho Chi Minh City",
+        "country": 33,
+        "lat": 10.8188,
+        "lng": 106.652
+      },
+      {
+        "city": "Bristol",
+        "country": 34,
+        "lat": 51.3827,
+        "lng": -2.7188
+      },
+      {
+        "city": "Cardiff",
+        "country": 34,
+        "lat": 51.3985,
+        "lng": -3.3433
+      }
+    ]
+  },
+  "terminal": {
+    "prompt": "housamz@starship:~$",
+    "sections": {
+      "welcome": {
+        "description": "Welcome and splash screen",
+        "lines": [
+          "<em>Housamz (<em>hmz.ie</em>) All rights are not reserved.</em>",
+          " ",
+          "0000000000000000000111111111110001111111100",
+          "0000000000000000011111111111111111111111110",
+          "0000000000000000111111110000011111111100111",
+          "0000000111111001111111100000111111111001110",
+          "0001111111111111111111000001111111111111100",
+          "0111110000001111111110000011111111100000000",
+          "0111000000001111111111100011111111000000000",
+          "1110000000011111111001111111111111000000000",
+          "1100000000111111110000011111111110000111110",
+          "1100000001111111100000011111111100000011111",
+          "1110000111111111000000111111111000000011111",
+          "0111111111111110000011111111111111000111110",
+          "0011111111111000001111111111000111111111100",
+          " ",
+          "<em>Type '<i>help</i>' to see available commands.</em>",
+          " "
+        ],
+        "type": "welcome"
+      },
+      "whoami": {
+        "description": "Who is Housamz?",
+        "lines": [
+          "👨‍💻 By day, I'm a Software Engineer. By night, a pos-grad lecturer. And in between? I'm probably fixing a toaster or building a robot for fun. Basically: full-time nerd, part-time superhero 🦸‍♂️🔧",
+          "🕹️ My tech story began in '98 as a starry-eyed Web Designer (weren't we all?), and by 2008 I was knee-deep in Web Dev—LEGO bricks turned to skyscrapers 🧱➡️🏙️",
+          "💼 Since then, I've dabbled in everything from biz dev to marketing, even had a go at entrepreneurship (RIP my lemonade empire 🍋💸).",
+          "🎨 My real love? Making things look so good they give Mona Lisa an identity crisis. Pixel-perfect is my love language 💖🖼️",
+          "🇮🇪 Oh, and I'm also a Peace Commissioner in Ireland—because why not fight bugs and crime? ⚖️🐛"
+        ],
+        "type": "paragraph"
+      },
+      "skills": {
+        "description": "What can I do?",
+        "lines": [
+          "<i>My Technical Skills</i>",
+          "<i>Frontend</i> HTML, CSS, JavaScript",
+          "<i>Backend</i> Node.js, Python",
+          "<i>DevOps</i> Docker, Git",
+          "<i>Linux Administration</i>",
+          "<i>Shell Scripting</i>"
+        ],
+        "type": "list"
+      },
+      "projects": {
+        "description": "My projects",
+        "lines": [
+          "<i>My Projects</i>",
+          "<i>Terminal Website</i> This interactive terminal-like website"
+        ],
+        "type": "list"
+      },
+      "contact": {
+        "description": "How to reach me",
+        "lines": [
+          "<i>Contact Information</i>",
+          "<i>Universal name</i> <em>housamz</em>",
+          "<i>GitHub</i> <span>github.com/<em>housamz</em></span>",
+          "<i>Codepen</i> <span>codepen.io/<em>housamz</em></span>",
+          "<i>LinkedIn</i> <span>linkedin.com/in/<em>housamz</em></span>",
+          "<i>Twitter</i> <span>twitter.com/<em>housamz</em></span>",
+          "<i>Website</i> <span><em>housamz</em>.com</span>"
+        ],
+        "type": "list"
+      }
+    }
+  }
 }

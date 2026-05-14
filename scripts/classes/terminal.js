@@ -1,7 +1,19 @@
-const TERMINAL_PROMPT = "housamz@starship:~$";
+const TERMINAL_PROMPT = window.__SITE_DATA__?.terminal?.prompt || "housamz@starship:~$";
 const TERMINAL_TYPE_SPEED = 10;
 const TERMINAL_SPINNER_CHARS = ["-", "\\", "|", "/"];
-const TERMINAL_DATA = {
+const SITE_DATA = window.__SITE_DATA__ || {};
+
+const escapeHtml = (value) =>
+  String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+const formatLinkText = (url) => String(url || "").replace(/^https?:\/\//, "").replace(/\/$/, "");
+
+const DEFAULT_TERMINAL_DATA = {
   welcome: {
     description: "Welcome and splash screen",
     lines: [
@@ -26,50 +38,83 @@ const TERMINAL_DATA = {
     ],
     type: "welcome",
   },
-  whoami: {
-    description: "Who is Housamz?",
-    lines: [
-      "👨‍💻 By day, I'm a Software Engineer. By night, a pos-grad lecturer. And in between? I'm probably fixing a toaster or building a robot for fun. Basically: full-time nerd, part-time superhero 🦸‍♂️🔧",
-      "🕹️ My tech story began in '98 as a starry-eyed Web Designer (weren't we all?), and by 2008 I was knee-deep in Web Dev—LEGO bricks turned to skyscrapers 🧱➡️🏙️",
-      "💼 Since then, I've dabbled in everything from biz dev to marketing, even had a go at entrepreneurship (RIP my lemonade empire 🍋💸).",
-      "🎨 My real love? Making things look so good they give Mona Lisa an identity crisis. Pixel-perfect is my love language 💖🖼️",
-      "🇮🇪 Oh, and I'm also a Peace Commissioner in Ireland—because why not fight bugs and crime? ⚖️🐛",
-    ],
-    type: "paragraph",
-  },
-  skills: {
-    description: "What can I do?",
-    lines: [
-      "<i>My Technical Skills</i>",
-      "<i>Frontend</i> HTML, CSS, JavaScript",
-      "<i>Backend</i> Node.js, Python",
-      "<i>DevOps</i> Docker, Git",
-      "<i>Linux Administration</i>",
-      "<i>Shell Scripting</i>",
-    ],
-    type: "list",
-  },
-  projects: {
-    description: "My projects",
-    lines: [
-      "<i>My Projects</i>",
-      "<i>Terminal Website</i> This interactive terminal-like website",
-    ],
-    type: "list",
-  },
-  contact: {
-    description: "How to reach me",
-    lines: [
-      "<i>Contact Information</i>",
-      "<i>Universal name</i> <em>housamz</em>",
-      "<i>GitHub</i> <span>github.com/<em>housamz</em></span>",
-      "<i>Codepen</i> <span>codepen.io/<em>housamz</em></span>",
-      "<i>LinkedIn</i> <span>linkedin.com/in/<em>housamz</em></span>",
-      "<i>Twitter</i> <span>twitter.com/<em>housamz</em></span>",
-      "<i>Website</i> <span><em>housamz</em>.com</span>",
-    ],
-    type: "list",
-  },
+  whoami: { description: "Who is this?", lines: [], type: "paragraph" },
+  skills: { description: "What can I do?", lines: [], type: "list" },
+  projects: { description: "My projects", lines: [], type: "list" },
+  contact: { description: "How to reach me", lines: [], type: "list" },
+};
+
+const buildTerminalDataFromSiteData = (data) => {
+  const basics = data?.basics || {};
+  const site = data?.site || {};
+  const profiles = Array.isArray(basics.profiles) ? basics.profiles : [];
+  const skillItems = (Array.isArray(data?.skills) ? data.skills : []).slice(0, 12);
+  const projectItems = Array.isArray(site.projects)
+    ? site.projects
+    : Array.isArray(data?.projects)
+      ? data.projects
+      : [];
+
+  const summary = (basics.summary || site.description || "").trim();
+  const whoamiLines = summary ? [escapeHtml(summary)] : [];
+
+  const skillsLines = ["<i>Top Skills</i>"];
+  skillItems.forEach((item) => {
+    if (item?.name) {
+      skillsLines.push(`<i>${escapeHtml(item.name)}</i>`);
+    }
+  });
+
+  const projectsLines = ["<i>Featured Projects</i>"];
+  projectItems.slice(0, 10).forEach((item) => {
+    const title = item?.name || item?.title;
+    const description = item?.description || item?.summary || "";
+    if (!title) return;
+    projectsLines.push(`<i>${escapeHtml(title)}</i> ${escapeHtml(description)}`.trim());
+  });
+
+  const contactLines = ["<i>Contact Information</i>"];
+  if (basics.name) {
+    contactLines.push(`<i>Name</i> <em>${escapeHtml(basics.name)}</em>`);
+  }
+  profiles.forEach((profile) => {
+    if (!profile?.network || !profile?.url) return;
+    contactLines.push(
+      `<i>${escapeHtml(profile.network)}</i> <span>${escapeHtml(formatLinkText(profile.url))}</span>`,
+    );
+  });
+  if (site.url) {
+    contactLines.push(`<i>Website</i> <span>${escapeHtml(formatLinkText(site.url))}</span>`);
+  }
+
+  return {
+    whoami: {
+      description: "Who is this?",
+      lines: whoamiLines,
+      type: "paragraph",
+    },
+    skills: {
+      description: "What can I do?",
+      lines: skillsLines,
+      type: "list",
+    },
+    projects: {
+      description: "My projects",
+      lines: projectsLines,
+      type: "list",
+    },
+    contact: {
+      description: "How to reach me",
+      lines: contactLines,
+      type: "list",
+    },
+  };
+};
+
+const TERMINAL_DATA = {
+  ...DEFAULT_TERMINAL_DATA,
+  ...(SITE_DATA?.terminal?.sections || {}),
+  ...buildTerminalDataFromSiteData(SITE_DATA),
 };
 
 const TERMINAL_APIS = {

@@ -6,10 +6,19 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
   <head>
+    {% assign unified_data = site.data['site-data'] %}
+    {% assign unified_basics = unified_data.basics %}
+    {% assign unified_site = unified_data.site %}
+    {% assign display_name = unified_basics.name | default: unified_site.name %}
+    {% assign display_tagline = unified_site.tagline %}
+    {% assign display_description = unified_basics.summary | default: unified_site.description %}
+    {% assign display_keywords = unified_site.keywords %}
+    {% assign display_footer_links = unified_site.footerLinkItems %}
+    {% assign analytics_id = unified_site.googleAnalytics %}
     <meta charset="utf-8" />
     <title>
-      {% if page.title %}{{ page.title }} – {{ site.name }} {% else %} {{
-      site.name }} - {{ site.tagline }}{% endif %}
+      {% if page.title %}{{ page.title }} – {{ display_name }} {% else %} {{
+      display_name }} - {{ display_tagline }}{% endif %}
     </title>
     <meta charset="utf-8" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -25,16 +34,16 @@
     {% if page.excerpt %}
     <meta
       name="description"
-      content="{{ page.excerpt| strip_html }}, {{ site.keywords }}"
+      content="{{ page.excerpt| strip_html }}, {{ display_keywords }}"
     />
     <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
     {% else %}
     <meta
       name="description"
-      content="{{ site.description }}, {{ site.keywords }}"
+      content="{{ display_description }}, {{ display_keywords }}"
     />
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta name="keywords" content="{{ site.keywords }}" />
+    <meta property="og:description" content="{{ display_description }}" />
+    <meta name="keywords" content="{{ display_keywords }}" />
     <meta http-equiv="expires" content="Mon, 06 Jan 2023 11:00:00 GMT" />
     {% endif %}
     <meta name="author" content="@housamz" />
@@ -85,7 +94,7 @@
         id="site-header"
       >
         <div class="mb-12 flex items-center gap-4 max-md:mb-6">
-          <a href="{{ site.baseurl }}/" aria-label="{{ site.name }}">
+          <a href="{{ site.baseurl }}/" aria-label="{{ display_name }}">
             <svg
               class="h-10 w-10 fill-sky-700 dark:fill-sky-500"
               version="1.1"
@@ -136,7 +145,7 @@
             <a
               class="text-gray-800 no-underline dark:text-gray-100"
               href="{{ site.baseurl }}/"
-              >{{ site.name }}</a
+              >{{ display_name }}</a
             >
           </h1>
         </div>
@@ -191,7 +200,7 @@
           <a
             class="text-gray-800 no-underline hover:text-sky-700 dark:text-gray-100 dark:hover:text-sky-300"
             href="{{ site.baseurl }}/"
-            >{{ site.name }}</a
+            >{{ display_name }}</a
           >
         </h1>
         {% endif %}
@@ -212,11 +221,11 @@
               new Date().getFullYear() > 2006 &&
                 document.write(2006 + " - " + new Date().getFullYear());
             </script>
-            {{ site.name }}
+            {{ display_name }}
           </div>
 
           <div class="flex justify-end gap-3">
-            {% for item in site.footer-link-items %} {% assign user = item.user
+            {% for item in display_footer_links %} {% assign user = item.user
             %} {% if user %} {% if item.url %} {% assign href = item.url |
             relative_url %} {% else %} {% assign href = item.base_url | append:
             user %} {% endif %}
@@ -237,6 +246,9 @@
           type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
         ></script>
+        <script>
+          window.__SITE_DATA__ = {{ site.data['site-data'] | jsonify }};
+        </script>
         <script
           src="{{ site.baseurl }}/scripts/classes/f-this-website.js"
           type="text/javascript"
@@ -264,7 +276,7 @@
 
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-93G01ZXVH0"
+          src="https://www.googletagmanager.com/gtag/js?id={{ analytics_id }}"
         ></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -273,7 +285,7 @@
           }
           gtag("js", new Date());
 
-          gtag("config", "G-93G01ZXVH0");
+          gtag("config", "{{ analytics_id }}");
         </script>
       </main>
     </div>
