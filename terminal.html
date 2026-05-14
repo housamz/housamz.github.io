@@ -1,0 +1,29 @@
+---
+layout: default
+title: Terminal
+permalink: /terminal/
+body_class: terminal-page
+description: An interactive terminal-style website built with vanilla JavaScript
+---
+
+<script>
+  window.__HOME_URL__ = "{{ '/' | relative_url }}";
+</script>
+
+<div class="terminal-page-shell">
+  <div class="terminal-container">
+    <div id="app">
+      <div id="command-history"></div>
+      <div class="input-line">
+        <span class="prompt" id="first-prompt"></span>
+        <input
+          class="command-input"
+          id="command-input"
+          type="text"
+          autofocus="autofocus"
+        />
+        <span class="cursor" id="cursor"></span>
+      </div>
+    </div>
+  </div>
+</div>

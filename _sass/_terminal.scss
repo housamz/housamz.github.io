@@ -1,0 +1,155 @@
+body.terminal-page {
+  margin: 0;
+  overflow: hidden;
+  font-weight: 500;
+  line-height: 1.31;
+}
+
+body.terminal-page .mx-auto {
+  display: block;
+  max-width: none;
+  padding: 0;
+}
+
+body.terminal-page header,
+body.terminal-page footer,
+body.terminal-page #back-top,
+body.terminal-page main > h1 {
+  display: none;
+}
+
+body.terminal-page main {
+  display: block;
+  min-height: 100vh;
+  padding: 0;
+}
+
+body.terminal-page #main {
+  height: 100vh;
+}
+
+.terminal-page-shell {
+  background-color: $terminal-bg;
+  color: $terminal-text;
+  font-family: $mono;
+  height: 100%;
+}
+
+.terminal-container {
+  background-color: $terminal-bg;
+  color: $terminal-text;
+  font-family: $mono;
+  font-size: 16px;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .welcome {
+    line-height: 1;
+    white-space: pre-wrap;
+  }
+
+  .prompt {
+    color: $terminal-green;
+    margin-right: 5px;
+  }
+
+  .input-line {
+    display: flex;
+    position: relative;
+  }
+
+  .command-input {
+    background-color: transparent;
+    border: none;
+    color: $terminal-text;
+    font-family: $mono;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+    caret-color: transparent;
+    position: relative;
+  }
+
+  .cursor {
+    animation: terminal-blink 1s step-end infinite;
+    background-color: $terminal-green;
+    display: inline-block;
+    height: 18px;
+    position: absolute;
+    width: 10px;
+  }
+
+  @keyframes terminal-blink {
+    from,
+    to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .command-history {
+    margin-bottom: 10px;
+  }
+
+  .output {
+    margin: 5px 0 15px;
+  }
+
+  @each $name, $hex in $terminal-color-map {
+    .#{$name} {
+      color: $hex;
+    }
+  }
+
+  .output.list > div:not(:first-child) {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 13rem 1fr;
+  }
+
+  em,
+  i {
+    font-style: normal;
+  }
+
+  .output div:first-child em,
+  .output i {
+    color: $terminal-yellow;
+  }
+
+  .output em i {
+    color: $terminal-orange;
+  }
+
+  .output div:first-child i,
+  .output em,
+  .output div:first-child em em {
+    color: $terminal-blue;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.75rem;
+
+    .output.list > div:not(:first-child) {
+      grid-template-columns: 1fr;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
