@@ -275,6 +275,72 @@ section {
   min-height: 1.25rem;
 }
 
+.tags-expo {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.tags-expo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.post-tag,
+.post-title {
+  text-decoration: none;
+}
+
+.entry a.post-tag {
+  background-color: $blue;
+  border-radius: $border-radius;
+  color: $light-color !important;
+  display: inline-flex;
+  font-family: $sans;
+  padding: 0.2rem 0.75rem;
+  transition: background-color 0.16s ease, border-color 0.16s ease,
+    color 0.16s ease, opacity 0.16s ease;
+}
+
+.entry a.post-tag:hover {
+  background-color: $border-color;
+  border-color: $border-color;
+  // color: $timeline-text;
+  opacity: 1;
+}
+
+.tags-expo-section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.tags-expo-section h4 {
+  margin-bottom: 0.5rem;
+}
+
+.tags-expo-posts {
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags-expo-posts li {
+  margin: 0;
+}
+
+.post-title {
+  color: $blue;
+  display: inline-flex;
+  font-family: $serif;
+  font-size: 1rem;
+}
+
+.post-title:hover {
+  opacity: 0.8;
+}
+
 .leaflet-container {
   font-family: $sans;
 }

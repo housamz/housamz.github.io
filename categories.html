@@ -11,18 +11,17 @@ title: Categories
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     {% endfor %}
   </div>
-  <hr />
   <div class="tags-expo-section">
     {% for tag in allCats %}
     <h4 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h4>
     <ul class="tags-expo-posts">
       {% for post in tag[1] %}
-      <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
         <li>
+          <a class="post-title" href="{{ post.url | relative_url }}">
           {{ post.title }}
           <!-- <small class="post-date">{{ post.date | date_to_string }}</small> -->
+          </a>
         </li>
-      </a>
       {% endfor %}
     </ul>
     {% endfor %}

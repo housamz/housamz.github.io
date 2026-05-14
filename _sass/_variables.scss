@@ -20,8 +20,7 @@ $secondary: #ffffff;
 $muted: #6b7280;
 $border-color: #e5e7eb;
 $code-bg: #f9fafb;
-$blue: #2563eb;
-$sky-title: #1d4ed8;
+$blue: #0369a1;
 $warning-txt: #856b00;
 $red: #dc3522;
 $green: #5caa82;
@@ -39,8 +38,7 @@ $secondary-dark: #0b0f16;
 $muted-dark: #9ca3af;
 $border-dark: #1f2937;
 $code-bg-dark: #0e121a;
-$blue-dark: #60a5fa;
-$sky-title-dark: #93c5fd;
+$blue-dark: #0ea5e9;
 $warning-txt-dark: #eebf05;
 
 // ============================================
@@ -53,7 +51,6 @@ $warning-txt-dark: #eebf05;
   --border: #{$border-color};
   --code-bg: #{$code-bg};
   --blue: #{$blue};
-  --sky-title: #{$sky-title};
   --warning-txt: #{$warning-txt};
 }
 
@@ -65,7 +62,6 @@ $warning-txt-dark: #eebf05;
     --border: #{$border-color};
     --code-bg: #{$code-bg-dark};
     --blue: #{$blue-dark};
-    --sky-title: #{$sky-title-dark};
     --warning-txt: #{$warning-txt-dark};
   }
 }
