@@ -31,7 +31,7 @@
       "highlights": []
     },
     {
-      "company": "UCD Professional Academy",
+      "company": "UCD PA",
       "position": "Lecturer",
       "website": "",
       "startDate": "2024-01-01",
@@ -119,8 +119,7 @@
       "summary": "Teaching all-level classes of Programming, Adobe Suite, and Microsoft Office.",
       "highlights": [],
       "endDate": "2008-12-01",
-      "academic": true,
-      "row": 6
+      "academic": true
     },
     {
       "company": "Al Awael",

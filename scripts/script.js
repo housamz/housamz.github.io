@@ -470,6 +470,8 @@ class Timeline {
     this.element = document.getElementById(element);
     this.data = data;
     this.tooltip = document.getElementById("tooltip");
+    this.host = this.element ? this.element.closest("#whoami") : null;
+    this.legend = this.host ? this.host.querySelector(".chart-key") : null;
 
     this.pixelsPerYear = 60; // Width in pixels per year
     this.baseOffset = 50; // Starting Y position
@@ -481,10 +483,59 @@ class Timeline {
     this.labelBuffer = 140;
 
     this.startYear = new Date().getFullYear();
+    this.activeTypes = new Set(["work", "teaching", "education"]);
     this.entries = this.getAllEntries(); // Precompute sorted entries
     this.maxRows = this.getConfiguredMaxRows();
     this.endYear = this.getTimelineEndYear();
+    this.bindLegendControls();
     this.init();
+  }
+
+  getTypeFromLegendClass(className) {
+    if (!className) return null;
+    if (className.includes("work-bar")) return "work";
+    if (className.includes("teaching-bar")) return "teaching";
+    if (className.includes("education-bar")) return "education";
+    if (className.includes("volunteer-bar")) return "volunteer";
+    return null;
+  }
+
+  bindLegendControls() {
+    if (!this.legend) return;
+
+    this.legend.querySelectorAll("div").forEach((item) => {
+      const type = this.getTypeFromLegendClass(item.className);
+      if (!type) return;
+
+      item.setAttribute("role", "button");
+      item.setAttribute("tabindex", "0");
+
+      const isActive = this.activeTypes.has(type);
+      item.classList.toggle("is-off", !isActive);
+      item.setAttribute("aria-pressed", isActive ? "true" : "false");
+
+      const toggle = () => {
+        if (this.activeTypes.has(type)) {
+          this.activeTypes.delete(type);
+          item.classList.add("is-off");
+          item.setAttribute("aria-pressed", "false");
+        } else {
+          this.activeTypes.add(type);
+          item.classList.remove("is-off");
+          item.setAttribute("aria-pressed", "true");
+        }
+
+        this.init();
+      };
+
+      item.addEventListener("click", toggle);
+      item.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
   }
 
   parseDate(dateStr) {
@@ -559,6 +610,15 @@ class Timeline {
         parsedEnd: this.parseDate(work.endDate),
         tooltipContent: `${work.position}: ${work.company}\n${work.startDate} - ${work.endDate}`,
       })),
+      ...this.data.volunteer.map((vol) => ({
+        title: vol.position,
+        subtitle: vol.organization,
+        type: "volunteer",
+        preferredRow: this.parsePreferredRow(vol.row),
+        parsedStart: this.parseDate(vol.startDate),
+        parsedEnd: this.parseDate(vol.endDate),
+        tooltipContent: `${vol.position}: ${vol.organization}\n${vol.startDate} - ${vol.endDate}`,
+      })),
     ].sort((a, b) => b.parsedEnd - a.parsedEnd);
   }
 
@@ -602,7 +662,11 @@ class Timeline {
     const fragment = document.createDocumentFragment();
     const rowRightEdges = Array(this.maxRows).fill(-Infinity);
 
-    this.entries.forEach((item, index) => {
+    const filteredEntries = this.entries.filter((item) =>
+      this.activeTypes.has(item.type),
+    );
+
+    filteredEntries.forEach((item, index) => {
       const startPosition = this.getPositionFromDate(item.parsedStart);
       const endPosition = this.getPositionFromDate(item.parsedEnd);
       const leftPosition = Math.min(startPosition, endPosition);

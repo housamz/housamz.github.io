@@ -91,17 +91,65 @@
 .chart-key {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
     color: $light-color;
+    font-weight: 700;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
+    border-radius: 0.45rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease,
+      border-color 0.16s ease, background 0.16s ease;
+
+    &::before {
+      content: "";
+      padding: 0.25rem;
+      border-radius: 999px;
+      background: rgba(251, 17, 1);
+      color: #dbe7f0;
+    }
+
+    &[aria-pressed="true"] {
+      border-color: rgba(255, 255, 255, 0.55);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.14);
+
+      &::before {
+        background: rgba(16, 185, 129);
+        color: #e7fff4;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.22);
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.7);
+      outline-offset: 2px;
+    }
+
+    &.is-off {
+      opacity: 0.5;
+      filter: grayscale(0.15);
+
+
+    }
   }
 }
 
 .timeline-container {
   background-color: $dark-color;
-  border: 1px solid var(--blue);
-  border-top-width: 10px;
   color: $light-color;
   overflow-x: auto;
   overflow-y: hidden;
