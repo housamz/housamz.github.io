@@ -103,7 +103,8 @@
   border: 1px solid var(--blue);
   border-top-width: 10px;
   color: $light-color;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
   width: 100%;
 }
 
@@ -114,25 +115,34 @@
 }
 
 #years {
-  display: flex;
-  justify-content: space-between;
   position: absolute;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .year-marker {
+  position: absolute;
   border-left: 1px dashed #333;
   color: #aaa;
   padding: 1rem 0 0 0;
-  text-align: center;
-  width: 100%;
+  transform: translateX(-0.5px);
+  height: 100%;
+
+  > div {
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
 }
 
 .event {
   cursor: pointer;
   position: absolute;
   width: 200px;
+  z-index: 2;
 }
 
 .event-line {

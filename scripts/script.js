@@ -471,25 +471,51 @@ class Timeline {
     this.data = data;
     this.tooltip = document.getElementById("tooltip");
 
-    this.endYear = 1996;
     this.pixelsPerYear = 60; // Width in pixels per year
     this.baseOffset = 50; // Starting Y position
     this.rowSpacing = 60; // Space between rows
-    this.maxRows = 5; // Number of rows to distribute events
+    this.maxRows = 6; // Number of rows to distribute events
+    this.horizontalPadding = 80; // Left and right breathing room for the axis
+    this.rowGap = 20; // Minimum horizontal gap between events in the same row
+    this.minEventWidth = 22;
+    this.labelBuffer = 140;
 
     this.startYear = new Date().getFullYear();
     this.entries = this.getAllEntries(); // Precompute sorted entries
+    this.endYear = this.getTimelineEndYear();
     this.init();
   }
 
   parseDate(dateStr) {
-    if (dateStr === "Now") return this.startYear;
-    const date = new Date(dateStr);
-    return date.getFullYear() + (date.getMonth() + 1) / 12; // Adding month precision
+    if (!dateStr || dateStr === "Now") return this.startYear;
+
+    const direct = new Date(dateStr);
+    if (!Number.isNaN(direct.getTime())) {
+      return direct.getFullYear() + (direct.getMonth() + 1) / 12;
+    }
+
+    // Fallback for partial or irregular date formats.
+    const yearMatch = String(dateStr).match(/\d{4}/);
+    if (yearMatch) {
+      return Number(yearMatch[0]);
+    }
+
+    return this.startYear;
   }
 
   getPositionFromDate(date) {
-    return (this.startYear - date) * this.pixelsPerYear;
+    return this.horizontalPadding + (this.startYear - date) * this.pixelsPerYear;
+  }
+
+  getTimelineEndYear() {
+    if (!this.entries.length) return this.startYear;
+    const allDates = this.entries
+      .flatMap((item) => [item.parsedStart, item.parsedEnd])
+      .filter((value) => Number.isFinite(value));
+    if (!allDates.length) return this.startYear;
+
+    const oldest = Math.min(...allDates);
+    return Math.floor(oldest);
   }
 
   getAllEntries() {
@@ -514,8 +540,11 @@ class Timeline {
   }
 
   init() {
+    this.element.innerHTML = "";
+
     const timelineWidth =
-      (this.startYear - this.endYear + 1) * this.pixelsPerYear;
+      (this.startYear - this.endYear + 1) * this.pixelsPerYear +
+      this.horizontalPadding * 2;
     const timelineHeight = this.baseOffset + this.maxRows * this.rowSpacing;
 
     this.element.style.width = `${timelineWidth}px`;
@@ -534,7 +563,7 @@ class Timeline {
     for (let year = this.startYear; year >= this.endYear; year--) {
       const marker = document.createElement("div");
       marker.className = "year-marker";
-      marker.style.left = `${(this.startYear - year) * this.pixelsPerYear}px`;
+      marker.style.left = `${this.getPositionFromDate(year)}px`;
 
       const text = document.createElement("div");
       text.textContent = year;
@@ -548,25 +577,38 @@ class Timeline {
 
   drawAllEvents() {
     const fragment = document.createDocumentFragment();
-    let rowAssignment = 0; // Track current row assignment
+    const rowRightEdges = Array(this.maxRows).fill(-Infinity);
 
     this.entries.forEach((item, index) => {
       const startPosition = this.getPositionFromDate(item.parsedStart);
       const endPosition = this.getPositionFromDate(item.parsedEnd);
-      const width = Math.abs(endPosition - startPosition);
+      const leftPosition = Math.min(startPosition, endPosition);
+      const width = Math.max(
+        this.minEventWidth,
+        Math.abs(endPosition - startPosition),
+      );
 
-      // Distribute events over multiple rows in a cyclic manner
-      const row = rowAssignment % this.maxRows;
-      rowAssignment++; // Increment row assignment for next event
+      let row = rowRightEdges.findIndex(
+        (rightEdge) => leftPosition >= rightEdge + this.rowGap,
+      );
+      if (row === -1) {
+        row = rowRightEdges.indexOf(Math.min(...rowRightEdges));
+      }
+
+      // Alternate label side to reduce text collisions in dense areas.
+      const putLabelOnRight = row % 2 === 0;
+      const labelReach = this.labelBuffer;
+      rowRightEdges[row] = Math.max(
+        rowRightEdges[row],
+        leftPosition + width + (putLabelOnRight ? labelReach : 0),
+      );
 
       const yPosition = this.baseOffset + row * this.rowSpacing;
 
       // Create event container
       const container = document.createElement("div");
       container.classList.add("event", item.type);
-      container.style.cssText = `left: ${
-        endPosition + this.pixelsPerYear / 2
-      }px; top: ${yPosition}px; width: ${width + this.pixelsPerYear / 2}px`;
+      container.style.cssText = `left: ${leftPosition}px; top: ${yPosition}px; width: ${width}px`;
       container.dataset.tooltip = item.tooltipContent;
 
       // Create event line
@@ -586,10 +628,13 @@ class Timeline {
       subTitle.textContent = item.subtitle;
       text.append(title, subTitle);
 
-      text.style[index <= this.entries.length / 2 ? "left" : "right"] = 0;
-
-      text.style.textAlign =
-        index <= this.entries.length / 2 ? "left" : "right";
+      if (putLabelOnRight) {
+        text.style.left = "0";
+        text.style.textAlign = "left";
+      } else {
+        text.style.right = "0";
+        text.style.textAlign = "right";
+      }
 
       // Assemble elements
       container.append(line, text);
