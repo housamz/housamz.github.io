@@ -133,9 +133,28 @@ jQuery(function ($) {
         summary: normalizedSummary,
       },
       skills: Array.isArray(data.skills)
-        ? data.skills.map((item) =>
-            typeof item === "string" ? { name: item } : item,
-          )
+        ? data.skills.map((item) => {
+            if (typeof item === "string") {
+              return {
+                name: item,
+                category: "Professional",
+                categoryClass: "skill-item skill-cat-professional",
+              };
+            }
+
+            const category = item?.category || "Professional";
+            const categoryKey = String(category)
+              .trim()
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-+|-+$/g, "") || "professional";
+
+            return {
+              ...item,
+              category,
+              categoryClass: `skill-item skill-cat-${categoryKey}`,
+            };
+          })
         : data.skills,
       projects: Array.isArray(data.projects)
         ? data.projects.map((item) => ({
@@ -147,6 +166,85 @@ jQuery(function ($) {
     };
 
     bind(dataForBinding, document.querySelector("#whoami"));
+
+    const skillNodes = document.querySelectorAll("#whoami .skill-item");
+    skillNodes.forEach((node) => {
+      const category = String(node.getAttribute("data-category") || "professional")
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "") || "professional";
+      node.dataset.skillCategory = category;
+    });
+
+    const skillsLegend = document.querySelector("#whoami .skills-filter");
+    if (skillsLegend && skillNodes.length) {
+      const activeCategories = new Set(
+        Array.from(skillNodes).map((node) => node.dataset.skillCategory).filter(Boolean),
+      );
+
+      const getSkillTypeFromLegendClass = (className) => {
+        if (!className) return null;
+        if (className.includes("skill-filter-all")) return "all";
+        if (className.includes("skill-filter-development")) return "development";
+        if (className.includes("skill-filter-teaching")) return "teaching";
+        if (className.includes("skill-filter-design")) return "design";
+        if (className.includes("skill-filter-leadership")) return "leadership";
+        if (className.includes("skill-filter-professional")) return "professional";
+        return null;
+      };
+
+      const applySkillFilters = () => {
+        skillNodes.forEach((node) => {
+          const category = node.dataset.skillCategory || "professional";
+          node.style.display = activeCategories.has(category) ? "" : "none";
+        });
+
+        const allActive =
+          activeCategories.size > 0 &&
+          Array.from(skillNodes).every((node) =>
+            activeCategories.has(node.dataset.skillCategory),
+          );
+
+        skillsLegend.querySelectorAll("div").forEach((item) => {
+          const type = getSkillTypeFromLegendClass(item.className);
+          if (!type) return;
+          const isActive = type === "all" ? allActive : activeCategories.has(type);
+          item.classList.toggle("is-off", !isActive);
+          item.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+      };
+
+      skillsLegend.querySelectorAll("div").forEach((item) => {
+        const type = getSkillTypeFromLegendClass(item.className);
+        if (!type) return;
+
+        item.setAttribute("role", "button");
+        item.setAttribute("tabindex", "0");
+
+        const toggle = () => {
+          if (type === "all") {
+            activeCategories.clear();
+            skillNodes.forEach((node) => {
+              if (node.dataset.skillCategory) activeCategories.add(node.dataset.skillCategory);
+            });
+          } else if (activeCategories.has(type)) {
+            activeCategories.delete(type);
+          } else {
+            activeCategories.add(type);
+          }
+          applySkillFilters();
+        };
+
+        item.addEventListener("click", toggle);
+        item.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+        });
+      });
+
+      applySkillFilters();
+    }
+
     if (typeof updateEarthPlacement === "function") {
       updateEarthPlacement();
       window.requestAnimationFrame(updateEarthPlacement);
@@ -228,14 +326,24 @@ const bindOne = (data, node, index) => {
       // search for before and after colon including optional white spaces
       const regex = /([^:\s]+)\s?:\s?([^:\,\}]+)/g;
       let attrKeyVal;
-      while ((attrKeyVal = regex.exec(bindParams[1])) !== null)
-        node.setAttribute(attrKeyVal[1], findData(data, attrKeyVal[2], index));
+      while ((attrKeyVal = regex.exec(bindParams[1])) !== null) {
+        const attrName = attrKeyVal[1].trim();
+        const attrValue = findData(data, attrKeyVal[2].trim(), index);
+        if (attrName === "class") {
+          // Add to class list rather than replacing so existing classes are preserved.
+          String(attrValue || "").split(/\s+/).filter(Boolean).forEach((cls) => {
+            node.classList.add(cls);
+          });
+        } else {
+          node.setAttribute(attrName, attrValue);
+        }
+      }
       bind(data, node);
       break;
     case "foreach":
       obj = findData(data, bindParams[1], index);
       cloneNode(node.children[0], obj.length - 1);
-      obj.forEach((item, i) => bind(item, node.children[i], i));
+      obj.forEach((item, i) => bindOne(item, node.children[i], i));
       break;
     case "html":
       node.innerHTML = findData(data, bindParams[1], index);

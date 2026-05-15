@@ -84,8 +84,16 @@ nav_icon: fa-solid fa-user
   </div>
 
   <h3 class="text-lg font-bold mt-6 mb-3">Skills</h3>
-  <div bind="foreach | skills" class="flex gap-1 flex-wrap">
-    <div class="bg-sky-700 text-white px-2 rounded">
+  <div class="skills-filter chart-key">
+    <div class="skill-filter-all">All</div>
+    <div class="skill-filter-development">Development</div>
+    <div class="skill-filter-teaching">Teaching</div>
+    <div class="skill-filter-design">Design</div>
+    <div class="skill-filter-leadership">Leadership</div>
+    <div class="skill-filter-professional">Professional</div>
+  </div>
+  <div bind="foreach | skills" class="skills-grid">
+    <div class="skill-item" bind="attr | { class : categoryClass, data-category : category, title : category }">
       <span bind="text | name"></span>
     </div>
   </div>
