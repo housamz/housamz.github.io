@@ -50,6 +50,18 @@ nav_icon: fa-solid fa-user
     </div>
   </div>
 
+  <h3 class="text-lg font-bold mt-6 mb-3">Projects & Side Quests</h3>
+  <div bind="foreach | projects" class="grid grid-cols-2 gap-4">
+    <div class="project-item">
+      <a bind="attr | { href : projectUrl }" class="text-sky-600" target="_blank" rel="noopener">
+        <h4 bind="text | name"></h4>
+      </a>
+      <div class="project-meta">
+        <span bind="text | description"></span>
+      </div>
+    </div>
+  </div>
+
   <h3 class="text-lg font-bold mt-6 mb-3">Skills</h3>
   <div bind="foreach | skills" class="flex gap-1 flex-wrap">
     <div class="bg-sky-700 text-white px-2 rounded">

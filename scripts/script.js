@@ -122,12 +122,28 @@ jQuery(function ($) {
     const data = window.__SITE_DATA__;
     if (!data) return;
 
-    bind(data, document.querySelector("#whoami"));
+    const dataForBinding = {
+      ...data,
+      skills: Array.isArray(data.skills)
+        ? data.skills.map((item) =>
+            typeof item === "string" ? { name: item } : item,
+          )
+        : data.skills,
+      projects: Array.isArray(data.projects)
+        ? data.projects.map((item) => ({
+            ...item,
+            projectUrl: item.href || item.url,
+            description: item.description || item.summary,
+          }))
+        : data.projects,
+    };
+
+    bind(dataForBinding, document.querySelector("#whoami"));
     if (typeof updateEarthPlacement === "function") {
       updateEarthPlacement();
       window.requestAnimationFrame(updateEarthPlacement);
     }
-    new Timeline("timeline", data);
+    new Timeline("timeline", dataForBinding);
   }
 });
 

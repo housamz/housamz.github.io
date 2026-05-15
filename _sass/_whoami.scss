@@ -69,6 +69,13 @@
   color: $dark-color;
   position: relative;
   padding: 1rem 1rem 1rem 2.4rem;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  &:hover {
+    transform: translateY(-4px) rotate(1deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    border-color: $red;
+  }
 
   a h4 {
     line-height: 1.2;
@@ -84,6 +91,7 @@
     border-color: $red;
     border-style: solid;
     border-width: 0 0.1rem 0 0.1rem;
+    transition: all 0.3s ease;
   }
 
   .paper-meta {
@@ -91,6 +99,55 @@
     font-size: 0.9rem;
     line-height: 1.2rem;
     margin-top: 16px;
+  }
+}
+
+.project-item {
+  background-color: var(--bg-secondary, $light-color);
+  border: 1px solid var(--border, $border-color);
+  border-radius: $border-radius;
+  color: $dark-color;
+  position: relative;
+  padding: 1.2rem;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+  }
+
+  &:hover {
+    transform: translateY(-6px) scale(1.02) rotate(-0.5deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border-color: $red;
+
+    &::before {
+      left: 100%;
+    }
+  }
+
+  a h4 {
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+    transition: color 0.2s ease;
+  }
+
+  &:hover a h4 {
+    color: $red;
+  }
+
+  .project-meta {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text-secondary, $dark-color);
+    opacity: 0.85;
   }
 }
 
@@ -235,5 +292,21 @@ $event-darken-default: 15%;
   #timeline .event.#{$type} .bar,
   .#{$type} .event-line {
     background: gradient-color($color, $event-darken-default);
+  }
+}
+
+// ============================================
+// Skills Styling - Playful Hover Effects
+// ============================================
+#whoami > div:has(> div > div[class*="bg-sky"]) {
+  > div > div[class*="bg-sky"] {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.15) translateY(-3px);
+      box-shadow: 0 8px 16px rgba(15, 23, 42, 0.2);
+      filter: brightness(1.1);
+    }
   }
 }

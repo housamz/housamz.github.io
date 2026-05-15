@@ -18,7 +18,9 @@ layout: default
 <section>
   <h2 class="mb-4 text-lg font-bold">Projects</h2>
   <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-    {% for project in site.projects %}
+    {% assign unified_data = site.data.site-data %}
+    {% for project in unified_data.projects %}
+    {% if project.type == 'portfolio' %}
     <article
       class="overflow-hidden rounded-lg border border-[var(--border)] transition duration-150 hover:-translate-y-0.5 hover:shadow-lg"
     >
@@ -44,6 +46,7 @@ layout: default
         </div>
       </a>
     </article>
+    {% endif %}
     {% endfor %}
   </div>
 </section>

@@ -13,7 +13,7 @@
     {% assign display_tagline = unified_site.tagline %}
     {% assign display_description = unified_basics.summary | default: unified_site.description %}
     {% assign display_keywords = unified_site.keywords %}
-    {% assign display_footer_links = unified_site.footerLinkItems %}
+    {% assign display_footer_links = unified_basics.profiles %}
     {% assign analytics_id = unified_site.googleAnalytics %}
     <meta charset="utf-8" />
     <title>
@@ -225,18 +225,16 @@
           </div>
 
           <div class="flex justify-end gap-3">
-            {% for item in display_footer_links %} {% assign user = item.user
-            %} {% if user %} {% if item.url %} {% assign href = item.url |
-            relative_url %} {% else %} {% assign href = item.base_url | append:
-            user %} {% endif %}
+            {% for item in display_footer_links %} {% assign href = item.url %}
+            {% if href %}
             <a
               class="inline-flex h-6 w-6 items-center justify-center text-base text-gray-500 no-underline hover:text-sky-700 dark:text-gray-400 dark:hover:text-sky-300"
-              href="{{ href }}"
+              href="{% if href contains 'http' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}"
               target="_blank"
-              aria-label="{{ item.label }}"
+              aria-label="{{ item.network }}"
             >
               <i class="{{ item.icon }}" aria-hidden="true"></i>
-              <span class="sr-only">{{ item.label }}</span>
+              <span class="sr-only">{{ item.network }}</span>
             </a>
             {% endif %} {% endfor %}
           </div>

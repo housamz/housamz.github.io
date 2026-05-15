@@ -49,29 +49,34 @@ const buildTerminalDataFromSiteData = (data) => {
   const site = data?.site || {};
   const profiles = Array.isArray(basics.profiles) ? basics.profiles : [];
   const skillItems = (Array.isArray(data?.skills) ? data.skills : []).slice(0, 12);
-  const projectItems = Array.isArray(site.projects)
-    ? site.projects
-    : Array.isArray(data?.projects)
-      ? data.projects
-      : [];
+  const projectItems = Array.isArray(data?.projects) ? data.projects : [];
 
   const summary = (basics.summary || site.description || "").trim();
   const whoamiLines = summary ? [escapeHtml(summary)] : [];
 
   const skillsLines = ["<i>Top Skills</i>"];
   skillItems.forEach((item) => {
-    if (item?.name) {
-      skillsLines.push(`<i>${escapeHtml(item.name)}</i>`);
+    const skillName = typeof item === "string" ? item : item?.name;
+    if (skillName) {
+      skillsLines.push(`<i>${escapeHtml(skillName)}</i>`);
     }
   });
 
   const projectsLines = ["<i>Featured Projects</i>"];
-  projectItems.slice(0, 10).forEach((item) => {
+  projectItems.forEach((item) => {
     const title = item?.name || item?.title;
     const description = item?.description || item?.summary || "";
     if (!title) return;
-    projectsLines.push(`<i>${escapeHtml(title)}</i> ${escapeHtml(description)}`.trim());
+    let displayDesc = description;
+    if (displayDesc.length > 60) {
+      displayDesc = displayDesc.substring(0, 57) + "...";
+    }
+    const line = displayDesc 
+      ? `<i>${escapeHtml(title)}</i> — ${escapeHtml(displayDesc)}` 
+      : `<i>${escapeHtml(title)}</i>`;
+    projectsLines.push(line);
   });
+  projectsLines.push("<div style='grid-column: 1 / -1; margin-top: 0.5rem;'><span class='green'>Tip: Use 'info projects &lt;name&gt;' or 'open projects &lt;name&gt;' to explore</span></div>");
 
   const contactLines = ["<i>Contact Information</i>"];
   if (basics.name) {
@@ -422,6 +427,16 @@ class Terminal {
       case "help":
         const otherCommands = [
           {
+            color: "green",
+            title: "info",
+            text: "Get detailed info about items (e.g., 'info projects teanga')",
+          },
+          {
+            color: "green",
+            title: "open",
+            text: "Open URL for items (e.g., 'open projects teanga', 'open contact github')",
+          },
+          {
             color: "blue",
             title: "exit",
             text: "Go to the homepage",
@@ -504,7 +519,20 @@ class Terminal {
         break;
 
       default:
-        outputLines = this._createErrorMessage(command, true);
+        if (theCommand.startsWith("info ")) {
+          const parts = theCommand.split(" ");
+          const category = parts[1];
+          const itemName = parts.slice(2).join(" ").toLowerCase();
+          outputLines = this._handleInfoCommand(category, itemName);
+        } else if (theCommand.startsWith("open ")) {
+          const parts = theCommand.split(" ");
+          const category = parts[1];
+          const itemName = parts.slice(2).join(" ").toLowerCase();
+          this._handleOpenCommand(category, itemName);
+          return;
+        } else {
+          outputLines = this._createErrorMessage(command, true);
+        }
     }
 
     if (outputLines.length > 0) {
@@ -550,6 +578,124 @@ class Terminal {
     }
   }
 
+  _handleInfoCommand(category, itemName) {
+    if (!category || !itemName) {
+      return [this._createSpan("Usage: info <category> <name> (e.g., 'info projects teanga')", null, "red")];
+    }
+
+    const categoryLower = category.toLowerCase();
+    let items = [];
+    let itemDisplayName = "Item";
+
+    if (categoryLower === "projects") {
+      items = SITE_DATA?.projects || [];
+      itemDisplayName = "Project";
+    } else if (categoryLower === "skills") {
+      const skillsArray = SITE_DATA?.skills || [];
+      items = skillsArray.map(s => typeof s === "string" ? { name: s } : s);
+      itemDisplayName = "Skill";
+    } else if (categoryLower === "work") {
+      items = SITE_DATA?.work || [];
+      itemDisplayName = "Work Experience";
+    } else if (categoryLower === "education") {
+      items = SITE_DATA?.education || [];
+      itemDisplayName = "Education";
+    } else if (categoryLower === "volunteer") {
+      items = SITE_DATA?.volunteer || [];
+      itemDisplayName = "Volunteer";
+    } else {
+      return [this._createSpan("Unknown category: " + category + ". Try: projects, skills, work, education, volunteer", null, "red")];
+    }
+
+    const normalize = (str) => str.toLowerCase().replace(/-/g, " ");
+    const normalized = normalize(itemName);
+    const item = items.find(i => {
+      const name = normalize(i?.name || i?.title || "");
+      return name.includes(normalized) || normalized.includes(name.split(" ")[0]);
+    });
+
+    if (!item) {
+      return [this._createSpan(itemDisplayName + " not found. Try 'info " + categoryLower + "' to list all.", null, "orange")];
+    }
+
+    const lines = ["<i>" + escapeHtml(item.name || item.title || itemDisplayName) + "</i>"];
+
+    if (item.summary) lines.push("<em>Summary:</em> " + escapeHtml(item.summary));
+    if (item.description) lines.push("<em>Description:</em> " + escapeHtml(item.description));
+    if (item.position) lines.push("<em>Position:</em> " + escapeHtml(item.position));
+    if (item.startDate) lines.push("<em>Started:</em> " + escapeHtml(item.startDate));
+    if (item.endDate) lines.push("<em>Ended:</em> " + escapeHtml(item.endDate));
+    if (item.studyType) lines.push("<em>Type:</em> " + escapeHtml(item.studyType));
+    if (item.area) lines.push("<em>Area:</em> " + escapeHtml(item.area));
+    if (item.organization) lines.push("<em>Organization:</em> " + escapeHtml(item.organization));
+    if (item.name && categoryLower === "skills") lines.push("<em>Skill:</em> " + escapeHtml(item.name));
+    if (item.url) lines.push("<em>URL:</em> <span>" + escapeHtml(formatLinkText(item.url)) + "</span>");
+    if (item.href) lines.push("<em>URL:</em> <span>" + escapeHtml(formatLinkText(item.href)) + "</span>");
+    if (item.location?.city) lines.push("<em>Location:</em> " + escapeHtml(item.location.city));
+
+    return lines;
+  }
+
+  _handleOpenCommand(category, itemName) {
+    if (!category || !itemName) {
+      this._renderOutput([this._createSpan("Usage: open <category> <name> (e.g., 'open projects teanga')", null, "red")], "paragraph");
+      return;
+    }
+
+    const categoryLower = category.toLowerCase();
+    let items = [];
+    let url = null;
+
+    if (categoryLower === "projects") {
+      items = SITE_DATA?.projects || [];
+      const normalize = (str) => str.toLowerCase().replace(/-/g, " ");
+      const normalized = normalize(itemName);
+      const item = items.find(i => {
+        const name = normalize(i?.name || i?.title || "");
+        return name.includes(normalized) || normalized.includes(name.split(" ")[0]);
+      });
+      url = item?.url || item?.href;
+      if (!url) {
+        this._renderOutput([this._createSpan("Project not found or has no URL.", null, "orange")], "paragraph");
+        return;
+      }
+    } else if (categoryLower === "contact") {
+      const profiles = SITE_DATA?.basics?.profiles || [];
+      const normalize = (str) => str.toLowerCase().replace(/-/g, " ");
+      const normalized = normalize(itemName);
+      const item = profiles.find(p => {
+        const name = normalize(p.network || "");
+        return name.includes(normalized) || normalized.includes(name.split(" ")[0]);
+      });
+      url = item?.url;
+      if (!url) {
+        this._renderOutput([this._createSpan("Contact not found or has no URL.", null, "orange")], "paragraph");
+        return;
+      }
+    } else if (categoryLower === "work") {
+      items = SITE_DATA?.work || [];
+      const normalize = (str) => str.toLowerCase().replace(/-/g, " ");
+      const normalized = normalize(itemName);
+      const item = items.find(i => {
+        const name = normalize(i?.name || i?.company || "");
+        return name.includes(normalized) || normalized.includes(name.split(" ")[0]);
+      });
+      url = item?.url;
+      if (!url) {
+        this._renderOutput([this._createSpan("Work entry not found or has no URL.", null, "orange")], "paragraph");
+        return;
+      }
+    } else {
+      this._renderOutput([this._createSpan("Unknown category: " + category + ". Try: projects, contact, work", null, "red")], "paragraph");
+      return;
+    }
+
+    if (url) {
+      window.open(url, "_blank");
+      this._renderOutput([this._createSpan("Opening: " + formatLinkText(url), null, "green")], "paragraph");
+    }
+  }
+
   _runTestCommands() {
     ["welcome", "help", "date", ...Object.keys(TERMINAL_DATA), ...Object.keys(TERMINAL_APIS), "history"].forEach((k, i) =>
       setTimeout(() => this.executeCommand(k), i * 3000)
@@ -574,6 +720,8 @@ class Terminal {
     return [
       ...Object.keys(TERMINAL_DATA),
       ...Object.keys(TERMINAL_APIS),
+      "info",
+      "open",
       "exit",
       "clear",
       "date",

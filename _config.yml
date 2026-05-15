@@ -10,70 +10,11 @@ tagline: Putting the fun in function
 # Short bio or description (displayed in the header)
 description: Software Engineer by day, lecturer by night, electronics hobbyist in between — basically a 24/7 nerd on a quest for happyness, one pixel at a time.  I'm also a Peace Commissioner appointed for County Dublin and adjacent counties, providing certification and witnessing services to the public.
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/logo.svg
-
 keywords: research, software engineer, designer, web developer, UI, UX, user experience, user interface, natural language processing, data analytics, developer, programming, coding, design, seo, search engine optimisation
-skills: Peace Commissioner, Full-stack Engineer, Graphic Designer, UX Developer, Researcher, Linguist, Tech Geek
 
 #
 # Flags below are optional
 #
-
-footer-link-items:
-  - key: behance
-    label: Behance
-    icon: fa-brands fa-behance
-    base_url: https://www.behance.com/
-    user: housamz
-  - key: linkedin
-    label: LinkedIn
-    icon: fa-brands fa-linkedin-in
-    base_url: https://www.linkedin.com/in/
-    user: housamz
-  - key: github
-    label: GitHub
-    icon: fa-brands fa-github
-    base_url: https://github.com/
-    user: housamz
-  - key: codepen
-    label: CodePen
-    icon: fa-brands fa-codepen
-    base_url: https://codepen.io/
-    user: housamz
-  - key: googlescholar
-    label: Google Scholar
-    icon: fa-solid fa-graduation-cap
-    base_url: https://scholar.google.com/citations?user=
-    user: 48PxDb0AAAAJ
-  - key: rss
-    label: RSS
-    icon: fa-solid fa-rss
-    url: /feed.xml
-    user: ""
-
-projects:
-  - name: Oorlish
-    href: https://oorlish.netlify.app/
-    description: A collection of everyday online tools and utilities built with simplicity and usability in mind.
-  - name: ASCII Donut
-    href: https://codepen.io/housamz/pen/zYNmppq
-    description: A spinning 3-D donut rendered in ASCII art, ported and animated in JavaScript.
-  - name: Ireland EV Chargers
-    href: https://ie-chargers.netlify.app/
-    description: Interactive map of electric vehicle charging stations across Ireland.
-  - name: JavaScript Food
-    href: https://codepen.io/housamz/full/jOjPmrM
-    description: A fun visual experiment combining JavaScript animations with food themes.
-  - name: Retro Composer
-    href: https://codepen.io/housamz/pen/JjOVEdp
-    description: A browser-based retro music composer with 8-bit style sounds and patterns.
-  - name: Teevee
-    href: https://teevee.netlify.app/
-    description: A minimal TV show tracker to keep tabs on what you are watching.
-  - name: Umm Kulthum Encyclopedia
-    href: https://umm-kulthum.com/
-    description: A comprehensive encyclopedia dedicated to the legendary Egyptian singer Umm Kulthum.
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -103,9 +44,6 @@ images_url: https://www.hmz.ie/images/media/
 #
 
 permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
