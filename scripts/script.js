@@ -250,6 +250,162 @@ jQuery(function ($) {
       window.requestAnimationFrame(updateEarthPlacement);
     }
     new Timeline("timeline", dataForBinding);
+
+    // Travels map
+    const mapElement = document.getElementById("map");
+    const travelsData = data?.travels;
+    if (
+      mapElement &&
+      travelsData &&
+      Array.isArray(travelsData.countries) &&
+      Array.isArray(travelsData.places) &&
+      typeof window.L === "object"
+    ) {
+      const countries = travelsData.countries;
+      const travels = travelsData.places;
+
+      const map = L.map("map").setView([35, 20], 2);
+
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+      const lightTiles = L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+          maxZoom: 20,
+          minZoom: 2,
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        },
+      );
+      const darkTiles = L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+        {
+          maxZoom: 20,
+          minZoom: 2,
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        },
+      );
+
+      let baseLayer;
+      const applyBaseLayer = (isDark) => {
+        if (baseLayer) map.removeLayer(baseLayer);
+        baseLayer = isDark ? darkTiles : lightTiles;
+        baseLayer.addTo(map);
+      };
+
+      applyBaseLayer(prefersDark.matches);
+
+      if (typeof prefersDark.addEventListener === "function") {
+        prefersDark.addEventListener("change", (event) => applyBaseLayer(event.matches));
+      } else if (typeof prefersDark.addListener === "function") {
+        prefersDark.addListener((event) => applyBaseLayer(event.matches));
+      }
+
+      const markerGroup =
+        typeof L.markerClusterGroup === "function"
+          ? L.markerClusterGroup({
+            showCoverageOnHover: false,
+            disableClusteringAtZoom: 7,
+            chunkedLoading: false,
+          })
+          : L.layerGroup();
+
+      markerGroup.addTo(map);
+
+      const countryFilter = document.getElementById("country-filter");
+      const citySearch = document.getElementById("city-search");
+      const clearFilters = document.getElementById("clear-filters");
+      const countriesCount = document.getElementById("countries-count");
+      const citiesCount = document.getElementById("cities-count");
+      const visibleCount = document.getElementById("visible-count");
+      const travelResults = document.getElementById("travel-results");
+
+      if (countryFilter && citySearch && clearFilters && countriesCount && citiesCount) {
+        const travelData = travels.map((place, index) => ({
+          ...place,
+          id: index + 1,
+          countryData: countries[place.country - 1],
+        }));
+
+        const totalCountries = new Set(travelData.map((place) => place.country)).size;
+        const totalCities = travelData.length;
+        const allBounds = L.latLngBounds(travelData.map((place) => [place.lat, place.lng]));
+
+        countriesCount.textContent = String(totalCountries);
+        citiesCount.textContent = String(totalCities);
+
+        const usedCountryIds = new Set(travelData.map((place) => place.country));
+        countries.forEach((country, index) => {
+          const countryId = index + 1;
+          if (!usedCountryIds.has(countryId)) return;
+          const option = document.createElement("option");
+          option.value = String(countryId);
+          option.textContent = `${country.flag} ${country.name}`;
+          countryFilter.appendChild(option);
+        });
+
+        const popupContent = (place) =>
+          `<strong>${place.countryData.flag} ${place.city}, ${place.countryData.name}</strong>`;
+
+        const getFilteredTravels = () => {
+          const selectedCountry = countryFilter.value;
+          const cityQuery = citySearch.value.trim().toLowerCase();
+
+          return travelData.filter((place) => {
+            const matchesCountry =
+              selectedCountry === "all" || place.country === Number(selectedCountry);
+            const matchesCity =
+              cityQuery.length === 0 || place.city.toLowerCase().includes(cityQuery);
+
+            return matchesCountry && matchesCity;
+          });
+        };
+
+        const updateMap = (filteredTravels) => {
+          map.removeLayer(markerGroup);
+          markerGroup.clearLayers();
+
+          filteredTravels.forEach((place) => {
+            const marker = L.marker([place.lat, place.lng]).bindPopup(popupContent(place));
+            markerGroup.addLayer(marker);
+          });
+
+          markerGroup.addTo(map);
+
+          if (visibleCount) visibleCount.textContent = String(filteredTravels.length);
+
+          if (filteredTravels.length > 1) {
+            const bounds = L.latLngBounds(filteredTravels.map((place) => [place.lat, place.lng]));
+            map.fitBounds(bounds, { padding: [30, 30] });
+            if (travelResults) travelResults.textContent = `Showing ${filteredTravels.length} cities.`;
+            return;
+          }
+
+          if (filteredTravels.length === 1) {
+            const place = filteredTravels[0];
+            map.setView([place.lat, place.lng], 6);
+            if (travelResults) {
+              travelResults.textContent =
+                `Showing 1 city: ${place.city}, ${place.countryData.name}.`;
+            }
+            return;
+          }
+
+          map.fitBounds(allBounds, { padding: [30, 30] });
+          if (travelResults) travelResults.textContent = "No cities match this filter.";
+        };
+
+        countryFilter.addEventListener("change", () => updateMap(getFilteredTravels()));
+        citySearch.addEventListener("input", () => updateMap(getFilteredTravels()));
+        clearFilters.addEventListener("click", () => {
+          countryFilter.value = "all";
+          citySearch.value = "";
+          updateMap(travelData);
+        });
+
+        updateMap(travelData);
+      }
+    }
   }
 });
 const binder = new Binder();

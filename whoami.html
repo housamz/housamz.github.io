@@ -98,5 +98,45 @@ nav_icon: fa-solid fa-user
     </div>
   </div>
 
+  <h3 class="text-lg font-bold mt-6 mb-3">Travels</h3>
+  <div class="travel-toolbar" aria-label="Travel stats and filters">
+    <section class="travel-stats" aria-label="Travel stats">
+      <p class="travel-stat bg-sky-800 text-white"><span>Countries</span><strong id="countries-count">0</strong></p>
+      <p class="travel-stat bg-sky-800 text-white"><span>Cities</span><strong id="cities-count">0</strong></p>
+    </section>
+
+    <form class="travel-controls" aria-label="Map filters" onsubmit="return false;">
+      <div class="travel-field">
+        <label for="country-filter">Country</label>
+        <select id="country-filter" name="country-filter">
+          <option value="all">All countries</option>
+        </select>
+      </div>
+
+      <div class="travel-field">
+        <label for="city-search">City</label>
+        <input
+          id="city-search"
+          name="city-search"
+          type="search"
+          placeholder="Search city"
+          autocomplete="off"
+        />
+      </div>
+
+      <button id="clear-filters" type="button">Clear</button>
+    </form>
+  </div>
+
+  <div
+    id="map"
+    role="region"
+    aria-label="World map with markers of visited places"
+  ></div>
+
+  <noscript>
+    JavaScript is disabled, so the interactive map is not available.
+  </noscript>
+
   <br /><br />
 </div>
