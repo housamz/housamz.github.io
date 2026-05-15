@@ -240,73 +240,100 @@
       "website": "http://www.www2015.it/documents/proceedings/companion/p151.pdf"
     }
   ],
+  "languages": [
+    {
+      "language": "Arabic",
+      "glyph": "ع",
+      "level": 5
+    },
+    {
+      "language": "English",
+      "glyph": "A",
+      "level": 5
+    },
+    {
+      "language": "French",
+      "glyph": "É",
+      "level": 2
+    },
+    {
+      "language": "Chinese",
+      "glyph": "汉",
+      "level": 1
+    },
+    {
+      "language": "Gaeilge",
+      "glyph": "G",
+      "level": 1
+    }
+  ],
   "skills": [
-    "React.js",
-    "Flask",
-    "Django",
-    "Django REST Framework",
-    "Cascading Style Sheets (CSS)",
-    "Teamwork",
-    "Rubrics",
-    "Training",
-    "Formative Assessment",
-    "Interpersonal Skills",
-    "Design",
-    "Communication",
-    "Problem Solving",
-    "University Lecturing",
-    "Grading",
-    "Curriculum Development",
-    "Mentoring",
-    "Teaching",
-    "Web Content Accessibility Guidelines (WCAG)",
-    "Programming",
-    "Web Design",
-    "Web Development",
-    "SEO",
-    "Graphic Design",
-    "Web Applications",
-    "User Interface",
-    "Project Management",
-    "User Experience",
-    "Research",
-    "Software Development",
-    "Front-end Development",
+    "Adobe Creative Suite",
+    "Adobe Photoshop",
     "Agile Methodologies",
     "Algorithms",
-    "Data Structures",
-    "Business Development",
-    "PHP",
-    "JavaScript",
-    "Adobe Creative Suite",
-    "Microsoft Office",
-    "Python",
-    "Databases",
-    "SQL",
-    "Adobe Photoshop",
     "AngularJS",
-    "Node.js",
-    "Git",
+    "Business Development",
+    "Cascading Style Sheets (CSS)",
+    "Communication",
+    "Curriculum Development",
+    "Data Structures",
+    "Databases",
+    "Design",
+    "Django REST Framework",
+    "Django",
     "Docker",
-    "jQuery",
+    "Flask",
+    "Formative Assessment",
+    "Front-end Development",
+    "Git",
+    "Grading",
+    "Graphic Design",
     "HTML5",
+    "Interpersonal Skills",
+    "JavaScript",
+    "jQuery",
     "Linux",
     "Management",
+    "Mentoring",
+    "Microsoft Office",
+    "Node.js",
+    "PHP",
+    "Problem Solving",
+    "Programming",
+    "Project Management",
+    "Python",
+    "React.js",
+    "Research",
+    "Rubrics",
+    "SEO",
+    "Software Development",
+    "SQL",
+    "Teaching",
     "Team Leadership",
     "Team Management",
-    "TypeScript"
+    "Teamwork",
+    "Training",
+    "TypeScript",
+    "University Lecturing",
+    "User Experience",
+    "User Interface",
+    "Web Applications",
+    "Web Content Accessibility Guidelines (WCAG)",
+    "Web Design",
+    "Web Development"
   ],
   "projects": [
     {
       "name": "Oorlish",
       "type": "portfolio",
-      "description": "A collection of everyday online tools and utilities built with simplicity and usability in mind.",
+      "description": "Everyday online tools and utilities built with simplicity and usability in mind.",
       "href": "https://oorlish.netlify.app/"
     },
     {
       "name": "ASCII Donut",
       "type": "portfolio",
-      "description": "A spinning 3-D donut rendered in ASCII art, ported and animated in JavaScript.",
+      "description": "A spinning 3D donut rendered in ASCII art, ported and animated in JavaScript.",
       "href": "https://codepen.io/housamz/pen/zYNmppq"
     },
     {
@@ -324,7 +351,7 @@
     {
       "name": "Retro Composer",
       "type": "portfolio",
-      "description": "A browser-based retro music composer with 8-bit style sounds and patterns.",
+      "description": "Browser-based retro music composer with 8-bit style sounds and patterns.",
       "href": "https://codepen.io/housamz/pen/JjOVEdp"
     },
     {
@@ -336,21 +363,21 @@
     {
       "name": "Umm Kulthum Encyclopedia",
       "type": "portfolio",
-      "description": "A comprehensive encyclopedia dedicated to the legendary Egyptian singer Umm Kulthum.",
+      "description": "Comprehensive encyclopedia dedicated to the legendary Egyptian singer Umm Kulthum.",
       "href": "https://umm-kulthum.com/"
     },
     {
       "name": "Prêt-à-LLOD",
       "type": "research",
       "startDate": "2019-01-01",
-      "summary": "In this project we aim to increase the uptake of language technologies by exploiting the combination of linked data and language technologies, that is Linguistic Linked Open Data (LLOD), to create ready-to-use multilingual data. Prêt-à-LLOD aims to achieve this by creating a new methodology for building data value chains applicable to a wide-range of sectors and applications and based around language resources and language technologies that can be integrated by means of semantic technologies, in particular the usage of Linguistic Linked Open Data (LLOD).",
+      "description": "Using Linguistic Linked Open Data to create ready-to-use multilingual data chains.",
       "url": "http://www.pret-a-llod.eu/"
     },
     {
-      "name": "Teanga, A Linked Data based Natural Language Processing Platform",
+      "name": "Teanga",
       "type": "research",
       "startDate": "2017-06-01",
-      "summary": "Teanga is a linked data based platform for natural language processing (NLP).  Teanga enables the use of many NLP services from a single interface, whether the need was to use a single service or multiple services in a pipeline. Teanga focuses on the problem of NLP service interoperability by using linked data to define the types of service input and output. Teanga's strengths include being easy to install and run, easy to use, able to run multiple NLP tasks from one interface and helping users to build a pipeline of tasks through a graphical user interface.",
+      "description": "A Linked Data platform for interoperable Natural Language Processing services.",
       "url": "http://www.teanga.io",
       "endDate": "2019-07-01"
     },
@@ -358,7 +385,7 @@
       "name": "MixedEmotions",
       "type": "research",
       "startDate": "2015-02-01",
-      "summary": "The MixedEmotions platform is a Big Data Toolbox for multilingual and multimodal emotion extraction and analysis. It can extract emotions from a text, audio and video. However, it also has many other capabilities, such as sentiment analysis, social network analysis and knowledge graphs visualisation among others.",
+      "description": "Big Data toolbox for multilingual and multimodal emotion extraction and analysis.",
       "url": "http://mixedemotions.insight-centre.org/",
       "endDate": "2017-06-01"
     },
@@ -366,7 +393,7 @@
       "name": "Smartie",
       "type": "research",
       "startDate": "2015-01-01",
-      "summary": "Smartie is a tool built for the Irish Times journalists to get detailed insights into Irish Times archives about topics.",
+      "description": "A tool providing Irish Times journalists with detailed insights into paper archives.",
       "url": "http://smartie.ie/",
       "endDate": "2015-07-01"
     },
@@ -374,7 +401,7 @@
       "name": "Kenny's Advanced Browse",
       "type": "research",
       "startDate": "2014-10-01",
-      "summary": "A project in cooperation with the oldest Book Shop in Galway, Kenny's. ‘Advanced Browse’ uses a combination of user reviews on Goodreads.com and the description of a book to create visual maps of book categories that you can expand and explore. Clicking on any ‘node’ on any branch of the tree will bring you to a list of books in that area, categorised by year of publication.",
+      "description": "Visual maps of book categories using Goodreads reviews and descriptions.",
       "url": "http://kennys.insight-centre.org/",
       "endDate": "2015-04-01"
     },
@@ -382,7 +409,7 @@
       "name": "Infiniti press",
       "type": "research",
       "startDate": "2013-02-01",
-      "summary": "Infiniti middle east newsroom website",
+      "description": "The official newsroom website for Infiniti Middle East.",
       "url": "http://www.infinitipress.me",
       "endDate": "2013-05-01"
     }

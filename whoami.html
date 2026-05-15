@@ -72,6 +72,17 @@ nav_icon: fa-solid fa-user
     </div>
   </div>
 
+  <h3 class="text-lg font-bold mt-6 mb-3">Languages</h3>
+  <div bind="foreach | languages" class="grid grid-cols-2 gap-4">
+    <div class="language-item" bind="attr | { data-level : level, title : fluency }">
+      <span class="language-glyph" bind="text | glyph"></span>
+      <div class="language-head">
+        <h4 bind="text | language"></h4>
+        <div class="language-level" bind="attr | { data-level : level, aria-label : fluency, title : fluency }"></div>
+      </div>
+    </div>
+  </div>
+
   <h3 class="text-lg font-bold mt-6 mb-3">Skills</h3>
   <div bind="foreach | skills" class="flex gap-1 flex-wrap">
     <div class="bg-sky-700 text-white px-2 rounded">
