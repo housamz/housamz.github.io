@@ -121,36 +121,84 @@ jQuery(function ($) {
       .replace(/\n\n---\n\n/, "\n\n")
       .trim();
 
+    const normalizedSkills = Array.isArray(data.skills)
+      ? data.skills.map((item) => {
+          if (typeof item === "string") {
+            return {
+              name: item,
+              category: "Professional",
+              categoryClass: "skill-item skill-cat-professional",
+              categoryKey: "professional",
+            };
+          }
+
+          const category = item?.category || "Professional";
+          const categoryKey = String(category)
+            .trim()
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "") || "professional";
+
+          return {
+            ...item,
+            category,
+            categoryClass: `skill-item skill-cat-${categoryKey}`,
+            categoryKey,
+          };
+        })
+      : data.skills;
+
+    const skillFilters = [{
+      key: "all",
+      label: "All",
+      filterClass: "skill-filter-all",
+    }];
+
+    const timelineFilters = [
+      {
+        key: "work",
+        label: "Work Experience",
+        filterClass: "work-bar",
+      },
+      {
+        key: "teaching",
+        label: "Teaching",
+        filterClass: "teaching-bar",
+      },
+      {
+        key: "education",
+        label: "Education",
+        filterClass: "education-bar",
+      },
+      {
+        key: "volunteer",
+        label: "Volunteer",
+        filterClass: "volunteer-bar",
+      },
+    ];
+
+    if (Array.isArray(normalizedSkills)) {
+      const seenSkillCategories = new Set();
+      normalizedSkills.forEach((item) => {
+        if (!item?.categoryKey || seenSkillCategories.has(item.categoryKey)) return;
+        seenSkillCategories.add(item.categoryKey);
+        skillFilters.push({
+          key: item.categoryKey,
+          label: item.category,
+          filterClass: `skill-filter-${item.categoryKey}`,
+        });
+      });
+    }
+
     const dataForBinding = {
       ...data,
       basics: {
         ...data.basics,
         summary: normalizedSummary,
       },
-      skills: Array.isArray(data.skills)
-        ? data.skills.map((item) => {
-            if (typeof item === "string") {
-              return {
-                name: item,
-                category: "Professional",
-                categoryClass: "skill-item skill-cat-professional",
-              };
-            }
-
-            const category = item?.category || "Professional";
-            const categoryKey = String(category)
-              .trim()
-              .toLowerCase()
-              .replace(/[^a-z0-9]+/g, "-")
-              .replace(/^-+|-+$/g, "") || "professional";
-
-            return {
-              ...item,
-              category,
-              categoryClass: `skill-item skill-cat-${categoryKey}`,
-            };
-          })
-        : data.skills,
+      timelineFilters,
+      skills: normalizedSkills,
+      skillFilters,
       projects: Array.isArray(data.projects)
         ? data.projects.map((item) => ({
             ...item,
@@ -178,16 +226,7 @@ jQuery(function ($) {
         Array.from(skillNodes).map((node) => node.dataset.skillCategory).filter(Boolean),
       );
 
-      const getSkillTypeFromLegendClass = (className) => {
-        if (!className) return null;
-        if (className.includes("skill-filter-all")) return "all";
-        if (className.includes("skill-filter-development")) return "development";
-        if (className.includes("skill-filter-teaching")) return "teaching";
-        if (className.includes("skill-filter-design")) return "design";
-        if (className.includes("skill-filter-leadership")) return "leadership";
-        if (className.includes("skill-filter-professional")) return "professional";
-        return null;
-      };
+      const getSkillFilterType = (node) => node.getAttribute("data-skill-filter");
 
       const applySkillFilters = () => {
         skillNodes.forEach((node) => {
@@ -202,7 +241,7 @@ jQuery(function ($) {
           );
 
         skillsLegend.querySelectorAll("div").forEach((item) => {
-          const type = getSkillTypeFromLegendClass(item.className);
+          const type = getSkillFilterType(item);
           if (!type) return;
           const isActive = type === "all" ? allActive : activeCategories.has(type);
           item.classList.toggle("is-off", !isActive);
@@ -211,7 +250,7 @@ jQuery(function ($) {
       };
 
       skillsLegend.querySelectorAll("div").forEach((item) => {
-        const type = getSkillTypeFromLegendClass(item.className);
+        const type = getSkillFilterType(item);
         if (!type) return;
 
         item.setAttribute("role", "button");

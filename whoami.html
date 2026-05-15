@@ -26,11 +26,10 @@ nav_icon: fa-solid fa-user
   </svg>
   <div bind="paragraphs | basics.summary"></div>
   <h3 class="text-lg font-bold mt-6 mb-3">History</h3>
-  <div class="chart-key">
-    <div class="work-bar">Work Experience</div>
-    <div class="teaching-bar">Teaching</div>
-    <div class="education-bar">Education</div>
-    <div class="volunteer-bar">Volunteer</div>
+  <div bind="foreach | timelineFilters" class="chart-key flex-wrap gap-1" aria-label="Timeline filters">
+    <div bind="attr | { class : filterClass, data-timeline-filter : key }">
+      <span bind="text | label"></span>
+    </div>
   </div>
   <div class="timeline-container">
     <div id="timeline" class="timeline">
@@ -39,7 +38,7 @@ nav_icon: fa-solid fa-user
   </div>
 
   <h3 class="text-lg font-bold mt-6 mb-3">Publications</h3>
-  <div bind="foreach | publications" class="grid grid-cols-2 gap-4">
+  <div bind="foreach | publications" class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="paper">
       <a bind="attr | { href : website }" class="text-sky-600">
         <h4 bind="text | name"></h4>
@@ -50,8 +49,8 @@ nav_icon: fa-solid fa-user
     </div>
   </div>
 
-  <h3 class="text-lg font-bold mt-6 mb-3">Projects & Side Quests</h3>
-  <div bind="foreach | projects" class="grid grid-cols-2 gap-4">
+  <h3 class="text-lg font-bold mt-6 mb-3">Side Quests</h3>
+  <div bind="foreach | projects" class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="project-item">
       <a bind="attr | { href : projectUrl }" class="text-sky-600" target="_blank" rel="noopener">
         <h4 bind="text | name"></h4>
@@ -63,7 +62,7 @@ nav_icon: fa-solid fa-user
   </div>
 
   <h3 class="text-lg font-bold mt-6 mb-3">Awards</h3>
-  <div bind="foreach | awards" class="grid grid-cols-2 gap-4">
+  <div bind="foreach | awards" class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="award-item">
       <h4 bind="text | title"></h4>
       <div class="award-meta">
@@ -73,7 +72,7 @@ nav_icon: fa-solid fa-user
   </div>
 
   <h3 class="text-lg font-bold mt-6 mb-3">Languages</h3>
-  <div bind="foreach | languages" class="grid grid-cols-2 gap-4">
+  <div bind="foreach | languages" class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <div class="language-item" bind="attr | { data-level : level, title : fluency }">
       <span class="language-glyph" bind="text | glyph"></span>
       <div class="language-head">
@@ -84,13 +83,10 @@ nav_icon: fa-solid fa-user
   </div>
 
   <h3 class="text-lg font-bold mt-6 mb-3">Skills</h3>
-  <div class="skills-filter chart-key">
-    <div class="skill-filter-all">All</div>
-    <div class="skill-filter-development">Development</div>
-    <div class="skill-filter-teaching">Teaching</div>
-    <div class="skill-filter-design">Design</div>
-    <div class="skill-filter-leadership">Leadership</div>
-    <div class="skill-filter-professional">Professional</div>
+  <div bind="foreach | skillFilters" class="skills-filter chart-key flex-wrap gap-1">
+    <div bind="attr | { class : filterClass, data-skill-filter : key }">
+      <span bind="text | label"></span>
+    </div>
   </div>
   <div bind="foreach | skills" class="skills-grid">
     <div class="skill-item" bind="attr | { class : categoryClass, data-category : category, title : category }">

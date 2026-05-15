@@ -24,20 +24,15 @@ class Timeline {
     this.init();
   }
 
-  getTypeFromLegendClass(className) {
-    if (!className) return null;
-    if (className.includes("work-bar")) return "work";
-    if (className.includes("teaching-bar")) return "teaching";
-    if (className.includes("education-bar")) return "education";
-    if (className.includes("volunteer-bar")) return "volunteer";
-    return null;
+  getTypeFromLegendItem(node) {
+    return node ? node.getAttribute("data-timeline-filter") : null;
   }
 
   bindLegendControls() {
     if (!this.legend) return;
 
     this.legend.querySelectorAll("div").forEach((item) => {
-      const type = this.getTypeFromLegendClass(item.className);
+      const type = this.getTypeFromLegendItem(item);
       if (!type) return;
 
       item.setAttribute("role", "button");
