@@ -122,8 +122,16 @@ jQuery(function ($) {
     const data = window.__SITE_DATA__;
     if (!data) return;
 
+    const normalizedSummary = String(data?.basics?.summary || "")
+      .replace(/\n\n---\n\n/, "\n\n")
+      .trim();
+
     const dataForBinding = {
       ...data,
+      basics: {
+        ...data.basics,
+        summary: normalizedSummary,
+      },
       skills: Array.isArray(data.skills)
         ? data.skills.map((item) =>
             typeof item === "string" ? { name: item } : item,
@@ -233,11 +241,11 @@ const bindOne = (data, node, index) => {
       node.innerHTML = findData(data, bindParams[1], index);
       break;
     case "paragraphs":
-      const paragraphs =
-        `<p>${findData(data, bindParams[1], index).split(".").join(".</p><p>")}</p>`.replace(
-          /<p><\/p>/g,
-          "",
-        );
+      const paragraphItems = String(findData(data, bindParams[1], index) || "")
+        .split(/\n\s*\n/)
+        .map((item) => item.trim())
+        .filter(Boolean);
+      const paragraphs = paragraphItems.map((item) => `<p>${item}</p>`).join("");
       node.innerHTML = paragraphs;
       break;
     case "text":

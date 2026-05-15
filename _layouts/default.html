@@ -8,13 +8,14 @@
   <head>
     {% assign unified_data = site.data['site-data'] %}
     {% assign unified_basics = unified_data.basics %}
-    {% assign unified_site = unified_data.site %}
-    {% assign display_name = unified_basics.name | default: unified_site.name %}
-    {% assign display_tagline = unified_site.tagline %}
-    {% assign display_description = unified_basics.summary | default: unified_site.description %}
-    {% assign display_keywords = unified_site.keywords %}
+    {% assign summary_parts = unified_basics.summary | split: '---' %}
+    {% assign display_summary = summary_parts | join: '' | strip %}
+    {% assign display_name = unified_basics.name %}
+    {% assign display_tagline = unified_basics.tagline %}
+    {% assign display_description = display_summary | strip_html %}
+    {% assign display_keywords = unified_basics.keywords %}
     {% assign display_footer_links = unified_basics.profiles %}
-    {% assign analytics_id = unified_site.googleAnalytics %}
+    {% assign analytics_id = unified_basics.googleAnalytics %}
     <meta charset="utf-8" />
     <title>
       {% if page.title %}{{ page.title }} – {{ display_name }} {% else %} {{

@@ -3,16 +3,9 @@ layout: default
 ---
 
 <div id="site-intro">
-  <p>
-    Software Engineer by day, lecturer by night, electronics hobbyist in between
-    — basically a 24/7 nerd on a quest for
-    <em class="text-sky-700 dark:text-sky-500">happyness</em>, one pixel at a time.
-  </p>
-  <p>
-    I'm also a <strong>Peace Commissioner</strong> appointed for County Dublin
-    and adjacent counties, providing certification and witnessing services to
-    the public.
-  </p>
+  {% assign unified_data = site.data.site-data %}
+  {% assign intro_parts = unified_data.basics.summary | split: "---" %}
+  {{ intro_parts[0] | strip | markdownify }}
 </div>
 
 <section>

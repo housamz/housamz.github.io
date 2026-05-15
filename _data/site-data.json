@@ -1,52 +1,38 @@
 {
   "basics": {
     "name": "Housam Ziad",
-    "label": "Peace Commissioner | Lecturer | Software Engineer",
-    "picture": "",
-    "email": "",
-    "website": "http://www.hmz.ie",
-    "summary": "I'm a Software Engineer by day, a lecturer by night, and an electronics hobbyist in between – basically, I'm a 24/7 nerd. My journey into the tech world started back in '98 when I was just a wide-eyed Web Designer, but let's be honest, who wasn't in '98? Fast forward to 2008, and I made the genius decision to dive headfirst into Web Development. It was like going from playing with LEGO to building the actual skyscraper! 🎨 💻 ✨  Along the way, I soaked up more knowledge than a sponge at a TED talk. I'm talking Business Development, Marketing, Management – you name it! I even dabbled in Entrepreneurship, but don't ask me about the failed lemonade stand. Oh, and I've been rubbing digital elbows with international organisations, no big deal.  Now, my true calling? Making stuff look good! I'm passionate about crafting designs that are so drop-dead gorgeous they make the Mona Lisa look like a doodle on a napkin. Whether it's for print or the web, I'm on a quest for happyness, one pixel at a time.",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Dublin",
-      "countryCode": "IE",
-      "region": "Leinster"
-    },
+    "website": "https://hmz.ie",
+    "tagline": "Putting the fun in function",
+    "summary": "Software Engineer by day, lecturer by night, electronics hobbyist in between — basically a 24/7 nerd on a quest for <em>happyness</em>, one pixel at a time.\n\nI'm also a <em>Peace Commissioner</em> appointed for County Dublin and adjacent counties, providing certification and witnessing services to the public.\n\n---\n\nMy journey into the tech world started back in '98 when I was just a wide-eyed Web Designer, but let's be honest, who wasn't in '98? Fast forward to 2008, and I made the genius decision to dive headfirst into Web Development.\n\n It was like going from playing with LEGO to building the actual skyscraper! Along the way, I soaked up more knowledge than a sponge at a TED talk. I'm talking Business Development, Marketing, Management – you name it! I even dabbled in Entrepreneurship, but don't ask me about the failed lemonade stand. Oh, and I've been rubbing digital elbows with international organisations, no big deal.\n\nNow, my true calling? Making stuff look good! I'm passionate about crafting designs that are so gorgeous they make <em>The Starry Night</em> look like a doodle on a napkin.",
+    "keywords": "research, software engineer, designer, web developer, UI, UX, user experience, user interface, natural language processing, data analytics, developer, programming, coding, design, seo, search engine optimisation",
+    "googleAnalytics": "G-93G01ZXVH0",
     "profiles": [
       {
-        "key": "behance",
         "network": "Behance",
         "icon": "fa-brands fa-behance",
         "url": "https://www.behance.com/housamz"
       },
       {
-        "key": "linkedin",
         "network": "LinkedIn",
         "icon": "fa-brands fa-linkedin-in",
-        "username": "housamz",
         "url": "https://www.linkedin.com/in/housamz/"
       },
       {
-        "key": "github",
         "network": "GitHub",
         "icon": "fa-brands fa-github",
         "url": "https://github.com/housamz"
       },
       {
-        "key": "codepen",
         "network": "CodePen",
         "icon": "fa-brands fa-codepen",
         "url": "https://codepen.io/housamz"
       },
       {
-        "key": "googlescholar",
         "network": "Google Scholar",
         "icon": "fa-solid fa-graduation-cap",
         "url": "https://scholar.google.com/citations?user=48PxDb0AAAAJ"
       },
       {
-        "key": "rss",
         "network": "RSS",
         "icon": "fa-solid fa-rss",
         "url": "/feed.xml"
@@ -57,137 +43,107 @@
     {
       "company": "Government of Ireland",
       "position": "Peace Commissioner",
-      "website": "",
       "startDate": "2024-04-01",
-      "summary": "A Peace Commissioner is an honorary position that carries specific powers and duties, including taking statutory declarations, witnessing signatures on documents required by various authorities, and signing certificates and orders under various Acts. Additionally, according to the Courts of Justice Act 1924, Peace Commissioners have the authority to issue summons and warrants.",
-      "highlights": []
+      "summary": "A Peace Commissioner is an honorary position that carries specific powers and duties, including taking statutory declarations, witnessing signatures on documents required by various authorities, and signing certificates and orders under various Acts. Additionally, according to the Courts of Justice Act 1924, Peace Commissioners have the authority to issue summons and warrants."
     },
     {
       "company": "UCD PA",
       "position": "Lecturer",
-      "website": "",
       "startDate": "2024-01-01",
       "summary": "Empowering aspiring web developers as a lecturer for the Professional Diploma in Software Development at UCD Professional Academy. This program equips students with in-demand languages like HTML, CSS, JavaScript, Python, and SQL to become full-stack developers. I create a dynamic learning environment, fostering expertise in web development fundamentals and practical application through real-world project development.",
-      "highlights": [],
       "academic": true
     },
     {
       "company": "Pulse College",
       "position": "Lecturer",
-      "website": "",
       "startDate": "2023-04-01",
       "summary": "- Led and supported budding designers through the exciting realms of Game UI Design, Game Design, and Architecture, actively shaping their journeys in these dynamic fields. - Crafted comprehensive curricula for Game UI Design and Game Design & Architecture, ensuring students received a balanced blend of theory and practical know-how. - Designed engaging lessons that explored the psychology of UI Design, practical methodologies for creating functional UI, and strategies for delivering positive user experiences. - Oversaw day-to-day class activities, from interactive lectures to hands-on workshops, fostering an environment where students could thrive and experiment with their newfound skills. - Assigned projects and assignments that mirrored real-world challenges, providing students with invaluable experience and preparing them for the demands of the industry.",
-      "highlights": [],
       "endDate": "2024-04-01",
       "academic": true
     },
     {
       "company": "Oracle",
       "position": "European Works Council (EWC) Delegate",
-      "website": "",
       "startDate": "2022-09-01",
-      "summary": "As Ireland's representative on the Oracle European Works Council (EWC), I bridge local perspectives with broader European discussions, contributing to company-wide initiatives and policy dialogue. In this role, I collaborate with representatives from various countries to ensure that the needs, concerns, and insights from our Irish teams are acknowledged in decisions that impact our European workforce. I am committed to fostering cross-cultural understanding, advocating for fair practices, and supporting Oracle's commitment to transparency and employee engagement across Europe.",
-      "highlights": []
+      "summary": "As Ireland's representative on the Oracle European Works Council (EWC), I bridge local perspectives with broader European discussions, contributing to company-wide initiatives and policy dialogue. In this role, I collaborate with representatives from various countries to ensure that the needs, concerns, and insights from our Irish teams are acknowledged in decisions that impact our European workforce. I am committed to fostering cross-cultural understanding, advocating for fair practices, and supporting Oracle's commitment to transparency and employee engagement across Europe."
     },
     {
       "company": "Oracle",
       "position": "Employee Consultation Forum (ECF) Rep",
-      "website": "",
       "startDate": "2021-02-01",
-      "summary": "As a member of the Employee Consultation Forum (ECF) in Ireland, I work closely with my colleagues to ensure their perspectives are represented within our local operations. I facilitate open communication between employees and management, addressing workplace issues, and supporting initiatives that enhance our working environment. My role focuses on advocating for employees' interests within Ireland, contributing to a collaborative culture that values transparency and inclusivity at all levels.",
-      "highlights": []
+      "summary": "As a member of the Employee Consultation Forum (ECF) in Ireland, I work closely with my colleagues to ensure their perspectives are represented within our local operations. I facilitate open communication between employees and management, addressing workplace issues, and supporting initiatives that enhance our working environment. My role focuses on advocating for employees' interests within Ireland, contributing to a collaborative culture that values transparency and inclusivity at all levels."
     },
     {
       "company": "Oracle",
       "position": "Principal Software Engineer",
-      "website": "",
       "startDate": "2019-08-01",
-      "summary": "Craft exceptional user experiences (UX) for complex enterprise software at Oracle. Lead the design and development of the UI for the Private Cloud Appliance. Prioritise usability, efficiency, and user adoption to drive business value. Extensive experience in JavaScript, TypeScript, Oracle JET, and React. Passionate about building intuitive interfaces that empower users. Working with 300 engineers in different teams in an Agile development environment to create a state-of-the-art user experience that meets business goals.",
-      "highlights": []
+      "summary": "Craft exceptional user experiences (UX) for complex enterprise software at Oracle. Lead the design and development of the UI for the Private Cloud Appliance. Prioritise usability, efficiency, and user adoption to drive business value. Extensive experience in JavaScript, TypeScript, Oracle JET, and React. Passionate about building intuitive interfaces that empower users. Working with 300 engineers in different teams in an Agile development environment to create a state-of-the-art user experience that meets business goals."
     },
     {
       "company": "University of Galway",
       "position": "Lecturer",
-      "website": "",
       "startDate": "2019-08-01",
       "summary": "- Instructed and guided students enrolled in the MSc and Diploma programs for Software Engineering & Database Technologies. - Served as a valuable member of the IT Online Programme team at NUI Galway. - Delivered courses on various subjects, including Software Engineering, Object-oriented Programming (Java), Fundamentals of Database, Artificial Intelligence, and Thesis Fundamentals.",
-      "highlights": [],
       "endDate": "2023-09-01",
       "academic": true
     },
     {
       "company": "Insight Research Ireland Centre for Data Analytics",
       "position": "Senior Software Engineer",
-      "website": "",
       "startDate": "2014-10-01",
       "summary": "I worked on filling the gap between research and industry by converting research into real-world software, using my mixed business and technical skills. My personal research was to build an NLP platform, Teanga [1], that uses Linked Data to achieve interoperability among NLP services, a new approach to utilising UX in NLP. Teanga was well-received by domain experts and during LREC 2018 in Miyazaki, Japan. While working at the Insight Centre, I completed a Master’s degree with First-Class Honours in 2017.  Libraries: Angular, AngularJS, SASS, D3, Bootstrap, Python Flask, Jinja, Handlebars.  [1] http://www.teanga.io",
-      "highlights": [],
       "endDate": "2019-07-01",
       "row": 3
     },
     {
       "company": "Emind Software Company",
       "position": "Founder",
-      "website": "",
       "startDate": "2008-01-01",
       "summary": "I founded emind Creative Solutions to fulfil clients' web development and applications needs. My vision was to apply user-oriented design and use modern web technologies, including mobile-first design processes, to help clients achieve more in the era of hand-held devices while simultaneously serving users from laptops and desktop computers. For six years, emind worked with big clients like Nissan, Garmin, Honda, Infiniti, Lipton, Pepsi co, McVities, and others.",
-      "highlights": [],
       "endDate": "2014-10-01"
     },
     {
       "company": "Al Awael",
       "position": "Development Team Lead",
-      "website": "",
       "startDate": "2006-01-01",
       "summary": "Leading the development team through the company's project. My tasks included collecting requirements from stockholders and project planning/management.",
-      "highlights": [],
       "endDate": "2013-02-01"
     },
     {
       "company": "New Horizons Computer Learning Centers",
       "position": "Web Design Instructor",
-      "website": "",
       "startDate": "2003-04-01",
       "summary": "Teaching all-level classes of Programming, Adobe Suite, and Microsoft Office.",
-      "highlights": [],
       "endDate": "2008-12-01",
       "academic": true
     },
     {
       "company": "Al Awael",
       "position": "Web Developer",
-      "website": "",
       "startDate": "2003-04-01",
       "summary": "",
-      "highlights": [],
       "endDate": "2006-01-01"
     },
     {
       "company": "Trust Lines",
       "position": "Senior Web Designer",
-      "website": "",
       "startDate": "2001-01-01",
       "summary": "",
-      "highlights": [],
       "endDate": "2003-03-01",
       "row": 1
     },
     {
       "company": "Trust Lines",
       "position": "Web Designer",
-      "website": "",
       "startDate": "1998-06-01",
       "summary": "",
-      "highlights": [],
       "endDate": "2001-01-01"
     },
     {
       "company": "Beacon Electronic Industries",
       "position": "Electronics Assembly Operative",
-      "website": "",
       "startDate": "1996-07-01",
       "summary": "As an Electronics Assembly Operative at Beacon Electronic Industries, I assembled and tested electronic protection and monitoring circuits, including through-hole and SMD work. I carried out functional testing with standard bench equipment, diagnosed and repaired returned units, and supported engineers with prototype builds and early R&D tasks. The role combined hands-on production with problem-solving, quality awareness, and continuous improvement across the assembly process.",
-      "highlights": [],
       "endDate": "1998-06-01",
       "row": 1
     }
@@ -198,45 +154,35 @@
       "position": "Consultant",
       "startDate": "2021-02-28",
       "endDate": "",
-      "summary": null,
-      "highlights": [],
-      "website": ""
+      "summary": null
     },
     {
       "organization": "My Streets Ireland CLG",
       "position": "Consultant",
       "startDate": "2019-12-31",
       "endDate": "",
-      "summary": null,
-      "highlights": [],
-      "website": ""
+      "summary": null
     },
     {
       "organization": "CoderDojo",
       "position": "Programming Instructor",
       "startDate": "2015-09-30",
       "endDate": "",
-      "summary": "Teaching kids programming using Scratch and web development using HTML, CSS, and JS.",
-      "highlights": [],
-      "website": ""
+      "summary": "Teaching kids programming using Scratch and web development using HTML, CSS, and JS."
     },
     {
       "organization": "Girls Hack Ireland",
       "position": "Programming Instructor",
       "startDate": "2015-02-28",
       "endDate": "",
-      "summary": null,
-      "highlights": [],
-      "website": ""
+      "summary": null
     },
     {
       "organization": "Online Marketing in Galway (OMiG)",
       "position": "Web Designer, Digital Marketing",
       "startDate": "2014-04-30",
       "endDate": "2021-06-30",
-      "summary": null,
-      "highlights": [],
-      "website": ""
+      "summary": null
     }
   ],
   "education": [
@@ -246,10 +192,6 @@
       "studyType": "Master of Science (MSc)",
       "startDate": "2015-09-01",
       "endDate": "2017-11-01",
-      "score": "1st class honours",
-      "courses": [],
-      "location": "Galway",
-      "type": "Part Time",
       "row": 1
     },
     {
@@ -257,25 +199,19 @@
       "area": "Language, Literature, and Linguistics",
       "studyType": "Bachelor of Arts (B.A.)",
       "startDate": "2004-12-31",
-      "endDate": "2008-12-31",
-      "score": "",
-      "courses": [],
-      "location": "Damascus",
-      "type": "Full Time"
+      "endDate": "2008-12-31"
     }
   ],
   "awards": [
     {
       "title": "Oracle 2022 Sustainability Champion",
       "date": "2022-04-30",
-      "awarder": "Oracle Sustainability",
-      "summary": "Oracle is proud to recognize the 2022 Oracle Sustainability Champions—employees around the world who are leading from the seat they are in and directly contributing to a more sustainable future. Each year, the Oracle Global Sustainability Team honors inspiring employees whose efforts help reduce our environmental footprint and improve the quality of life in the communities where they live and work.\n\nMore on https://blogs.oracle.com/sustainability/post/meet-this-years-sustainability-champions"
+      "awarder": "Oracle"
     },
     {
       "title": "NASA Space Apps Challenge 2019",
       "date": "2019-10-31",
-      "awarder": "NASA",
-      "summary": "Space Apps is an international hackathon for coders, scientists, designers, storytellers, makers, builders, technologists, and others in cities around the world, where teams engage with NASA’s free and open data to address real-world problems on Earth and in space. Space Apps 2019 included over 29,000 participants at more than 230 events in 80 countries."
+      "awarder": "NASA"
     }
   ],
   "publications": [
@@ -283,29 +219,25 @@
       "name": "Teanga: A Linked Data based platform for Natural Language Processing",
       "publisher": "LREC 2018",
       "releaseDate": "2018-05-07",
-      "website": "http://www.lrec-conf.org/proceedings/lrec2018/summaries/106.html",
-      "summary": "In this paper, we describe Teanga, a linked data based platform for natural language processing (NLP). Teanga enables the use of many NLP services from a single interface, whether the need was to use a single service or multiple services in a pipeline. Teanga focuses on the problem of NLP services interoperability by using linked data to define the types of services input and output. Teanga’s strengths include being easy to install and run, easy to use, able to run multiple NLP tasks from one interface and helping users to build a pipeline of tasks through a graphical user interface."
+      "website": "http://www.lrec-conf.org/proceedings/lrec2018/summaries/106.html"
     },
     {
       "name": "Mixedemotions: An open-source toolbox for multimodal emotion analysis",
       "publisher": "IEEE",
       "releaseDate": "2018-01-25",
-      "website": "https://aran.library.nuigalway.ie/bitstream/handle/10379/14653/main.pdf?sequence=5&isAllowed=y",
-      "summary": "Recently, there is an increasing tendency to embed functionalities for recognizing emotions from user-generated media content in automated systems such as call-centre operations, recommendations, and assistive technologies, providing richer and more informative user and content profiles. However, to date, adding these functionalities was a tedious, costly, and time-consuming effort, requiring identification and integration of diverse tools with diverse interfaces as required by the use case at hand. The MixedEmotions Toolbox leverages the need for such functionalities by providing tools for text, audio, video, and linked data processing within an easily integrable plug-and-play platform. These functionalities include: 1) for text processing: emotion and sentiment recognition; 2) for audio processing: emotion, age, and gender recognition; 3) for video processing: face detection and tracking, emotion recognition, facial …"
+      "website": "https://aran.library.nuigalway.ie/bitstream/handle/10379/14653/main.pdf?sequence=5&isAllowed=y"
     },
     {
       "name": "OTTO-Ontology Translation System",
       "publisher": "International Semantic Web Conference",
       "releaseDate": "2015-08-11",
-      "website": "https://aran.library.nuigalway.ie/bitstream/handle/10379/14903/llncsdoc.pdf?sequence=1",
-      "summary": "To enable knowledge access across languages, ontologies that are often represented only in English, need to be translated into different languages. For this reason, we present OTTO, an OnTology TranslatiOn System, which enhances ontologies with multilingual information. Rather a different task than the classic document translation, ontology label translation faces highly specific vocabulary and lack contextual information. Therefore, OTTO takes advantage of the semantic information of the ontology to improve the translation of labels."
+      "website": "https://aran.library.nuigalway.ie/bitstream/handle/10379/14903/llncsdoc.pdf?sequence=1"
     },
     {
       "name": "Who are the american vegans related to brad pitt?: Exploring related entities",
       "publisher": "ACM",
       "releaseDate": "2015-05-18",
-      "website": "http://www.www2015.it/documents/proceedings/companion/p151.pdf",
-      "summary": "In this demo, we present Entity Relatedness Graph (EnRG), a focused related entities explorer, which provides the users with a dynamic set of filters and facets. It gives a ranked lists of related entities to a given entity, and clusters them using the different filters. For instance, using EnRG, one can easily find the American vegans related to Brad Pitt or Irish universities related to Semantic Web. Moreover, EnRG helps a user in discovering the provenance for implicit relations between two entities. EnRG uses distributional semantics to obtain the relatedness scores between two entities."
+      "website": "http://www.www2015.it/documents/proceedings/companion/p151.pdf"
     }
   ],
   "skills": [
@@ -363,28 +295,6 @@
     "Team Leadership",
     "Team Management",
     "TypeScript"
-  ],
-  "languages": [
-    {
-      "language": "Arabic",
-      "fluency": "Native or bilingual proficiency"
-    },
-    {
-      "language": "English",
-      "fluency": "Native or bilingual proficiency"
-    },
-    {
-      "language": "French",
-      "fluency": "Limited working proficiency"
-    },
-    {
-      "language": "Chinese",
-      "fluency": "Elementary proficiency"
-    },
-    {
-      "language": "Gaeilge",
-      "fluency": "Elementary proficiency"
-    }
   ],
   "projects": [
     {
@@ -477,16 +387,6 @@
       "endDate": "2013-05-01"
     }
   ],
-  "site": {
-    "name": "Housam Ziad",
-    "tagline": "Putting the fun in function",
-    "description": "Software Engineer by day, lecturer by night, electronics hobbyist in between — basically a 24/7 nerd on a quest for happyness, one pixel at a time.  I'm also a Peace Commissioner appointed for County Dublin and adjacent counties, providing certification and witnessing services to the public.",
-    "keywords": "research, software engineer, designer, web developer, UI, UX, user experience, user interface, natural language processing, data analytics, developer, programming, coding, design, seo, search engine optimisation",
-    "googleAnalytics": "G-93G01ZXVH0",
-    "url": "https://hmz.ie",
-    "baseurl": "",
-    "imagesUrl": "https://www.hmz.ie/images/media/"
-  },
   "travels": {
     "countries": [
       {
@@ -1339,47 +1239,6 @@
           " "
         ],
         "type": "welcome"
-      },
-      "whoami": {
-        "description": "Who is Housamz?",
-        "lines": [
-          "👨‍💻 By day, I'm a Software Engineer. By night, a pos-grad lecturer. And in between? I'm probably fixing a toaster or building a robot for fun. Basically: full-time nerd, part-time superhero 🦸‍♂️🔧",
-          "🕹️ My tech story began in '98 as a starry-eyed Web Designer (weren't we all?), and by 2008 I was knee-deep in Web Dev—LEGO bricks turned to skyscrapers 🧱➡️🏙️",
-          "💼 Since then, I've dabbled in everything from biz dev to marketing, even had a go at entrepreneurship (RIP my lemonade empire 🍋💸).",
-          "🎨 My real love? Making things look so good they give Mona Lisa an identity crisis. Pixel-perfect is my love language 💖🖼️",
-          "🇮🇪 Oh, and I'm also a Peace Commissioner in Ireland—because why not fight bugs and crime? ⚖️🐛"
-        ],
-        "type": "paragraph"
-      },
-      "skills": {
-        "description": "What can I do?",
-        "lines": [
-          "<i>My Technical Skills</i>",
-          "<i>Frontend</i> HTML, CSS, JavaScript",
-          "<i>Backend</i> Node.js, Python",
-          "<i>DevOps</i> Docker, Git",
-          "<i>Linux Administration</i>",
-          "<i>Shell Scripting</i>"
-        ],
-        "type": "list"
-      },
-      "projects": {
-        "description": "My projects",
-        "lines": [],
-        "type": "list"
-      },
-      "contact": {
-        "description": "How to reach me",
-        "lines": [
-          "<i>Contact Information</i>",
-          "<i>Universal name</i> <em>housamz</em>",
-          "<i>GitHub</i> <span>github.com/<em>housamz</em></span>",
-          "<i>Codepen</i> <span>codepen.io/<em>housamz</em></span>",
-          "<i>LinkedIn</i> <span>linkedin.com/in/<em>housamz</em></span>",
-          "<i>Twitter</i> <span>twitter.com/<em>housamz</em></span>",
-          "<i>Website</i> <span><em>housamz</em>.com</span>"
-        ],
-        "type": "list"
       }
     }
   }

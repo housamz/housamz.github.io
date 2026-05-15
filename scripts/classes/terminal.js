@@ -46,12 +46,14 @@ const DEFAULT_TERMINAL_DATA = {
 
 const buildTerminalDataFromSiteData = (data) => {
   const basics = data?.basics || {};
-  const site = data?.site || {};
   const profiles = Array.isArray(basics.profiles) ? basics.profiles : [];
   const skillItems = (Array.isArray(data?.skills) ? data.skills : []).slice(0, 12);
   const projectItems = Array.isArray(data?.projects) ? data.projects : [];
 
-  const summary = (basics.summary || site.description || "").trim();
+  const summary = String(basics.summary || "")
+    .replace(/\n\n---\n\n/, "\n\n")
+    .replace(/<[^>]+>/g, "")
+    .trim();
   const whoamiLines = summary ? [escapeHtml(summary)] : [];
 
   const skillsLines = ["<i>Top Skills</i>"];
@@ -88,8 +90,8 @@ const buildTerminalDataFromSiteData = (data) => {
       `<i>${escapeHtml(profile.network)}</i> <span>${escapeHtml(formatLinkText(profile.url))}</span>`,
     );
   });
-  if (site.url) {
-    contactLines.push(`<i>Website</i> <span>${escapeHtml(formatLinkText(site.url))}</span>`);
+  if (basics.website) {
+    contactLines.push(`<i>Website</i> <span>${escapeHtml(formatLinkText(basics.website))}</span>`);
   }
 
   return {
