@@ -1,11 +1,6 @@
 /*jshint esversion: 6 */
 
 jQuery(function ($) {
-  // typing effect
-  if ($("#site-skills").length && typeof window.TypedText === "function") {
-    new TypedText($("#site-skills"));
-  }
-
   // game
   if ($("#main").length && typeof window.FThisWebsite === "function") {
     new FThisWebsite($("#main")[0], " fudge ");

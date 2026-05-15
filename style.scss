@@ -387,3 +387,126 @@ section {
     gap: 0.5rem;
   }
 }
+
+// 404
+.minimal-404 {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.error-stack {
+  filter: contrast(122%);
+  font-size: clamp(4rem, 17vw, 10rem);
+  font-weight: bold;
+  letter-spacing: -1.5rem;
+  line-height: 0.9;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.error-stack .layer {
+  display: block;
+}
+
+.error-stack .layer-base {
+  background: linear-gradient(110deg, #0f172a 10%, #0369a1 42%, #22c55e 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: saturate(145%);
+  position: relative;
+  z-index: 2;
+}
+
+.error-stack .layer-glow,
+.error-stack .layer-shift {
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.error-stack .layer-glow {
+  background: linear-gradient(110deg, #67e8f9 0%, #22d3ee 48%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: blur(1.4px) saturate(190%);
+  opacity: 0.46;
+  transform: translate(-0.03em, -0.02em);
+  z-index: 1;
+}
+
+.error-stack .layer-shift {
+  background: linear-gradient(110deg, #f97316 8%, #ef4444 50%, #eab308 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: hue-rotate(-12deg) saturate(170%);
+  opacity: 0.48;
+  transform: translate(0.03em, 0.025em);
+  z-index: 3;
+}
+
+.error-copy {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1rem 0 0.6rem;
+}
+
+.action-link {
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  display: inline-block;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.38rem 0.8rem;
+  text-decoration: none;
+}
+
+.action-button {
+  background: transparent;
+  cursor: pointer;
+}
+
+.missing-url {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.88rem;
+  margin-bottom: 1.6rem;
+  word-break: break-all;
+}
+
+.utility-panel {
+  margin: 0 auto;
+  max-width: 28rem;
+  text-align: left;
+}
+
+.utility-panel h2 {
+  font-size: 1rem;
+  margin: 0 0 0.45rem;
+}
+
+.utility-panel li {
+  border-bottom: 1px dashed #d1d5db;
+  padding: 0.45rem 0;
+}
+
+@media (max-width: 640px) {
+  .error-stack {
+    font-size: clamp(3.6rem, 26vw, 6rem);
+  }
+
+  .utility-panel {
+    max-width: 100%;
+  }
+}
