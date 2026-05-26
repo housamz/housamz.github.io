@@ -3,7 +3,7 @@
 jQuery(function ($) {
   // game
   if ($("#main").length && typeof window.FThisWebsite === "function") {
-    new FThisWebsite($("#main")[0], " fudge ");
+    new FThisWebsite($("#main")[0], " ****** ");
   }
 
   // back to top
