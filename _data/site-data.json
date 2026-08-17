@@ -1237,7 +1237,13 @@
         "country": 34,
         "lat": 51.3985,
         "lng": -3.3433
-      }
+      },
+      {
+        "city": "Verona",
+        "country": 13,
+        "lat": 45.4333,
+        "lng": 10.9833
+      },
     ]
   },
   "terminal": {
