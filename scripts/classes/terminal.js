@@ -51,7 +51,7 @@ const buildTerminalDataFromSiteData = (data) => {
   const projectItems = Array.isArray(data?.projects) ? data.projects : [];
 
   const summary = String(basics.summary || "")
-    .replace(/\n\n---\n\n/, "\n\n")
+    .split("---\n\n")[0]
     .replace(/<[^>]+>/g, "")
     .trim();
   const whoamiLines = summary ? [escapeHtml(summary)] : [];
