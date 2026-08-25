@@ -34,7 +34,7 @@ jQuery(function ($) {
     typeof window.Timeline === "function"
   ) {
     // on earth for
-    new DateBetween("timeOnEarth", "On earth for", "1981-08-03T04:30:00", null);
+    new DateBetween("timeOnEarth", "On earth for", "1981-07-30T04:30:00", null);
 
     // keep earth/time rotating and boost speed while scrolling
     const whoami = document.querySelector("#whoami");
@@ -118,7 +118,7 @@ jQuery(function ($) {
     if (!data) return;
 
     const normalizedSummary = String(data?.basics?.summary || "")
-      .replace(/\n\n---\n\n/, "\n\n")
+      .split("---\n\n")[1]
       .trim();
 
     const normalizedSkills = Array.isArray(data.skills)
