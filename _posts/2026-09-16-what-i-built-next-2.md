@@ -93,6 +93,26 @@ Eventually I reached the obvious limitation. The Station P1 Pro was never design
 
 More importantly, I wanted somewhere safer to experiment with virtual machines and infrastructure without putting everything on one little Ubuntu installation. So another second-hand machine entered the story: a **Lenovo ThinkCentre M73 Tiny**. It has an Intel Core i5-4570T, 8 GB of RAM and a 240 GB SSD. Again, nothing spectacular. And that is precisely what I like about it.
 
+## One plug to power them all
+
+As the homelab grew, I discovered another problem that had nothing to do with Docker, networking or Linux.
+**Power adapters.**
+
+Every little device came with its own power brick. Before long, I had five different adapters occupying sockets, creating cable clutter and generally making my supposedly neat little homelab look like something I'd assembled behind a television in 2004.
+This annoyed me far more than it probably should have.
+
+So I started looking at the actual power requirements of each device and realised I didn't necessarily need five separate power supplies. What I needed was one sufficiently capable USB-C power supply and the right cables.
+
+Some of the machines weren't designed for USB-C power at all, so I used USB-C Power Delivery trigger cables that negotiate the required voltage from the charger and present it through the connector the device expects. An example of the cable can be found by [clicking here](https://temu.to/k/e7kpxebmch4).
+
+Eventually, five power adapters became one power supply and a handful of USB-C cables.
+
+I was ridiculously proud of this. Not installing Proxmox. Not configuring Docker. Not getting DNS, Traefik and HTTPS talking nicely to each other. **The cables.**
+
+There is something deeply satisfying about looking behind a collection of computers and seeing one power supply where there used to be five chunky adapters fighting for space.
+It also became another small example of what I enjoy about the homelab: the solution didn't require buying newer computers. It required understanding what the hardware actually needed and finding a cleaner way to provide it.
+And, perhaps most importantly, I can now look behind the desk without becoming annoyed.
+
 ## Proxmox changes the architecture
 
 I installed **Proxmox** on the ThinkCentre. This was probably the point where my collection of self-hosted applications officially became a homelab. Instead of thinking purely in terms of: **machine → Docker → containers**
