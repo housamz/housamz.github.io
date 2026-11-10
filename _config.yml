@@ -1,0 +1,156 @@
+title: Housam
+description: Software, education and design. A terminal portfolio by Housam.
+url: https://hmz.ie
+exclude:
+  - README.md
+  - LICENSE
+  - tests
+  - Gemfile
+  - Gemfile.lock
+
+# Public portfolio content and terminal settings
+basics:
+  name: Housam
+  website: https://hmz.ie
+  summary: Educator, technologist and multidisciplinary leader working across software
+    engineering, design, research and business. I make complex ideas accessible, develop
+    people and use technology to solve meaningful problems.
+skills:
+- name: Adobe Creative Suite
+  category: Design
+- name: Agile Methodologies
+  category: Leadership
+- name: Algorithms
+  category: Development
+- name: Business Development
+  category: Leadership
+- name: Communication
+  category: Professional
+- name: Curriculum Development
+  category: Teaching
+- name: Databases
+  category: Development
+- name: Formative Assessment
+  category: Teaching
+- name: Front-end Development
+  category: Development
+- name: Graphic Design
+  category: Design
+- name: JavaScript
+  category: Development
+- name: Linux
+  category: Development
+- name: Mentoring
+  category: Teaching
+- name: Microsoft Office
+  category: Professional
+- name: PHP
+  category: Development
+- name: Programming
+  category: Development
+- name: Project Management
+  category: Leadership
+- name: Python
+  category: Development
+- name: React
+  category: Development
+- name: Research
+  category: Professional
+- name: Software Development
+  category: Development
+- name: TypeScript
+  category: Development
+- name: User Experience
+  category: Design
+- name: User Interface
+  category: Design
+- name: Web Applications
+  category: Development
+- name: Web Content Accessibility Guidelines (WCAG)
+  category: Development
+projects:
+- name: Oorlish
+  type: portfolio
+  description: Everyday online tools and utilities built with simplicity and usability
+    in mind.
+  href: https://oorlish.netlify.app/
+- name: ASCII Donut
+  type: portfolio
+  description: A spinning 3D donut rendered in ASCII art, ported and animated in JavaScript.
+  href: https://codepen.io/housamz/pen/zYNmppq
+- name: Ireland EV Chargers
+  type: portfolio
+  description: Interactive map of electric vehicle charging stations across Ireland.
+  href: https://ie-chargers.netlify.app/
+- name: JavaScript Food
+  type: portfolio
+  description: A fun visual experiment combining JavaScript animations with food themes.
+  href: https://codepen.io/housamz/full/jOjPmrM
+- name: Retro Composer
+  type: portfolio
+  description: Browser-based retro music composer with 8-bit style sounds and patterns.
+  href: https://codepen.io/housamz/pen/JjOVEdp
+- name: Teevee
+  type: portfolio
+  description: A minimal TV show tracker to keep tabs on what you are watching.
+  href: https://teevee.netlify.app/
+- name: Umm Kulthum Encyclopedia
+  type: portfolio
+  description: Comprehensive encyclopedia dedicated to the legendary Egyptian singer
+    Umm Kulthum.
+  href: https://umm-kulthum.com/
+- name: Prêt-à-LLOD
+  type: research
+  description: Using Linguistic Linked Open Data to create ready-to-use multilingual
+    data chains.
+  url: http://www.pret-a-llod.eu/
+- name: Teanga
+  type: research
+  description: A Linked Data platform for interoperable Natural Language Processing
+    services.
+  url: http://www.teanga.io
+- name: MixedEmotions
+  type: research
+  description: Big Data toolbox for multilingual and multimodal emotion extraction
+    and analysis.
+  url: http://mixedemotions.insight-centre.org/
+- name: Smartie
+  type: research
+  description: A tool providing Irish Times journalists with detailed insights into
+    paper archives.
+  url: http://smartie.ie/
+- name: Kenny's Advanced Browse
+  type: research
+  description: Visual maps of book categories using Goodreads reviews and descriptions.
+  url: http://kennys.insight-centre.org/
+- name: Infiniti press
+  type: research
+  description: The official newsroom website for Infiniti Middle East.
+  url: http://www.infinitipress.me
+terminal:
+  prompt: visitor@hmzie:~$
+  sections:
+    welcome:
+      description: Welcome and splash screen
+      lines:
+      - "<em>Housamz (<em>hmz</em>.ie) All rights are not reserved.</em>"
+      - " "
+      - '0000000000000000000111111111110001111111100'
+      - '0000000000000000011111111111111111111111110'
+      - '0000000000000000111111110000011111111100111'
+      - '0000000111111001111111100000111111111001110'
+      - '0001111111111111111111000001111111111111100'
+      - '0111110000001111111110000011111111110000000'
+      - '1111000000001111111111100111111111100000000'
+      - '1110000000011111111001111111111111001111000'
+      - '1100000000111111110000011111111110000111110'
+      - '1100000001111111100000011111111100000011111'
+      - '1110000111111111000000111111111000000011111'
+      - '0111111111111110000011111111111111000111110'
+      - '0011111111111000001111111111000111111111100'
+      - " "
+      - "<em>Type '<i>help</i>' to see available commands.</em>"
+      - " "
+      - "<em>Stay a while: <i>games</i> for the arcade · <i>explore</i> for a surprise.</em>"
+      - " "
+      type: welcome

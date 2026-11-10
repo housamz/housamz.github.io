@@ -1,0 +1,59 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Housam — portfolio."
+    />
+    <meta name="theme-color" content="#0d1e2e" />
+    <title>Housam = Portfolio</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/terminal.css" />
+  </head>
+  <body class="terminal-page">
+    <main id="main" class="terminal-page-shell">
+      <div class="terminal-container">
+        <div id="app">
+          <div
+            id="command-history"
+            role="log"
+            aria-label="Terminal output"
+          ></div>
+          <div class="input-line">
+            <span class="prompt" id="first-prompt"></span>
+            <input
+              class="command-input"
+              id="command-input"
+              type="text"
+              autofocus="autofocus"
+              aria-label="Terminal command"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+            />
+            <span class="cursor" id="cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      window.__HOME_URL__ = "/";
+      window.__SITE_DATA__ = {
+        "basics": {{ site.basics | jsonify }},
+        "skills": {{ site.skills | jsonify }},
+        "projects": {{ site.projects | jsonify }},
+        "terminal": {{ site.terminal | jsonify }}
+      };
+    </script>
+    <script src="/scripts/classes/terminal-play.js"></script>
+    <script src="/scripts/classes/terminal.js"></script>
+    <script>
+      new Terminal().initialize();
+    </script>
+  </body>
+</html>
